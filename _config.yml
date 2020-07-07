@@ -1,7 +1,7 @@
 # Book settings
-title: My sample book
-author: The Jupyter Book Community
-logo: logo.png
+title: Course 100 
+author: Firas Moosvi
+logo: logo.jpg
 
 latex:
   latex_documents:
