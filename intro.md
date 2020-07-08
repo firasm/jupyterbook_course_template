@@ -1,7 +1,7 @@
 ![](images/header.jpg)
 [Header image attribution](https://unsplash.com/photos/qxCqkbF7tUc).
 
-Course 100 - Course Title
+Syllabus
 =======================
 2020 - 2021, Winter Term 1
 
@@ -47,6 +47,10 @@ In et tellus finibus, mollis nisi sed, auctor est.
 Sed placerat ex at ligula eleifend, ac dapibus neque euismod.
 Suspendisse malesuada pretium dui, ac lacinia mi pellentesque eu. Sed volutpat enim sed feugiat malesuada.
 
+```{tip} text
+Number one reason thing to take away from this is...
+```
+
 ### Course Learning Outcomes (AKA what will I learn in this course?)
 
 1. Pellentesque pellentesque ut arcu vel sagittis.
@@ -65,6 +69,10 @@ The following are required items for this course, and their costs (in $CAD) are:
 
 Being very conscious of the high costs of education, I have made efforts to minimize the additional cost of taking this course.
 Below is a justification of each required item and why I think you need it to succeed in this course.
+
+```{warning} text
+Do not procrastinate buying access to the online homework system! You will need it right away.
+```
 
 ### Textbook
 
@@ -112,6 +120,17 @@ This year, because the labs are all online, a digital version of the lab manual 
 - Opt-out
 
 ## Accomodations 
+
+Accommodations are intended to remove barriers experienced by individuals with disabilities.
+As a matter of principle, UBC is committed to promoting human rights, equity and diversity, and it also has a legal duty under the BC Human Rights Code to make its goods and services available in a manner that does not discriminate.
+[Policy 73](https://universitycounsel.ubc.ca/files/2019/02/policy73.pdf) (Accommodation for Students with Disabilities) sets out principles and processes governing the accommodation of students with disabilities.
+
+All accomodations for this course are handled through the [Disability Resource Cenre](https://students.ok.ubc.ca/academic-success/disability-resources/contact-the-disability-resource-centre/) and I encourage you to contact them to book an appointment.
+
+### What if I have to   
+
+
+### What if I have dependenants that rely on me for care?
 
 
 ## What do I need to know to go through this course ethically and with integrity?

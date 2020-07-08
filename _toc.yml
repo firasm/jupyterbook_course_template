@@ -1,5 +1,8 @@
 - file: intro
-- file: content
   sections:
-    - file: markdown
-    - file: notebooks
+    - file: accommodation
+- file: class
+  sections:
+    - file: 1-intro
+    - file: 2-energy
+    - file: 3-momentum
