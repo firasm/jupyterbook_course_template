@@ -1,0 +1,4 @@
+Energy
+=======================
+
+Notes about energy.

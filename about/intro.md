@@ -1,5 +1,10 @@
-![](images/header.jpg)
-[Header image attribution](https://unsplash.com/photos/qxCqkbF7tUc).
+```{figure} ../images/header.jpg
+---
+height: 150px
+name: my-figure
+---
+[Header image attribution](https://unsplash.com/photos/qxCqkbF7tUc)
+```
 
 Syllabus
 =======================
@@ -21,14 +26,14 @@ This is the official syllabus for Course 100.
 | Pre-requisites      | Pre-Course 100                                  |
 | Co-requisites       | N/A                                             |
 | Costs               | Total $XX                                       |
-| Weekly meetings     | [Thursdays at 14:00](link)                      |
+| Weekly meetings     | [Thursdays at 14:00](https://cbc.ca)            |
 | Lectures            | Online                                          |
 | Tutorial            | You **must** register for a tutorial section.   |
 | Laboratory          | You **must** register for a laboratory section. |
 | URL                 | https://this.site                               |
 | Instructor          | Firas Moosvi                                    |
-| Office              | [Zoom](ubc.zoom.us)                             |
-| Email               | [Contact via Piazza](piazza.com)                |
+| Office              | [Zoom](https://ubc.zoom.us)                     |
+| Email               | [Contact via Piazza](https://piazza.com)        |
 | Teaching Assistants | TA1 (location) <br> TA2(location) <br> TA3 (location) <br> TA4 (location) <br> TA5 (location) |
 
 ## Why should I take this course?
