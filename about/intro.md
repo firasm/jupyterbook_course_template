@@ -1,10 +1,5 @@
-```{figure} ../images/header.jpg
----
-height: 150px
-name: my-figure
----
+![](../images/header.jpg)
 [Header image attribution](https://unsplash.com/photos/qxCqkbF7tUc)
-```
 
 Syllabus
 =======================
@@ -110,11 +105,19 @@ This year, because the labs are all online, a digital version of the lab manual 
 
 ## How will I be graded in this course?
 
+| Item                 | Weight | Due date(s) |
+| -------------------- | ------ | ----------- |
+| 12 Homework Assignments | 24%    | Tuesdays at 9 PM PDT |
+| Learning Log            | 6%     | Tuesdays at 9 PM PDT |
+| 8 Tests (Bonus Tests)   | 30%    | Friday at 9 PM PDT   |
+| 8 Labs                  | 20%    | TBD  |
+| Final Exam              | 20%    | TBD  | 
+
 ## How do I do well in this course? 
 
-### ... but I'm not good at physics
+### ... but I'm not good at physics!
 
-### ... but i'm not good at math
+### ... but I'm not good at math!
 
 
 ## What type of information will I collect about you in this course?
