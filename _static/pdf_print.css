@@ -4,13 +4,13 @@
 
 @media print {
 
-    .bd-content {
-            flex: 0 0 100%;
-            max-width: 100%;
-    }
-
     div.topbar {
         display: none;
+    }
+
+    .pr-md-0 {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
     }
 
 }
