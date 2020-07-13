@@ -1,4 +1,4 @@
-![](../images/header.jpg)
+![](html/_images/header.jpg)
 [Header image attribution](https://unsplash.com/photos/qxCqkbF7tUc)
 
 Syllabus
@@ -84,6 +84,8 @@ Number one reason thing to take away from this is...
 1. Vivamus pharetra pretium dui, nec semper enim vehicula nec.
 1. Quisque vel odio dui. Aenean ullamcorper arcu sit amet gravida dapibus.
 
+## How will this course be taught ?
+
 ## What do I need to purchase for this course?
 
 The following are required items for this course, and their costs (in $CAD) are:
@@ -167,9 +169,8 @@ Accommodations are intended to remove barriers experienced by individuals with d
 As a matter of principle, UBC is committed to promoting human rights, equity and diversity, and it also has a legal duty under the BC Human Rights Code to make its goods and services available in a manner that does not discriminate.
 [Policy 73](https://universitycounsel.ubc.ca/files/2019/02/policy73.pdf) (Accommodation for Students with Disabilities) sets out principles and processes governing the accommodation of students with disabilities.
 
-All accommodations for this course are handled through the [Disability Resource Centre](https://students.ok.ubc.ca/academic-success/disability-resources/contact-the-disability-resource-centre/) and I encourage you to contact them to book an appointment.
-
-[This page]() has more information about the procedure for getting accommodations in this course. 
+All accommodations for this course are handled through the [Disability Resource Centre](https://students.ok.ubc.ca/academic-success/disability-resources/contact-the-disability-resource-centre/) and I encourage you to contact them to book an appointment. 
+For a more detailed guide, the {ref}`page_Accommodations` page has a list of steps you should take for this course. 
 
 ### What if I have to miss a deadline because of a wedding, birthday, funeral, religious holiday, or personal event ?
 
@@ -181,7 +182,7 @@ The course is designed to give you maximum flexibility:
 - You can use the grace period an unlimited amount of time in the course (though if it happens every week and for every assignment, I might check in with you and gently encourage you not to leave things to the last minute)
 
 If you miss a deadline by more than the grace period, the general course policy is that you will get 0 on it.
-In some very exceptional (i.e. rare) cases, I reserve the right to grant an extension.
+In some very exceptional (i.e. very rare) cases, I reserve the right to grant an extension.
 
 ### What if I have dependents that rely on me for care and unpredictable emergencies may arise?
 
@@ -192,6 +193,57 @@ I'm sure we will come to some agreement, generally the earlier you let me know o
 
 ## How do I go through this course ethically and with integrity?
 
+I want to be proud of your work in this course, and I want YOU to be proud of yourself as well!
+That cannot happen if you make unethical decisions, including (but not limited) to cheating or plagiarism.
+According to the scientific literature, the most common reasons students cheat are:
+
+- Fear of failure and life consequences
+- Peer pressure, including an inability to say no to help others cheat
+- Perceived societal acceptance of cheating (Lance Armstrong, Barry Bonds, Enron, Wall Street & the The Big Short)
+- Desire for success without the time/desire to put in the work needed
+- Strict deadlines and due-dates
+- Requirement from instructors to memorize facts, figures, equations, etc...
+- High-stakes exams with no recompense for "having a bad day"
+- Peers cheating with no consequences or penalties
+- Unclear expectations on what constitutes academic dishonesty
+- Inadequate support from instructor and teaching team
+
+Though I sympathize with students and the stresses of your busy lives - in my opinion, there is no good reason to cheat.
+I have tried extremely hard to make this course focused on learning rather than grading, and where grading is needed, to have policies that are as "student-friendly" as possible.
+In particular, I hope (and expect) that the following features of the course should eliminate your temptation to cheat or plagiarize:
+
+- 48 hour grace-period on all homework and lab due dates and deadlines.
+- Long testing window (48 hours) so you can start the tests whenever you're comfortable.
+- Weekly learning logs, homework and reading reflections to make you think about your learning ([metacognition](https://cft.vanderbilt.edu/guides-sub-pages/metacognition/)).
+- Timed tests have generous time limits (allowable time is 1.5x the estimated time).
+- Each test has a "bonus test" available one week later; for each test, we will take the better score of the pair.
+- No high-stakes exams (the single largest assessment item is the final exam at 20%).
+- All course assessments are completely open book and open notes. 
+- Plenty of TA and instructor office hours and several outside of normal business hours.
+- A class guidebook that outlines exactly what you should do when to help you manage your time.
+- Tonnes of supplemental materials including other instructional videos in case you want a different perspective.
+- Weekly prompt to accept the integrity pledge to keep you accountable.
+- A true willingness from the instructor (me) to help you learn and succeed in this course!
+
+A more detailed description of academic integrity, including the University’s policies and procedures, may be found in the [Academic Calendar](http://calendar.ubc.ca/vancouver/index.cfm?tree=3,54,111,0).
+
+### My personal plea
+
+With these features, and many other little things, I sincerely hope that you will consider completing this course with maximum integrity so that you never have to feel guilty, ashamed, or disappointed in yourself and your actions!
+
+To make it even easier for you to decide what isn't allowed, below is a list of things that I *definitely** consider to be academic dishonesty:
+
+- Asking others for their work in the course (whether question by question, or all at once)
+- Sending others your work in the course
+- Doing tests collaboratively (tests **must** be done by yourself and alone)
+- Sending others your test questions and/or answers
+- Sharing any course material onto Chegg, Course Hero, Slader or other similar sites
+- Searching for solutions to course material on Chegg, Course Hero, Slader or other similar sites
+- Blindly googling the question in hopes of finding someone who had a similar question and then copying their answer
+    - Note, googling to find resources to understand specific concepts or general ideas is highly encouraged!
+- Having a tutor/friend/nemesis complete and submit your work for you
+- Copying and pasting code, equations, text explanations, prose, etc... without attribution
+- Manipulating the learning platforms we use to reverse engineer the randomization algorithms, hacking the timer functionality, or other similar technical [malfeasance](https://dictionary.cambridge.org/dictionary/english/malfeasance).
 
 ### UBCO's statement on Academic Integrity
 
@@ -202,10 +254,6 @@ This also means you should not cheat, copy, or mislead others about what is your
 Violations of academic integrity (i.e., misconduct) lead to the breakdown of the academic enterprise, and therefore serious consequences arise and harsh sanctions are imposed.
 For example, incidences of plagiarism or cheating may result in a mark of zero on the assignment or exam and more serious consequences may apply if the matter is referred to the President’s Advisory Committee on Student Discipline.
 Careful records are kept in order to monitor and prevent recurrences.
-
-### My personal plea
-
-A more detailed description of academic integrity, including the University’s policies and procedures, may be found in the [Academic Calendar](http://calendar.ubc.ca/vancouver/index.cfm?tree=3,54,111,0).
 
 ## Compassion
 
@@ -218,6 +266,14 @@ I will not judge you, nor think any less of you.
 I will do everything in my power to work something that is both reasonable and fair. 
 This, I promise!
 
+## UBC Policies
+
+UBC provides resources to support student learning and to maintain healthy lifestyles but recognizes that sometimes crises arise and so there are additional resources to access including those for survivors of sexual violence.
+UBC values respect for the person and ideas of all members of the academic community.
+Harassment and discrimination are not tolerated nor is suppression of academic freedom. 
+UBC provides appropriate accommodation for students with disabilities and for religious and cultural observances. 
+UBC values academic honesty and students are expected to acknowledge the ideas generated by others and to uphold the highest academic standards in all of their actions. Details of the policies and how to access support are available [here](https://senate.ubc.ca/policies-resources-support-student-success).
+
 ## Attribution
 
 The syllabus was constructed and adapted from many other templates and examples.
@@ -225,6 +281,7 @@ Below is the list of resources I have used to put this syllabus together:
 
 - Physics 117 (Instructor: [Dr. Simon Bates](https://sites.google.com/site/simonpbates/home?authuser=0))
 - Psychology 417A-951 (Instructor: [Dr. Catherine Rawn](https://blogs.ubc.ca/catherinerawn/))
-- (Instructor: [Dr. Christopher Jones](https://hcommons.org/members/profchrismjones/) and [this tweet](https://twitter.com/ProfChrisMJones/status/1282036533562834944))
+- [Dr. Christopher Jones](https://hcommons.org/members/profchrismjones/) and [this tweet](https://twitter.com/ProfChrisMJones/status/1282036533562834944)
+- [Jesse Stommell](https://www.jessestommel.com/designing-for-care/)
 
 ### References
