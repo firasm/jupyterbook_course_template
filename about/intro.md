@@ -31,6 +31,31 @@ This is the official syllabus for Course 100.
 | Email               | [Contact via Piazza](https://piazza.com)        |
 | Teaching Assistants | TA1 (location) <br> TA2(location) <br> TA3 (location) <br> TA4 (location) <br> TA5 (location) |
 
+## How will I be evaluated in this course?
+
+The grading scheme for this course is here:
+
+| Item                 | Weight | Due date(s) |
+| -------------------- | ------ | ----------- |
+| Learning Logs           | 10% (10 x 1%)   | TBD |
+| 12 Homework Assignments | 24% (12 x 2%)   | TBD |
+| 8 Tests (& Bonus Tests) | 32% (8 x 4%)    | TBD |
+| 8 Labs                  | 16% (8 x 2%)    | TBD |
+| Final Exam              | 20%             | TBD | 
+
+```{attention} 
+All deadlines in this course have an automatic 48 hour grace period after the due dates listed above.
+Any submissions submitted past the grace period will not be graded.
+```
+
+### Are there other requirements I need to know about to pass the course?
+
+Yes. To pass this course, you must do all of the following:
+
+- Achieve a minimum of 50% on the labs (8.0 / 16) with no more than 3 missed labs
+- Achieve a minimum of 50% on the tests and final exam (26.0 / 52) 
+- Achieve a minimum of 50% on whole course grade (50.0 / 100)
+
 ## Why should I take this course?
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -80,16 +105,20 @@ The required **textbook** for this course is:
 
 > [Physics for Scientists and Engineers, 4e by Randall D. Knight]()
 
+and it is required because ----.
+
 You may purchase either Volume 1 only or the full text.
 The cost for a new physical textbook is $---.
 It is also possible to get a digital textbook for $---.
-Volume 1 contains all of the material required for PHYS 111 and will be lighter and more portable. If you purchase the full text, it will include Volume 2 which will be used in the second part of Introductory Physics for the Physical Sciences (PHYS 121) in term 2.
+Volume 1 contains all of the material required for PHYS 111 and will be lighter and more portable. If you purchase the full text, it will include Volume 2 which will (tentatively) be used in the second part of Introductory Physics for the Physical Sciences (PHYS 121) in term 2.
 
 ### Online homework system
 
 The required online homework system for this course is:
 
 > Mastering Physics 
+
+and it is required because ----.
 
 - Justification for "spaced practice".
 - Plea to do homework and practice problems
@@ -103,35 +132,20 @@ The required **lab manual** for this course is:
 In the past, this lab manual had to be purchased from the UBC Bookstore.
 This year, because the labs are all online, a digital version of the lab manual is available to you on Canvas free of charge. 
 
-## How will I be graded in this course?
-
-The grading scheme for this course is here:
-
-| Item                 | Weight | Due date(s) |
-| -------------------- | ------ | ----------- |
-| Learning Logs           | 10% (12 x 0.5%)  | Tuesdays at 9 PM PDT |
-| 12 Homework Assignments | 24% (12 x 2%)   | Tuesdays at 9 PM PDT |
-| 8 Tests (Bonus Tests)   | 32% (8 x 4%)    | Friday at 9 PM PDT   |
-| 8 Labs                  | 16% (2 x 8%)  | TBD  |
-| Final Exam              | 20%    | TBD  | 
-
-### Are there other requirements I need to know about to pass the course?
-
-Yes. To pass this course, you must do all of the following:
-
-- Achieve a minimum of 50% on the labs (8.0 / 16) with no more than 3 missed labs
-- Achieve a minimum of 50% on the tests and final exam (26.0 / 52) 
-- Achieve a minimum of 50% on whole course grade (50.0 / 100)
-
 ## What should I think about if I'm considering withdrawing from the course?
 
-- Withdraw date
-- Withdrawl with a W or without
+First of all, I'm sorry you're having trouble and are considering withdrawing from the course!
+This is no problem, and I will not be personally offended or upset you need to do this, I encourage you to do what you feel is right for you and your situation. 
+Below is some information that might be helpful for you in making the decision.
 
-```{attention} 
-All deadlines in this course have an automatic 48 hour grace period after the due dates listed above.
-Any submissions submitted past the grace period will not be graded.
-```
+| Withdrawal type | Effect on Transcript | Tuition refund |
+| --------------- | -------------------- | -------------- | 
+| Before the 1st withdrawal date | None  | 100% refund    |
+| Before the 2nd withdrawal date  | W on transcript | [0 - 50%](http://www.calendar.ubc.ca/okanagan/index.cfm?tree=14,339,1033,0) refund depending on the date you're withdrawing |
+| After the 2nd withdrawal date (cannot happen without faculty approval) | W on transcript | 0% |
+
+There are other things to consider as well, including your graduation requirements/timelines, eligibility for student loans, bursaries, scholarships etc.
+I advise you to [read the full list of considerations](https://students.ok.ubc.ca/courses-money-enrolment/registration/late-course-changes/) here and contact your faculty advisor if you have additional questions.
 
 ## How do I do well in this course? 
 
@@ -147,24 +161,39 @@ Any submissions submitted past the grace period will not be graded.
 - Nudge theory
 - Opt-out
 
-## Accomodations 
+## What should I do if I need accommodations to be successful in this course?
 
 Accommodations are intended to remove barriers experienced by individuals with disabilities.
 As a matter of principle, UBC is committed to promoting human rights, equity and diversity, and it also has a legal duty under the BC Human Rights Code to make its goods and services available in a manner that does not discriminate.
 [Policy 73](https://universitycounsel.ubc.ca/files/2019/02/policy73.pdf) (Accommodation for Students with Disabilities) sets out principles and processes governing the accommodation of students with disabilities.
 
-All accomodations for this course are handled through the [Disability Resource Cenre](https://students.ok.ubc.ca/academic-success/disability-resources/contact-the-disability-resource-centre/) and I encourage you to contact them to book an appointment.
+All accommodations for this course are handled through the [Disability Resource Centre](https://students.ok.ubc.ca/academic-success/disability-resources/contact-the-disability-resource-centre/) and I encourage you to contact them to book an appointment.
 
-### What if I have to   
+[This page]() has more information about the procedure for getting accommodations in this course. 
+
+### What if I have to miss a deadline because of a wedding, birthday, funeral, religious holiday, or personal event ?
+
+No problem! There's not even any need to tell me, or ask for permission to miss deadlines.
+The course is designed to give you maximum flexibility: 
+
+- Every deadline has a 48-hour grace period that is automatically applied.
+- There is no late penalty if you use the grace period
+- You can use the grace period an unlimited amount of time in the course (though if it happens every week and for every assignment, I might check in with you and gently encourage you not to leave things to the last minute)
+
+If you miss a deadline by more than the grace period, the general course policy is that you will get 0 on it.
+In some very exceptional (i.e. rare) cases, I reserve the right to grant an extension.
+
+### What if I have dependents that rely on me for care and unpredictable emergencies may arise?
+
+Let's talk, send me a private message and we can discuss it.
+I do not necessarily need to know all the personal details, just a high-level summary of your situation and what you think an ideal solution would be.
+
+I'm sure we will come to some agreement, generally the earlier you let me know of any special circumstances or accommodation, the more I'll be able to do for you!
+
+## How do I go through this course ethically and with integrity?
 
 
-### What if I have dependenants that rely on me for care?
-
-
-## What do I need to know to go through this course ethically and with integrity?
-
-
-### Academic Integrity
+### UBCO's statement on Academic Integrity
 
 The academic enterprise is founded on honesty, civility, and integrity.
 As members of this enterprise, all students are expected to know, understand, and follow the codes of conduct regarding academic integrity.
@@ -197,4 +226,5 @@ Below is the list of resources I have used to put this syllabus together:
 - Physics 117 (Instructor: [Dr. Simon Bates](https://sites.google.com/site/simonpbates/home?authuser=0))
 - Psychology 417A-951 (Instructor: [Dr. Catherine Rawn](https://blogs.ubc.ca/catherinerawn/))
 - (Instructor: [Dr. Christopher Jones](https://hcommons.org/members/profchrismjones/) and [this tweet](https://twitter.com/ProfChrisMJones/status/1282036533562834944))
-- 
+
+### References
