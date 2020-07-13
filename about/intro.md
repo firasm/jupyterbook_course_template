@@ -70,7 +70,7 @@ The following are required items for this course, and their costs (in $CAD) are:
 Being very conscious of the high costs of education, I have made efforts to minimize the additional cost of taking this course.
 Below is a justification of each required item and why I think you need it to succeed in this course.
 
-```{warning} text
+```{warning}
 Do not procrastinate buying access to the online homework system! You will need it right away.
 ```
 
@@ -105,13 +105,33 @@ This year, because the labs are all online, a digital version of the lab manual 
 
 ## How will I be graded in this course?
 
+The grading scheme for this course is here:
+
 | Item                 | Weight | Due date(s) |
 | -------------------- | ------ | ----------- |
-| 12 Homework Assignments | 24%    | Tuesdays at 9 PM PDT |
-| Learning Log            | 6%     | Tuesdays at 9 PM PDT |
-| 8 Tests (Bonus Tests)   | 30%    | Friday at 9 PM PDT   |
-| 8 Labs                  | 20%    | TBD  |
+| Learning Logs           | 10% (12 x 0.5%)  | Tuesdays at 9 PM PDT |
+| 12 Homework Assignments | 24% (12 x 2%)   | Tuesdays at 9 PM PDT |
+| 8 Tests (Bonus Tests)   | 32% (8 x 4%)    | Friday at 9 PM PDT   |
+| 8 Labs                  | 16% (2 x 8%)  | TBD  |
 | Final Exam              | 20%    | TBD  | 
+
+### Are there other requirements I need to know about to pass the course?
+
+Yes. To pass this course, you must do all of the following:
+
+- Achieve a minimum of 50% on the labs (8.0 / 16) with no more than 3 missed labs
+- Achieve a minimum of 50% on the tests and final exam (26.0 / 52) 
+- Achieve a minimum of 50% on whole course grade (50.0 / 100)
+
+## What should I think about if I'm considering withdrawing from the course?
+
+- Withdraw date
+- Withdrawl with a W or without
+
+```{attention} 
+All deadlines in this course have an automatic 48 hour grace period after the due dates listed above.
+Any submissions submitted past the grace period will not be graded.
+```
 
 ## How do I do well in this course? 
 
@@ -157,3 +177,24 @@ Careful records are kept in order to monitor and prevent recurrences.
 ### My personal plea
 
 A more detailed description of academic integrity, including the University’s policies and procedures, may be found in the [Academic Calendar](http://calendar.ubc.ca/vancouver/index.cfm?tree=3,54,111,0).
+
+## Compassion
+
+As I'm sure you're aware, *there is a global pandemic* happening right now and we could all use some extra compassion and humanity.
+If you're going through something that is affecting you (course or otherwise), you are always welcome to come and talk to me about it. 
+If I am not able to help you myself, then I can probably direct you to the right person or resource.
+If you need extra help, or extra time to deal with something you're going through, just ask.
+You will *never* owe me an explanation about your physical health, mental health, or those of your family members, friends, etc... I will believe you, and I will trust you.
+I will not judge you, nor think any less of you.
+I will do everything in my power to work something that is both reasonable and fair. 
+This, I promise!
+
+## Attribution
+
+The syllabus was constructed and adapted from many other templates and examples.
+Below is the list of resources I have used to put this syllabus together:
+
+- Physics 117 (Instructor: [Dr. Simon Bates](https://sites.google.com/site/simonpbates/home?authuser=0))
+- Psychology 417A-951 (Instructor: [Dr. Catherine Rawn](https://blogs.ubc.ca/catherinerawn/))
+- (Instructor: [Dr. Christopher Jones](https://hcommons.org/members/profchrismjones/) and [this tweet](https://twitter.com/ProfChrisMJones/status/1282036533562834944))
+- 
