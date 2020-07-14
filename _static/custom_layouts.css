@@ -1,0 +1,11 @@
+/*********************************************
+* Print-specific CSS *
+*********************************************/
+
+.table td, .table th{
+	padding: 0.2rem
+}
+
+.row-odd p, .row-even p{
+	margin-bottom: 0
+}
