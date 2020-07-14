@@ -72,7 +72,7 @@ In et tellus finibus, mollis nisi sed, auctor est.
 Sed placerat ex at ligula eleifend, ac dapibus neque euismod.
 Suspendisse malesuada pretium dui, ac lacinia mi pellentesque eu. Sed volutpat enim sed feugiat malesuada.
 
-```{tip} text
+```{tip}
 Number one reason thing to take away from this is...
 ```
 
@@ -151,10 +151,25 @@ I advise you to [read the full list of considerations](https://students.ok.ubc.c
 
 ## How do I do well in this course? 
 
-### ... but I'm not good at physics!
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Ut blandit faucibus fermentum.
+Fusce porttitor congue dolor, eget efficitur neque ultricies at.
+Nulla suscipit convallis elit, eu consequat felis.
 
-### ... but I'm not good at math!
+1. Quisque et malesuada justo, dapibus commodo enim.
+1. Sed malesuada turpis sed nibh dictum, a interdum dui tincidunt.
+1. Duis consequat magna non tortor dictum facilisis.
+1. In hac habitasse platea dictumst.
+1. Phasellus eu eros libero.
+1. Phasellus rhoncus eros vel metus porttitor porta.
+1. In et tellus finibus, mollis nisi sed, auctor est.
 
+Sed placerat ex at ligula eleifend, ac dapibus neque euismod.
+Suspendisse malesuada pretium dui, ac lacinia mi pellentesque eu. Sed volutpat enim sed feugiat malesuada.
+
+### ... but I've never been good at physics or math!
+
+### ... but I don't even like physics or math!
 
 ## What type of information will I collect about you in this course?
 
