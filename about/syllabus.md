@@ -16,7 +16,7 @@ This is the official syllabus for Course 100.
 
 ## About this Course
 
-|                     |                                                 |
+| Name                | Description                                     |
 |---------------------|-------------------------------------------------|
 | Course              | Course 100                                      |
 | Pre-requisites      | Pre-Course 100                                  |
@@ -174,7 +174,10 @@ Suspendisse malesuada pretium dui, ac lacinia mi pellentesque eu. Sed volutpat e
 
 ## What type of information will I collect about you in this course?
 
-[Learning analytics](https://www.solaresearch.org/about/what-is-learning-analytics/) is a relatively new field that involves the collection and analysis of data about learners for the [express purpose](https://www.collinsdictionary.com/dictionary/english/the-express-purpose-of) of improving their learning by optimizing teaching practices. 
+Having taught [DSCI 541: Security, Ethics, and Security](https://github.com/UBC-MDS/DSCI_541_priv-eth-sec) in the UBC Master of Data Science in the past, I am very aware of the surveillance culture that has permeated our society and heralded the [End of Privacy](https://www.youtube.com/watch?v=NesTWiKfpD0) as we know it.
+That being said, as an instructor, I care tremendously about your learning and the course-related data that is collected about you is extremely valuable. 
+Broadly speaking, this relatively new field is called **Learning Analytics**.
+[Learning analytics](https://www.solaresearch.org/about/what-is-learning-analytics/) involves the collection and analysis of data about learners for the [express purpose](https://www.collinsdictionary.com/dictionary/english/the-express-purpose-of) of improving their learning by optimizing teaching and learning practices. 
 
 In this course, we will be using the following learning technologies (privacy policies linked): 
 
@@ -183,33 +186,23 @@ In this course, we will be using the following learning technologies (privacy po
 - [Sli.do](https://www.sli.do/terms#privacy-policy)
 - [Mastering Physics](https://www.pearson.com/en-us/legal-information/privacy-policy.html)
 - [Vimeo](https://vimeo.com/privacy)
-All of the tools above will be used in a [FIPPA-compliant](https://universitycounsel.ubc.ca/subject-areas/access-and-privacy-general/access-to-information/about-fippa/) way, with your privacy top of mind. 
 
-Many of these tools log data about your activity and provide information that can be used to improve the quality of teaching and learning. 
+All tools used in the course will be used in a [FIPPA-compliant](https://universitycounsel.ubc.ca/subject-areas/access-and-privacy-general/access-to-information/about-fippa/) manner, with your privacy top of mind. 
+New tools may be added to the course as the need arises, and I will update this section with the appropriate information and make an announcement if a new tool is added midway through a course.
 
-In this course, I plan to use analytics data to:
-- View overall class progress
-Track your progress in order to provide you with personalized feedback
-Review statistics on course content being accessed to support improvements in the course 
-Track participation in discussion forums
-Assess your participation in the course]
+All of the tools above log data about your activity that can be used to improve the quality of teaching and learning.
+In this course, I intend to use this information to:
 
+- view overall class progress (in aggregate),
+- track your personal progress in order to provide you with personalized feedback,
+- track participation in discussion forums
+- improve the course and your learning, 
+- explore students actions in the course, 
+- provide you feedback on your progress.
 
-
-
-Having taught [DSCI 541: Security, Ethics, and Security](https://github.com/UBC-MDS/DSCI_541_priv-eth-sec) in the UBC Master of Data Science in the past, I am very aware of the surveillance culture that has permeated our society and heralded the [End of Privacy](https://www.youtube.com/watch?v=NesTWiKfpD0) as we know it.
-That being said, as an instructor, I care tremendously about your learning and the course-related data that is collected about you is extremely valuable if  help me give you suggestions on your  
-
-
-
-
-
- digital traces students leave behind during their class activities can be extremely valuable **proxies** 
-
-- Mention Learning Analytics and OnTask
-- Google Analytics
-- Nudge theory
-- Opt-out
+Unfortunately, at the moment it is not possible to opt-out of the data collection process, but if you like, you may opt-out of the process where *I use the data to give you personalized feedback*. 
+To opt-out, please [complete this form](https://ubc.ca1.qualtrics.com/jfe/form/SV_4SB8DCF8fnktkLb) at any point in the course. 
+You may opt-out with my full support, I respect your decision and applaud you for your netizenship!
 
 ## What should I do if I need accommodations to be successful in this course?
 
