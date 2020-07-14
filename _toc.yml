@@ -1,11 +1,13 @@
-- file: about/intro
+- file: about/home
 
 - header: About this Course
-- file: about/accommodations
-- file: about/course_map
-- file: about/help
-- file: about/faq
-- file: about/class
+- file: about/syllabus
+  sections:
+    - file: about/accommodations
+    - file: about/course_map
+    - file: about/help
+    - file: about/faq
+    - file: about/class
 
 - header: Class notes
 - file: class/welcome
