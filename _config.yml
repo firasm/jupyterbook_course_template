@@ -2,10 +2,22 @@
 title: Course 100 
 author: Firas Moosvi
 logo: images/logo.jpg
+copyright: ""
+exclude_patterns: ["LICENSE.md", "README.md"]
 
 latex:
   latex_documents:
     targetname: book.tex
 html:
-    navbar_number_sections: true
-    home_page_in_navbar: false
+  navbar_number_sections : true
+  home_page_in_navbar : false
+  baseurl : "https://firas.moosvi.com/courses/"  # The base URL where your book will be hosted. Used for creating image previews and social links. e.g.: https://mypage.com/mybook/
+  extra_footer : |
+      <div>
+      <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png"></a>
+          All content on this site (unless otherwise specified) is licensed under the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0 license</a>
+      </div>
+
+sphinx:
+  config:
+    html_show_copyright: false

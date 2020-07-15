@@ -1,6 +1,8 @@
 ![](../images/header.jpg)
 [Header image attribution](https://unsplash.com/photos/qxCqkbF7tUc)
 
-# Welcome to Course 100!
+# Home
+
+## Welcome to Course 111
 
 ## About this site
