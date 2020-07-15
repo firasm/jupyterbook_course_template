@@ -1,4 +1,5 @@
-Class notes
+(page_Course_Schedule)=
+Course Schedule
 =======================
 
 There are many ways to write content in Jupyter Book. This short section

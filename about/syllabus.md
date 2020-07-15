@@ -1,4 +1,4 @@
-![](html/_images/header.jpg)
+![](../images/header.jpg)
 [Header image attribution](https://unsplash.com/photos/qxCqkbF7tUc)
 
 Syllabus
@@ -85,7 +85,25 @@ Number one reason thing to take away from this is...
 1. Vivamus pharetra pretium dui, nec semper enim vehicula nec.
 1. Quisque vel odio dui. Aenean ullamcorper arcu sit amet gravida dapibus.
 
+```{tip}
+The full course schedule is available here: {ref}`page_Course_Schedule`
+```
+
 ## How will this course be taught ?
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Ut blandit faucibus fermentum.
+Fusce porttitor congue dolor, eget efficitur neque ultricies at.
+Nulla suscipit convallis elit, eu consequat felis.
+Quisque et malesuada justo, dapibus commodo enim.
+Sed malesuada turpis sed nibh dictum, a interdum dui tincidunt.
+Duis consequat magna non tortor dictum facilisis.
+In hac habitasse platea dictumst.
+Phasellus eu eros libero.
+Phasellus rhoncus eros vel metus porttitor porta.
+In et tellus finibus, mollis nisi sed, auctor est.
+Sed placerat ex at ligula eleifend, ac dapibus neque euismod.
+Suspendisse malesuada pretium dui, ac lacinia mi pellentesque eu. Sed volutpat enim sed feugiat malesuada.
 
 ## What do I need to purchase for this course?
 
@@ -106,9 +124,10 @@ Do not procrastinate buying access to the online homework system! You will need 
 
 The required **textbook** for this course is:
 
-> [Physics for Scientists and Engineers, 4e by Randall D. Knight]()
+> Physics for Scientists and Engineers, 4e by Randall D. Knight
 
-and it is required because ----.
+and it is required because you need a reference text for this course, as well as practice problems, and a homework system.
+The Mastering Physics homework system comes bundled with this textbook.
 
 You may purchase either Volume 1 only or the full text.
 The cost for a new physical textbook is $---.
@@ -121,10 +140,10 @@ The required online homework system for this course is:
 
 > Mastering Physics 
 
-and it is required because ----.
-
-- Justification for "spaced practice".
-- Plea to do homework and practice problems
+and it is required because it is a companion product to our textbook.
+There is considerable research ([here](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1949-8594.1995.tb15736.x) and [here](https://www.learningscientists.org/learning-scientists-podcast/2017/10/4/episode-4-spaced-practice)) that suggests distributed practice is more helpful for long term retention and overall learning.
+Furthermore with online Mastering Physics interface, your textbook, homework assignments, and tests are all on Mastering Physics.
+Mastering Physics also has some integrated study modules that can help you test yourself and take more effective notes.
 
 ### Lab Manual
 

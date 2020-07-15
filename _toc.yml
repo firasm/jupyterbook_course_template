@@ -2,12 +2,10 @@
 
 - header: About this Course
 - file: about/syllabus
-  sections:
-    - file: about/accommodations
-    - file: about/course_map
-    - file: about/help
-    - file: about/faq
-    - file: about/class
+- file: about/course_schedule
+- file: about/accommodations
+- file: about/doing_well
+- file: about/faq
 
 - header: Class notes
 - file: class/welcome
