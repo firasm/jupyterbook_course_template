@@ -9,7 +9,7 @@ latex:
   latex_documents:
     targetname: book.tex
 html:
-  navbar_number_sections : true
+  navbar_number_sections : false
   home_page_in_navbar : false
   baseurl : "https://firas.moosvi.com/courses/"  # The base URL where your book will be hosted. Used for creating image previews and social links. e.g.: https://mypage.com/mybook/
   extra_footer : |

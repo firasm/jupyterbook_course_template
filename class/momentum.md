@@ -1,4 +1,0 @@
-Momentum
-=======================
-
-Discussion of momentum

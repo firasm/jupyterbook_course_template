@@ -2,8 +2,6 @@
 Accommodations
 =======================
 
-lknlk
-
 ## One 
 
 test test

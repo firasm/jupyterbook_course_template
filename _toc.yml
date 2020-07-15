@@ -7,9 +7,38 @@
 - file: about/doing_well
 - file: about/faq
 
-- header: Class notes
-- file: class/welcome
-- file: class/energy
-- file: class/momentum
+- header: Class Notes
+- file: class/topic1
+  title: Week 1 - Topic
+- file: class/topic2
+  title: Week 2 - Topic
+- file: class/topic3
+  title: Week 3 - Topic
+- file: class/topic4
+  title: Week 4 - Topic
+- file: class/topic5
+  title: Week 5 - Topic
+- file: class/topic6
+  title: Week 6 - Topic
+- file: class/topic7
+  title: Week 7 - Topic
+- file: class/topic8
+  title: Week 8 - Topic
+- file: class/topic9
+  title: Week 9 - Topic
+- file: class/topic10
+  title: Week 10 - Topic
+- file: class/topic11
+  title: Week 11 - Topic
+- file: class/topic12
+  title: Week 12 - Topic
+- file: class/topic13
+  title: Week 13 - Topic
 
-- header: Logistics
+- header: Lab Materials
+- file: class/labs
+  title: Lab Stuff
+
+- header: Final Exam prep
+- file: class/final
+  title: Exam stuff
