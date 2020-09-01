@@ -9,8 +9,11 @@ latex:
   latex_documents:
     targetname: book.tex
 html:
-  navbar_number_sections : false
   home_page_in_navbar : true
+  use_repository_button: true
+  use_issues_button: true
+  use_edit_page_button: true
+  navbar_number_sections : false
   baseurl : "https://firas.moosvi.com/courses/physics111/"  # The base URL where your book will be hosted. Used for creating image previews and social links. e.g.: https://mypage.com/mybook/
   # google_analytics_id: UA-11111111 # add your Google Analytics Tracking Code
   comments:
@@ -22,6 +25,11 @@ html:
       <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png"></a>
           All content on this site (unless otherwise specified) is licensed under the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0 license</a>
       </div>
+
+launch_buttons:
+  notebook_interface : "jupyterlab"
+  binderhub_url      : "https://mybinder.org"
+  thebe              : true
 
 sphinx:
   config:
