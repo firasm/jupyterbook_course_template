@@ -1,5 +1,5 @@
 # Book settings
-title: Course 100 
+title: Physics 111 
 author: Firas Moosvi
 logo: images/logo.jpg
 copyright: ""
@@ -10,8 +10,13 @@ latex:
     targetname: book.tex
 html:
   navbar_number_sections : false
-  home_page_in_navbar : false
-  baseurl : "https://firas.moosvi.com/courses/"  # The base URL where your book will be hosted. Used for creating image previews and social links. e.g.: https://mypage.com/mybook/
+  home_page_in_navbar : true
+  baseurl : "https://firas.moosvi.com/courses/physics111/"  # The base URL where your book will be hosted. Used for creating image previews and social links. e.g.: https://mypage.com/mybook/
+  # google_analytics_id: UA-11111111 # add your Google Analytics Tracking Code
+  comments:
+    hypothesis: true
+    utterances:
+      repo: "ubco-cmps/data301_course"
   extra_footer : |
       <div>
       <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png"></a>
