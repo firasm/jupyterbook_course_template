@@ -51,18 +51,6 @@ There are sophisticated options for creating quizzes, I encourage you to check i
 At UBC and UBCO, we have an institutional license to Qualtrics, so you can even ask students to authenticate via CWL and collect student identification information.
 In other words - if used correctly - this is fully FIPPA compliant!
 
-#### Authenticating Qualtrics surveys with CWL (or other SSO)
-
-To require students to autheticate via CWL (or other single-sign-on) before attempting a survey, have a look at this [documentation page](https://www.qualtrics.com/support/survey-platform/survey-module/survey-flow/advanced-elements/authenticator/sso-authenticator/).
-If you're at UBC or UBCO, you can set your Authenticator settings in Survey Flows like this:
-
-```{figure} ../images/qualtrics_sso.png
----
-name: figure-qualtrics_sso
----
-SSO settings for a Qualtrics Survey; enabling this will require authentication before the survey can be accessed.
-```
-
 Here's the qualtrics survey embedded in the IFrame.
 <iframe src="https://ubc.ca1.qualtrics.com/jfe/form/SV_0MyZxI8Wck4YTxX" frameborder="0" width="100%" height="600px"></iframe>
 
@@ -74,5 +62,3 @@ That is often a desired feature, especially if students want to come back and re
 Sometimes though, it would be good to pause the video and ask students one or several clicker-type questions, and give them some feedback.
 
 This is where the Kaltura Video Service (and a few others) can help facilitate these types of interactions. 
-
-See an example below:
