@@ -27,7 +27,19 @@ Currently it takes about 70s for the website to update.
 
 ## Features
 
-TBD
+1. Support for executing code in a browser using [thebe](https://thebe.readthedocs.io/en/latest/) and [mybinderorg](https://mybinder.org)!
+
+1. Structured book with markdown file stubs aligning with a course structure for a 13 week course. Fully versioned using GitHub, automatically deployed using GH Actions to either GH or your own server. Can also be extended with a testing framework for extra peace of mind.
+
+1. [Examples of how to use IFrames](https://firasm.github.io/jupyterbook_course_template/class/topic1.html#) to embed web content, @phet_sims, @sli.do polls, videos, and other content. 
+
+1. Powerful built-in annotation and commenting features with [hypothes.is](http://hypothes.is) and [utteranc.es](http://utteranc.es). Annotate your syllabus, course readings, and any other content.
+
+1. Add persistent checkboxes so students can track their progress through notebooks, exercises and readings. 
+
+1. Allow students to download pages of the site in PDF, link to the source code on your repo, or open in a mybinder notebook. 
+
+1. The JupyterBook can be embedded into Canvas using the Redirect tool so students never have to leave their LMS.
 
 ## Edit the template for your course
 
@@ -49,7 +61,6 @@ I might miss a few things, so this list is a work in progress:
 	
 1. In the `about` and `class` folders:
 	- [ ] Edit the .md and .ipynb files with your course content
-
 
 ## Attribution
 
