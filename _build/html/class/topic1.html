@@ -69,9 +69,9 @@ commentsRunWhenDOMLoaded(addUtterances);
     <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
+        const thebe_selector = ".thebe,.cell"
+        const thebe_selector_input = "pre,.cell_input div.highlight"
+        const thebe_selector_output = ".output,.cell_output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="canonical" href="https://firas.moosvi.com/courses/physics111/class/topic1.html" />
@@ -88,7 +88,7 @@ commentsRunWhenDOMLoaded(addUtterances);
 <meta property="og:url"         content="https://firas.moosvi.com/courses/physics111/class/topic1.html" />
 <meta property="og:type"        content="article" />
 <meta property="og:title"       content="Topic 1" />
-<meta property="og:description" content="Topic 1  Notes about topic 1.  Introduction to Kinematics in 1D  &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width:" />
+<meta property="og:description" content="Topic 1  Notes about topic 1.  Clickers  Doing clicker questions using JupyterBook is very seamless for students!  One can use any of the web-based options that" />
 <meta property="og:image"       content="https://firas.moosvi.com/courses/physics111/_static/logo.jpg" />
 
 <meta name="twitter:card" content="summary" />
@@ -356,6 +356,24 @@ commentsRunWhenDOMLoaded(addUtterances);
 </div>
         <!-- Source interaction buttons -->
 
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/firasm/jupyterbook_course_template"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/firasm/jupyterbook_course_template/issues/new?title=Issue%20on%20page%20%2Fclass/topic1.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/firasm/jupyterbook_course_template/edit/master/class/topic1.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
 
         <!-- Full screen (wrap in <a> to have style consistency -->
         <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
@@ -374,8 +392,35 @@ commentsRunWhenDOMLoaded(addUtterances);
         <nav id="bd-toc-nav">
             <ul class="nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#clickers">
+   Clickers
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#introduction-to-kinematics-in-1d">
    Introduction to Kinematics in 1D
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#short-quiz">
+   Short Quiz
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#making-quizzes-on-qualtrics">
+     Making quizzes on Qualtrics
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#authenticating-qualtrics-surveys-with-cwl-or-other-sso">
+     Authenticating Qualtrics surveys with CWL (or other SSO)
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#quiz-in-a-video">
+   Quiz IN a video
   </a>
  </li>
 </ul>
@@ -391,18 +436,73 @@ commentsRunWhenDOMLoaded(addUtterances);
   <div class="section" id="topic-1">
 <span id="page-topic1"></span><h1>Topic 1<a class="headerlink" href="#topic-1" title="Permalink to this headline">¶</a></h1>
 <p>Notes about topic 1.</p>
+<div class="section" id="clickers">
+<h2>Clickers<a class="headerlink" href="#clickers" title="Permalink to this headline">¶</a></h2>
+<p>Doing clicker questions using JupyterBook is very seamless for students!</p>
+<p>One can use any of the web-based options that exist.</p>
+<p>Some examples I have used before are:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://sli.do">sli.do</a></p></li>
+<li><p><a class="reference external" href="https://pollev.com">Poll Everywhere</a></p></li>
+<li><p><a class="reference external" href="https://typeform">TypeForm</a></p></li>
+<li><p><a class="reference external" href="https://www.mentimeter.com">Mentimeter</a></p></li>
+</ul>
+<p>There are many others, most should work if they have some sort of web interface.</p>
+<p>In general, here are the steps to do this:</p>
+<ol class="simple">
+<li><p>Create your poll as you would</p></li>
+<li><p>Grab the embed URL from the website (see <code class="xref std std-numref docutils literal notranslate"><span class="pre">figure-slido</span></code>)</p></li>
+<li><p>Paste it into a jupyter notebook file as a markdown cell or as an IFrame</p></li>
+</ol>
+<iframe src="https://app.sli.do/event/7cljwqgq/embed/polls/ab33d3ee-f713-498d-9f31-7db3e85497af" frameborder="0" width="700" height="650"></iframe>
+</div>
 <div class="section" id="introduction-to-kinematics-in-1d">
 <h2>Introduction to Kinematics in 1D<a class="headerlink" href="#introduction-to-kinematics-in-1d" title="Permalink to this headline">¶</a></h2>
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
     <iframe src="https://www.youtube.com/watch?v=ZM8ECpBuQYE&list=PL8dPuuaLjXtN0ge7yDk_UA0ldZJdhwkoV&t=0s" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
-</div></div>
+</div>
+</div>
+<div class="section" id="short-quiz">
+<h2>Short Quiz<a class="headerlink" href="#short-quiz" title="Permalink to this headline">¶</a></h2>
+<p>You may imagine giving students a short comprehension quiz after they watch a video to make sure they grasped the finer points of the lesson.
+You can also embed quizzes directly into your JupyterBook so it’s a seamless experience for the students.
+Here we will use Qualtrics, but other options are also possible!</p>
+<p>The example quiz with automatic scoring below is from the <a class="reference external" href="http://webservices.itcs.umich.edu/mediawiki/qualtrics/index.php/Example_Surveys">University of Michigan Qualtrics wiki</a>!</p>
+<iframe src="https://umichbus.qualtrics.com/SE/?SID=SV_cFPFvElYyKyb3qB" frameborder="0" width="100%" height="2200px"></iframe>
+<div class="section" id="making-quizzes-on-qualtrics">
+<h3>Making quizzes on Qualtrics<a class="headerlink" href="#making-quizzes-on-qualtrics" title="Permalink to this headline">¶</a></h3>
+<p>Qualtrics has some <a class="reference external" href="https://www.qualtrics.com/support/survey-platform/survey-module/survey-tools/scoring/">extremely good resources</a> on creating quizzes and automatically scoring them.
+There are sophisticated options for creating quizzes, I encourage you to check it out.
+At UBC and UBCO, we have an institutional license to Qualtrics, so you can even ask students to authenticate via CWL and collect student identification information.
+In other words - if used correctly - this is fully FIPPA compliant!</p>
+</div>
+<div class="section" id="authenticating-qualtrics-surveys-with-cwl-or-other-sso">
+<h3>Authenticating Qualtrics surveys with CWL (or other SSO)<a class="headerlink" href="#authenticating-qualtrics-surveys-with-cwl-or-other-sso" title="Permalink to this headline">¶</a></h3>
+<p>To require students to autheticate via CWL (or other single-sign-on) before attempting a survey, have a look at this <a class="reference external" href="https://www.qualtrics.com/support/survey-platform/survey-module/survey-flow/advanced-elements/authenticator/sso-authenticator/">documentation page</a>.
+If you’re at UBC or UBCO, you can set your Authenticator settings in Survey Flows like this:</p>
+<div class="figure align-default" id="figure-qualtrics-sso">
+<img alt="class/../images/qualtrics_sso.png" src="class/../images/qualtrics_sso.png" />
+<p class="caption"><span class="caption-number">Fig. 3 </span><span class="caption-text">SSO settings for a Qualtrics Survey; enabling this will require authentication before the survey can be accessed.</span><a class="headerlink" href="#figure-qualtrics-sso" title="Permalink to this image">¶</a></p>
+</div>
+<p>Here’s the qualtrics survey embedded in the IFrame.</p>
+<iframe src="https://ubc.ca1.qualtrics.com/jfe/form/SV_0MyZxI8Wck4YTxX" frameborder="0" width="100%" height="600px"></iframe>
+</div>
+</div>
+<div class="section" id="quiz-in-a-video">
+<h2>Quiz IN a video<a class="headerlink" href="#quiz-in-a-video" title="Permalink to this headline">¶</a></h2>
+<p>Scenario B is pretty good, but it’s still a bit clunky as the quiz and the video are separated.
+That is often a desired feature, especially if students want to come back and re-visit the quiz after thinking about the video.</p>
+<p>Sometimes though, it would be good to pause the video and ask students one or several clicker-type questions, and give them some feedback.</p>
+<p>This is where the Kaltura Video Service (and a few others) can help facilitate these types of interactions.</p>
+<p>See an example below:</p>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
     {
         requestKernel: true,
         binderOptions: {
-            repo: "binder-examples/jupyter-stacks-datascience",
+            repo: "firasm/jupyterbook_course_template",
             ref: "master",
         },
         codeMirrorConfig: {
