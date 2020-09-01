@@ -14,12 +14,12 @@ html:
   use_issues_button: true
   use_edit_page_button: true
   navbar_number_sections : false
-  baseurl : "https://firas.moosvi.com/courses/physics111/"  # The base URL where your book will be hosted. Used for creating image previews and social links. e.g.: https://mypage.com/mybook/
+  baseurl : "https://firasm.github.io/jupyterbook_course_template/"  # The base URL where your book will be hosted. Used for creating image previews and social links. e.g.: https://mypage.com/mybook/
   # google_analytics_id: UA-11111111 # add your Google Analytics Tracking Code
   comments:
     hypothesis: true
     utterances:
-      repo: "ubco-cmps/data301_course"
+      repo: "firasm/jupyterbook_course_template"
   extra_footer : |
       <div>
       <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png"></a>
