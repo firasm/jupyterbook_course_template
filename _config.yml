@@ -31,6 +31,11 @@ launch_buttons:
   binderhub_url      : "https://mybinder.org"
   thebe              : true
 
+repository: 
+  url          : https://github.com/firasm/jupyterbook_course_template
+  path_to_book : ""
+  branch       : master
+
 sphinx:
   config:
     html_show_copyright: false
