@@ -16,7 +16,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pdf_print.css" />
     <link rel="stylesheet" type="text/css" href="../_static/custom_layouts.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/jupyter-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-dropdown.css" />
     <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script src="../_static/sphinx-book-theme.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -26,7 +26,6 @@
     <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script src="../_static/mystnb.js"></script>
     <script src="../_static/save_state.js"></script>
     <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
     <script kind="utterances">
@@ -49,7 +48,7 @@ var addUtterances = () => {
     script.src = "https://utteranc.es/client.js";
     script.async = "async";
 
-    script.setAttribute("repo", "ubco-cmps/data301_course");
+    script.setAttribute("repo", "firasm/jupyterbook_course_template");
     script.setAttribute("issue-term", "pathname");
     script.setAttribute("theme", "github-light");
     script.setAttribute("label", "💬 comment");
@@ -65,8 +64,8 @@ commentsRunWhenDOMLoaded(addUtterances);
 </script>
     <script src="../_static/sphinx-book-theme.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe,.cell"
@@ -74,7 +73,7 @@ commentsRunWhenDOMLoaded(addUtterances);
         const thebe_selector_output = ".output,.cell_output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <link rel="canonical" href="https://firas.moosvi.com/courses/physics111/class/topic8.html" />
+    <link rel="canonical" href="https://firasm.github.io/jupyterbook_course_template/class/topic8.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Topic X" href="topic9.html" />
@@ -85,11 +84,11 @@ commentsRunWhenDOMLoaded(addUtterances);
 
 
 <!-- Opengraph tags -->
-<meta property="og:url"         content="https://firas.moosvi.com/courses/physics111/class/topic8.html" />
+<meta property="og:url"         content="https://firasm.github.io/jupyterbook_course_template/class/topic8.html" />
 <meta property="og:type"        content="article" />
 <meta property="og:title"       content="Topic 8" />
 <meta property="og:description" content="Topic 8  Notes about topic 8." />
-<meta property="og:image"       content="https://firas.moosvi.com/courses/physics111/_static/logo.jpg" />
+<meta property="og:image"       content="https://firasm.github.io/jupyterbook_course_template/_static/logo.jpg" />
 
 <meta name="twitter:card" content="summary" />
 
@@ -312,6 +311,10 @@ commentsRunWhenDOMLoaded(addUtterances);
 </nav>
 
  <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
 
 </div>
 

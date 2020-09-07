@@ -16,7 +16,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pdf_print.css" />
     <link rel="stylesheet" type="text/css" href="../_static/custom_layouts.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/jupyter-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-dropdown.css" />
     <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script src="../_static/sphinx-book-theme.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -26,7 +26,6 @@
     <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script src="../_static/mystnb.js"></script>
     <script src="../_static/save_state.js"></script>
     <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
     <script kind="utterances">
@@ -49,7 +48,7 @@ var addUtterances = () => {
     script.src = "https://utteranc.es/client.js";
     script.async = "async";
 
-    script.setAttribute("repo", "ubco-cmps/data301_course");
+    script.setAttribute("repo", "firasm/jupyterbook_course_template");
     script.setAttribute("issue-term", "pathname");
     script.setAttribute("theme", "github-light");
     script.setAttribute("label", "💬 comment");
@@ -65,8 +64,8 @@ commentsRunWhenDOMLoaded(addUtterances);
 </script>
     <script src="../_static/sphinx-book-theme.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe,.cell"
@@ -74,7 +73,7 @@ commentsRunWhenDOMLoaded(addUtterances);
         const thebe_selector_output = ".output,.cell_output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <link rel="canonical" href="https://firas.moosvi.com/courses/physics111/class/test_notebook.html" />
+    <link rel="canonical" href="https://firasm.github.io/jupyterbook_course_template/class/test_notebook.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Topic 1" href="topic1.html" />
@@ -85,11 +84,11 @@ commentsRunWhenDOMLoaded(addUtterances);
 
 
 <!-- Opengraph tags -->
-<meta property="og:url"         content="https://firas.moosvi.com/courses/physics111/class/test_notebook.html" />
+<meta property="og:url"         content="https://firasm.github.io/jupyterbook_course_template/class/test_notebook.html" />
 <meta property="og:type"        content="article" />
 <meta property="og:title"       content="Content with notebooks" />
 <meta property="og:description" content="Content with notebooks  You can also create content with Jupyter Notebooks. This means that you can include code blocks and their outputs in your book.  for i i" />
-<meta property="og:image"       content="https://firas.moosvi.com/courses/physics111/_static/logo.jpg" />
+<meta property="og:image"       content="https://firasm.github.io/jupyterbook_course_template/_static/logo.jpg" />
 
 <meta name="twitter:card" content="summary" />
 
@@ -313,6 +312,10 @@ commentsRunWhenDOMLoaded(addUtterances);
 
  <!-- To handle the deprecated key -->
 
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
 </div>
 
 
@@ -395,6 +398,11 @@ commentsRunWhenDOMLoaded(addUtterances);
         
         
         
+        <a class="colab-button" href="https://colab.research.google.com/github/firasm/jupyterbook_course_template/blob/master/class/test_notebook.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
         <button type="button" class="btn btn-secondary topbarbtn"
             onclick="initThebeSBT()" title="Launch Thebe" data-toggle="tooltip" data-placement="left"><i
                 class="fas fa-play"></i><span style="margin-left: .4em;">Live Code</span></button>
@@ -432,13 +440,13 @@ commentsRunWhenDOMLoaded(addUtterances);
 code blocks and their outputs in your book.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
   <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The number is </span><span class="si">{0}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>The number is 0
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The number is 0
 The number is 1
 The number is 2
 The number is 3

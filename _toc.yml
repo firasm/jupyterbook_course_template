@@ -8,14 +8,15 @@
     - file: about/doing_well
     - file: about/faq
 
+- part: Getting started!
+  chapters:
+    - file: getting-started/todo_list
+      title: Things to do before start of course
+
 - part: Course Feedback
   chapters:
     - file: about/feedback
       title: Anonymous Feedback Form
-
-- part: First Week!
-  chapters:
-    - file: class/getting_started
 
 - part: Part 1 - Kinematics
   chapters:
