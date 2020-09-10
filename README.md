@@ -17,7 +17,7 @@ Currently it takes about 70s for the website to update.
 
 ![](https://github.com/firasm/bits/blob/master/jb-step1.png)
 
-### 2. Fill in the info for the new repository, make sure it's a public repository and you include all branches (this will make sure the `gh-pages` branch is deployed.
+### 2. Fill in the info for the new repository, make sure it's a public repository and you include all branches (this will make sure the `gh-pages` branch is deployed).
 
 ![](https://github.com/firasm/bits/blob/master/jb-step2.png)
 
