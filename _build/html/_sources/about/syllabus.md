@@ -1,6 +1,6 @@
 ![](../images/header.jpg)
 
-![](../images/UBCO_CMPS_header.png)
+![](../images/UBCO_CMPS_header.jpg)
 
 # Course Syllabus
 
@@ -57,7 +57,7 @@ Any major changes to the syllabus (this page) will be documented here as well as
 | Term                | 2020/21 Winter Term 1                                                                          |
 | Pre-requisites      | One of MATH 12, PREC 12, MATH 125, MATH 126 and PHYS 11. (Physics 12 is strongly recommended.) |
 | Co-requisites       | Math 100                                                                                       |
-| Costs               | Total $XX                                                                                      |
+| Additional course fees               | Total $XX                                                                                      |
 | Lectures            | Online [Thursdays at 14:00](https://ubc.zoom.us)                                               |
 | Tutorial            | You **must** register for a tutorial section.                                                  |
 | Laboratory          | You **must** register for a laboratory section.                                                |
@@ -163,34 +163,48 @@ Do not procrastinate buying access to the online homework system! You will need 
 
 ### Textbook
 
-The required **textbook** for this course is:
+```{tip}
+The required **textbook** for this course is: [Physics for Scientists and Engineers, 4e by Randall D. Knight](https://www.campusebookstore.com/integration/AccessCodes/default.aspx?bookseller_id=240&Course=PHYS+111.001&frame=YES&t=permalink).
+```
 
-> Physics for Scientists and Engineers, 4e by Randall D. Knight
-
-and it is required because you need a reference text for this course, as well as practice problems, and a homework system.
+It is required because you need a reference text for this course, as well as practice problems, and a homework system.
 The Mastering Physics homework system comes bundled with this textbook.
 
-You may purchase either Volume 1 only or the full text.
-The cost for a new physical textbook is $---.
-It is also possible to get a digital textbook for $---.
-Volume 1 contains all of the material required for PHYS 111 and will be lighter and more portable. If you purchase the full text, it will include Volume 2 which will (tentatively) be used in the second part of Introductory Physics for the Physical Sciences (PHYS 121) in term 2.
+```{attention}
+tl;dr version: Purchase the eText + Mastering Physics access code for $115.50 + tax. This is all you will need.
+```
 
+The cost for a new e-Text (with MasteringPhysics code) is listed above.
+With the e-Text, there is no option to purchase separate volumes and you will get access to the full textbook.
+If you choose to purchase a physical copy from the UBCO Bookstore, there is also no choice - you will need to purchase both volumes ($150 + tax).
+Volume 1 contains all of the material required for PHYS 111 and will be lighter and more portable. 
+If you purchase the full physical textbook, it will include Volume 2 which will (tentatively) be used in the second part of Introductory Physics for the Physical Sciences (PHYS 121) in term 2.
+
+Either an e-Text or a physical textbook will work as long as you have the Mastering Physics access code to get access to the homework system.
+New textbooks from the UBCO bookstore have it included.
+If you purchase your textbook from elsewhere, or have a used textbook you’ll need to purchase it separately. 
+**Update**: there is now option to purchase just the Mastering Physics access for $50.50 from the link above. 
+To be clear, the UBCO Bookstore has three options: 1) eText with Mastering Physics access code ($115.50 + tax), 2) Physical textbook with Mastering Physics access code ($150 + tax), 3) Mastering Physics access code only ($50.50 + tax). Most students will choose choose Option 1 which is the pa
+
+```{warning}
+The UBCO bookstore has warned me there may be shipping delays due to COVID-19 if you choose to get a physical textbook. If you’re ordering it online or through the bookstore, I encourage you to call or email to confirm there is stock, and that the shipping times (if applicable) are reasonable before placing the order.
+```
 ### Online homework system
 
-The required online homework system for this course is:
+```{tip}
+The required online homework system for this course is: **Mastering Physics**
+```
 
-> Mastering Physics 
-
-and it is required because it is a companion product to our textbook.
+It is required and is a companion product to our textbook.
 There is considerable research ([here](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1949-8594.1995.tb15736.x) and [here](https://www.learningscientists.org/learning-scientists-podcast/2017/10/4/episode-4-spaced-practice)) that suggests distributed practice is more helpful for long term retention and overall learning.
 Furthermore with online Mastering Physics interface, your textbook, homework assignments, and tests are all on Mastering Physics.
 Mastering Physics also has some integrated study modules that can help you test yourself and take more effective notes.
 
 ### Lab Manual
 
-The required **lab manual** for this course is:
-
-> Available on Canvas, free of charge
+```{tip}
+The required lab manual for this course is: Available on Canvas, free of charge.
+```
 
 In the past, this lab manual had to be purchased from the UBC Bookstore.
 This year, because the labs are all online, a digital version of the lab manual is available to you on Canvas free of charge. 
@@ -233,38 +247,81 @@ Here are the key principles I intend to apply in this class:
 1. Exploring the connections between different disciplines is an extremely powerful motivator.
 1. Teaching is three parts preparation, two parts classroom management, and one part execution.
 
+## Course Communication
+
+- For lectures, labs, tutorials, and office hours we will be using Zoom.
+- For official course communication, we will be using [Canvas](https://canvas.ca/) and [Piazza](https://piazza.com/).
+- For unofficial chat, community building, sharing of tiktoks, cat videos, and general conversation we will (optionally) be using a Discord server.
+
+```{warning}
+Please note signing up for the Discord server is **completely optional**! You will not miss anything course-related if you choose not to get on the Discord.
+```
+
+### Sign up for a (free) Zoom account
+
+Instructions coming soon...
+
+### Sign up for a (free) Piazza account [Required]
+
+This term we will be using Piazza for class discussion.
+The system is highly catered to getting you help fast and efficiently from classmates, the TA, and myself.
+Rather than emailing questions to the teaching staff, I encourage you to post your questions on Piazza.
+
+*The Piazza tool is stored on servers outside Canada. When you access this site by clicking on the link through Canvas, you are being transferred to these servers. In order to protect your identity, UBC obfuscates your user ID before it is sent to the site. However, Piazza does require you to create an account on their servers. While Piazza adheres to strict U.S. privacy regulations (FERPA), UBC cannot guarantee security of your private details on servers outside of Canada. Please exercise caution whenever using personal information. You may wish to use a pseudonym to protect your privacy if you have concerns.*
+
+[Sign up for our class Piazza](https://piazza.com).
+
+### Sign up for the Discord Server [Optional]
+
+You can [download Discord for free on desktop here](https://discord.com/download), or through the [Google Play store](https://play.google.com/store/apps/details?id=com.discord) or [Apple App Store](https://apps.apple.com/us/app/discord/id985746746) on mobile and tablets.
+
+Invitation to [join the unofficial UBCO first year science Discord Server](https://discord.gg)!
+
+Here is a [Beginner's Guide to Discord](https://support.discord.com/hc/en-us/articles/360045138571-Beginner-s-Guide-to-Discord) and if you prefer watching a video:
+
+<div class="container youtube">
+<iframe class="responsive-iframe" src="https://www.youtube.com/embed/3ooRuvrPQsU" frameborder="0" allow="accelerometer; autoplay="0"; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+Again, please note signing up for the Discord server is **completely optional**, and is an experiment we are trying to help maintain human interactions during online learning.
+
 ## What should I think about if I'm considering withdrawing from the course?
 
 First of all, I'm sorry you're having trouble and are considering withdrawing from the course!
 This is no problem, and I will not be personally offended or upset you need to do this, I encourage you to do what you feel is right for you and your situation. 
 Below is some information that might be helpful for you in making the decision.
 
-| Withdrawal type | Effect on Transcript | Tuition refund |
-| --------------- | -------------------- | -------------- | 
-| Before the 1st withdrawal date | None  | 100% refund    |
-| Before the 2nd withdrawal date  | W on transcript | [0 - 50%](http://www.calendar.ubc.ca/okanagan/index.cfm?tree=14,339,1033,0) refund (depending on the date you're withdrawing) |
-| After the 2nd withdrawal date (cannot happen without faculty approval) | W on transcript | 0% |
+| Withdrawal type                 | Effect on Transcript | Tuition refund                                                                                     |
+|---------------------------------|----------------------|----------------------------------------------------------------------------------------------------|
+| Before September 21, 2020 11:59 PDT | None                 | 100% refund                                                                                        |
+| Before November 13, 2020 11:59 PDT | W on transcript      | [See UBCO Calendar](https://students.ok.ubc.ca/courses-money-enrolment/finances/tuition-and-fees/) |
+| After 11:59 PDT November 13, 2020 ^ | W on transcript      | [See UBCO Calendar](https://students.ok.ubc.ca/courses-money-enrolment/finances/tuition-and-fees/) |
+
+^ Note: Withdrawal after this date cannot happen without approval from the Faculty (Email: fos.students.ubco@ubc.ca).
 
 There are factors other than money and your transcript to consider as well, including your mental health, graduation requirements/timelines, eligibility for student loans, bursaries, scholarships etc.
-I advise you to [read the full list of considerations](https://students.ok.ubc.ca/courses-money-enrolment/registration/late-course-changes/) here and contact your faculty advisor if you have additional questions.
+I advise you to [read the full list of considerations](https://students.ok.ubc.ca/courses-money-enrolment/registration/late-course-changes/) here and conslt with an Academic Advisor or your Program Advisor if you have additional questions.
 
 ## How do I do well in this course? 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-Ut blandit faucibus fermentum.
-Fusce porttitor congue dolor, eget efficitur neque ultricies at.
-Nulla suscipit convallis elit, eu consequat felis.
+For full details, please see the page {ref}`page_doing_well`.
 
-1. Quisque et malesuada justo, dapibus commodo enim.
-1. Sed malesuada turpis sed nibh dictum, a interdum dui tincidunt.
-1. Duis consequat magna non tortor dictum facilisis.
-1. In hac habitasse platea dictumst.
-1. Phasellus eu eros libero.
-1. Phasellus rhoncus eros vel metus porttitor porta.
-1. In et tellus finibus, mollis nisi sed, auctor est.
+To whet your appetite on what you'll read there, here are some guidelines on preparing yourselves for this course:
 
-Sed placerat ex at ligula eleifend, ac dapibus neque euismod.
-Suspendisse malesuada pretium dui, ac lacinia mi pellentesque eu. Sed volutpat enim sed feugiat malesuada.
+1. Learning is a contact sport.
+2. Memorizing is not learning.
+3. Understanding is learning and understanding should be your goal.
+4. We’ll do lots of tests.
+
+And some ingredients for your success:
+
+1. Plan.
+1. Prepare.
+1. Engage.
+1. Practice.
+1. Collaborate.
+1. Do not be fooled by familiarity of the material.
+1. Math.
 
 ### ... but I've never been good at physics or math!
 
@@ -301,7 +358,7 @@ That being said, as an instructor, I care tremendously about your learning and t
 Broadly speaking, this relatively new field is called **Learning Analytics**.
 [Learning Analytics](https://www.solaresearch.org/about/what-is-learning-analytics/) involves the collection and analysis of data about learners for the [express purpose](https://www.collinsdictionary.com/dictionary/english/the-express-purpose-of) of improving their learning by optimizing teaching and learning practices. 
 
-In this course, we will be using the following learning technologies (privacy policies linked): 
+In this course, we will be using the following required learning technologies (privacy policies linked): 
 
 - [Canvas](https://faculty.canvas.ubc.ca/canvas-privacy/)
 - [Piazza](https://piazza.com/legal/privacy)
@@ -325,6 +382,20 @@ Unfortunately, at the moment it is not possible to opt-out of the data collectio
 To opt-out, please [complete this form](https://ubc.ca1.qualtrics.com/jfe/form/SV_4SB8DCF8fnktkLb) at any point in the course. 
 You may opt-out with my full support, I respect your decision and applaud you for your netizenship!
 
+### Optional Tools
+
+There are some learning tools that I would like to experiment with this year, and I will not require you to sign up for these (but you are free to do so to explore):
+
+- [Hypothes.is](https://web.hypothes.is/privacy/)
+
+<div class="container youtube">
+<iframe class="responsive-iframe" src="https://www.youtube.com/embed/QCkm0lL-6lc" frameborder="0" allow="accelerometer; autoplay="0"; encrypted-media; gyroscope; picture-in-picture allowfullscreen></iframe>
+</div>
+
+- [Desmos](https://www.desmos.com/privacy)
+
+... others may be added as needed.
+
 ## What should I do if I need accommodations to be successful in this course?
 
 Accommodations are intended to remove barriers experienced by individuals with disabilities.
@@ -339,7 +410,7 @@ For a more detailed guide, the {ref}`page_Accommodations` page has a list of ste
 Students who, because of unforeseen events, are absent during the term and are unable to complete tests or other graded work, should normally discuss with their instructors how they can make up for missed work.
 If ill health is an issue, students are encouraged to seek attention from a health professional.
 Campus Health and Counselling will normally provide documentation only to students who have been seen previously at these offices for treatment or counselling specific to conditions associated with their academic difficulties. 
-Students who feel that requests for consideration have not been dealt with fairly by their instructors may take their concerns first to the Head of the Department, and if not resolved, to the Office of the Dean. Further information can be found at the UBCO Calendar](http://www.calendar.ubc.ca/okanagan/index.cfm?tree=3,48,0,0).
+Students who feel that requests for consideration have not been dealt with fairly by their instructors may take their concerns first to the Head of the Department, and if not resolved, to the Office of the Dean. Further information can be found at the [UBCO Calendar](http://www.calendar.ubc.ca/okanagan/index.cfm?tree=3,48,0,0).
 
 ```{tip}
 If you miss a course component due to an illness, health, or other personal situation, please reach out to me as soon as you are comfortable, and I'll work with you to get you back on track.
@@ -372,9 +443,8 @@ If I am not able to help you myself, then I can probably direct you to the right
 If you need extra help, or extra time to deal with something you're going through, just ask.
 You will *never* owe me an explanation about your physical health, mental health, or those of your family members, friends, etc... I will believe you, and I will trust you.
 I will not judge you, nor think any less of you.
-I will do everything in my power to work something that is both reasonable and fair. 
+I will do everything in my power to work out something that is both reasonable and fair. 
 This, I promise!
-
 
 ## How do I go through this course ethically and with integrity?
 
@@ -394,7 +464,7 @@ According to the scientific literature, the most common reasons students cheat a
 - Inadequate support from instructor and teaching team
 
 Though I sympathize with students and the stresses of your busy lives - in my opinion, there is no good reason to cheat.
-I have tried extremely hard to make this course focused on learning rather than grading, and where grading is needed, to have policies that are as "student-friendly" as possible.
+I have tried extremely hard to make this course focused on learning rather than grading, and where grading is needed, to have policies that are as student-friendly as possible.
 In particular, I hope (and expect) that the following features of the course should eliminate your temptation to cheat or plagiarize:
 
 - 48 hour grace-period on all homework and lab due dates and deadlines.
@@ -405,7 +475,7 @@ In particular, I hope (and expect) that the following features of the course sho
 - No high-stakes exams (the single largest assessment item is the final exam at 20%).
 - All course assessments are completely open book and open notes. 
 - Plenty of TA and instructor office hours and several outside of normal business hours.
-- A class guidebook that outlines exactly what you should do when to help you manage your time.
+- Class website that outlines exactly what you should do when to help you manage your time.
 - Tonnes of supplemental materials including other instructional videos in case you want a different perspective.
 - Weekly prompt to accept the integrity pledge to keep you accountable.
 - A true willingness from the instructor (me) to help you learn and succeed in this course!
@@ -416,7 +486,7 @@ A more detailed description of academic integrity, including the University’s 
 
 With these features, and many other little things, I sincerely hope that you will consider completing this course with maximum integrity so that you never have to feel guilty, ashamed, or disappointed in yourself and your actions!
 
-To make it even easier for you to decide what isn't allowed, below is a list of things that I *definitely** consider to be academic dishonesty:
+To make it even easier for you to decide what isn't allowed, below is a list of things that I **definitely** consider to be academic dishonesty:
 
 - Asking others for their work in the course (whether question by question, or all at once)
 - Sending others your work in the course
@@ -448,6 +518,16 @@ Harassment and discrimination are not tolerated nor is suppression of academic f
 UBC provides appropriate accommodation for students with disabilities and for religious and cultural observances. 
 UBC values academic honesty and students are expected to acknowledge the ideas generated by others and to uphold the highest academic standards in all of their actions. Details of the policies and how to access support are available [here](https://senate.ubc.ca/policies-resources-support-student-success).
 
+### Online learning for international students
+
+During this pandemic, the shift to online learning has greatly altered teaching and studying at UBC, including changes to health and safety considerations.
+Keep in mind that some UBC courses might cover topics that are censored or considered illegal by non-Canadian governments.
+This may include, but is not limited to, human rights, representative government, defamation, obscenity, gender or sexuality, and historical or current geopolitical controversies.
+If you are a student living abroad, you will be subject to the laws of your local jurisdiction, and your local authorities might limit your access to course material or take punitive action against you. UBC is strongly committed to academic freedom, but has no control over foreign authorities (please visit [this calendar page](http://www.calendar.ubc.ca/okanagan/index.cfm?tree=3,293,866,0) for an articulation of the values of the University conveyed in the Senate Statement on Academic Freedom).
+Thus, we recognize that students will have legitimate reason to exercise caution in studying certain subjects.
+If you have concerns regarding your personal situation, consider postponing taking a course with manifest risks, until you are back on campus or reach out to your academic advisor to find substitute courses. 
+For further information and support, please visit: [https://academic.ubc.ca/support-resources/freedom-expression/](https://academic.ubc.ca/support-resources/freedom-expression/).
+
 ### Copyright Disclaimer
 
 Diagrams and figures included in lecture presentations adhere to [Copyright Guidelines for UBC Faculty, Staff and Students](http://copyright.ubc.ca/requirements/copyright-guidelines/) and [UBC Fair Dealing Requirements for Faculty and Staff](http://copyright.ubc.ca/requirements/fair-dealing/).
@@ -464,7 +544,7 @@ Distribution of this material to a third party is forbidden.
 A student who has a complaint related to this course should follow the procedures summarized below:
 
 - The student should attempt to resolve the matter with the instructor first. Students may talk first to someone other than the instructor if they do not feel, for whatever reason, that they can directly approach the instructor. 
-- If the complaint is not resolved to the student's satisfaction, the student should go to the departmental chair John Braun at SCI 388, 250-807-8032 or e-mail him at john.braun@ubc.ca.  
+- If the complaint is not resolved to the student's satisfaction, the student should go to the departmental chair John Braun at SCI 388, 250-807-8032 or e-mail him at john.braun@ubc.ca.
 
 ### Grading Practices   
 

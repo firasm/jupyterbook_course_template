@@ -8,63 +8,142 @@
     - file: about/doing_well
     - file: about/faq
 
-- part: Getting started!
+- part: Part 1 of the course
   chapters:
-    - file: getting-started/todo_list
-      title: Things to do before start of course
+    - file: class/week01/week01_summary.md
+      title: Week 1 - Data Science
+      expand_sections: true
+      sections:
+        - file: class/week01/lecture1
+        - file: class/week01/lecture2
 
-- part: Course Feedback
-  chapters:
-    - file: about/feedback
-      title: Anonymous Feedback Form
-
-- part: Part 1 - Kinematics
-  chapters:
-    - file: class/part1
-      title: Introduction
-    - file: class/test_notebook
-    - file: class/topic1
-      title: Week 1 - Topic
-    - file: class/topic2
-      title: Week 2 - Topic
-    - file: class/topic3
-      title: Week 3 - Topic
-    - file: class/topic4
-      title: Week 4 - Topic
-    - file: class/topic5
-      title: Week 5 - Topic
-- part: Part 2 - Dynamics
-  chapters:
-    - file: class/part2
-      title: Part 2
-    - file: class/topic6
-      title: Week 6 - Topic
-    - file: class/topic7
-      title: Week 7 - Topic
-    - file: class/topic8
-      title: Week 8 - Topic
-    - file: class/topic9
-      title: Week 9 - Topic
-
-- part: Part 3 - Energy and Momentum
-  chapters:
-    - file: class/part3
-      title: Part 3
-    - file: class/topic10
-      title: Week 10 - Topic
-    - file: class/topic11
-      title: Week 11 - Topic
-    - file: class/topic12
-      title: Week 12 - Topic
-    - file: class/topic13
-      title: Week 13 - Topic
+    - file: class/week02/week02_summary
+      title: Week 2 - Introductory Physics
+      sections:
+        - file: class/week02/readings
+        - file: class/week02/videos
+        - file: class/week02/homework
+        - file: class/week02/lecture
+        - file: class/week02/test
+        - file: class/week02/lab
+        - file: class/week02/learninglogs
+    - file: class/week03/week03_summary
+      title: Week 3 - Shakespeare
+      sections:
+        - file: class/week03/readings
+        # - file: class/week03/videos
+        # - file: class/week03/homework
+        # - file: class/week03/lecture
+        # - file: class/week03/test
+        # - file: class/week03/lab
+    - file: class/week04/week04_summary
+      title: Week 4 - Chemistry
+      sections:
+        # - file: class/week04/readings
+        # - file: class/week04/videos
+        # - file: class/week04/homework
+        - file: class/week04/lecture
+        # - file: class/week04/test
+        # - file: class/week04/lab
+    - file: class/week05/week05_summary
+      title: Week 5
+      sections:
+        - file: class/week05/readings
+        - file: class/week05/videos
+        - file: class/week05/homework
+        - file: class/week05/lecture
+        - file: class/week05/test
+        - file: class/week05/lab
+    # - file: class/week06/week06_summary
+      # title: Week 6
+      # sections:
+        # - file: class/week06/readings
+        # - file: class/week06/videos
+        # - file: class/week06/homework
+        # - file: class/week06/lecture
+        # - file: class/week06/test
+        # - file: class/week06/lab
+# 
+# - part: Part 2 - Dynamics
+  # chapters:
+    # - file: class/week07/week07_summary
+      # title: Week 7
+      # sections:
+        # - file: class/week07/readings
+        # - file: class/week07/videos
+        # - file: class/week07/homework
+        # - file: class/week07/lecture
+        # - file: class/week07/test
+        # - file: class/week07/lab
+    # - file: class/week08/week08_summary
+      # title: Week 8
+      # sections:
+        # - file: class/week08/readings
+        # - file: class/week08/videos
+        # - file: class/week08/homework
+        # - file: class/week08/lecture
+        # - file: class/week08/test
+        # - file: class/week08/lab
+    # - file: class/week09/week09_summary
+      # title: Week 9
+      # sections:
+        # - file: class/week09/readings
+        # - file: class/week09/videos
+        # - file: class/week09/homework
+        # - file: class/week09/lecture
+        # - file: class/week09/test
+        # - file: class/week09/lab
+    # - file: class/week10/week10_summary
+      # title: Week 10
+      # sections:
+        # - file: class/week10/readings
+        # - file: class/week10/videos
+        # - file: class/week10/homework
+        # - file: class/week10/lecture
+        # - file: class/week10/test
+        # - file: class/week10/lab
+# 
+# - part: Part 3 - Energy and Momentum
+  # chapters:
+    # - file: class/week11/week11_summary
+      # title: Week 11 - Topic
+      # sections:
+        # - file: class/week11/readings
+        # - file: class/week11/videos
+        # - file: class/week11/homework
+        # - file: class/week11/lecture
+        # - file: class/week11/test
+        # - file: class/week11/lab
+    # - file: class/week12/week12_summary
+      # title: Week 12 - Topic
+      # sections:
+        # - file: class/week12/readings
+        # - file: class/week12/videos
+        # - file: class/week12/homework
+        # - file: class/week12/lecture
+        # - file: class/week12/test
+        # - file: class/week12/lab
+    # - file: class/week13/week13_summary
+      # title: Week 13 - Topic
+      # sections:
+        # - file: class/week13/readings
+        # - file: class/week13/videos
+        # - file: class/week13/homework
+        # - file: class/week13/lecture
+        # - file: class/week13/test
+        # - file: class/week13/lab
 
 - part: Lab Materials
   chapters:
     - file: class/labs
       title: Lab Stuff
 
-- part: Final Exam prep
+# - part: Final Exam prep
+#   chapters:
+#     - file: class/final
+#       title: Exam stuff
+
+- part: Course Feedback
   chapters:
-    - file: class/final
-      title: Exam stuff
+    - file: about/feedback
+      title: Anonymous Feedback Form
