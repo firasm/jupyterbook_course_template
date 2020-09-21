@@ -16,21 +16,22 @@
       sections:
         - file: class/week01/lecture1
         - file: class/week01/lecture2
+        - file: class/week01/lecture3
 
     - file: class/week02/week02_summary
       title: Week 2 - Introductory Physics
       sections:
-        - file: class/week02/readings
         - file: class/week02/videos
         - file: class/week02/homework
-        - file: class/week02/lecture
-        - file: class/week02/test
-        - file: class/week02/lab
-        - file: class/week02/learninglogs
+        - file: class/week02/readings
+        # - file: class/week02/lecture
+        # - file: class/week02/test
+        # - file: class/week02/lab
+        # - file: class/week02/learninglogs
     - file: class/week03/week03_summary
       title: Week 3 - Shakespeare
-      sections:
-        - file: class/week03/readings
+      #sections:
+        #- file: class/week03/readings
         # - file: class/week03/videos
         # - file: class/week03/homework
         # - file: class/week03/lecture
@@ -38,22 +39,24 @@
         # - file: class/week03/lab
     - file: class/week04/week04_summary
       title: Week 4 - Chemistry
-      sections:
+    - url: https://firas.moosvi.com/books/active-learning-technologies/jupyterdays/capacitor_talk/Capacitor.html
+      tile: Capacitor Lecture
+      #sections:
         # - file: class/week04/readings
         # - file: class/week04/videos
         # - file: class/week04/homework
-        - file: class/week04/lecture
+        #- file: class/week04/lecture
         # - file: class/week04/test
         # - file: class/week04/lab
-    - file: class/week05/week05_summary
-      title: Week 5
-      sections:
-        - file: class/week05/readings
-        - file: class/week05/videos
-        - file: class/week05/homework
-        - file: class/week05/lecture
-        - file: class/week05/test
-        - file: class/week05/lab
+    # - file: class/week05/week05_summary
+    #   title: Week 5
+    #   sections:
+    #     - file: class/week05/videos
+    #     - file: class/week05/homework
+    #     - file: class/week05/readings
+    #     - file: class/week05/lecture
+    #     - file: class/week05/test
+    #     - file: class/week05/lab
     # - file: class/week06/week06_summary
       # title: Week 6
       # sections:
