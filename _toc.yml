@@ -40,7 +40,7 @@
     - file: class/week04/week04_summary
       title: Week 4 - Chemistry
     - url: https://firas.moosvi.com/books/active-learning-technologies/jupyterdays/capacitor_talk/Capacitor.html
-      tile: Capacitor Lecture
+      title: Capacitor Lecture
       #sections:
         # - file: class/week04/readings
         # - file: class/week04/videos
