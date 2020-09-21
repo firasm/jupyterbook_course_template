@@ -78,7 +78,7 @@ commentsRunWhenDOMLoaded(addUtterances);
     <link rel="canonical" href="https://firasm.github.io/jupyterbook_course_template/class/week01/lecture2.html" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Week 2 Summary" href="../week02/week02_summary.html" />
+    <link rel="next" title="Introduction to Microsoft Excel" href="lecture3.html" />
     <link rel="prev" title="Introduction to Python" href="lecture1.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -89,7 +89,7 @@ commentsRunWhenDOMLoaded(addUtterances);
 <meta property="og:url"         content="https://firasm.github.io/jupyterbook_course_template/class/week01/lecture2.html" />
 <meta property="og:type"        content="article" />
 <meta property="og:title"       content="Platforms for Data Science" />
-<meta property="og:description" content="Platforms for Data Science  from IPython.display import IFrame from IPython.display import Markdown # Additional styling ; should be moved into helpers from IPy" />
+<meta property="og:description" content="Platforms for Data Science  &lt;style&gt;/*.container { width:100% !important; }*/  div.prompt {display:none}  div.output_subarea {max-width:100%}  /* These below are" />
 <meta property="og:image"       content="https://firasm.github.io/jupyterbook_course_template/_static/logo.jpg" />
 
 <meta name="twitter:card" content="summary" />
@@ -176,6 +176,11 @@ commentsRunWhenDOMLoaded(addUtterances);
      Platforms for Data Science
     </a>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="lecture3.html">
+     Introduction to Microsoft Excel
+    </a>
+   </li>
   </ul>
  </li>
  <li class="toctree-l1">
@@ -194,8 +199,10 @@ commentsRunWhenDOMLoaded(addUtterances);
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../week05/week05_summary.html">
-   Week 5
+  <a class="reference external" href="https://firas.moosvi.com/books/active-learning-technologies/jupyterdays/capacitor_talk/Capacitor.html">
+   https://firas.moosvi.com/books/active-learning-technologies/jupyterdays/capacitor_talk/Capacitor.html
+   <i class="fas fa-external-link-alt">
+   </i>
   </a>
  </li>
 </ul>
@@ -460,11 +467,6 @@ commentsRunWhenDOMLoaded(addUtterances);
    </li>
   </ul>
  </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#rise-template">
-   RISE Template
-  </a>
- </li>
 </ul>
 
         </nav>
@@ -477,16 +479,7 @@ commentsRunWhenDOMLoaded(addUtterances);
                 
   <div class="section" id="platforms-for-data-science">
 <h1>Platforms for Data Science<a class="headerlink" href="#platforms-for-data-science" title="Permalink to this headline">¶</a></h1>
-<div class="cell tag_hide-input docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">IFrame</span>
-<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Markdown</span>
-<span class="c1"># Additional styling ; should be moved into helpers</span>
-<span class="kn">from</span> <span class="nn">IPython.core.display</span> <span class="kn">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">HTML</span>
-<span class="n">HTML</span><span class="p">(</span><span class="s1">&#39;&lt;style&gt;</span><span class="si">{}</span><span class="s1">&lt;/style&gt;&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="s1">&#39;styler.css&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()))</span>
-</pre></div>
-</div>
-</div>
+<div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
 <div class="output text_html"><style>/*.container { width:100% !important; }*/
 
@@ -844,14 +837,14 @@ Namespaces are one honking great idea -- let&#39;s do more of those!
 <h2>Course Tools Survey (2 mins)<a class="headerlink" href="#course-tools-survey-2-mins" title="Permalink to this headline">¶</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">IFrame</span><span class="p">(</span><span class="s1">&#39;https://ubc.ca1.qualtrics.com/jfe/form/SV_eboA3fyVCFkhixn&#39;</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="mi">500</span><span class="p">,</span><span class="n">height</span><span class="o">=</span><span class="mi">1300</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">IFrame</span><span class="p">(</span><span class="s1">&#39;https://ubc.ca1.qualtrics.com/jfe/form/SV_eboA3fyVCFkhixn&#39;</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="mi">750</span><span class="p">,</span><span class="n">height</span><span class="o">=</span><span class="mi">1300</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
 <iframe
-    width="500"
+    width="750"
     height="1300"
     src="https://ubc.ca1.qualtrics.com/jfe/form/SV_eboA3fyVCFkhixn"
     frameborder="0"
@@ -910,38 +903,7 @@ Namespaces are one honking great idea -- let&#39;s do more of those!
 </ul>
 </li>
 </ul>
-</div>
-</div>
-<div class="section" id="rise-template">
-<h2>RISE Template<a class="headerlink" href="#rise-template" title="Permalink to this headline">¶</a></h2>
-<div class="cell tag_hide-input docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">traitlets.config.manager</span> <span class="kn">import</span> <span class="n">BaseJSONConfigManager</span>
-<span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>
-<span class="n">path</span> <span class="o">=</span> <span class="n">Path</span><span class="o">.</span><span class="n">home</span><span class="p">()</span> <span class="o">/</span> <span class="s2">&quot;.jupyter&quot;</span> <span class="o">/</span> <span class="s2">&quot;nbconfig&quot;</span>
-<span class="n">cm</span> <span class="o">=</span> <span class="n">BaseJSONConfigManager</span><span class="p">(</span><span class="n">config_dir</span><span class="o">=</span><span class="nb">str</span><span class="p">(</span><span class="n">path</span><span class="p">))</span>
-<span class="n">tmp</span> <span class="o">=</span> <span class="n">cm</span><span class="o">.</span><span class="n">update</span><span class="p">(</span>
-        <span class="s2">&quot;rise&quot;</span><span class="p">,</span>
-        <span class="p">{</span>
-            <span class="s2">&quot;theme&quot;</span><span class="p">:</span> <span class="s2">&quot;sky&quot;</span><span class="p">,</span> <span class="c1"># https://revealjs.com/themes/</span>
-            <span class="s2">&quot;transition&quot;</span><span class="p">:</span> <span class="s2">&quot;fade&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;start_slideshow_at&quot;</span><span class="p">:</span> <span class="s2">&quot;selected&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;autolaunch&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
-            <span class="s2">&quot;width&quot;</span><span class="p">:</span> <span class="s2">&quot;100%&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;height&quot;</span><span class="p">:</span> <span class="s2">&quot;100%&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;header&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;footer&quot;</span><span class="p">:</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;scroll&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
-            <span class="s2">&quot;enable_chalkboard&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
-            <span class="s2">&quot;slideNumber&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
-            <span class="s2">&quot;center&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
-            <span class="s2">&quot;controlsLayout&quot;</span><span class="p">:</span> <span class="s2">&quot;edges&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;slideNumber&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
-            <span class="s2">&quot;hash&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
-        <span class="p">}</span>
-    <span class="p">)</span>
-</pre></div>
-</div>
+<div class="cell tag_remove-input docutils container">
 </div>
 </div>
 </div>
@@ -976,7 +938,7 @@ Namespaces are one honking great idea -- let&#39;s do more of those!
     <div class='prev-next-bottom'>
         
     <a class='left-prev' id="prev-link" href="lecture1.html" title="previous page">Introduction to Python</a>
-    <a class='right-next' id="next-link" href="../week02/week02_summary.html" title="next page">Week 2 Summary</a>
+    <a class='right-next' id="next-link" href="lecture3.html" title="next page">Introduction to Microsoft Excel</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
