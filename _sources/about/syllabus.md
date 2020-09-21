@@ -6,7 +6,8 @@
 
 This is the official syllabus and course outline for Physics 111.
 
-```{warning} Please note that this syllabus is currently under active development, there may be typos or missing sections; treat this as a draft until the course starts!
+```{tip} Welcome! Feel free to use anything that exists on this site as it is all material licensed under CC-BY-SA 4.0.
+For a shortlink to share a link to the template repository used to create this site, use: [bit.ly/jb_course](http://bit.ly/jb_course).
 ```
 
 ## PHYS 111 (3) Introductory Physics for the Physical Sciences I
