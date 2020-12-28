@@ -1,5 +1,3 @@
-(page_topic_labs)=
-Labs
-=======================
+# Labs
 
-Notes about labs.
+The labs for Physics 111 can be found as a separate Canvas course - they are separate from the lecture portion of Physics 111.

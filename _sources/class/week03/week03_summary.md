@@ -1,92 +1,29 @@
-# Readings
+(page_topic3)=
+Week 3 Summary
+=======================
 
-This week we will discuss the famous Hamlet soliloquy, also known as Act III Scene I.
-Your task is to annotate the words with your commentary, and come to class ready to discuss and act out this scene in your interpretation.
+## List of things to do this week
 
-> To be, or not to be: that is the question:
-> 
-> Whether 'tis nobler in the mind to suffer
-> 
-> The slings and arrows of outrageous fortune,
-> 
-> Or to take arms against a sea of troubles,
-> 
-> And by opposing end them? To die: to sleep;
-> 
-> No more; and by a sleep to say we end
-> 
-> The heart-ache and the thousand natural shocks
-> 
-> That flesh is heir to, 'tis a consummation
-> 
-> Devoutly to be wish'd. To die, to sleep;
-> 
-> To sleep: perchance to dream: ay, there's the rub;
-> 
-> For in that sleep of death what dreams may come
-> 
-> When we have shuffled off this mortal coil,
-> 
-> Must give us pause: there's the respect
-> 
-> That makes calamity of so long life;
-> 
-> For who would bear the whips and scorns of time,
-> 
-> The oppressor's wrong, the proud man's contumely,
-> 
-> The pangs of despised love, the law's delay,
-> 
-> The insolence of office and the spurns
-> 
-> That patient merit of the unworthy takes,
-> 
-> When he himself might his quietus make
-> 
-> With a bare bodkin? who would fardels bear,
-> 
-> To grunt and sweat under a weary life,
-> 
-> But that the dread of something after death,
-> 
-> The undiscover'd country from whose bourn
-> 
-> No traveller returns, puzzles the will
-> 
-> And makes us rather bear those ills we have
-> 
-> Than fly to others that we know not of?
-> 
-> Thus conscience does make cowards of us all;
-> 
-> And thus the native hue of resolution
-> 
-> Is sicklied o'er with the pale cast of thought,
-> 
-> And enterprises of great pith and moment
-> 
-> With this regard their currents turn awry,
-> 
-> And lose the name of action.—Soft you now!
-> 
-> The fair Ophelia! Nymph, in thy orisons
-> 
-> Be all my sins remember'd.
-> 
+Below is a list of things you need to do this week, links to where you can do them, as well as roughly the order you should do it.
+Note that these are just SUGGESTIONS and you are by no means required to them this way. 
+I have put the labs at the end, but if your lab section is earlier in the week, you may want to shift things around to accommodate that.
 
-```{dropdown} Benedict Cumberbatch as Hamlet
-    :container: + shadow
-    :title: bg-success text-white font-weight-bold
+<label><input type="checkbox" id="week03_task1" class="box"> [**Read/skim the assigned textbook chapter**](./readings.md)</input></label>
 
-<div class="container youtube">
-<iframe class="responsive-iframe" src="https://www.youtube.com/embed/juuWo66DNe0" frameborder="0" allow="accelerometer; autoplay="0"; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+<label><input type="checkbox" id="week03_task2" class="box"> [**Watch the lecture videos**](./videos.md) </input></label>
+
+
+<label><input type="checkbox" id="week03_task3" class="box"> [**Complete the MasteringPhysics homework**](./homework.md) </input></label>
+
+<label><input type="checkbox" id="week03_task4" class="box"> [**Attend yor tutorial section to get help**](https://canvas.ubc.ca/courses/63995/external_tools/5284) </input></label>
+
+
+```{tip}
+Remember that there are two Homework assignments due this week: HW02 (from week2) and HW03 (from week03).
 ```
 
-```{dropdown} Mel Gibson as Hamlet
-    :container: + shadow
-    :title: bg-info text-white font-weight-bold
-<div class="container youtube">
-<iframe class="responsive-iframe" src="https://www.youtube.com/embed/ei0fnP9s0KA" frameborder="0" allow="accelerometer; autoplay="0"; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-```
+<label><input type="checkbox" id="week03_task5" class="box"> [**Write the test (60 mins)**](./test.md) </input></label>
+
+<label><input type="checkbox" id="week03_task6" class="box"> [**Complete the lab**](./lab.md) </input></label>
+
+<label><input type="checkbox" id="week03_task7" class="box"> [**Complete your Learning Log assignment**](./learninglogs.md) </input></label>

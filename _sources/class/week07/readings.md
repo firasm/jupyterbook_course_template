@@ -2,15 +2,17 @@
 
 This week the readings assignments are listed below:
 
-<label><input type="checkbox" id="week02_reading1" class="box"> **Readings 2.1: ** </input></label> 
+<label><input type="checkbox" id="week06_reading1" class="box"> **Readings 6.1: ** </input></label> 
 
-<label><input type="checkbox" id="week02_reading2" class="box"> **Readings 2.2: ** </input></label> 
+<label><input type="checkbox" id="week06_reading2" class="box"> **Readings 6.2: ** </input></label> 
 
-<label><input type="checkbox" id="week02_reading3" class="box"> **Readings 2.3: ** </input></label> 
+<label><input type="checkbox" id="week06_reading3" class="box"> **Readings 6.3: ** </input></label> 
 
-<label><input type="checkbox" id="week02_reading4" class="box"> **Readings 2.4: ** </input></label> 
+<label><input type="checkbox" id="week06_reading4" class="box"> **Readings 6.4: ** </input></label> 
 
-<label><input type="checkbox" id="week02_reading5" class="box"> **Readings 2.5: ** </input></label> 
+<label><input type="checkbox" id="week06_reading5" class="box"> **Readings 6.5: ** </input></label> 
+
+<label><input type="checkbox" id="week06_reading5" class="box"> **Readings 6.6: ** </input></label> 
 
 Click the button below to be taken to the Pearson textbook to access the eText
 
