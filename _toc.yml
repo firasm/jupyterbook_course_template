@@ -18,7 +18,7 @@
         - file: class/demo01/lecture2
         - file: class/demo01/lecture3
     - file: class/demo02/demo02_summary
-      title: demo 2 - Introductory Physics
+      title: Demo 2 - Introductory Physics
       sections:
         - file: class/demo02/videos
         - file: class/demo02/homework
@@ -27,9 +27,9 @@
         - file: class/demo02/learninglogs
         - file: class/demo02/test
     - file: class/demo03/demo03_summary
-      title: demo 3 - Shakespeare
+      title: Demo 3 - Shakespeare
     - file: class/demo04/demo04_summary
-      title: demo 4 - Chemistry
+      title: Demo 4 - Chemistry
     - url: https://firas.moosvi.com/books/active-learning-technologies/jupyterdays/capacitor_talk/Capacitor.html
       title: Capacitor Lecture
 
