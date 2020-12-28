@@ -1,5 +1,4 @@
 - file: about/syllabus
-  expand_sections: true
 
 - part: About this course
   chapters:
@@ -8,143 +7,168 @@
     - file: about/doing_well
     - file: about/faq
 
-- part: Part 1 of the course
-  chapters:
-    - file: class/week01/week01_summary.md
-      title: Week 1 - Data Science
-      expand_sections: true
-      sections:
-        - file: class/week01/lecture1
-        - file: class/week01/lecture2
-        - file: class/week01/lecture3
+# This is the demo section to show some of the Jupyter Book functionality
 
-    - file: class/week02/week02_summary
-      title: Week 2 - Introductory Physics
+- part: Demo section
+  chapters:
+    - file: class/demo01/demo01_summary
+      title: Demo 1 - Data Science
       sections:
-        - file: class/week02/videos
-        - file: class/week02/homework
-        - file: class/week02/readings
-        # - file: class/week02/lecture
-        # - file: class/week02/test
-        # - file: class/week02/lab
-        # - file: class/week02/learninglogs
-    - file: class/week03/week03_summary
-      title: Week 3 - Shakespeare
-      #sections:
-        #- file: class/week03/readings
-        # - file: class/week03/videos
-        # - file: class/week03/homework
-        # - file: class/week03/lecture
-        # - file: class/week03/test
-        # - file: class/week03/lab
-    - file: class/week04/week04_summary
-      title: Week 4 - Chemistry
+        - file: class/demo01/lecture1
+        - file: class/demo01/lecture2
+        - file: class/demo01/lecture3
+    - file: class/demo02/demo02_summary
+      title: demo 2 - Introductory Physics
+      sections:
+        - file: class/demo02/videos
+        - file: class/demo02/homework
+        - file: class/demo02/readings
+        - file: class/demo02/lab
+        - file: class/demo02/learninglogs
+        - file: class/demo02/test
+    - file: class/demo03/demo03_summary
+      title: demo 3 - Shakespeare
+    - file: class/demo04/demo04_summary
+      title: demo 4 - Chemistry
     - url: https://firas.moosvi.com/books/active-learning-technologies/jupyterdays/capacitor_talk/Capacitor.html
       title: Capacitor Lecture
-      #sections:
-        # - file: class/week04/readings
-        # - file: class/week04/videos
-        # - file: class/week04/homework
-        #- file: class/week04/lecture
-        # - file: class/week04/test
-        # - file: class/week04/lab
-    # - file: class/week05/week05_summary
-    #   title: Week 5
-    #   sections:
-    #     - file: class/week05/videos
-    #     - file: class/week05/homework
-    #     - file: class/week05/readings
-    #     - file: class/week05/lecture
-    #     - file: class/week05/test
-    #     - file: class/week05/lab
-    # - file: class/week06/week06_summary
-      # title: Week 6
-      # sections:
-        # - file: class/week06/readings
-        # - file: class/week06/videos
-        # - file: class/week06/homework
-        # - file: class/week06/lecture
-        # - file: class/week06/test
-        # - file: class/week06/lab
-# 
-# - part: Part 2 - Dynamics
-  # chapters:
-    # - file: class/week07/week07_summary
-      # title: Week 7
-      # sections:
-        # - file: class/week07/readings
-        # - file: class/week07/videos
-        # - file: class/week07/homework
-        # - file: class/week07/lecture
-        # - file: class/week07/test
-        # - file: class/week07/lab
-    # - file: class/week08/week08_summary
-      # title: Week 8
-      # sections:
-        # - file: class/week08/readings
-        # - file: class/week08/videos
-        # - file: class/week08/homework
-        # - file: class/week08/lecture
-        # - file: class/week08/test
-        # - file: class/week08/lab
-    # - file: class/week09/week09_summary
-      # title: Week 9
-      # sections:
-        # - file: class/week09/readings
-        # - file: class/week09/videos
-        # - file: class/week09/homework
-        # - file: class/week09/lecture
-        # - file: class/week09/test
-        # - file: class/week09/lab
-    # - file: class/week10/week10_summary
-      # title: Week 10
-      # sections:
-        # - file: class/week10/readings
-        # - file: class/week10/videos
-        # - file: class/week10/homework
-        # - file: class/week10/lecture
-        # - file: class/week10/test
-        # - file: class/week10/lab
-# 
-# - part: Part 3 - Energy and Momentum
-  # chapters:
-    # - file: class/week11/week11_summary
-      # title: Week 11 - Topic
-      # sections:
-        # - file: class/week11/readings
-        # - file: class/week11/videos
-        # - file: class/week11/homework
-        # - file: class/week11/lecture
-        # - file: class/week11/test
-        # - file: class/week11/lab
-    # - file: class/week12/week12_summary
-      # title: Week 12 - Topic
-      # sections:
-        # - file: class/week12/readings
-        # - file: class/week12/videos
-        # - file: class/week12/homework
-        # - file: class/week12/lecture
-        # - file: class/week12/test
-        # - file: class/week12/lab
-    # - file: class/week13/week13_summary
-      # title: Week 13 - Topic
-      # sections:
-        # - file: class/week13/readings
-        # - file: class/week13/videos
-        # - file: class/week13/homework
-        # - file: class/week13/lecture
-        # - file: class/week13/test
-        # - file: class/week13/lab
+
+# This is an actual course that was run on Jupyter Book in 2020 Winter Term 1 at UBC Okanagan.
+# If interested in the PDF slides that are embedded, copy the files folder from here: https://github.com/ubco-cmps/physics111_course/tree/master/files
+# Here is an example: https://firas.moosvi.com/courses/physics111/class/week12/lecture.html
+
+- part: Part 1 - Kinematics
+  chapters:
+    - file: class/week01/week01_summary
+      title: Week 1 - Introductions!
+    - file: class/week02/week02_summary
+      title: Week 2 - Chapter 2
+      sections:
+        - file: class/week02/readings
+        - file: class/week02/videos
+        - file: class/week02/homework
+        - file: class/week02/lecture
+        - file: class/week02/test
+        - file: class/week02/lab
+        - file: class/week02/learninglogs
+    - file: class/week03/week03_summary
+      title: Week 3 - Chapter 3
+      sections:
+        - file: class/week03/readings
+        - file: class/week03/videos
+        - file: class/week03/homework
+        - file: class/week03/lecture
+        - file: class/week03/test
+        - file: class/week03/lab
+        - file: class/week03/learninglogs
+    - file: class/week04/week04_summary
+      title: Week 4 - Chapter 4
+      sections:
+        - file: class/week04/readings
+        - file: class/week04/videos
+        - file: class/week04/homework
+        - file: class/week04/lecture
+        - file: class/week04/test
+        - file: class/week04/lab
+        - file: class/week04/learninglogs
+
+- part: Part 2 - Dynamics
+  chapters:
+    - file: class/week05/week05_summary
+      title: Week 5 - Chapter 5
+      sections:
+        - file: class/week05/readings
+        - file: class/week05/videos
+        - file: class/week05/homework
+        - file: class/week05/lecture
+        - file: class/week05/test
+        - file: class/week05/lab
+        - file: class/week05/learninglogs
+    - file: class/week06/week06_summary
+      title: Week 6 - Week Off !!
+    - file: class/week07/week07_summary
+      title: Week 7 - Chapter 6
+      sections:
+        - file: class/week07/readings
+        - file: class/week07/videos
+        - file: class/week07/homework
+        - file: class/week07/lecture
+        - file: class/week07/test
+        - file: class/week07/lab
+        - file: class/week07/learninglogs
+    - file: class/week08/week08_summary
+      title: Week 8 - Chapter 7
+      sections:
+        - file: class/week08/readings
+        - file: class/week08/videos
+        - file: class/week08/homework
+        - file: class/week08/lecture
+        - file: class/week08/test
+        - file: class/week08/lab
+        - file: class/week08/learninglogs
+    - file: class/week09/week09_summary
+      title: Week 9 - Chapter 8
+      sections:
+        - file: class/week09/readings
+        - file: class/week09/videos
+        - file: class/week09/homework
+        - file: class/week09/lecture
+        - file: class/week09/test
+        - file: class/week09/lab
+        - file: class/week09/learninglogs
+- part: Part 3 - Energy & Momentum
+  chapters:
+    - file: class/week10/week10_summary
+      title: Week 10 - Chapter 9
+      sections:
+        - file: class/week10/readings
+        - file: class/week10/videos
+        - file: class/week10/homework
+        - file: class/week10/lecture
+        - file: class/week10/test
+        - file: class/week10/lab
+        - file: class/week10/learninglogs
+    - file: class/week11/week11_summary
+      title: Week 11 - Chapter 10
+      sections:
+        - file: class/week11/readings
+        - file: class/week11/videos
+        - file: class/week11/homework
+        - file: class/week11/lecture
+        - file: class/week11/test
+        - file: class/week11/lab
+        - file: class/week11/learninglogs
+    - file: class/week12/week12_summary
+      title: Week 12 - Chapter 11
+      sections:
+        - file: class/week12/readings
+        - file: class/week12/videos
+        - file: class/week12/homework
+        - file: class/week12/lecture
+        - file: class/week12/test
+        - file: class/week12/lab
+        - file: class/week12/learninglogs
+- part: Week 13 - Exam Review
+  chapters:
+    - file: class/week13/week13_summary
+      title: Week 13 - Review
+      sections:
+        - file: class/week13/readings
+        - file: class/week13/videos
+        - file: class/week13/homework
+        - file: class/week13/lecture
+        - file: class/week13/test
+        - file: class/week13/lab
+        - file: class/week13/learninglogs
+
+- part: Final Exam
+  chapters:
+    - file: class/final
 
 - part: Lab Materials
   chapters:
     - file: class/labs
       title: Lab Stuff
-
-# - part: Final Exam prep
-#   chapters:
-#     - file: class/final
-#       title: Exam stuff
 
 - part: Course Feedback
   chapters:

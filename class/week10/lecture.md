@@ -1,3 +1,6 @@
 # Lecture
 
-This week in the lecture we will go through the following worksheet and clicker questions.
+This week the lecture is CANCELLED due to the Remembrance Day Holiday.
+
+There will be an OPTIONAL makeup class on Monday or Tuesday the following week.
+It will be recorded.

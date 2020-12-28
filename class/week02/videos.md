@@ -2,195 +2,69 @@
 
 Below are the assigned videos for this week. 
 The videos are collapsible so once you're done with one, you can move to the next one.
-In the sidebar on the right, you can use the checklists to keep track of what's done.
 
-````{margin}
-```{admonition} Checklist of items
-:class: tip sticky
-
-<input type="checkbox" id="week03_video13" class="box"><label>Calculus: Derivatives</input></label>
-
-<input type="checkbox" id="week03_video14" class="box"><label>Calculus: Integrals</input></label>
-
-<input type="checkbox" id="week03_video1" class="box"><label>Video 1</input></label>
-
-<input type="checkbox" id="week03_video2" class="box"><label>Video 2</input></label>
-
-<input type="checkbox" id="week03_video3" class="box"><label>Video 3</input></label>
-
-<input type="checkbox" id="week03_video4" class="box"><label>Video 4</input></label>
-
-<input type="checkbox" id="week03_video5" class="box"><label>Video 5</input></label>
-
-<input type="checkbox" id="week03_video6" class="box"><label>Video 6</input></label>
-
-<input type="checkbox" id="week03_video7" class="box"><label>Video 7</input></label>
-
-<input type="checkbox" id="week03_video8" class="box"><label>Video 8</input></label>
-
-<input type="checkbox" id="week03_video9" class="box"><label>Video 9</input></label>
-
-<input type="checkbox" id="week03_video10" class="box"><label>Video 10</input></label>
-
-<input type="checkbox" id="week03_video11" class="box"><label>Video 11</input></label>
-
-<input type="checkbox" id="week03_video12" class="box"><label>Video 12 (Optional) </input></label>
-
-```
-````
-
-## Summary of Calculus from Crash Course Physics (Optional but recommended)
-
-```{dropdown} Derivatives
-    :container: + shadow
-    :title: bg-success text-white font-weight-bold
+```{dropdown} <h4 class="dropdown-margin"><label><input type="checkbox" id="week02_reading1" class="box"> **Introduction to Displacement and the Differences Between Displacement and Distance**</input></label></h4> 
+:open:
 
 <div class="container youtube">
-<iframe class="responsive-iframe" src="https://www.youtube-nocookie.com/embed/ObHJJYvu3RE" frameborder="0" allow="accelerometer; autoplay="0"; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-```
-
-```{dropdown} Integrals
-    :container: + shadow
-    :title: bg-success text-white font-weight-bold
-
-<div class="container youtube">
-<iframe class="responsive-iframe" src="https://www.youtube-nocookie.com/embed/jLJLXka2wEM" frameborder="0" allow="accelerometer; autoplay="0"; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-```
-
-## Required Videos
-
-```{dropdown} 1. Vectors and 2D Motion
-    :container: + shadow
-    :title: bg-primary text-white font-weight-bold
-    :open:
-
-<div class="container youtube">
-<iframe class="responsive-iframe" src="https://www.youtube-nocookie.com/embed/w3BhzYI6zXU" frameborder="0" allow="accelerometer; autoplay="0"; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-```
-
-```{dropdown} 2. Introduction to Tip-to-Tail Vector Addition, Vectors and Scalars
-    :container: + shadow
-    :title: bg-primary text-white font-weight-bold
-
-<div class="container youtube">
-<iframe class="responsive-iframe" src="https://www.youtube-nocookie.com/embed/ZYl9-iz7nR8" frameborder="0" allow="accelerometer; autoplay="0"; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="responsive-iframe" src="https://www.youtube-nocookie.com/embed/uTQ4_AOae1g" frameborder="0" allow="accelerometer; autoplay="0"; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-- [Notes](https://www.flippingphysics.com/uploads/2/1/1/0/21103672/0049_lecture_notes_-_introduction_to_tip-to-tail_vector_addition_vectors_and_scalars.pdf)
-- [Direct link to Mr. P's page](https://www.flippingphysics.com/vectors-and-scalars.html)
+- [Notes](https://www.flippingphysics.com/uploads/2/1/1/0/21103672/0007_lecture_notes_-_displacement_versus_distance.pdf)
+- [Direct link to Mr. P's page](https://www.flippingphysics.com/introduction-to-displacement.html)
+
 ```
 
-```{dropdown} 3. Introductory Tip-to-Tail Vector Addition Problem
-    :container: + shadow
-    :title: bg-primary text-white font-weight-bold
-
+```{dropdown} <h4 class="dropdown-margin"><label><input type="checkbox" id="week02_reading2" class="box"> **Introduction to Velocity and Speed and the differences between the two** </input></label></h4>
 <div class="container youtube">
-<iframe class="responsive-iframe" src="https://www.youtube-nocookie.com/embed/256Yn47knH4" frameborder="0" allow="accelerometer; autoplay="0"; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="responsive-iframe" src="https://www.youtube-nocookie.com/embed/I16utd8d6JM" frameborder="0" allow="accelerometer; autoplay="0"; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 - [Notes](https://www.flippingphysics.com/uploads/2/1/1/0/21103672/0008_lecture_notes_-_introduction_to_velocity_and_speed.pdf)
-- [Direct link to Mr. P's page](https://www.flippingphysics.com/tip-to-tail-vector-addition.html)
+- [Direct link to Mr. P's page](https://www.flippingphysics.com/introduction-to-velocity-and-speed.html)
+
 ```
 
-```{dropdown} 4. Introduction to Vector Components
-    :container: + shadow
-    :title: bg-primary text-white font-weight-bold
+```{dropdown} <h4 class="dropdown-margin"><label><input type="checkbox" id="week02_reading3" class="box"> **Average Velocity Example Problem with Three Velocities** </input></label></h4>
 
 <div class="container youtube">
-<iframe class="responsive-iframe" src="https://www.youtube-nocookie.com/embed/Hjc8WwqqF6s" frameborder="0" allow="accelerometer; autoplay="0"; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="responsive-iframe" src="https://www.youtube-nocookie.com/embed/WpdYBnyZOm8" frameborder="0" allow="accelerometer; autoplay="0"; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-- [Notes](https://www.flippingphysics.com/uploads/2/1/1/0/21103672/0052_lecture_notes_-_introduction_to_vector_components.pdf)
-- [Direct link to Mr. P's page](https://www.flippingphysics.com/vector-components.html)
+- [Notes](https://www.flippingphysics.com/uploads/2/1/1/0/21103672/0009_lecture_notes_-_average_velocity_example_problem_with_three_velocities.pdf)
+- [Direct link to Mr. P's page](https://www.flippingphysics.com/average-velocity-example-problem-with-three-velocities.html)
+
 ```
 
-```{dropdown} 5. Introduction to Component Vectors and Unit Vectors
-    :container: + shadow
-    :title: bg-primary text-white font-weight-bold
+```{dropdown} <h4 class="dropdown-margin"><label><input type="checkbox" id="week02_reading4" class="box"> **Example Problem: Velocity and Speed are Different** </input></label></h4>
 
 <div class="container youtube">
-<iframe class="responsive-iframe" src="https://www.youtube-nocookie.com/embed/S9hPYnYWNSQ" frameborder="0" allow="accelerometer; autoplay="0"; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="responsive-iframe" src="https://www.youtube-nocookie.com/embed/8AWvUvHlpcQ" frameborder="0" allow="accelerometer; autoplay="0"; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
+
+- [Notes](https://www.flippingphysics.com/uploads/2/1/1/0/21103672/0010_lecture_notes_-_example_problem_-_velocity_and_speed_are_different.pdf)
+- [Direct link to Mr. P's page](https://www.flippingphysics.com/example-problem-velocity-and-speed-are-different.html)
+
 ```
 
-```{dropdown} 6. Introductory Vector Addition Problem using Component Vectors
-    :container: + shadow
-    :title: bg-primary text-white font-weight-bold
-    
+```{dropdown} <h4 class="dropdown-margin"><label><input type="checkbox" id="week02_reading5" class="box"> **Understanding and Walking Position as a function of Time Graphs**</input></label></h4>
+
 <div class="container youtube">
-<iframe class="responsive-iframe" src="https://www.youtube-nocookie.com/embed/q8TbXJEbeFg" frameborder="0" allow="accelerometer; autoplay="0"; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="responsive-iframe" src="https://www.youtube-nocookie.com/embed/Mjnu5ePzXDM" frameborder="0" allow="accelerometer; autoplay="0"; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-- [Notes](https://www.flippingphysics.com/uploads/2/1/1/0/21103672/0053_lecture_notes_-_introductory_vector_addition_problem_using_component_vectors_also_0054.pdf)
-- [Direct link to Mr. P's page](https://www.flippingphysics.com/introductory-vector-addition-problem.html)
+- [Notes](https://www.flippingphysics.com/uploads/2/1/1/0/21103672/0011_lecture_notes_-_understanding_walking_and_graphing_position_as_a_function_of_time.pdf)
+- [Direct link to Mr. P's page](https://www.flippingphysics.com/understanding-and-walking-graphs-of-position-as-a-function-of-time.html)
+
 ```
 
-```{dropdown} 7. A Visually Complicated Vector Addition Problem using Component Vectors
-    :container: + shadow
-    :title: bg-primary text-white font-weight-bold
+```{dropdown} <h4 class="dropdown-margin"><label><input type="checkbox" id="week02_reading6" class="box"> **Example Problem: Finding Average Speed for Pole Position** </input></label></h4>
 
 <div class="container youtube">
-<iframe class="responsive-iframe" src="https://www.youtube-nocookie.com/embed/e0rZI2JYGkY" frameborder="0" allow="accelerometer; autoplay="0"; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="responsive-iframe" src="https://www.youtube-nocookie.com/embed/n8mC8V0_Rbo" frameborder="0" allow="accelerometer; autoplay="0"; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-- [Notes](https://www.flippingphysics.com/uploads/2/1/1/0/21103672/0055_lecture_notes_-_a_visually_complicated_vector_addition_problem_using_component_vectors.pdf)
-- [Direct link to Mr. P's page](https://www.flippingphysics.com/complicated-vector-addition.html)
-```
-
-```{dropdown} 8. An Introductory Vector Addition Problem using Unit Vectors
-    :container: + shadow
-    :title: bg-primary text-white font-weight-bold
-
-<div class="container youtube">
-<iframe class="responsive-iframe" src="https://www.youtube-nocookie.com/embed/nRcOGxcJmzw" frameborder="0" allow="accelerometer; autoplay="0"; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-```
-```{dropdown} 9. Introduction to the R Position Vector by way of an Example Problem
-    :container: + shadow
-    :title: bg-primary text-white font-weight-bold
-
-<div class="container youtube">
-<iframe class="responsive-iframe" src="https://www.youtube-nocookie.com/embed/1AdVOdOeX0Q" frameborder="0" allow="accelerometer; autoplay="0"; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-```
-
-```{dropdown} 10. Using the R Position Vector to find Velocity and Acceleration - Example Problem
-    :container: + shadow
-    :title: bg-primary text-white font-weight-bold
-
-<div class="container youtube">
-<iframe class="responsive-iframe" src="https://www.youtube-nocookie.com/embed/Z7aT8Efqb6E" frameborder="0" allow="accelerometer; autoplay="0"; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-```
-
-```{dropdown} 11. How to use Cardinal Directions with Vectors
-    :container: + shadow
-    :title: bg-primary text-white font-weight-bold
-
-<div class="container youtube">
-<iframe class="responsive-iframe" src="https://www.youtube-nocookie.com/embed/UWn3u6kv1Wk" frameborder="0" allow="accelerometer; autoplay="0"; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-- [Notes](https://www.flippingphysics.com/uploads/2/1/1/0/21103672/0051_lecture_notes_-_how_to_use_cardinal_directions_with_vectors.pdf)
-- [Direct link to Mr. P's page](https://www.flippingphysics.com/cardinal-directions.html)
-```
-
-## Optional Videos
-
-The videos below are relevant to the subject material, but are not required for Physics 111.
-
-```{dropdown} 12. Using a Data Table to Make Vector Addition Problems Easier
-    :container: + shadow
-    :title: bg-success text-white font-weight-bold
-
-<div class="container youtube">
-<iframe class="responsive-iframe" src="https://www.youtube-nocookie.com/embed/nwqu0RIsvV4" frameborder="0" allow="accelerometer; autoplay="0"; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-- [Notes](https://www.flippingphysics.com/uploads/2/1/1/0/21103672/_0053_lecture_notes_-_introductory_vector_addition_problem_using_component_vectors_also_0054.pdf)
-- [Direct link to Mr. P's page](https://www.flippingphysics.com/data-table.html)
+- [Notes](https://www.flippingphysics.com/uploads/2/1/1/0/21103672/0012_lecture_notes_-_example_problem_-_finding_necessary_pole_position_speed.pdf)
+- [Direct link to Mr. P's page](https://www.flippingphysics.com/example-problem-finding-average-speed-for-pole-position-ndash-not-as-easy-as-you-think.html)
 
 ```

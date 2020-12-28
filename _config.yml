@@ -4,6 +4,7 @@ author: Firas Moosvi
 logo: images/logo.jpg
 copyright: ""
 exclude_patterns: ["LICENSE.md", "README.md"]
+only_build_toc_files: true
 
 latex:
   latex_documents:

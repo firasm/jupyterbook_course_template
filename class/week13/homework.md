@@ -2,7 +2,7 @@
 
 ````{panels}
 
-This week the homework assignment is on Chapter 2, and is posted on Mastering physics.
+This week is the final week of Physics 111 and will be used for review. There are some extra problems on Mastering Physics.
 
 ++++ 
 

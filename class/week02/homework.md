@@ -1,8 +1,7 @@
 # Homework
 
 ````{panels}
-
-This week the homework assignment is on Chapter 3, and is posted on Mastering physics.
+This week the homework assignment is on Chapter 2, and is posted on Mastering physics.
 
 ++++ 
 

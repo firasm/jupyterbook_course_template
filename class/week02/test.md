@@ -1,15 +1,15 @@
-# Test 1
+# Test 0
 
 ````{panels}
 
-This week you will have your first Test, and it will mostly be on the contents of Chapter 2 and 3.
-Remember that Test 1 will be available starting at Thursday at 6:00 PM PDT and will remain available until Saturday at 6:00 PM.
-You will have 60 minutes to complete the test.
+This week is your first test - it is NOT for marks, but is not optional.
+It will cover the course policies and will be timed to give you practice on how the testing system works.
+This test will be open to you after the Week 2 lecture.
 
 ++++ 
 
-```{link-button} https://canvas.ubc.ca/courses/63995/assignments
-:text: Test 1 on Canvas
+```{link-button} https://canvas.ubc.ca/courses/63995/quizzes/256495
+:text: Test0 is available
 :type: url
 :classes: btn-outline-success btn-block stretched-link text-dark
 ```
