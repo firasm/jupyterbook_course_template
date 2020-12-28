@@ -7,7 +7,15 @@
 This is the official syllabus and course outline for Physics 111.
 
 ```{tip} Welcome! Feel free to use anything that exists on this site as it is all material licensed under CC-BY-SA 4.0.
-For a shortlink to share a link to the template repository used to create this site, use: [bit.ly/jb_course](http://bit.ly/jb_course).
+For a shortlink to share a link to the template repository used to create this site, use: [bit.ly/jb_course](https://bit.ly/jb_course).
+```
+
+```{figure} ../images/construction.jpeg
+---
+width: 750px
+name: Under Construction.
+---
+This course website is currently under construction. It will continue to be updated and will be released closer to the course start date. [Photo by Mabel Amber from Pexels](https://www.pexels.com/photo/traffic-red-blue-sign-117602/). 
 ```
 
 ## TODO for using the template
@@ -24,13 +32,15 @@ For a shortlink to share a link to the template repository used to create this s
 - Update "How will I be evaluated in this course?"
 - Update "How will this course be taught?"
 - Update "How do I do well in this course?"
+- Update "Final Examinations" section with the dates
+    - e.g., F&R "Winter 2020 Term 2" with the right term and dates
 - Update "Attribution"
-
-
+- Update the feedback page with the link for this course
+- Remove this TODO list
 
 ## PHYS 111 (3) Introductory Physics for the Physical Sciences I
 
-The [UBCO calendar description](http://www.calendar.ubc.ca/okanagan/courses.cfm?code=PHYS) of this course is: 
+The [UBCO calendar description](https://www.calendar.ubc.ca/okanagan/courses.cfm?code=PHYS) of this course is: 
 
 > Introduction to mechanics primarily for students majoring in the physical sciences (e.g. physics, chemistry, mathematics, computer science, geology, physical geography) or engineering.
 > Particle kinematics and dynamics, work and energy, momentum, gravitation, rigid body motion, fluid statics and dynamics with applications to the physical sciences.
@@ -65,25 +75,25 @@ I invite you to be co-contributors to this syllabus, and use the tools provided 
 Any major changes to the syllabus (this page) will be documented here as well as the date the change was made. 
 
 | Change Date | Summary | Rationale |
-|-------------|----------------|-----------|
-| TBD         | TBD            | TBD       |
+|-------------|---------|-----------|
+| TBD         | TBD     | TBD       |
 
 ## About this course
 
-| Name                | Description                                                                                    |
-|---------------------|------------------------------------------------------------------------------------------------|
-| Course              | Physics 111                                                                                    |
-| Term                | 2020/21 Winter Term 1                                                                          |
-| Pre-requisites      | One of MATH 12, PREC 12, MATH 125, MATH 126 and PHYS 11. (Physics 12 is strongly recommended.) |
-| Co-requisites       | Math 100                                                                                       |
-| Additional course fees               | Total $XX                                                                                      |
-| Lectures            | Online [Thursdays at 14:00](https://canvas.ubc.ca/courses/COURSEID/external_tools/15408)                                               |
-| Tutorial            | You **must** register for a tutorial section.                                                  |
-| Laboratory          | You **must** register for a laboratory section.                                                |
-| URL                 | https://this.site                                                                              |
-| Instructor          | Firas Moosvi                                                                                   |
-| Office              | [Zoom](https://canvas.ubc.ca/courses/COURSEID/external_tools/15408)                                                                    |
-| Email               | [Contact via Ed Discussion](https://us.edstem.org/join/JOIN_CODE)                                                       |
+| Name                   | Description                                                                                    |
+|------------------------|------------------------------------------------------------------------------------------------|
+| Course                 | Physics 111                                                                                    |
+| Term                   | 2020/21 Winter Term 1                                                                          |
+| Pre-requisites         | One of MATH 12, PREC 12, MATH 125, MATH 126 and PHYS 11. (Physics 12 is strongly recommended.) |
+| Co-requisites          | Math 100                                                                                       |
+| Additional course fees | Total $XX                                                                                      |
+| Lectures               | Online [Thursdays at 14:00](https://canvas.ubc.ca/courses/COURSEID/external_tools/15408)       |
+| Tutorial               | You **must** register for a tutorial section.                                                  |
+| Laboratory             | You **must** register for a laboratory section.                                                |
+| URL                    | https://this.site                                                                              |
+| Instructor             | Firas Moosvi                                                                                   |
+| Office                 | [Zoom](https://canvas.ubc.ca/courses/COURSEID/external_tools/15408)                            |
+| Email                  | [Contact via Ed Discussion](https://us.edstem.org/join/JOIN_CODE)                              |
 
 ## A message from your instructor
 
@@ -274,6 +284,7 @@ Here are the key principles I intend to apply in this class:
 1. Learning technologies must be leveraged to scale instructor effort across multiple classes.
 1. Exploring the connections between different disciplines is an extremely powerful motivator.
 1. Teaching is three parts preparation, two parts classroom management, and one part execution.
+
 ### Sign up for a (free) Ed Discussion account [Required]
 
 This term we will be using Ed Discussion for class discussion.
@@ -290,10 +301,10 @@ First of all, I'm sorry you're having trouble and are considering withdrawing fr
 This is no problem, and I will not be personally offended or upset you need to do this, I encourage you to do what you feel is right for you and your situation. 
 Below is some information that might be helpful for you in making the decision.
 
-| Withdrawal type                 | Effect on Transcript | Tuition refund                                                                                     |
-|---------------------------------|----------------------|----------------------------------------------------------------------------------------------------|
+| Withdrawal type                     | Effect on Transcript | Tuition refund                                                                                     |
+|-------------------------------------|----------------------|----------------------------------------------------------------------------------------------------|
 | Before September 21, 2020 11:59 PDT | None                 | 100% refund                                                                                        |
-| Before November 13, 2020 11:59 PDT | W on transcript      | [See UBCO Calendar](https://students.ok.ubc.ca/courses-money-enrolment/finances/tuition-and-fees/) |
+| Before November 13, 2020 11:59 PDT  | W on transcript      | [See UBCO Calendar](https://students.ok.ubc.ca/courses-money-enrolment/finances/tuition-and-fees/) |
 | After 11:59 PDT November 13, 2020 ^ | W on transcript      | [See UBCO Calendar](https://students.ok.ubc.ca/courses-money-enrolment/finances/tuition-and-fees/) |
 
 ^ Note: Withdrawal after this date cannot happen without approval from the Faculty (Email: fos.students.ubco@ubc.ca).
@@ -409,7 +420,7 @@ Students who, because of unforeseen events, are absent during the term and are u
 If ill health is an issue, students are encouraged to seek attention from a health professional.
 Campus Health and Counselling will normally provide documentation only to students who have been seen previously at these offices for treatment or counselling specific to conditions associated with their academic difficulties. 
 Students who feel that requests for consideration have not been dealt with fairly by their instructors may take their concerns first to the Head of the Department, and if not resolved, to the Office of the Dean (Email: fos.students.ubco@ubc.ca). 
-Further information can be found at the [UBCO Calendar](http://www.calendar.ubc.ca/okanagan/index.cfm?tree=3,48,0,0). 
+Further information can be found at the [UBCO Calendar](https://www.calendar.ubc.ca/okanagan/index.cfm?tree=3,48,0,0). 
 
 ```{tip}
 If you miss a course component due to an illness, health, or other personal situation, please reach out to me as soon as you are comfortable, and I'll work with you to get you back on track.
@@ -483,11 +494,11 @@ In particular, I hope (and expect) that the following features of the course sho
 - Weekly prompt to accept the integrity pledge to keep you accountable.
 - A true willingness from the instructor (me) to help you learn and succeed in this course!
 
-A more detailed description of academic integrity, including the University’s policies and procedures, may be found in the [Academic Calendar](http://calendar.ubc.ca/vancouver/index.cfm?tree=3,54,111,0).
+A more detailed description of academic integrity, including the University’s policies and procedures, may be found in the [Academic Calendar](https://calendar.ubc.ca/vancouver/index.cfm?tree=3,54,111,0).
 
 ### My personal plea
 
-With these features, and many other little things, I sincerely hope that you will consider completing this course with maximum integrity so that you never have to feel guilty, ashamed, or disappointed in yourself and your actions!
+With these features, and several other little things, I sincerely hope that you will consider completing this course with maximum integrity so that you never have to feel guilty, ashamed, or disappointed in yourself and your actions!
 
 To make it even easier for you to decide what isn't allowed, below is a list of things that I **definitely** consider to be academic dishonesty:
 
@@ -503,16 +514,6 @@ To make it even easier for you to decide what isn't allowed, below is a list of 
 - Copying and pasting code, equations, text explanations, prose, etc... without attribution
 - Manipulating the learning platforms we use to reverse engineer the randomization algorithms, hacking the timer functionality, or other similar technical [malfeasance](https://dictionary.cambridge.org/dictionary/english/malfeasance).
 
-### UBCO's statement on Academic Integrity
-
-The academic enterprise is founded on honesty, civility, and integrity.
-As members of this enterprise, all students are expected to know, understand, and follow the codes of conduct regarding academic integrity.
-At the most basic level, this means submitting only original work done by you and acknowledging all sources of information or ideas and attributing them to others as required.
-This also means you should not cheat, copy, or mislead others about what is your work.
-Violations of academic integrity (i.e., misconduct) lead to the breakdown of the academic enterprise, and therefore serious consequences arise and harsh sanctions are imposed.
-For example, incidences of plagiarism or cheating may result in a mark of zero on the assignment or exam and more serious consequences may apply if the matter is referred to the President’s Advisory Committee on Student Discipline.
-Careful records are kept in order to monitor and prevent recurrences.
-
 ## UBC Policies
 
 UBC provides resources to support student learning and to maintain healthy lifestyles but recognizes that sometimes crises arise and so there are additional resources to access including those for survivors of sexual violence.
@@ -526,14 +527,38 @@ UBC values academic honesty and students are expected to acknowledge the ideas g
 During this pandemic, the shift to online learning has greatly altered teaching and studying at UBC, including changes to health and safety considerations.
 Keep in mind that some UBC courses might cover topics that are censored or considered illegal by non-Canadian governments.
 This may include, but is not limited to, human rights, representative government, defamation, obscenity, gender or sexuality, and historical or current geopolitical controversies.
-If you are a student living abroad, you will be subject to the laws of your local jurisdiction, and your local authorities might limit your access to course material or take punitive action against you. UBC is strongly committed to academic freedom, but has no control over foreign authorities (please visit [this calendar page](http://www.calendar.ubc.ca/okanagan/index.cfm?tree=3,293,866,0) for an articulation of the values of the University conveyed in the Senate Statement on Academic Freedom).
+If you are a student living abroad, you will be subject to the laws of your local jurisdiction, and your local authorities might limit your access to course material or take punitive action against you. UBC is strongly committed to academic freedom, but has no control over foreign authorities (please visit [this calendar page](https://www.calendar.ubc.ca/okanagan/index.cfm?tree=3,293,866,0) for an articulation of the values of the University conveyed in the Senate Statement on Academic Freedom).
 Thus, we recognize that students will have legitimate reason to exercise caution in studying certain subjects.
 If you have concerns regarding your personal situation, consider postponing taking a course with manifest risks, until you are back on campus or reach out to your academic advisor to find substitute courses. 
 For further information and support, please visit: [https://academic.ubc.ca/support-resources/freedom-expression/](https://academic.ubc.ca/support-resources/freedom-expression/).
 
+### Grading Practices
+
+Faculties, departments, and schools reserve the right to scale grades in order to maintain equity among sections and conformity to University, faculty, department, or school norms. 
+Students should therefore note that an unofficial grade given by an instructor might be changed by the faculty, department, or school.
+[Grades](https://www.calendar.ubc.ca/okanagan/index.cfm?tree=3,41,90,1014) are not official until they appear on a student's academic record.
+If you have any questions about how academic integrity applies to this course, please consult with your professor.
+
+### Final Examinations 
+
+The examination period for Winter 2020 Term 2 is April 16 - 29, 2021.  Except in the case of examination clashes and hardships (three or more formal examinations scheduled within a 24-hour period) or unforeseen events, students will be permitted to apply for out-of-time final examinations only if they are representing the University, the province, or the country in a competition or performance; serving in the Canadian military; observing a religious rite; working to support themselves or their family; or caring for a family member.  Unforeseen events include (but may not be limited to) the following: ill health or other personal challenges that arise during a term and changes in the requirements of an ongoing job.   
+Further information on Academic Concession can be found under Policies and Regulation in the [Okanagan Academic Calendar](https://www.calendar.ubc.ca/okanagan/index.cfm?tree=3,48,0,0).
+
+### Academic Integrity
+
+The academic enterprise is founded on honesty, civility, and integrity.
+As members of this enterprise, all students are expected to know, understand, and follow the codes of conduct regarding academic integrity.
+At the most basic level, this means submitting only original work done by you and acknowledging all sources of information or ideas and attributing them to others as required.
+This also means you should not cheat, copy, or mislead others about what is your work.
+Violations of academic integrity (i.e., misconduct) lead to the breakdown of the academic enterprise, and therefore serious consequences arise and harsh sanctions are imposed.
+For example, incidences of plagiarism or cheating may result in a mark of zero on the assignment or exam and more serious consequences may apply if the matter is referred to the President’s Advisory Committee on Student Discipline.
+Careful records are kept in order to monitor and prevent recurrences.
+
+A more detailed description of academic integrity, including the University’s policies and procedures, may be found in the [Academic Calendar](https://okanagan.students.ubc.ca/calendar/index.cfm?tree=3,54,111,0.)
+
 ### Copyright Disclaimer
 
-Diagrams and figures included in lecture presentations adhere to [Copyright Guidelines for UBC Faculty, Staff and Students](http://copyright.ubc.ca/requirements/copyright-guidelines/) and [UBC Fair Dealing Requirements for Faculty and Staff](http://copyright.ubc.ca/requirements/fair-dealing/).
+Diagrams and figures included in lecture presentations adhere to [Copyright Guidelines for UBC Faculty, Staff and Students](https://copyright.ubc.ca/requirements/copyright-guidelines/) and [UBC Fair Dealing Requirements for Faculty and Staff](https://copyright.ubc.ca/requirements/fair-dealing/).
 Some of these figures and images are subject to copyright and will not be posted to Canvas.
 All material uploaded to Canvas that contain diagrams and figures are used with permission of the publisher; are in the public domain; are licensed by Creative Commons; meet the permitted terms of use of UBC’s library license agreements for electronic items; and/or adhere to the UBC Fair Dealing Requirements for Faculty and Staff.
 Access to the Canvas course site is limited to students currently registered in this course. 
@@ -547,28 +572,31 @@ Distribution of this material to a third party is forbidden.
 A student who has a complaint related to this course should follow the procedures summarized below:
 
 - The student should attempt to resolve the matter with the instructor first. Students may talk first to someone other than the instructor if they do not feel, for whatever reason, that they can directly approach the instructor. 
-- If the complaint is not resolved to the student's satisfaction, the student should go to the departmental chair John Braun at SCI 388, 250-807-8032 or e-mail him at john.braun@ubc.ca.
+- If the complaint is not resolved to the student's satisfaction, the student should e-mail the Associate Head,  
+Yves Lucet at [yves.lucet@ubc.ca](mailto:yves.lucet@ubc.ca) or the Department Head, Dr. John Braun at [john.braun@ubc.ca](mailto:john.braun@ubc.ca).
 
-### Grading Practices   
+### Important Dates
 
-Requirements to pass the course are listed above {ref}`grading_practices`.
+You will find all the important term dates in the [UBCO Academic Calendar](https://www.calendar.ubc.ca/okanagan/index.cfm?go=deadlines).
 
-Faculties, departments, and schools reserve the right to scale grades in order to maintain equity among sections and conformity to University, faculty, department, or school norms. 
-Students should therefore note that an unofficial grade given by an instructor might be changed by the faculty, department, or school.
-[Grades](http://www.calendar.ubc.ca/okanagan/index.cfm?tree=3,41,90,1014) are not official until they appear on a student's academic record.
-If you have any questions about how academic integrity applies to this course, please consult with your professor.
+### Tentative Schedule
 
+The tentative course schedule can be found [here](./course_schedule).
+
+## Student Service Resources
+
+The following are some resources the department and the university have compiled for you.
 ### Disability Assistance
 
 The Disability Resource Centre ensures educational equity for students with disabilities, injuries or illness.
-If you are disabled, have an injury or illness and require academic accommodations to meet the course objectives, [visit our website](http://students.ok.ubc.ca/drc/welcome.html) for more information or contact the DRC at: drc.questions@ubc.ca.
+If you are disabled, have an injury or illness and require academic accommodations to meet the course objectives, [visit our website](https://students.ok.ubc.ca/drc/welcome.html) for more information or contact the DRC at: [drc.questions@ubc.ca](mailto:drc.questions@ubc.ca).
 
 ### Equity, Human Rights, Discrimination and Harassment
 
 UBC Okanagan is a place where every student, staff and faculty member should be able to study and work in an environment that is free from human rights based discrimination and harassment.
-If you require assistance related to an issue of equity, discrimination or harassment, please contact the [Equity Office](https://equity.ok.ubc.ca/) by phone (250.807.9291) or email (equity.ubco@ubc.ca), your administrative head of unit, and/or your unit’s equity representative.   
+If you require assistance related to an issue of equity, discrimination or harassment, please contact the [Equity Office](https://equity.ok.ubc.ca/) by phone (250.807.9291) or email ([equity.ubco@ubc.ca](mailto:equity.ubco@ubc.ca)), your administrative head of unit, and/or your unit’s equity representative.   
 
-### Health & Wellness
+### Health & Wellness - UNC 337
 
 At UBC Okanagan health services to students are provided by Health and Wellness.
 Nurses, physicians and counsellors provide health care and counselling related to physical health, emotional/mental health and sexual/reproductive health concerns.
@@ -586,12 +614,13 @@ We support your decision, whatever you decide. Visit [svpro.ok.ubc.ca](https://s
 
 If you or someone you know has experienced sexual assault or some other form of sexual misconduct by a UBC community member and you want the Independent Investigations Office (IIO) at UBC to investigate, please contact the IIO.
 Investigations are conducted in a trauma informed, confidential and respectful manner in accordance with the principles of procedural fairness.
-You can report your experience directly to the IIO via email: director.of.investigations@ubc.ca or by calling 604.827.2060 or online by visiting [investigationsoffice.ubc.ca](https://investigationsoffice.ubc.ca).
+You can report your experience directly to the IIO via email: [director.of.investigations@ubc.ca](mailto:director.of.investigations@ubc.ca) or by calling 604.827.2060 or online by visiting [investigationsoffice.ubc.ca](https://investigationsoffice.ubc.ca).
 
 ### The Hub
 
 The Student Learning Hub (LIB 237) is your go-to resource for free math, science, writing, and language learning support.
-The Hub welcomes undergraduate students from all disciplines and year levels to access a range of supports that include tutoring in math, sciences, languages, and writing, as well as help with study skills and learning strategies. For more information, please visit the Hub’s website (https://students.ok.ubc.ca/student-learning-hub/) or call 250-807-9185.
+The Hub welcomes undergraduate students from all disciplines and year levels to access a range of supports that include tutoring in math, sciences, languages, and writing, as well as help with study skills and learning strategies. 
+For more information, please visit the Hub’s website (https://students.ok.ubc.ca/student-learning-hub/) or call 250-807-9185.
 
 ### SAFEWALK
 
