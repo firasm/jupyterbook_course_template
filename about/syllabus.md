@@ -10,6 +10,24 @@ This is the official syllabus and course outline for Physics 111.
 For a shortlink to share a link to the template repository used to create this site, use: [bit.ly/jb_course](http://bit.ly/jb_course).
 ```
 
+## TODO for using the template
+
+- Replace name of the course, F&R PHYS 111 to CRSE XXX.
+- Add links to Canvas page; F&R COURSEID to 5 digit Canvas ID.
+    - e.g., https://canvas.ubc.ca/courses/63995/announcements; 63995 will be COURSEID.
+
+- Update "Ed Discussion link"; F&R JOIN_CODE
+    - e.g., https://us.edstem.org/join/JOIN_CODE
+- Change calendar description of course.
+- Update Withdrawal dates.
+- Update "How do I contact the teaching team?"
+- Update "How will I be evaluated in this course?"
+- Update "How will this course be taught?"
+- Update "How do I do well in this course?"
+- Update "Attribution"
+
+
+
 ## PHYS 111 (3) Introductory Physics for the Physical Sciences I
 
 The [UBCO calendar description](http://www.calendar.ubc.ca/okanagan/courses.cfm?code=PHYS) of this course is: 
@@ -59,13 +77,13 @@ Any major changes to the syllabus (this page) will be documented here as well as
 | Pre-requisites      | One of MATH 12, PREC 12, MATH 125, MATH 126 and PHYS 11. (Physics 12 is strongly recommended.) |
 | Co-requisites       | Math 100                                                                                       |
 | Additional course fees               | Total $XX                                                                                      |
-| Lectures            | Online [Thursdays at 14:00](https://ubc.zoom.us)                                               |
+| Lectures            | Online [Thursdays at 14:00](https://canvas.ubc.ca/courses/COURSEID/external_tools/15408)                                               |
 | Tutorial            | You **must** register for a tutorial section.                                                  |
 | Laboratory          | You **must** register for a laboratory section.                                                |
 | URL                 | https://this.site                                                                              |
 | Instructor          | Firas Moosvi                                                                                   |
-| Office              | [Zoom](https://ubc.zoom.us)                                                                    |
-| Email               | [Contact via Piazza](https://piazza.com)                                                       |
+| Office              | [Zoom](https://canvas.ubc.ca/courses/COURSEID/external_tools/15408)                                                                    |
+| Email               | [Contact via Ed Discussion](https://us.edstem.org/join/JOIN_CODE)                                                       |
 
 ## A message from your instructor
 
@@ -98,7 +116,11 @@ Suspendisse malesuada pretium dui, ac lacinia mi pellentesque eu. Sed volutpat e
 Number one reason thing to take away from this is...
 ```
 
-## Contact the Teaching Team
+## How do I contact the teaching team?
+
+- For lectures, labs, tutorials, and office hours we will be using [Zoom](https://canvas.ubc.ca/courses/COURSEID/external_tools/15408).
+- For official course communication, I will use [Canvas Announcements](https://canvas.ubc.ca/courses/COURSEID/announcements).
+- For questions and answers, and if you want to reach out to the teaching team including instructors and TAs, we will use [Ed Discussion](https://edstem.org/).
 
 | Team Member                               | Pronounce as     | Contact | Office Hour |
 |-------------------------------------------|------------------|---------|-------------|
@@ -106,6 +128,10 @@ Number one reason thing to take away from this is...
 | (TA)                                      |                  | TBD     | TBD         |
 | (TA)                                      |                  | TBD     | TBD         |
 | (TA)                                      |                  | TBD     | TBD         |
+
+
+
+
 
 (grading_practices)=
 ## How will I be evaluated in this course?
@@ -130,11 +156,12 @@ Any submissions submitted past the grace period will not be graded.
 
 ### Are there other requirements I need to know about to pass the course?
 
-Yes. To pass this course, you must do all of the following:
+- All students must satisfy ALL conditions to pass the course:
+    1. Pass the Lab component with a grade of at least 50%,
+    1. Pass the Test and Exam components (together) with a grade of at least 50%,
+    1. Pass the Final Exam with a grade of at least 40%.
 
-- Achieve a minimum of 50% on the labs (10.0 / 20) with no more than 3 missed labs
-- Achieve a minimum of 50% on the tests and final exam (25.0 / 50) 
-- Achieve a minimum of 50% on the whole course grade (50.0 / 100)
+If students do not satisfy the appropriate requirements, the student will be assigned the **lower** of their earned course grade or, a maximum overall grade of 45 in the course.
 
 ## Course Learning Outcomes (AKA what will I learn in this course?)
 
@@ -212,8 +239,8 @@ This year, because the labs are all online, a digital version of the lab manual 
 
 ## How will this course be taught ?
 
-This course will be a [Flipped Classroom](https://www.youtube.com/watch?v=anAp5UIsGCA); this is a technique pioneered largely by Dr. [Eric Mazur](https://www.physics.harvard.edu/people/facpages/mazur) and extended by others.
-Briefly, it requires students to watch videos and engage with the assigned reading prior to the classroom meeting (knowledge transfer).
+This course will be taught as a [Blended Learning classroom](https://en.wikipedia.org/wiki/Blended_learning) where some elements of a [flipped classroom](https://www.youtube-nocookie.com/embed/BCIxikOq73Q) will be mixed wih a more traditional coding classroom with live demos, clicker questions, and worksheets.
+Briefly, this requires students to watch videos and engage with the assigned reading prior to the classroom meeting (knowledge transfer).
 During the class meeting, the instructor guides students through clicker questions, worksheet problems, and other activities to help the students make sense of the material (sense-making).
 See {numref}`masterymodel1` for a mental model of how learning works {cite}`Ambrose2010`.
 
@@ -247,44 +274,15 @@ Here are the key principles I intend to apply in this class:
 1. Learning technologies must be leveraged to scale instructor effort across multiple classes.
 1. Exploring the connections between different disciplines is an extremely powerful motivator.
 1. Teaching is three parts preparation, two parts classroom management, and one part execution.
+### Sign up for a (free) Ed Discussion account [Required]
 
-## Course Communication
-
-- For lectures, labs, tutorials, and office hours we will be using Zoom.
-- For official course communication, we will be using [Canvas](https://canvas.ca/) and [Piazza](https://piazza.com/).
-- For unofficial chat, community building, sharing of tiktoks, cat videos, and general conversation we will (optionally) be using a Discord server.
-
-```{warning}
-Please note signing up for the Discord server is **completely optional**! You will not miss anything course-related if you choose not to get on the Discord.
-```
-
-### Sign up for a (free) Zoom account
-
-Instructions coming soon...
-
-### Sign up for a (free) Piazza account [Required]
-
-This term we will be using Piazza for class discussion.
+This term we will be using Ed Discussion for class discussion.
 The system is highly catered to getting you help fast and efficiently from classmates, the TA, and myself.
-Rather than emailing questions to the teaching staff, I encourage you to post your questions on Piazza.
+Rather than emailing questions to the teaching staff, I encourage you to post your questions on Ed Discussion.
 
-*The Piazza tool is stored on servers outside Canada. When you access this site by clicking on the link through Canvas, you are being transferred to these servers. In order to protect your identity, UBC obfuscates your user ID before it is sent to the site. However, Piazza does require you to create an account on their servers. While Piazza adheres to strict U.S. privacy regulations (FERPA), UBC cannot guarantee security of your private details on servers outside of Canada. Please exercise caution whenever using personal information. You may wish to use a pseudonym to protect your privacy if you have concerns.*
+*The Ed Discussion tool is stored on servers outside Canada. When you access this site by clicking on the link through Canvas, you are being transferred to these servers. In order to protect your identity, UBC obfuscates your user ID before it is sent to the site. However, Ed Discussion does require you to create an account on their servers. While Ed Discussion adheres to strict U.S. privacy regulations (FERPA), UBC cannot guarantee security of your private details on servers outside of Canada. Please exercise caution whenever using personal information. You may wish to use a pseudonym to protect your privacy if you have concerns.*
 
-[Sign up for our class Piazza](https://piazza.com).
-
-### Sign up for the Discord Server [Optional]
-
-You can [download Discord for free on desktop here](https://discord.com/download), or through the [Google Play store](https://play.google.com/store/apps/details?id=com.discord) or [Apple App Store](https://apps.apple.com/us/app/discord/id985746746) on mobile and tablets.
-
-Invitation to [join the unofficial UBCO first year science Discord Server](https://discord.gg)!
-
-Here is a [Beginner's Guide to Discord](https://support.discord.com/hc/en-us/articles/360045138571-Beginner-s-Guide-to-Discord) and if you prefer watching a video:
-
-<div class="container youtube">
-<iframe class="responsive-iframe" src="https://www.youtube.com/embed/3ooRuvrPQsU" frameborder="0" allow="accelerometer; autoplay="0"; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-Again, please note signing up for the Discord server is **completely optional**, and is an experiment we are trying to help maintain human interactions during online learning.
+[Sign up for our class Ed Discussion](https://us.edstem.org/join/JOIN_CODE).
 
 ## What should I think about if I'm considering withdrawing from the course?
 
@@ -362,7 +360,7 @@ Broadly speaking, this relatively new field is called **Learning Analytics**.
 In this course, we will be using the following required learning technologies (privacy policies linked): 
 
 - [Canvas](https://faculty.canvas.ubc.ca/canvas-privacy/)
-- [Piazza](https://piazza.com/legal/privacy)
+- [Ed Discussion](https://edstem.org/privacy)
 - [Sli.do](https://www.sli.do/terms#privacy-policy)
 - [Mastering Physics](https://www.pearson.com/en-us/legal-information/privacy-policy.html)
 
@@ -404,14 +402,14 @@ As a matter of principle, UBC is committed to promoting human rights, equity and
 [Policy 73](https://universitycounsel.ubc.ca/files/2019/02/policy73.pdf) (Accommodation for Students with Disabilities) sets out principles and processes governing the accommodation of students with disabilities.
 
 All accommodations for this course are handled through the [Disability Resource Centre](https://students.ok.ubc.ca/academic-success/disability-resources/contact-the-disability-resource-centre/) and I encourage you to contact them to book an appointment. 
-For a more detailed guide, the {ref}`page_Accommodations` page has a list of steps you should take for this course. 
 
 ### What if I miss labs, tests, or the exam due to an illness, health, or other personal situation?
 
 Students who, because of unforeseen events, are absent during the term and are unable to complete tests or other graded work, should normally discuss with their instructors how they can make up for missed work.
 If ill health is an issue, students are encouraged to seek attention from a health professional.
 Campus Health and Counselling will normally provide documentation only to students who have been seen previously at these offices for treatment or counselling specific to conditions associated with their academic difficulties. 
-Students who feel that requests for consideration have not been dealt with fairly by their instructors may take their concerns first to the Head of the Department, and if not resolved, to the Office of the Dean. Further information can be found at the [UBCO Calendar](http://www.calendar.ubc.ca/okanagan/index.cfm?tree=3,48,0,0).
+Students who feel that requests for consideration have not been dealt with fairly by their instructors may take their concerns first to the Head of the Department, and if not resolved, to the Office of the Dean (Email: fos.students.ubco@ubc.ca). 
+Further information can be found at the [UBCO Calendar](http://www.calendar.ubc.ca/okanagan/index.cfm?tree=3,48,0,0). 
 
 ```{tip}
 If you miss a course component due to an illness, health, or other personal situation, please reach out to me as soon as you are comfortable, and I'll work with you to get you back on track.
@@ -432,6 +430,10 @@ The course is designed to give you maximum flexibility:
 - Every deadline has a 48-hour grace period that is automatically applied.
 - There is no late penalty if you use the grace period
 - You can use the grace period an unlimited amount of time in the course (though if it happens every week and for every assignment, I might check in with you and gently encourage you not to leave things to the last minute)
+
+```{tip}
+Remember, if you miss a Test for whatever reason, you can make it up the following week in the bonus test!
+```
 
 If you miss a deadline by more than the grace period, the general course policy is that you will get 0 on it.
 In some cases, I reserve the right to grant an extension, or provide an alternate assignment.
@@ -473,7 +475,7 @@ In particular, I hope (and expect) that the following features of the course sho
 - Weekly learning logs, homework and reading reflections to make you think about your learning ([metacognition](https://cft.vanderbilt.edu/guides-sub-pages/metacognition/)).
 - Timed tests have generous time limits (allowable time is 1.25x the estimated time).
 - Each test has a "bonus test" available one week later; for each test, we will take the better score of the pair.
-- No high-stakes exams (the single largest assessment item is the final exam at 20%).
+- No high-stakes exams (the single largest assessment item is the final exam).
 - All course assessments are completely open book and open notes. 
 - Plenty of TA and instructor office hours and several outside of normal business hours.
 - Class website that outlines exactly what you should do when to help you manage your time.
