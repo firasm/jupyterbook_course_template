@@ -54,7 +54,7 @@ sphinx:
 
     myst_substitutions:
       INSTRUCTOR: Dr. Firas Moosvi
-      COURSE_CODE: COSC 123
+      COURSE_CODE: PHYS 111
       PREREQS: One of MATH 12, PREC 12, MATH 125, MATH 126 and PHYS 11 (Physics 12 is strongly recommended).
       COREQS: Math 100
       FEES: $0
