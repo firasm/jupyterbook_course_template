@@ -31,6 +31,7 @@ jobs:
         pip install -r requirements.txt
         pip install myst-parser --upgrade
         pip install linkify
+        pip install linkify-it-py
     # Build the book
     - name: Build the book
       run: |
