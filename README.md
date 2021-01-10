@@ -21,7 +21,7 @@ Currently it takes about 70s for the website to update.
 
 ![](https://github.com/firasm/bits/blob/master/jb-step2.png)
 
-### 3. Wait for the GH Action to complete, and then visit your deployed website here: https://firasm.github.io/jupyterbook_course_template. That's it!
+### 3. Wait for the GH Action to complete, and then visit your deployed website here: https://<your_github_username>.github.io/<repo_name> . That's it!
 
 ![](https://github.com/firasm/bits/blob/master/jb-step3.png)
 
@@ -37,9 +37,11 @@ Currently it takes about 70s for the website to update.
 
 1. Add persistent checkboxes so students can track their progress through notebooks, exercises and readings. 
 
-1. Allow students to download pages of the site in PDF, link to the source code on your repo, or open in a mybinder notebook. 
+1. Allow students to download pages of the site in PDF, link to the source code on your repo, or open in a mybinder notebook.
 
 1. The JupyterBook can be embedded into Canvas using the Redirect tool so students never have to leave their LMS.
+
+1. (NEW!) Use of the new `substitution` feature of [myst-parser](https://myst-parser.readthedocs.io/en/latest/develop/_changelog.html#id1) to configure the course algorithmically from the `_config.yml` file!
 
 ## Edit the template for your course
 
@@ -55,6 +57,7 @@ I might miss a few things, so this list is a work in progress:
 	- [ ] Enable/Disable Hypothes.is (remove the line to remove the hypothes.is integration)
 	- [ ] Configure Utteranc.es repository (Choose one of Hypothesis or Utteranc.es)
 	- [ ] Adjust `extra_footer` to control License of course materials
+	- [ ] Set the substitution parameters under the `myst_substitutions`
 
 1. In the `_toc.yml` file:
 	- [ ] Arrange the table of contents to add/remove files
