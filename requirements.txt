@@ -1,3 +1,4 @@
+setuptools==45
 jupyter-book
 matplotlib
 numpy
