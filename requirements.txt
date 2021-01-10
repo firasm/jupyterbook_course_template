@@ -1,4 +1,4 @@
 jupyter-book
 matplotlib
 numpy
-myst-parser~>0.13
+myst-parser~=0.13
