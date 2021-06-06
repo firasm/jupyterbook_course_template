@@ -71,6 +71,3 @@ sphinx:
       COURSE_LINK: "https://firas.moosvi.com/courses/cosc123"
       FORUM_LINK: "[Ed Discussion](https://us.edstem.org/JOIN_LINK/)"
       ANALYTICS_OPTOUT: "[complete this form](https://ubc.ca1.qualtrics.com/jfe/form/xxxxxxxxxx)"
-
-parse:
-  myst_extended_syntax: true
