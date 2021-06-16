@@ -1,4 +1,6 @@
 jupyter-book
 matplotlib
 numpy
-# myst-parser~=0.13 (you need this to get the substitutions to work out! works locally, can't get it to work on GH action)
+#myst-parser
+linkify
+linkify-it-py
