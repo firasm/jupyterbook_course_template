@@ -69,9 +69,9 @@ sphinx:
       W_DATE_1: "11:59 PDT on January 22, 2021"
       W_DATE_2: "11:59 PDT on March 26, 2021"
       W_DATE_3: "11:59 PDT on March 26, 2021"
-      CANVAS_ID: '63995'
+      EXAM_PERIOD: "Friday December 10th - Wednesday, December 22"
+      CANVAS_ID: "63995"
       ED_ID: xxxxxxxx
-      LECTURE_TIMES: Thursdays at 14:00 PST
       CANVAS_LINK: "https://canvas.ubc.ca/courses/CANVAS_ID"
       # ZOOM_LINK: "[Zoom](https://canvas.ubc.ca/courses/CANVAS_ID/external_tools/15408)"
       # CU_LINK: "[Collaborate Ultra](https://canvas.ubc.ca/courses/CANVAS_ID/external_tools/5284)"

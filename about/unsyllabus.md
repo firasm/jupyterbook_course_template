@@ -2,9 +2,7 @@
 
 ![](../images/UBCO_CMPS_header.jpg)
 
-# Course UN-Syllabus
-
-
+# Course UnSyllabus
 ```{figure} ../images/construction.jpeg
 ---
 width: 750px

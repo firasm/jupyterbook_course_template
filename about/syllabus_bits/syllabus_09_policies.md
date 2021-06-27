@@ -1,6 +1,6 @@
 ## Final Examinations 
 
-The examination period for {{ TERM }} is April 16 - 29, 2021.
+The examination period for {{ TERM }} is {{ EXAM_PERIOD }}.
 Except in the case of examination clashes and hardships (three or more formal examinations scheduled within a 24-hour period) or unforeseen events, students will be permitted to apply for out-of-time final examinations only if they are representing the University, the province, or the country in a competition or performance; serving in the Canadian military; observing a religious rite; working to support themselves or their family; or caring for a family member.
 Unforeseen events include (but may not be limited to) the following: ill health or other personal challenges that arise during a term and changes in the requirements of an ongoing job.
 Further information on Academic Concession can be found under Policies and Regulation in the [Okanagan Academic Calendar](http://www.calendar.ubc.ca/okanagan/index.cfm?tree=3,48,0,0).
@@ -33,7 +33,7 @@ Violations of academic integrity (i.e., misconduct) lead to the breakdown of the
 For example, incidences of plagiarism or cheating may result in a mark of zero on the assignment or exam and more serious consequences may apply if the matter is referred to the President’s Advisory Committee on Student Discipline.
 Careful records are kept in order to monitor and prevent recurrences.
 
-A more detailed description of academic integrity, including the University’s policies and procedures, may be found in the [Academic Calendar](https://okanagan.students.ubc.ca/calendar/index.cfm?tree=3,54,111,0.)
+A more detailed description of academic integrity, including the University’s policies and procedures, may be found in the [Academic Calendar](http://okanagan.students.ubc.ca/calendar/index.cfm?tree=3,54,111,0.)
 
 If you have any questions about how academic integrity applies to this course, please consult with your professor.
 
@@ -41,7 +41,7 @@ If you have any questions about how academic integrity applies to this course, p
 
 Faculties, departments, and schools reserve the right to scale grades in order to maintain equity among sections and conformity to University, faculty, department, or school norms. 
 Students should therefore note that an unofficial grade given by an instructor might be changed by the faculty, department, or school.
-[Grades](https://www.calendar.ubc.ca/okanagan/index.cfm?tree=3,41,90,1014) are not official until they appear on a student's academic record.
+[Grades](http://www.calendar.ubc.ca/okanagan/index.cfm?tree=3,41,90,1014) are not official until they appear on a student's academic record.
 If you have any questions about how academic integrity applies to this course, please consult with your professor.
 
 ## Disability Assistance
@@ -59,7 +59,7 @@ If you require assistance related to an issue of equity, discrimination or haras
 At UBC Okanagan health services to students are provided by Health and Wellness.
 Nurses, physicians and counsellors provide health care and counselling related to physical health, emotional/mental health and sexual/reproductive health concerns.
 As well, health promotion, education and research activities are provided to the campus community.
-If you require assistance with your health, please contact [Health and Wellness](https://www.students.ok.ubc.ca/health-wellness) in person (UNC 337) or by email (healthwellness.okanagan@ubc.ca) for more information or to book an appointment.
+If you require assistance with your health, please contact [Health and Wellness](http://www.students.ok.ubc.ca/health-wellness) in person (UNC 337) or by email (healthwellness.okanagan@ubc.ca) for more information or to book an appointment.
 
 ## Sexual Violence Prevention and Response Office (SVPRO)
 
@@ -100,7 +100,7 @@ UBC values academic honesty and students are expected to acknowledge the ideas g
 During this pandemic, the shift to online learning has greatly altered teaching and studying at UBC, including changes to health and safety considerations.
 Keep in mind that some UBC courses might cover topics that are censored or considered illegal by non-Canadian governments.
 This may include, but is not limited to, human rights, representative government, defamation, obscenity, gender or sexuality, and historical or current geopolitical controversies.
-If you are a student living abroad, you will be subject to the laws of your local jurisdiction, and your local authorities might limit your access to course material or take punitive action against you. UBC is strongly committed to academic freedom, but has no control over foreign authorities (please visit [this calendar page](https://www.calendar.ubc.ca/okanagan/index.cfm?tree=3,293,866,0) for an articulation of the values of the University conveyed in the Senate Statement on Academic Freedom).
+If you are a student living abroad, you will be subject to the laws of your local jurisdiction, and your local authorities might limit your access to course material or take punitive action against you. UBC is strongly committed to academic freedom, but has no control over foreign authorities (please visit [this calendar page](http://www.calendar.ubc.ca/okanagan/index.cfm?tree=3,293,866,0) for an articulation of the values of the University conveyed in the Senate Statement on Academic Freedom).
 Thus, we recognize that students will have legitimate reason to exercise caution in studying certain subjects.
 If you have concerns regarding your personal situation, consider postponing taking a course with manifest risks, until you are back on campus or reach out to your academic advisor to find substitute courses. 
 For further information and support, please visit: [https://academic.ubc.ca/support-resources/freedom-expression/](https://academic.ubc.ca/support-resources/freedom-expression/). -->
