@@ -2,47 +2,81 @@
 
 ![](../images/UBCO_CMPS_header.jpg)
 
-# Course Syllabus
+**Department of Computer Science, Mathematics, Physics and Statistics**
 
-This is the official syllabus and course outline for {{ COURSE_CODE }}.
+# Official Course Syllabus
 
-```{warning} Please note that this syllabus is currently under active development, there may be typos or missing sections; treat this as a draft until the course starts!
-```
+Below is the official UBC-mandated Course Syllabus for {{ COURSE_CODE }}.
+Elements of this document are **fixed** and unchanging.
+Additional details about the course are available on the <a href="{{ CANVAS_LINK.replace('CANVAS_ID',CANVAS_ID) }}">course website</a>.
 
-```{figure} ../images/construction.jpeg
+**{{ COURSE_CODE }} {{ SECTION }}**
+
+**{{ TITLE }} ({{ CREDITS }})**
+
+**{{ TERM }}**
+
+**{{ ROOM }} - {{ MEETING_TIMES }}**
+
 ---
-width: 750px
-name: Under Construction.
----
-This course website is currently under construction. It will continue to be updated and will be released closer to the course start date. [Photo by Mabel Amber from Pexels](https://www.pexels.com/photo/traffic-red-blue-sign-117602/). 
+
+## Instructor
+
+**Name:** {{ INSTRUCTOR }}
+
+**Office:** {{ OFFICE }}
+
+**Phone:** {{ PHONE }}
+
+For information on how to contact your course instructor, including office hours, see the <a href="{{ CANVAS_LINK.replace('CANVAS_ID',CANVAS_ID) }}">course website</a>.
+
+## Course Description
+
+```{include} syllabus_bits/calendar_entry.md
 ```
 
-```{include} syllabus_bits/syllabus_01_highlights.md
+## Course Format
+
+This course has {{ FORMAT }}
+
+You will find all the important term dates in the [UBCO Academic Calendar](http://www.calendar.ubc.ca/okanagan/index.cfm?go=deadlines).
+
+## Learning Outcomes
+
+The Learning Outcomes for this course can be found on the <a href="{{ CANVAS_LINK.replace('CANVAS_ID',CANVAS_ID) }}">course website</a>.
+
+## Passing Criteria
+
+```{include} syllabus_bits/passing_requirement.md
 ```
 
-```{include} syllabus_bits/syllabus_02_changelog.md
+## Required Materials
+
+There is no requirement to purchase textbooks or any other materials for this course.
+Resources and materials for this course can be found on the <a href="{{ CANVAS_LINK.replace('CANVAS_ID',CANVAS_ID) }}">course website</a>.
+
+## Course Evaluation
+
+| Assessment Type                      | Weight | Date                          |
+|--------------------------------------|--------|-------------------------------|
+| Tests, Assignments, Labs, Activities | 70%    | Regular points in the term.   |
+| Final Exam                           | 30%    | In the scheduled exam period. |
+
+Final grades will be based on the evaluations listed above and the final grade will be assigned according to the standardized grading system outlined in the [UBC Okanagan Calendar](http://okanagan.students.ubc.ca/calendar/).
+
+```{note}
+Note: Any requests for changes to final exams must be sent to the office of the Associate Dean of Students (bsasdeansoffice.ubco@ubc.ca).
 ```
 
-```{include} syllabus_bits/syllabus_03_details.md
-```
+## Late Policy and Missed Assignments and Exams
 
-```{include} syllabus_bits/syllabus_04_tools.md
-```
+Normally, most deadlines in this course have a generous grace period.
+If you require an extension beyond the grace period, please contact the instructor on {{ FORUM_LINK }} (ideally before the deadline passes) to discuss your options.
+Detailed course policies can be found on the <a href="{{ CANVAS_LINK.replace('CANVAS_ID',CANVAS_ID) }}">course website</a>.
 
-```{include} syllabus_bits/syllabus_05_taught.md
-```
+## Lecture Outline
 
-```{include} syllabus_bits/syllabus_06_doing_well.md
-```
-
-```{include} syllabus_bits/syllabus_07_integrity.md
-```
-
-```{include} syllabus_bits/syllabus_08_accommodations.md
-```
+The tentative course schedule, subject to change, can be found on the <a href="{{ CANVAS_LINK.replace('CANVAS_ID',CANVAS_ID) }}">course website</a>.
 
 ```{include} syllabus_bits/syllabus_09_policies.md
-```
-
-```{include} syllabus_bits/syllabus_10_references.md
 ```
