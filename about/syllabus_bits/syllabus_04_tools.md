@@ -7,7 +7,6 @@ In this course, we will be using the following required learning technologies (p
 - [Canvas](https://faculty.canvas.ubc.ca/canvas-privacy/)
 - [Ed Discussion](https://edstem.org/privacy)
 - [Sli.do](https://www.sli.do/terms#privacy-policy)
-- [Mastering Physics](https://www.pearson.com/en-us/legal-information/privacy-policy.html)
 
 All tools used in the course will be used in a [FIPPA-compliant](https://universitycounsel.ubc.ca/subject-areas/access-and-privacy-general/access-to-information/about-fippa/) manner, with your privacy top of mind. 
 New tools may be added to the course as the need arises, and I will update this section with the appropriate information and make an announcement if a new tool is added midway through a course.
@@ -18,7 +17,7 @@ Even though the tools above are required for this course, if you have a moral or
 
 ### Sign up for a (free) Ed Discussion account [Required]
 
-This term we will be using {{ FORUM_LINK.replace('JOIN_LINK', ED_ID) }} for class discussion.
+In this course, we will be using {{ FORUM_LINK.replace('JOIN_LINK', ED_ID) }} for class discussion.
 The system is highly catered to getting you help fast and efficiently from classmates, the TA, and myself.
 Please do NOT email questions to the instructor and TAs unless it is a legitimate emergency (or if you cannot access Ed Discussion).
 

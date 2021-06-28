@@ -23,53 +23,26 @@ Number one reason thing to take away from this is...
 (grading_practices)=
 ### How will I be evaluated in this course?
 
-The grading scheme for this course is here:
-
-| Item                  | Weight          | Due date(s) |
-|-----------------------|-----------------|-------------|
-| Homework Assignments  | 25% (10 x 2.5%) | TBD         |
-| Labs                  | 25% (10 x 2.5%) | TBD         |
-| Tests (& Bonus Tests) | 25% (5 x 5%)    | TBD         |
-| Learning Logs         | 5% (10 x 0.5%)  | TBD         |
-| Final Exam            | 20%             | TBD         |
-
-There will be 5 tests in this course in an (approximately) bi-weekly schedule.
-For each of the tests, there will be a bonus test exactly one week later and the better score of the Test-Bonus Test pair will be taken.
-
-```{attention} 
-All deadlines in this course have an automatic 48 hour grace period after the due dates listed above.
-Any submissions submitted past the grace period will not be graded (with some exceptions).
+```{include} syllabus_bits/grading_practices_detailed.md
 ```
 
 ### What are the passing requirements for this course?
 
-- All students must satisfy ALL conditions to pass the course:
-    1. Pass the Lab component with a grade of at least 50%,
-    1. Pass the Test and Exam components (together) with a grade of at least 50%,
-    1. Pass the Final Exam with a grade of at least 40%.
-
-If students do not satisfy the appropriate requirements, the student will be assigned the **lower** of their earned course grade or, a maximum overall grade of 45 in the course.
+```{include} syllabus_bits/passing_requirement.md
+```
 
 ### What are the Course Learning Outcomes?
 
-1. Pellentesque pellentesque ut arcu vel sagittis.
-1. Sed faucibus at ipsum pharetra euismod.
-1. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-1. Vivamus pharetra pretium dui, nec semper enim vehicula nec.
-1. Quisque vel odio dui. Aenean ullamcorper arcu sit amet gravida dapibus.
+```{include} syllabus_bits/course_LOs.md
+```
 
 ```{tip}
 The full course schedule is available here: {ref}`page_Course_Schedule`
 
 and [here](./course_schedule.md)
 ```
+
 ### What do I need to purchase for this course?
-
-The following are required items for this course, and their costs (in $CAD) are:
-
-- Textbook ($XX)
-- Access to online homework system ($XX)
-- Lab Manual ($0)
 
 Being very conscious of the high tuition and technology costs, I have made efforts to minimize the additional cost of taking this course.
 Below is a justification of each required item and why I think you need it to succeed in this course.

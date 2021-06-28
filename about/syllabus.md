@@ -43,7 +43,12 @@ You will find all the important term dates in the [UBCO Academic Calendar](http:
 
 ## Learning Outcomes
 
-The Learning Outcomes for this course can be found on the <a href="{{ CANVAS_LINK.replace('CANVAS_ID',CANVAS_ID) }}">course website</a>.
+The Learning Outcomes for this course are: 
+
+```{include} syllabus_bits/course_LOs.md
+```
+
+More details about the course can be found on the <a href="{{ CANVAS_LINK.replace('CANVAS_ID',CANVAS_ID) }}">course website</a>.
 
 ## Passing Criteria
 
@@ -57,15 +62,7 @@ Resources and materials for this course can be found on the <a href="{{ CANVAS_L
 
 ## Course Evaluation
 
-| Assessment Type                      | Weight | Date                          |
-|--------------------------------------|--------|-------------------------------|
-| Tests, Assignments, Labs, Activities | 70%    | Regular points in the term.   |
-| Final Exam                           | 30%    | In the scheduled exam period. |
-
-Final grades will be based on the evaluations listed above and the final grade will be assigned according to the standardized grading system outlined in the [UBC Okanagan Calendar](http://okanagan.students.ubc.ca/calendar/).
-
-```{note}
-Note: Any requests for changes to final exams must be sent to the office of the Associate Dean of Students (bsasdeansoffice.ubco@ubc.ca).
+```{include} syllabus_bits/grading_practices_simple.md
 ```
 
 ## Late Policy and Missed Assignments and Exams
