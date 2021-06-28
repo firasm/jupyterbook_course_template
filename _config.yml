@@ -6,6 +6,9 @@ copyright: ""
 exclude_patterns: ["LICENSE.md", "README.md"]
 only_build_toc_files: true
 
+bibtex_bibfiles:
+  - about/citations.bib
+
 latex:
   latex_documents:
     targetname: book.tex
@@ -42,6 +45,7 @@ sphinx:
   config:
     html_show_copyright: false
     html_extra_path: ['files']
+    bibtex_reference_style: author_year
     myst_enable_extensions: 
     - amsmath
     - colon_fence
