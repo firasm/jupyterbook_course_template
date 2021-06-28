@@ -50,7 +50,6 @@ sphinx:
     - html_image
     - linkify
     - replacements
-    - smartquotes
     - substitution
 
     myst_substitutions:
