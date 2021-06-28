@@ -67,6 +67,7 @@ sphinx:
       TERM: "2020 Winter Term 2"
       ROOM: "ROOM 100"
       MEETING_TIMES: "Monday, Wednesday, Friday from 1-2 PM"
+      GRACE_PERIOD: "48 hour"
       W_DATE_1: "11:59 PDT on January 22, 2021"
       W_DATE_2: "11:59 PDT on March 26, 2021"
       W_DATE_3: "11:59 PDT on March 26, 2021"
