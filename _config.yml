@@ -84,6 +84,6 @@ sphinx:
       COURSE_LINK: "https://firas.moosvi.com/courses/cosc123"
       FORUM_LINK: "[Ed Discussion](https://us.edstem.org/JOIN_LINK/)"
       ANALYTICS_OPTOUT: "[complete this form](https://ubc.ca1.qualtrics.com/jfe/form/xxxxxxxxxx)"
-      FORMAT: "Lectures, Labs, Tutorials and they will both be running online in this course."
+      FORMAT: "Lectures, Labs, Tutorials and they will all be running online in this course."
       ASSOCIATE_HEAD: "Jake Bobowski [jake.bobowski@ubc.ca](mailto:jake.bobowski@ubc.ca)"
       ANON_FEEDBACK: "[feedback form](https://cbc.ca)"

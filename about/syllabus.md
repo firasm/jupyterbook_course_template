@@ -17,10 +17,8 @@ Additional details about the course are available on the <a href="{{ CANVAS_LINK
 **{{ TERM }}**
 
 **{{ ROOM }} - {{ MEETING_TIMES }}**
-
 ---
-
-## Instructor
+## Course Instructor
 
 **Name:** {{ INSTRUCTOR }}
 
@@ -48,32 +46,32 @@ The Learning Outcomes for this course are:
 ```{include} syllabus_bits/course_LOs.md
 ```
 
-More details about the course can be found on the <a href="{{ CANVAS_LINK.replace('CANVAS_ID',CANVAS_ID) }}">course website</a>.
+More details about the course can be found on the {{ '[course website]({link})'.format(link=CANVAS_LINK.replace('CANVAS_ID',CANVAS_ID))}}.
+
+## Required Materials
+
+There is no requirement to purchase textbooks or any other materials for this course.
+Resources and materials for this course can be found on the {{ '[course website]({link})'.format(link=CANVAS_LINK.replace('CANVAS_ID',CANVAS_ID))}}.
+
+## Course Evaluation
+
+```{include} syllabus_bits/grading_practices.md
+```
 
 ## Passing Criteria
 
 ```{include} syllabus_bits/passing_requirement.md
 ```
 
-## Required Materials
-
-There is no requirement to purchase textbooks or any other materials for this course.
-Resources and materials for this course can be found on the <a href="{{ CANVAS_LINK.replace('CANVAS_ID',CANVAS_ID) }}">course website</a>.
-
-## Course Evaluation
-
-```{include} syllabus_bits/grading_practices_simple.md
-```
-
 ## Late Policy and Missed Assignments and Exams
 
 Normally, most deadlines in this course have a generous grace period.
 If you require an extension beyond the grace period, please contact the instructor on {{ FORUM_LINK }} (ideally before the deadline passes) to discuss your options.
-Detailed course policies can be found on the <a href="{{ CANVAS_LINK.replace('CANVAS_ID',CANVAS_ID) }}">course website</a>.
+Detailed course policies can be found on the {{ '[course website]({link})'.format(link=CANVAS_LINK.replace('CANVAS_ID',CANVAS_ID))}}.
 
 ## Lecture Outline
 
-The tentative course schedule, subject to change, can be found on the <a href="{{ CANVAS_LINK.replace('CANVAS_ID',CANVAS_ID) }}">course website</a>.
+The tentative course schedule, subject to change, can be found on the {{ '[course website]({link})'.format(link=CANVAS_LINK.replace('CANVAS_ID',CANVAS_ID))}}.
 
-```{include} syllabus_bits/syllabus_09_policies.md
+```{include} syllabus_bits/policies.md
 ```
