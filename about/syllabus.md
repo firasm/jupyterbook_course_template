@@ -4,7 +4,7 @@
 
 **Department of Computer Science, Mathematics, Physics and Statistics**
 
-# Official Course Syllabus
+# Course Syllabus (Official)
 
 Below is the official UBC-mandated Course Syllabus for {{ COURSE_CODE }}.
 Elements of this document are **fixed** and unchanging.

@@ -1,5 +1,3 @@
-## Why is there a Syllabus and an Unsyllabus for this course?
-
 Traditionally, there has been a culture at most higher education institutions for every course to have a document that sets expectation for how the course will be conducted, what students will be expected to do, and what they will learn in the course.
 The purpose of that document was for the instructor to communicate "what the course will be about" to students so they know what they're getting themselves into.
 This document is typically called a "Syllabus" or a "Course Outline".
@@ -11,7 +9,7 @@ What I do want is to give you suggestions and guidelines supported by my persona
 
 That being said, perhaps there are some advantages to having some elements of a course codified in a "legal document" - the "Syllabus".
 For instance, the instructor for the course, the calendar course entry, the term dates, the final exam period, the passing criteria, how to file a grievance or complaint, and your responsibilities to uphold UBC Okanagan's commitment to equity, diversity, and inclusion.
-The items above are indeed permanent and unchanging, so deserve to be in the syllabus. 
+The items above are indeed permanent and unchanging, and deserve to be in the syllabus. 
 
 Other things, such as what you will learn, how and when you will do it are more flexible and fluid.
 For that, we have this unsyllabus.
@@ -21,15 +19,13 @@ For that, we have this unsyllabus.
 In contrast to the syllabus, the unsyllabus is not a legal document. Instead, it is a *living document* that serves students and adjusts to their needs and feedback.
 Dr. John Warmer describes this best [in his article, "A syllabus is not a contract"](https://www.insidehighered.com/blogs/just-visiting/syllabus-not-contract):
 
-> ... this syllabus is not a contract, it is a living document which reflects the experiences, emotions, philosophies, and goals I bring to a particular course.
+> ... this [un]syllabus is not a contract, it is a living document which reflects the experiences, emotions, philosophies, and goals I bring to a particular course.
 
 and also: 
 
-> A syllabus as a plan is a lot like an itinerary before a trip. 
+> An [un]syllabus as a plan is a lot like an itinerary before a trip. 
 > There’s some definite highlights we need to hit, but if something that seems cool and worth doing crops up unexpectedly, we need to seize that opportunity in the moment. 
 > If something really bad happens (the equivalent of a norovirus breakout on a cruise ship) we may need to abandon something previously scheduled entirely.
-
-Interestingly, it is worth noting that a recent review of legal precedents suggests that syllabi are not considered contracts by the courts {cite}`Rumore2016`.
 
 ### Summary
 
@@ -41,7 +37,7 @@ You may use those opportunities (or any other using the anonymous {{ ANON_FEEDBA
 | Document   | Status                                                                                                                                   |
 |------------|------------------------------------------------------------------------------------------------------------------------------------------|
 | Syllabus   | University-mandated, like a legal contract and contains university rules about conduct and behaviour;  elements will not change.                                                                   |
-| Unsyllabus | Living document, responsive to student feedback and adaptable to circumstances; elements may change, usually to the benefit of students. |
+| Unsyllabus | Living document, responsive to student feedback and adaptable to circumstances; elements may change, usually to the benefit of students and of learning. |
 
 ```{important} Please note that I have your best interests in mind, and it is highly unlikely that I will ever change the unsyllabus in a way that negatively affects the class, or even individual students. If you believe a change is affecting you negatively, please reach out to me on {{ FORUM_LINK }}, or submit your feedback using the anonymous {{ ANON_FEEDBACK }}.
 ```

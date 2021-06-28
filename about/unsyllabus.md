@@ -3,12 +3,16 @@
 ![](../images/UBCO_CMPS_header.jpg)
 
 # Course Unsyllabus
+
 ```{figure} ../images/construction.jpeg
 ---
 width: 750px
 name: Under Construction.
 ---
 This course website is currently under construction. It will continue to be updated and will be released closer to the course start date. [Photo by Mabel Amber from Pexels](https://www.pexels.com/photo/traffic-red-blue-sign-117602/). 
+```
+
+## Why is there a Syllabus and an Unsyllabus for this course?
 
 ```{include} syllabus_bits/syllabus_00_why.md
 ```
@@ -52,8 +56,9 @@ Until then, enjoy being [Rick-Rolled](https://www.dictionary.com/e/slang/rickrol
 
 <div class="page_break"> </div>
 
-## Changes to the unsyllabus since the start of Term
+## Changes to the unsyllabus
 
+In this section, I will outline any changes that have been made to the unsyllabus as we go through the course.
 We will do our best to follow the plan outlined in this unsyllabus, but in case things go south, I will need to make adjustments to the contents and the schedule.
 
 Any major changes to the syllabus (this page) will be documented here, as well as the date the change was made. 
@@ -444,34 +449,4 @@ Below is the list of resources I have used to put this syllabus together:
 
 ```{bibliography} citations.bib
 :style: unsrt
-```
-
-```{include} syllabus_bits/syllabus_01_highlights.md
-```
-
-```{include} syllabus_bits/syllabus_02_changelog.md
-```
-
-```{include} syllabus_bits/syllabus_03_details.md
-```
-
-```{include} syllabus_bits/syllabus_04_tools.md
-```
-
-```{include} syllabus_bits/syllabus_05_taught.md
-```
-
-```{include} syllabus_bits/syllabus_06_doing_well.md
-```
-
-```{include} syllabus_bits/syllabus_07_integrity.md
-```
-
-```{include} syllabus_bits/syllabus_08_accommodations.md
-```
-
-```{include} syllabus_bits/syllabus_09_policies.md
-```
-
-```{include} syllabus_bits/syllabus_10_references.md
 ```
