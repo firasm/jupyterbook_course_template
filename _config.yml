@@ -6,6 +6,9 @@ copyright: ""
 exclude_patterns: ["LICENSE.md", "README.md"]
 only_build_toc_files: true
 
+bibtex_bibfiles:
+  - about/citations.bib
+
 latex:
   latex_documents:
     targetname: book.tex
@@ -42,6 +45,7 @@ sphinx:
   config:
     html_show_copyright: false
     html_extra_path: ['files']
+    bibtex_reference_style: author_year
     myst_enable_extensions: 
     - amsmath
     - colon_fence
@@ -50,25 +54,36 @@ sphinx:
     - html_image
     - linkify
     - replacements
-    - smartquotes
     - substitution
 
     myst_substitutions:
-      INSTRUCTOR: Dr. Firas Moosvi
-      COURSE_CODE: PHYS 111
-      PREREQS: One of MATH 12, PREC 12, MATH 125, MATH 126 and PHYS 11 (Physics 12 is strongly recommended).
-      COREQS: Math 100
-      FEES: $0
-      TERM: 2020 Winter Term 2
-      W_DATE_1: 11:59 PDT on January 22, 2021 
-      W_DATE_2: 11:59 PDT on March 26, 2021 
-      W_DATE_3: 11:59 PDT on March 26, 2021
-      CANVAS_ID: '63995'
+      INSTRUCTOR: "Dr. Firas Moosvi (he/his/him)"
+      PRONOUNCE: "Fur-az Moose-vee"
+      OFFICE: "ROOM 111"
+      PHONE: "N/A"
+      COURSE_CODE: "PHYS 111"
+      SECTION: "001"
+      CREDITS: "3"
+      TITLE: "Introductory Physics for the Physical Sciences I"
+      PREREQS: "One of MATH 12, PREC 12, MATH 125, MATH 126 and PHYS 11 (Physics 12 is strongly recommended)."
+      COREQS: "Math 100"
+      TERM: "2020 Winter Term 2"
+      ROOM: "ROOM 100"
+      MEETING_TIMES: "Monday, Wednesday, Friday from 1-2 PM"
+      GRACE_PERIOD: "48 hour"
+      W_DATE_1: "11:59 PDT on January 22, 2021"
+      W_DATE_2: "11:59 PDT on March 26, 2021"
+      W_DATE_3: "11:59 PDT on March 26, 2021"
+      EXAM_PERIOD: "Friday December 10th - Wednesday, December 22"
+      CANVAS_ID: "63995"
       ED_ID: xxxxxxxx
-      LECTURE_TIMES: Thursdays at 14:00 PST
+      CANVAS_LINK: "https://canvas.ubc.ca/courses/CANVAS_ID"
       ZOOM_LINK: "[Zoom](https://canvas.ubc.ca/courses/CANVAS_ID/external_tools/15408)"
-      CU_LINK: "[Collaborate Ultra](https://canvas.ubc.ca/courses/CANVAS_ID/external_tools/5284)"
+      # CU_LINK: "[Collaborate Ultra](https://canvas.ubc.ca/courses/CANVAS_ID/external_tools/5284)"
       ANNOUNCEMENTS_LINK: "[Canvas Announcements](https://canvas.ubc.ca/courses/CANVAS_ID/announcements)"
       COURSE_LINK: "https://firas.moosvi.com/courses/cosc123"
       FORUM_LINK: "[Ed Discussion](https://us.edstem.org/JOIN_LINK/)"
       ANALYTICS_OPTOUT: "[complete this form](https://ubc.ca1.qualtrics.com/jfe/form/xxxxxxxxxx)"
+      FORMAT: "Lectures, Labs, Tutorials and they will all be running online in this course."
+      ASSOCIATE_HEAD: "Jake Bobowski [jake.bobowski@ubc.ca](mailto:jake.bobowski@ubc.ca)"
+      ANON_FEEDBACK: "[feedback form](https://cbc.ca)"
