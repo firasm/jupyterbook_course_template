@@ -28,16 +28,16 @@ If there is a lab and/or tutorial listed on the SSC for this course, You **must*
 | Lectures     | {{ MEETING_TIMES }} in {{ ROOM }}                                                        |
 | Office Hours | {{ ZOOM_LINK.replace('CANVAS_ID',CANVAS_ID) }} at various times (see below for schedule) |
 | Canvas URL   | {{ CANVAS_LINK.replace('CANVAS_ID',CANVAS_ID) }}                                         |
-| Course Forum | Contact via private message on {{ FORUM_LINK.replace('JOIN_LINK', ED_ID) }}              |
+| Course Forum | Contact via private message on {{ FORUM_LINK }}              |
 
 ### How do I contact the teaching team?
 
 ```{include} syllabus_bits/teaching_team.md
 ```
 
-- For official course communication, I will use {{ ANNOUNCEMENTS_LINK }}, please note that replies to announcements will not be monitored and you should use {{ FORUM_LINK.replace('JOIN_LINK', ED_ID) }} for follow-up questions.
-- For **all** course-related questions you can reach out to the teaching team including instructors and TAs via {{ FORUM_LINK.replace('JOIN_LINK', ED_ID) }}. 
-- You are encouraged to post questions publicly whenever possible so others can benefit. For private and personal issues, you can send private messages on {{ FORUM_LINK.replace('JOIN_LINK', ED_ID) }}.
+- For official course communication, I will use {{ ANNOUNCEMENTS_LINK }}, please note that replies to announcements will not be monitored and you should use {{ FORUM_LINK }} for follow-up questions.
+- For **all** course-related questions you can reach out to the teaching team including instructors and TAs via {{ FORUM_LINK }}. 
+- You are encouraged to post questions publicly whenever possible so others can benefit. For private and personal issues, you can send private messages on {{ FORUM_LINK }}.
 - Any student may visit the office hour for any member of the teaching team (TA or instructor)! In other words, you can go to the office hour of ANY TA, not just the one whose lab/tutorial you are registered in. 
 
 ### A message from your instructor
@@ -172,7 +172,7 @@ Even though the tools above are required for this course, if you have a moral or
 
 ### Sign up for a (free) Ed Discussion account [Required]
 
-In this course, we will be using {{ FORUM_LINK.replace('JOIN_LINK', ED_ID) }} for class discussion.
+In this course, we will be using {{ FORUM_LINK }} for class discussion.
 The system is highly catered to getting you help fast and efficiently from classmates, the TA, and myself.
 Please do NOT email questions to the instructor and TAs unless it is a legitimate emergency (or if you cannot access Ed Discussion).
 
@@ -180,7 +180,7 @@ Please do NOT email questions to the instructor and TAs unless it is a legitimat
 The Ed Discussion tool is stored on servers outside Canada. When you access this site by clicking on the link through Canvas, you are being transferred to these servers. In order to protect your identity, UBC obfuscates your user ID before it is sent to the site. However, Ed Discussion does require you to create an account on their servers. While Ed Discussion adheres to strict U.S. privacy regulations (FERPA), UBC cannot guarantee security of your private details on servers outside of Canada. Please exercise caution whenever using personal information. You may wish to use a pseudonym to protect your privacy if you have concerns.
 ```
 
-Sign up for {{ FORUM_LINK.replace('JOIN_LINK', ED_ID) }} using our unique course link.
+Sign up for {{ FORUM_LINK }} using our unique course link.
 
 <!-- ### Optional Tools
 
