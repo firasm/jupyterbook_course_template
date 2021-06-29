@@ -12,11 +12,6 @@ name: Under Construction.
 This course website is currently under construction. It will continue to be updated and will be released closer to the course start date. [Photo by Mabel Amber from Pexels](https://www.pexels.com/photo/traffic-red-blue-sign-117602/). 
 ```
 
-## Why is there a Syllabus and an Unsyllabus for this course?
-
-```{include} syllabus_bits/syllabus_00_why.md
-```
-
 ## Highlights
 
 ```{warning}
@@ -56,7 +51,13 @@ Until then, enjoy being [Rick-Rolled](https://www.dictionary.com/e/slang/rickrol
 
 <div class="page_break"> </div>
 
-## Changes to the unsyllabus
+
+## Why is there a Syllabus and an Unsyllabus for this course?
+
+```{include} syllabus_bits/syllabus_00_why.md
+```
+
+### Changes to the unsyllabus
 
 In this section, I will outline any changes that have been made to the unsyllabus as we go through the course.
 We will do our best to follow the plan outlined in this unsyllabus, but in case things go south, I will need to make adjustments to the contents and the schedule.

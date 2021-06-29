@@ -65,8 +65,9 @@ Resources and materials for this course can be found on the {{ '[course website]
 
 ## Late Policy and Missed Assignments and Exams
 
-Normally, most deadlines in this course have a generous grace period.
-If you require an extension beyond the grace period, please contact the instructor on {{ FORUM_LINK }} (ideally before the deadline passes) to discuss your options.
+Deadlines in this course have a generous no-penalty {{ GRACE_PERIOD }} grace period so late submissions are not generally accepted.
+Missed Tests and Exams will be given a score of 0 unless prior arrangements are made.
+To contact the instructor for this course, use {{ FORUM_LINK }}.
 Detailed course policies can be found on the {{ '[course website]({link})'.format(link=CANVAS_LINK.replace('CANVAS_ID',CANVAS_ID))}}.
 
 ## Lecture Outline
