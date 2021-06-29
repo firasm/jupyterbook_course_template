@@ -1,4 +1,4 @@
-The grading scheme for this course is here:
+The grading scheme for this course is:
 
 | Item                  | Weight          | Due date(s) |
 |-----------------------|-----------------|-------------|
