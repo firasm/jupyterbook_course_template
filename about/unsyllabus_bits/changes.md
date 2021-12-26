@@ -5,5 +5,5 @@ Any major changes to the syllabus (this page) will be documented here, as well a
 
 | Change Date   | Summary                                                     | Rationale  |
 |---------------|-------------------------------------------------------------|------------|
-| Sept 20, 2021 | Changed Test window from Thursday-Saturday to Friday-Sunday | Class Vote |
+| DATA | TBD | TBD |
 |               |                                                             |            |

@@ -66,11 +66,6 @@
 ```{include} unsyllabus_bits/teaching_philosophy.md
 ```
 
-### How will this course be taught ?
-
-```{include} unsyllabus_bits/course_taught.md
-```
-
 ## Academic Integrity
 
 ```{include} unsyllabus_bits/academic_integrity.md
