@@ -22,7 +22,7 @@ my_list[5]
 
 [0;31m---------------------------------------------------------------------------[0m
 [0;31mIndexError[0m                                Traceback (most recent call last)
-[0;32m/tmp/ipykernel_1692/303719451.py[0m in [0;36m<module>[0;34m[0m
+[0;32m/tmp/ipykernel_1813/303719451.py[0m in [0;36m<module>[0;34m[0m
 [0;32m----> 1[0;31m [0mmy_list[0m[0;34m[[0m[0;36m5[0m[0;34m][0m[0;34m[0m[0;34m[0m[0m
 [0m
 [0;31mIndexError[0m: list index out of range
