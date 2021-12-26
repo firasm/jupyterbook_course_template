@@ -7,6 +7,7 @@ In this course, we will be using the following required learning technologies (p
 - [Canvas](https://faculty.canvas.ubc.ca/canvas-privacy/)
 - [Ed Discussion](https://edstem.org/privacy)
 - [Gradescope](https://www.gradescope.com/privacy)
+- [GitHub](https://docs.github.com/en/github/site-policy/github-privacy-statement)
 - PrairieLearn (Privacy policy not available yet)
 
 All tools used in the course will be used in a [FIPPA-compliant](https://universitycounsel.ubc.ca/subject-areas/access-and-privacy-general/access-to-information/about-fippa/) manner, with your privacy top of mind. 
@@ -21,7 +22,7 @@ Even though the tools above are required for this course, if you have a moral or
 You should then be guided through a series of steps to create an account, set a password, and link it to our course. 
 
 On the left sidebar in Canvas, click on Gradescope.
-<img src="../images/GradescopeAccount.gif">
+<img src="../images/GradescopeAccount.gif" width = 100%>
 
 This is **very** important for you to do as it'll be our primary mechanism for delivering you feedback in this course.
 
