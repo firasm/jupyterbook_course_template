@@ -2,13 +2,13 @@
 
 ![](../images/UBCO_CMPS_header.jpg)
 
-**Department of Computer Science, Mathematics, Physics and Statistics**
+**Department of Computer Science, Mathematics, Physics, and Statistics**
 
 # Course Syllabus (Official)
 
 Below is the official UBC-mandated Course Syllabus for {{ COURSE_CODE }}.
 Elements of this document are **fixed** and unchanging.
-Additional details about the course are available on the <a href="{{ CANVAS_LINK.replace('CANVAS_ID',CANVAS_ID) }}">course website</a>.
+Additional details about the course are available on the {{ '[course website]({link})'.format(link=CANVAS_LINK.replace('CANVAS_ID',CANVAS_ID))}}.
 
 **{{ COURSE_CODE }} {{ SECTION }}**
 
@@ -27,7 +27,9 @@ Additional details about the course are available on the <a href="{{ CANVAS_LINK
 
 **Phone:** {{ PHONE }}
 
-For information on how to contact your course instructor, including office hours, see the <a href="{{ CANVAS_LINK.replace('CANVAS_ID',CANVAS_ID) }}">course website</a>.
+For information on how to contact your course instructor, including office hours, see the {{ '[course website]({link})'.format(link=COURSE_LINK)}}.
+
+**Mode of Delivery:** Online (All course activities and assessments, including the Final Exam, will be conducted Online.)
 
 ## Course Description
 
@@ -71,9 +73,11 @@ Missed Tests and Exams will be given a score of 0 unless prior arrangements are 
 To contact the instructor for this course, use {{ FORUM_LINK }}.
 Details on deadlines and other course policies can be found on the {{ '[course website]({link})'.format(link=CANVAS_LINK.replace('CANVAS_ID',CANVAS_ID))}}.
 
-## Lecture Outline
-
+## Tentative Course Schedule
 The tentative course schedule, subject to change, can be found on the {{ '[course website]({link})'.format(link=CANVAS_LINK.replace('CANVAS_ID',CANVAS_ID))}}.
+
+```{include} syllabus_bits/schedule.md
+```
 
 ```{include} syllabus_bits/policies.md
 ```
