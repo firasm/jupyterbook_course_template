@@ -7,7 +7,7 @@ No configuration is necessary, there are just three steps.
 
 To access the rendered version of this JupyterBook, visit https://firasm.github.io/jupyterbook_course_template.
 
-Each time there is a commit to master, the website will re-deploy.
+Each time there is a commit to `main`, the website will re-deploy.
 Currently it takes about 70s for the website to update.
 
 
