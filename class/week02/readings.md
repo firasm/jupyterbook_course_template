@@ -16,14 +16,12 @@ This week the readings assignments are listed below:
 
 -->
 
-````{panels}
+````{card}
 
 If you have access to the eText, click here to access the eText.
 
-++++ 
-
-```{link-button} https://portal.mypearson.com
-:text: Pearson eText
+```{button-link} https://portal.mypearson.com
+Pearson eText
 :type: url
 :classes: btn-outline-warning btn-block stretched-link text-dark
 ```

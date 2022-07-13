@@ -39,7 +39,7 @@ launch_buttons:
 repository: 
   url          : https://github.com/firasm/jupyterbook_course_template
   path_to_book : ""
-  branch       : master
+  branch       : main
 
 sphinx:
   config:

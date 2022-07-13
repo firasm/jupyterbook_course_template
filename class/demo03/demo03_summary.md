@@ -75,8 +75,8 @@ Your task is to annotate the words with your commentary, and come to class ready
 > 
 
 ```{dropdown} Benedict Cumberbatch as Hamlet
-    :container: + shadow
-    :title: bg-success text-white font-weight-bold
+    :class-container: sd-shadow-lg
+    :color: primary
 
 <div class="container youtube">
 <iframe class="responsive-iframe" src="https://www.youtube.com/embed/juuWo66DNe0" frameborder="0" allow="accelerometer; autoplay="0"; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -84,8 +84,8 @@ Your task is to annotate the words with your commentary, and come to class ready
 ```
 
 ```{dropdown} Mel Gibson as Hamlet
-    :container: + shadow
-    :title: bg-info text-white font-weight-bold
+    :class-container: sd-shadow-lg
+    :color: primary
 <div class="container youtube">
 <iframe class="responsive-iframe" src="https://www.youtube.com/embed/ei0fnP9s0KA" frameborder="0" allow="accelerometer; autoplay="0"; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
