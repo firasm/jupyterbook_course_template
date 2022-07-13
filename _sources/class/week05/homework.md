@@ -1,14 +1,11 @@
 # Homework
 
-````{panels}
+````{card}
 
 This week the homework assignment is on Chapter 5, and is posted on Mastering physics.
 
-++++ 
+```{button-link} https://portal.mypearson.com
+Mastering Physics
 
-```{link-button} https://portal.mypearson.com
-:text: Mastering Physics
-:type: url
-:classes: btn-outline-success btn-block stretched-link text-dark
 ```
 ````

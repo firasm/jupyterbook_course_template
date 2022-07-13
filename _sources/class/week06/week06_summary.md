@@ -10,8 +10,8 @@ That being said, I understand it's midterm season so I'm sure you'll have plenty
 
 
 ```{dropdown} Portal
-    :container: + shadow
-    :title: bg-success text-white font-weight-bold
+    :class-container: sd-shadow-lg
+    :color: primary
     :open:
 
 <div class="container youtube">
