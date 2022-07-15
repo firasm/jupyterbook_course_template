@@ -5,15 +5,15 @@
 (unsyllabus)=
 # Unsyllabus
 
-```{include} unsyllabus_bits/main_nav.md
-```
-
 ```{figure} ../images/construction.jpeg
 ---
 width: 750px
 name: Under Construction.
 ---
 This course website is currently under construction. It will continue to be updated and will be released closer to the course start date. [Photo by Mabel Amber from Pexels](https://www.pexels.com/photo/traffic-red-blue-sign-117602/). 
+```
+
+```{include} unsyllabus_bits/main_nav.md
 ```
 
 (important-details)=
@@ -32,7 +32,7 @@ This course website is currently under construction. It will continue to be upda
 (evaluation)=
 ## Evaluation
 
-```{include} syllabus_bits/grading_practices_detailed.md
+```{include} unsyllabus_bits/grading_practices_detailed.md
 ```
 
 (passing-requirements)=
@@ -65,7 +65,7 @@ This course website is currently under construction. It will continue to be upda
 (syllabus-vs-unsyllabus)=
 ## Syllabus vs. Unsyllabus
 
-```{include} syllabus_bits/why_syllabus_unsyllabus.md
+```{include} unsyllabus_bits/why_syllabus_unsyllabus.md
 ```
 
 <div class="page_break"> </div>
