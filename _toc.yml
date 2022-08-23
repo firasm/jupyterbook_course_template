@@ -3,6 +3,7 @@ root: about/unsyllabus
 parts:
 - caption: About this course
   chapters:
+  - file: about/pre_term
   - file: about/syllabus
   - file: about/course_schedule
   - file: about/accommodations
