@@ -21,7 +21,19 @@ Currently it takes about 70s for the website to update.
 
 ![](https://github.com/firasm/bits/blob/master/jb-step2.png)
 
-### 3. Wait for the GH Action to complete, and then visit your deployed website here: https://<your_github_username>.github.io/<repo_name> . That's it!
+### 3. Give the GitHub Action permission to your repository
+
+- In your own repository, Click Settings
+- On the left sidebar, click "Actions"
+- Click on "General"
+- Allow the "Read-Write Permission"
+- If you were able to do this before the GitHub action finished, it should have worked. If you didn't, the job will fail, and you'll need to click on the Run and then click the checkmark to "re-run failed jobs"
+
+Here's an image of the image:
+
+![](https://github.com/firasm/bits/blob/master/jb-step3a.jpg)
+
+### 4. Wait for the GH Action to complete, and then visit your deployed website here: https://<your_github_username>.github.io/<repo_name> . That's it!
 
 ![](https://github.com/firasm/bits/blob/master/jb-step3.png)
 
