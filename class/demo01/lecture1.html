@@ -3,11 +3,11 @@
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
     <title>Introduction to Python &#8212; Physics 111</title>
   
@@ -19,12 +19,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
 
   
-  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -35,14 +35,15 @@
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/custom_layouts.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/extra.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/pdf_print.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom_layouts.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
@@ -117,6 +118,15 @@ const thebe_selector_output = ".output, .cell_output"
   
   <a class="skip-link" href="#main-content">Skip to main content</a>
   
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
   <input type="checkbox"
           class="sidebar-toggle"
           name="__primary"
@@ -175,9 +185,11 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
   
 
 <a class="navbar-brand logo" href="../../about/unsyllabus.html">
+  
   
   
   
@@ -187,8 +199,8 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="../../_static/logo.jpg" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="../../_static/logo.jpg" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="../../_static/logo.jpg" class="logo__image only-light" alt="Physics 111 - Home"/>
+    <script>document.write(`<img src="../../_static/logo.jpg" class="logo__image only-dark" alt="Physics 111 - Home"/>`);</script>
   
   
 </a></div>
@@ -586,20 +598,22 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
+
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
 
+
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -741,12 +755,12 @@ document.write(`
 <p>See the <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html">Python 3 documentation</a> for a summary of the standard built-in Python datatypes. See <a class="reference external" href="http://greenteapress.com/thinkpython/html/thinkpython003.html">Think Python (Chapter 2)</a> for a discussion of variables, expressions and statements in Python.</p>
 <section id="common-built-in-python-data-types">
 <h3>Common built-in Python data types<a class="headerlink" href="#common-built-in-python-data-types" title="Permalink to this heading">#</a></h3>
-<table class="table">
+<table class="colwidths-auto table">
 <thead>
-<tr class="row-odd"><th class="head text-left"><p>English name</p></th>
-<th class="head text-left"><p>Type name</p></th>
-<th class="head text-left"><p>Description</p></th>
-<th class="head text-left"><p>Example</p></th>
+<tr class="row-odd"><th class="text-left head"><p>English name</p></th>
+<th class="text-left head"><p>Type name</p></th>
+<th class="text-left head"><p>Description</p></th>
+<th class="text-left head"><p>Example</p></th>
 </tr>
 </thead>
 <tbody>
@@ -879,10 +893,10 @@ document.write(`
 <section id="arithmetic-operators">
 <h4>Arithmetic Operators<a class="headerlink" href="#arithmetic-operators" title="Permalink to this heading">#</a></h4>
 <p>The syntax for the arithmetic operators are:</p>
-<table class="table">
+<table class="colwidths-auto table">
 <thead>
-<tr class="row-odd"><th class="head text-center"><p>Operator</p></th>
-<th class="head text-center"><p>Description</p></th>
+<tr class="row-odd"><th class="text-center head"><p>Operator</p></th>
+<th class="text-center head"><p>Description</p></th>
 </tr>
 </thead>
 <tbody>
@@ -1284,10 +1298,10 @@ document.write(`
 <section id="comparison-operators">
 <h4>Comparison Operators<a class="headerlink" href="#comparison-operators" title="Permalink to this heading">#</a></h4>
 <p>Compare objects using comparison operators. The result is a Boolean value.</p>
-<table class="table">
+<table class="colwidths-auto table">
 <thead>
-<tr class="row-odd"><th class="head text-center"><p>Operator</p></th>
-<th class="head text-left"><p>Description</p></th>
+<tr class="row-odd"><th class="text-center head"><p>Operator</p></th>
+<th class="text-left head"><p>Description</p></th>
 </tr>
 </thead>
 <tbody>
@@ -1364,10 +1378,10 @@ document.write(`
 </div>
 <p>Note: we will discuss <code class="docutils literal notranslate"><span class="pre">is</span></code> next week.</p>
 <p>Operators on Boolean values.</p>
-<table class="table">
+<table class="colwidths-auto table">
 <thead>
-<tr class="row-odd"><th class="head text-center"><p>Operator</p></th>
-<th class="head text-left"><p>Description</p></th>
+<tr class="row-odd"><th class="text-center head"><p>Operator</p></th>
+<th class="text-left head"><p>Description</p></th>
 </tr>
 </thead>
 <tbody>
@@ -2945,11 +2959,10 @@ Nice to meet you!
 
               
               
-                <footer class="bd-footer-article">
+              
+              
+                <footer class="prev-next-footer">
                   
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="demo01_summary.html"
@@ -2969,10 +2982,7 @@ Nice to meet you!
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -3052,6 +3062,7 @@ By Firas Moosvi
   
   <div class="footer-item">
     
+
   </div>
   
   <div class="footer-item">
@@ -3078,8 +3089,8 @@ By Firas Moosvi
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
 
   <footer class="bd-footer">
   </footer>

@@ -3,11 +3,11 @@
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
     <title>Unsyllabus &#8212; Physics 111</title>
   
@@ -19,12 +19,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -35,14 +35,15 @@
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/custom_layouts.css" />
     <link rel="stylesheet" type="text/css" href="../_static/extra.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pdf_print.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom_layouts.css" />
     <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -114,6 +115,15 @@ const thebe_selector_output = ".output, .cell_output"
   
   <a class="skip-link" href="#main-content">Skip to main content</a>
   
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
   <input type="checkbox"
           class="sidebar-toggle"
           name="__primary"
@@ -172,9 +182,11 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
   
 
 <a class="navbar-brand logo" href="#">
+  
   
   
   
@@ -184,8 +196,8 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="../_static/logo.jpg" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="../_static/logo.jpg" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="../_static/logo.jpg" class="logo__image only-light" alt="Physics 111 - Home"/>
+    <script>document.write(`<img src="../_static/logo.jpg" class="logo__image only-dark" alt="Physics 111 - Home"/>`);</script>
   
   
 </a></div>
@@ -534,20 +546,22 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
+
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
 
+
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -740,7 +754,7 @@ document.write(`
 </div>
 <section id="important-details">
 <span id="id2"></span><h2>Important Details<a class="headerlink" href="#important-details" title="Permalink to this heading">#</a></h2>
-<table class="table">
+<table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
 <th class="head"><p>Description</p></th>
@@ -783,7 +797,7 @@ All course content, references, and resources provided in this course are free a
 </section>
 <section id="contact-us">
 <span id="id3"></span><h2>Contact Us<a class="headerlink" href="#contact-us" title="Permalink to this heading">#</a></h2>
-<table class="table">
+<table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Team Member</p></th>
 <th class="head"><p>Pronounce as</p></th>
@@ -823,7 +837,7 @@ All course content, references, and resources provided in this course are free a
 <section id="evaluation">
 <span id="id4"></span><h2>Evaluation<a class="headerlink" href="#evaluation" title="Permalink to this heading">#</a></h2>
 <p>The grading scheme for this course is:</p>
-<table class="table">
+<table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Item</p></th>
 <th class="head"><p>Weight</p></th>
@@ -893,7 +907,7 @@ Any submissions submitted past the grace period will not be graded (with some ex
 <h2>Schedule<a class="headerlink" href="#schedule" title="Permalink to this heading">#</a></h2>
 <p id="id7">This is the tentative plan for PHYS 111 this term.
 Things may change depending on many factors so this is subject to change.</p>
-<table class="table">
+<table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Wk</p></th>
 <th class="head"><p>Date</p></th>
@@ -1067,7 +1081,7 @@ Suspendisse malesuada pretium dui, ac lacinia mi pellentesque eu. Sed volutpat e
 <p>In this section, I will outline any changes that have been made to the unsyllabus as we go through the course.
 We will do our best to follow the plan outlined in this unsyllabus, but in case things go south, I will need to make adjustments to the contents and the schedule.</p>
 <p>Any major changes to the syllabus (this page) will be documented here, as well as the date the change was made.</p>
-<table class="table">
+<table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Change Date</p></th>
 <th class="head"><p>Summary</p></th>
@@ -1192,6 +1206,18 @@ This, I promise!</p>
 </section>
 <section id="course-tools">
 <span id="tools"></span><h2>Course Tools<a class="headerlink" href="#course-tools" title="Permalink to this heading">#</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>I will be the first to acknowledge that my courses are usually heavily reliant on learning technologies.
+I strongly believe that learning technologies are essential (for me) to give you my students a good experience in the course.
+Many times during the course you may be frustrated why we need to use so many different tools, and why there isn’t one tool that does everything.
+Believe me, this frustrates me too (particularly because each of your instructors will be using different tools depending on their needs), and is something that I’m working on improving.
+At the moment, the reality is that many learning technologies often only do <em>one thing</em> very well.
+This of course means that other functionalities take a back-seat and exist merely to check a box on their marketing website (just to say they have the feature).</p>
+<p><strong>In all of my courses, before selecting a learning technology, I do a very careful scan of the landscape, weigh the pros and cons, consider the privacy and convenience aspects, and then select the ones that I believe will best support my teaching goals at minimal inconvenience to students.</strong></p>
+<p>I hope you will be patient with all the tools used in this course, I hope I can demonstrate value to you by using them in our course.
+If you have any feedback about my usage of the tools, I’d be happy to <span class="xref myst">get your (anonymous) feedback</span> and though it may not always be possible to make changes mid-semester, I will certainly keep your feedback in mind as I plan the next iteration of this course.</p>
+</div>
 <p>There is no cost to the student for any of the tools used in this course.</p>
 <section id="required-tools">
 <h3>Required Tools<a class="headerlink" href="#required-tools" title="Permalink to this heading">#</a></h3>
@@ -1201,7 +1227,8 @@ This, I promise!</p>
 <li><p><a class="reference external" href="https://edstem.org/privacy">Ed Discussion</a></p></li>
 <li><p><a class="reference external" href="https://www.gradescope.com/privacy">Gradescope</a></p></li>
 <li><p><a class="reference external" href="https://docs.github.com/en/github/site-policy/github-privacy-statement">GitHub</a></p></li>
-<li><p>PrairieLearn (Privacy policy not available yet)</p></li>
+<li><p><a class="reference external" href="https://www.prairielearn.com/legal/privacy">PrairieLearn</a></p></li>
+<li><p><a class="reference external" href="https://www.slido.com/terms?experience_id=1&amp;utm_campaign=_eid-007-control&amp;utm_source=www.slido.com-_ab#privacy-policy">Sli.do</a></p></li>
 </ul>
 <p>All tools used in the course will be used in a <a class="reference external" href="https://universitycounsel.ubc.ca/subject-areas/access-and-privacy-general/access-to-information/about-fippa/">FIPPA-compliant</a> manner, with your privacy top of mind.
 New tools may be added to the course as the need arises, and I will update this section with the appropriate information and make an announcement if a new tool is added midway through a course.</p>
@@ -1357,7 +1384,7 @@ Below is some information that might be helpful for you in making the decision.<
 <p class="admonition-title">Warning</p>
 <p>Please note that it is the student’s responsibility to check the withdrawal dates as <a class="reference external" href="http://www.calendar.ubc.ca/okanagan/index.cfm?go=deadlines">listed in the UBC Calendar</a>.</p>
 </div>
-<table class="table">
+<table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Withdrawal type</p></th>
 <th class="head"><p>Effect on Transcript</p></th>
@@ -1371,17 +1398,21 @@ Below is some information that might be helpful for you in making the decision.<
 </tr>
 <tr class="row-odd"><td><p>Before 11:59 PDT on March 26, 2021</p></td>
 <td><p>W on transcript</p></td>
-<td><p><a class="reference external" href="https://students.ok.ubc.ca/courses-money-enrolment/finances/tuition-and-fees/">See UBCO Calendar</a></p></td>
+<td><p><a class="reference external" href="https://students.ok.ubc.ca/courses-money-enrolment/finances/tuition-and-fees/">See policy details</a></p></td>
 </tr>
 <tr class="row-even"><td><p>After 11:59 PDT on March 26, 2021 ^</p></td>
 <td><p>W on transcript</p></td>
-<td><p><a class="reference external" href="https://students.ok.ubc.ca/courses-money-enrolment/finances/tuition-and-fees/">See UBCO Calendar</a></p></td>
+<td><p><a class="reference external" href="https://students.ok.ubc.ca/courses-money-enrolment/finances/tuition-and-fees/">See policy details</a></p></td>
 </tr>
 </tbody>
 </table>
 <p>^ Note: Withdrawal after this date cannot happen without approval from the Faculty (Email: <a class="reference external" href="mailto:fos&#46;students&#46;ubco&#37;&#52;&#48;ubc&#46;ca">fos<span>&#46;</span>students<span>&#46;</span>ubco<span>&#64;</span>ubc<span>&#46;</span>ca</a>).</p>
-<p>There are factors other than money and your transcript to consider as well, including your mental health, graduation requirements/timelines, eligibility for student loans, bursaries, scholarships etc.
-I advise you to <a class="reference external" href="https://students.ok.ubc.ca/courses-money-enrolment/registration/late-course-changes/">read the full list of considerations</a> here and consult with an Academic Advisor or your Program Advisor if you have additional questions.</p>
+<p>There are factors other than money and your transcript to consider as well, including your mental health, graduation requirements/timelines, <a class="reference external" href="https://students.ok.ubc.ca/courses-money-enrolment/finances/student-loans-and-grants/course-load-requirements/">course load requirements</a>, eligibility for student loans, bursaries, scholarships etc.
+I advise you to <a class="reference external" href="https://students.ok.ubc.ca/courses-money-enrolment/registration/late-course-changes/">read a list of some considerations</a> here and consult with an Academic Advisor or your Program Advisor if you have additional questions.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>International students have additional factors to consider when withdrawing - you are urged to follow-up with a GEO advisor (<a class="reference external" href="mailto:geo&#46;ubco&#37;&#52;&#48;ubc&#46;ca">geo<span>&#46;</span>ubco<span>&#64;</span>ubc<span>&#46;</span>ca</a>) and see the <a class="reference external" href="https://students.ok.ubc.ca/new-to-ubc/immigration-documentation/immigration-impacts-of-withdrawing/">frequently asked questions here</a>.</p>
+</div>
 </section>
 <section id="acknowledgements">
 <span id="id13"></span><h2>Acknowledgements<a class="headerlink" href="#acknowledgements" title="Permalink to this heading">#</a></h2>
@@ -1399,11 +1430,11 @@ Below is the list of resources I have used to put this syllabus together:</p>
 <section id="references">
 <span id="id14"></span><h2>References<a class="headerlink" href="#references" title="Permalink to this heading">#</a></h2>
 <div class="docutils container" id="id15">
-<div class="citation" id="id17" role="doc-biblioentry">
-<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id11">1</a><span class="fn-bracket">]</span></span>
-<p>Susan A. Ambrose, Michael W. Bridges, Michele DiPietro, Marsha C. Lovett, and Marie K. Norman. <em>How Learning Works: 7 Research-Based Principles for Smart Teaching</em>. Jossey-Bass, San Francisco, CA, 2010. ISBN 978-0-470-48410-4.</p>
-</div>
-</div>
+<dl class="citation">
+<dt class="label" id="id17"><span class="brackets"><a class="fn-backref" href="#id11">1</a></span></dt>
+<dd><p>Susan A. Ambrose, Michael W. Bridges, Michele DiPietro, Marsha C. Lovett, and Marie K. Norman. <em>How Learning Works: 7 Research-Based Principles for Smart Teaching</em>. Jossey-Bass, San Francisco, CA, 2010. ISBN 978-0-470-48410-4.</p>
+</dd>
+</dl>
 </div>
 </section>
 <div class="toctree-wrapper compound">
@@ -1451,11 +1482,10 @@ Below is the list of resources I have used to put this syllabus together:</p>
 
               
               
-                <footer class="bd-footer-article">
+              
+              
+                <footer class="prev-next-footer">
                   
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="right-next"
        href="pre_term.html"
@@ -1466,10 +1496,7 @@ Below is the list of resources I have used to put this syllabus together:</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -1554,6 +1581,7 @@ By Firas Moosvi
   
   <div class="footer-item">
     
+
   </div>
   
   <div class="footer-item">
@@ -1580,8 +1608,8 @@ By Firas Moosvi
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
 
   <footer class="bd-footer">
   </footer>
