@@ -1,6 +1,6 @@
 ![](../images/header.jpg)
 
-![](../images/UBCO_CMPS_header.jpg)
+![](../images/UBC_CS.png)
 
 **Department of Computer Science, Mathematics, Physics, and Statistics**
 
@@ -40,7 +40,7 @@ For information on how to contact your course instructor, including office hours
 
 This course has {{ FORMAT }}
 
-You will find all the important term dates in the [UBCO Academic Calendar](http://www.calendar.ubc.ca/okanagan/index.cfm?go=deadlines).
+You will find all the important term dates in the [UBC Academic Calendar](https://vancouver.calendar.ubc.ca/dates-and-deadlines).
 
 ## Learning Outcomes
 
