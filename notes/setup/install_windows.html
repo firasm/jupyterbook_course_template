@@ -1,0 +1,1773 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Windows Software Stack &#8212; Physics 111</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/extra.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pdf_print.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom_layouts.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "firasm/jupyterbook_course_template");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+    <script src="../../_static/save_state.js"></script>
+    <script src="../../_static/plausible_jupyterbookcoursetemplate.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'notes/setup/install_windows';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Ubuntu Software Stack" href="install_ubuntu.html" />
+    <link rel="prev" title="macOS Software Stack" href="install_macOS.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+
+  <div class="bd-header-announcement container-fluid bd-header-announcement">
+    <div class="bd-header-announcement__content">Use this JupyterBook as a <a href='https://github.com/firasm/jupyterbook_course_template' style='color:pink;'>template by clicking here</a>!</div>
+  </div>
+
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../../about/unsyllabus.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo.jpg" class="logo__image only-light" alt="Physics 111 - Home"/>
+    <script>document.write(`<img src="../../_static/logo.jpg" class="logo__image only-dark" alt="Physics 111 - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../about/unsyllabus.html">
+                    Unsyllabus
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">About this course</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../about/pre_term.html">Before term starts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../about/syllabus.html">Course Syllabus (Official)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../about/course_schedule.html">Course Schedule</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../about/accommodations.html">Accommodations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../about/doing_well.html">How to do well in this course</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../about/faq.html">Frequently Asked Questions</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/tasks1.html">Before the Term starts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/tasks2.html">In the first week</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/tasks3.html">At the end of the first week</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="stack.html">Setup Your Machine</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="install_macOS.html">macOS Software Stack</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Windows Software Stack</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install_ubuntu.html">Ubuntu Software Stack</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Demo section</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../demo01/demo01_summary.html">Demo 1 - Data Science</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../demo01/lecture1.html">Introduction to Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../demo01/lecture2.html">Platforms for Data Science</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../demo01/lecture3.html">Introduction to Microsoft Excel</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../demo02/demo02_summary.html">Demo 2 - Introductory Physics</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../demo02/videos.html">Videos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../demo02/homework.html">Homework</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../demo02/readings.html">Readings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../demo02/lab.html">Lab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../demo02/learninglogs.html">Learning Logs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../demo02/test.html">Test 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../demo03/demo03_summary.html">Demo 3 - Shakespeare</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../demo04/demo04_summary.html">Demo 4 - Chemistry</a></li>
+<li class="toctree-l2"><a class="reference external" href="https://firas.moosvi.com/books/active-learning-technologies/jupyterdays/capacitor_talk/Capacitor.html">Capacitor Lecture</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part 1 - Kinematics</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../week01/week01_summary.html">Week 1 - Introductions!</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../week02/week02_summary.html">Week 2 - Chapter 2</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../week02/readings.html">Readings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week02/videos.html">Videos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week02/homework.html">Homework</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week02/lecture.html">Lecture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week02/test.html">Test 0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week02/lab.html">Lab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week02/learninglogs.html">Learning Logs</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../week03/week03_summary.html">Week 3 - Chapter 3</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../week03/readings.html">Readings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week03/videos.html">Videos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week03/homework.html">Homework</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week03/lecture.html">Lecture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week03/test.html">Test 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week03/lab.html">Lab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week03/learninglogs.html">Learning Logs</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../week04/week04_summary.html">Week 4 - Chapter 4</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../week04/readings.html">Readings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week04/videos.html">Videos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week04/homework.html">Homework</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week04/lecture.html">Lecture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week04/test.html">Bonus Test 01</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week04/lab.html">Lab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week04/learninglogs.html">Learning Logs</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part 2 - Dynamics</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../week05/week05_summary.html">Week 5 - Chapter 5</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../week05/readings.html">Readings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week05/videos.html">Videos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week05/homework.html">Homework</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week05/lecture.html">Lecture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week05/test.html">Test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week05/lab.html">Lab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week05/learninglogs.html">Learning Logs</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../week06/week06_summary.html">Week 6 - Week Off !!</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../week07/week07_summary.html">Week 7 - Chapter 6</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../week07/readings.html">Readings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week07/videos.html">Videos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week07/homework.html">Homework</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week07/lecture.html">Lecture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week07/test.html">Test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week07/lab.html">Lab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week07/learninglogs.html">Learning Logs</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../week08/week08_summary.html">Week 8 - Chapter 7</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../week08/readings.html">Readings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week08/videos.html">Videos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week08/homework.html">Homework</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week08/lecture.html">Lecture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week08/test.html">Test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week08/lab.html">Lab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week08/learninglogs.html">Learning Logs</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../week09/week09_summary.html">Week 9 - Chapter 8</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../week09/readings.html">Readings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week09/videos.html">Videos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week09/homework.html">Homework</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week09/lecture.html">Lecture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week09/test.html">Test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week09/lab.html">Lab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week09/learninglogs.html">Learning Logs</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part 3 - Energy &amp; Momentum</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../week10/week10_summary.html">Week 10 - Chapter 9</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../week10/readings.html">Readings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week10/videos.html">Videos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week10/homework.html">Homework</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week10/lecture.html">Lecture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week10/test.html">Test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week10/lab.html">Lab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week10/learninglogs.html">Learning Logs</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../week11/week11_summary.html">Week 11 - Chapter 10</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../week11/readings.html">Readings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week11/videos.html">Videos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week11/homework.html">Homework</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week11/lecture.html">Lecture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week11/test.html">Test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week11/lab.html">Lab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week11/learninglogs.html">Learning Logs</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../week12/week12_summary.html">Week 12 - Chapter 11</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../week12/readings.html">Readings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week12/videos.html">Videos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week12/homework.html">Homework</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week12/lecture.html">Lecture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week12/test.html">Test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week12/lab.html">Lab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week12/learninglogs.html">Learning Logs</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Week 13 - Exam Review</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../week13/week13_summary.html">Week 13 - Review</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-14"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../week13/readings.html">Readings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week13/videos.html">Videos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week13/homework.html">Homework</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week13/lecture.html">Lecture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week13/test.html">Test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week13/lab.html">Lab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week13/learninglogs.html">Learning Logs</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Final Exam</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../final.html">Final Exam Information</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Lab Materials</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../labs.html">Lab Stuff</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Course Feedback</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../about/feedback.html">Anonymous Feedback Form</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/firasm/jupyterbook_course_template" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/firasm/jupyterbook_course_template/edit/main/notes/setup/install_windows.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/firasm/jupyterbook_course_template/issues/new?title=Issue%20on%20page%20%2Fnotes/setup/install_windows.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/notes/setup/install_windows.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Windows Software Stack</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installation-notes">Installation notes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table-of-contents">Table of Contents</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ubc-student-email">UBC Student Email</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#web-browser">Web browser</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#zoom">Zoom</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#github-com-account">GitHub.com account</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#microsoft-office">Microsoft Office</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#terminal-gitbash">Terminal (GitBash)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visual-studio-code">Visual Studio Code</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python">Python</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-conda-and-python">Installing <code class="docutils literal notranslate"><span class="pre">conda</span></code> and python</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#integrating-python-with-the-git-bash-terminal">Integrating Python with the Git Bash terminal</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#essential-python-packages">Essential Python packages</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vscode-extensions">VSCode extensions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#git-and-github">Git and GitHub</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#install-git-on-your-computer">Install Git on your computer</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#configuring-git-user-info">Configuring Git user info</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#create-your-github-personal-access-token">Create your GitHub “Personal Access Token”</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#clone-your-first-repository-on-your-computer">Clone your first repository on your computer!</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#launch-vs-code-from-gitbash">Launch VS Code from GitBash</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#setting-vs-code-as-the-default-editor">Setting VS Code as the default editor</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tree">Tree</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#test-jupyterlab">Test JupyterLab</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-conda-and-jupyterlab">Python, Conda, and JupyterLab</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#python-and-conda">Python and Conda</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Integrating Python with the Git Bash terminal</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Essential Python packages</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#jupyterlab-setup">JupyterLab setup</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#r-irkernel-rtools-and-rstudio">R, IRkernel, Rtools, and RStudio</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#r">R</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rstudio">RStudio</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rtools">Rtools</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#essential-r-packages">Essential R packages</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#irkernel">IRkernel</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#latex">LaTeX</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#make">Make</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#postgresql">PostgreSQL</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#docker">Docker</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#improving-the-bash-configuration">Improving the bash configuration</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#post-installation-notes">Post-installation notes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#attributions">Attributions</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="windows-software-stack">
+<span id="page-install-windows"></span><h1>Windows Software Stack<a class="headerlink" href="#windows-software-stack" title="Permalink to this heading">#</a></h1>
+<head>
+	<base target="_blank">
+</head>
+<p>These instructions will walk you through installing the required software stack for PHYS 111.
+Before starting, ensure that your laptop meets the minimum requirements:</p>
+<ul class="simple">
+<li><p>Runs the latest version of Windows 10 or 11 available for your system.</p>
+<ul>
+<li><p>Currently enrolled UBC students with a valid CWL account <a class="reference external" href="https://it.ubc.ca/services/desktop-print-services/software-licensing/windows-education">qualify for one license of Windows 11 Education</a>.</p></li>
+</ul>
+</li>
+<li><p>Can connect to networks via a wireless connection.</p></li>
+<li><p>Has at least 25 GB disk space available.</p></li>
+<li><p>Has at least 4 GB of RAM (more is recommended).</p></li>
+<li><p>Uses a 64-bit CPU.</p></li>
+<li><p>Is at most 6 years old at the start of the program (4 years old or newer is recommended).</p></li>
+<li><p>Student user has full administrative access to the computer.</p></li>
+</ul>
+<p>If your computer does not meet any of the requirements above, please don’t just drop the course!!
+Let me know first and we can discuss alternate possibilities so you can still take the course.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Before starting, I suggest updating your Windows operating system to the latest version your laptop can run:</p>
+<p><a class="reference external" href="https://support.microsoft.com/en-us/windows/update-windows-3c5ae7fc-9fb6-9af1-1984-b5e0412c556a">See here</a> on how to update your Windows 11 machine to the latest version.</p>
+</div>
+<section id="installation-notes">
+<h2>Installation notes<a class="headerlink" href="#installation-notes" title="Permalink to this heading">#</a></h2>
+<p>Unless you really know what you are doing, if you have already installed Git, Conda, or any of the Python related packages below, I <strong>strongly</strong> advise you to please uninstall these and follow the instructions below to re-install and configure them correctly (make sure to also remove any user configuration files and backup them if desired).
+In order to be able to support you effectively and minimize setup issues and software conflicts, we suggest students to install the software stack the same way (even though there are better ways).</p>
+<p>In all the sections below, if you are presented with the choice to download either a 64-bit (also called x64) or a 32-bit (also called x86) version of the application <strong>always</strong> choose the 64-bit version.</p>
+<p>Once you have completed these installation instructions, make sure to follow the post-installation notes at the end to check that all software is setup correctly.</p>
+</section>
+<section id="table-of-contents">
+<h2>Table of Contents<a class="headerlink" href="#table-of-contents" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="#ubc-student-email"><span class="std std-doc">UBC Student Email</span></a></p></li>
+<li><p><a class="reference internal" href="#zoom"><span class="std std-doc">Zoom</span></a></p></li>
+<li><p><a class="reference internal" href="#web-browser"><span class="std std-doc">Web browser</span></a></p></li>
+<li><p><a class="reference internal" href="#microsoft-office"><span class="std std-doc">Microsoft Office</span></a></p></li>
+<li><p><a class="reference internal" href="#visual-studio-code"><span class="std std-doc">Visual Studio Code</span></a></p></li>
+<li><p><a class="reference internal" href="#terminal-gitbash"><span class="std std-doc">Terminal</span></a></p></li>
+<li><p><a class="reference internal" href="#python"><span class="std std-doc">Python, Conda, and JupyterLab</span></a></p></li>
+<li><p><a class="reference internal" href="#vscode-extensions"><span class="std std-doc">Configuring VS Code extensions</span></a></p></li>
+<li><p><a class="reference internal" href="#git-and-github"><span class="std std-doc">Git and GitHub</span></a></p></li>
+<li><p><a class="reference internal" href="#tree"><span class="std std-doc">Tree</span></a></p></li>
+<li><p><a class="reference internal" href="#test-jupyterlab"><span class="std std-doc">Test JupyterLab</span></a></p></li>
+</ul>
+</section>
+<section id="ubc-student-email">
+<h2>UBC Student Email<a class="headerlink" href="#ubc-student-email" title="Permalink to this heading">#</a></h2>
+<p>Please sign up for a UBC Student Email.
+This account will also grant you access to a range of other UBC services (not used in this course), including Microsoft Teams and OneDrive.
+To do so navigate to <a class="reference external" href="https://it.ubc.ca/services/email-voice-internet/ubc-student-email-service">https://it.ubc.ca/services/email-voice-internet/ubc-student-email-service</a> and follow the instructions under “Get Started”.</p>
+</section>
+<section id="web-browser">
+<h2>Web browser<a class="headerlink" href="#web-browser" title="Permalink to this heading">#</a></h2>
+<p>You are welcome to use most modern browsers that have a WebKit or Gecko backend.
+<a class="reference external" href="https://www.apple.com/ca/safari/">Safari</a>, <a class="reference external" href="https://www.mozilla.org/en-CA/firefox/new/?redirect_source=firefox-com">Firefox</a>, <a class="reference external" href="https://vivaldi.com">Vivaldi</a>, <a class="reference external" href="https://brave.com">Brave</a>, <a class="reference external" href="https://www.microsoft.com/en-us/edge">Edge</a> are all recommended.
+Google Chrome is not recommended because of the <a class="reference external" href="https://www.forbes.com/sites/zakdoffman/2021/03/20/stop-using-google-chrome-on-apple-iphone-12-pro-max-ipad-and-macbook-pro/">well-documented privacy and tracking issues with Google</a>.</p>
+</section>
+<section id="zoom">
+<h2>Zoom<a class="headerlink" href="#zoom" title="Permalink to this heading">#</a></h2>
+<p>We will be using Zoom in this course for the classes, as well as the labs, and student hours.
+It is <em>very</em> important that you have the most recent version of Zoom installed, as we will be using many of the features that are only available in more recent versions.</p>
+<p>The latest version of Zoom as of Sept 2022 is: <code class="docutils literal notranslate"><span class="pre">5.11.10</span> <span class="pre">(102279)</span></code>.
+You can ensure you have the latest version of Zoom by clicking “Check for Updates” as shown in the screenshot below (on a Windows machine, your screenshot will look slightly different).</p>
+<img alt="Zoom 'Check for Updates' showing the latest version of Zoom is installed." src="../../_images/zoom.png" />
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Please note that if you have been relying on the “web version” of Zoom that works only in a browser, this will not work for this course!
+Please make sure to download the Zoom desktop client for your operating system to fully participate in the course.</p>
+</div>
+</section>
+<section id="github-com-account">
+<h2><a class="reference external" href="http://GitHub.com">GitHub.com</a> account<a class="headerlink" href="#github-com-account" title="Permalink to this heading">#</a></h2>
+<p>Sign up for a free account at <a class="reference external" href="https://github.com/">GitHub.com</a> if you don’t have one already.
+Your GitHub username is important, here’s how to find your username:</p>
+<img alt="Pointing to the top right once you log into GitHub.com to identify your username." src="../../_images/github_account.png" />
+</section>
+<section id="microsoft-office">
+<h2>Microsoft Office<a class="headerlink" href="#microsoft-office" title="Permalink to this heading">#</a></h2>
+<p>UBC students have free access to a Microsoft Office 365 annual subscription, which is renewed for students enrolled in at least one course.
+Office 365 includes Word, Excel, PowerPoint, Outlook, and OneNote, and is available on a variety of platforms.</p>
+<p>To get your free Office 365 license and download the installer files, visit <a class="reference external" href="https://it.ubc.ca/services/desktop-print-services/software-licensing/office-365-students">UBC IT</a> for the installation instructions.
+Note that you will need your CWL login credentials in order to download the software and activate your license from <a class="reference external" href="https://portal.office.com">portal.office.com</a>.</p>
+<p>In this course, you will only need Microsoft Excel, but you’re welcome to install other apps as well.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>You will not be able to use Google Sheets, Apple Numbers, or LibreOffice Calc to do the Excel portion of this course.
+If you have trouble installing it, please let the instructor know.</p>
+</div>
+</section>
+<section id="terminal-gitbash">
+<h2>Terminal (GitBash)<a class="headerlink" href="#terminal-gitbash" title="Permalink to this heading">#</a></h2>
+<p>Unfortunately, one of the major problems with using the Windows operating system is that the “Command Prompt” that comes with the operating system is severely deficient.
+No worries though, luckily most of the tools we use in this course are open source, so the community has worked hard to shore up deficiencies in the Microsoft ecosystem (until Windows subsystem for Linux is a more mature product).</p>
+<p>The replacement for the Command Prompt we will use in this course is called “GitBash”.
+The latest version of GitBash for Windows is: <code class="docutils literal notranslate"><span class="pre">2.37.3</span></code>.</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>“GitBash” is relatively old software, but it is very reliable and works very well.
+If you are feeling brave and want to setup <code class="docutils literal notranslate"><span class="pre">zsh</span></code> (the next generation Terminal, with many improvements) on Windows, you can <a class="reference external" href="https://dev.to/zinox9/installing-zsh-on-windows-37em">try these instructions here</a>.
+Note that these instructions are experimental and support from the teaching team is limited. But if you can get it to work or run into any issues, let me know.
+I hope to adopt zsh on windows fully next time I teach this course.</p>
+</div>
+<p>Briefly, we will be using the Bash shell to interact with our computers via a command line interface, and Git to keep a version history of our files and upload to/download from to GitHub.</p>
+<p>Go to <a class="reference external" href="https://git-scm.com/download/win">https://git-scm.com/download/win</a> and download the windows version of GitBash.
+After the download has finished, run the installer and <strong>accept the default configuration for all pages except for the following</strong>:</p>
+<ul class="simple">
+<li><p>On the <strong>Choosing the default editor used by Git</strong> page, select “Use Visual Studio Code as Git’s default editor” from the drop-down menu’</p></li>
+<li><p><em>Optional</em> On the <strong>Select Components</strong> page, check “On the Desktop” under “Additional icons”.</p></li>
+</ul>
+<img alt="" src="../../_images/vscode-as-git-editor.png" />
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you wish to pin Git Bash to the taskbar, you need to search for the program in the start menu, right click the entry and select “Pin to taskbar”. If you instead first launch the program and pin it by right clicking on the taskbar icon, Git Bash will open with the wrong home directory (<code class="docutils literal notranslate"><span class="pre">/</span></code> instead of <code class="docutils literal notranslate"><span class="pre">/c/users/$USERNAME</span></code>.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>After installation, test if you were successful by opening the GitBash program.
+Below is a picture of the Git Bash icon on the Desktop and an opened instance of the Git Bash terminal (we will often refer to this as just the “Terminal”).
+From now on, all commands should be entered into the GitBash program (not Anaconda Command Prompt, or Command Prompt, or PowerShell etc…).</p>
+</div>
+<img alt="" src="../../_images/gitbash.png" />
+<p>In the terminal, type the following to check which version of Bash you just installed:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">bash</span> <span class="o">--</span><span class="n">version</span>
+</pre></div>
+</div>
+<p>The output should look similar to this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">GNU</span> <span class="n">bash</span><span class="p">,</span> <span class="n">version</span> <span class="mf">4.4.23</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">-</span><span class="n">release</span> <span class="p">(</span><span class="n">x86_64</span><span class="o">-</span><span class="n">pc</span><span class="o">-</span><span class="n">sys</span><span class="p">)</span>
+<span class="n">Copyright</span> <span class="p">(</span><span class="n">C</span><span class="p">)</span> <span class="mi">2019</span> <span class="n">Free</span> <span class="n">Software</span> <span class="n">Foundation</span><span class="p">,</span> <span class="n">Inc</span><span class="o">.</span>
+<span class="n">License</span> <span class="n">GPLv3</span><span class="o">+</span><span class="p">:</span> <span class="n">GNU</span> <span class="n">GPL</span> <span class="n">version</span> <span class="mi">3</span> <span class="ow">or</span> <span class="n">later</span> <span class="o">&lt;</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">gnu</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">licenses</span><span class="o">/</span><span class="n">gpl</span><span class="o">.</span><span class="n">html</span><span class="o">&gt;</span>
+
+<span class="n">This</span> <span class="ow">is</span> <span class="n">free</span> <span class="n">software</span><span class="p">;</span> <span class="n">you</span> <span class="n">are</span> <span class="n">free</span> <span class="n">to</span> <span class="n">change</span> <span class="ow">and</span> <span class="n">redistribute</span> <span class="n">it</span><span class="o">.</span>
+<span class="n">There</span> <span class="ow">is</span> <span class="n">NO</span> <span class="n">WARRANTY</span><span class="p">,</span> <span class="n">to</span> <span class="n">the</span> <span class="n">extent</span> <span class="n">permitted</span> <span class="n">by</span> <span class="n">law</span><span class="o">.</span>
+</pre></div>
+</div>
+<blockquote>
+<div><p>If you tried to paste the above into the Git Bash terminal, you will have noticed that <code class="docutils literal notranslate"><span class="pre">Ctrl+V</span></code> does not work in Git Bash. Instead you need to right click and select “Paste” or use the <code class="docutils literal notranslate"><span class="pre">Shift+Insert</span></code> shortcut. To copy from the Git Bash terminal you simply select the text you want and it is copied automatically.</p>
+</div></blockquote>
+<blockquote>
+<div><p>Via right click you can also reach the settings menu where you can configure Git Bash to your preferences, a couple of tips would be to check “Mouse -&gt; Clicks place command line cursor” and change the font to something more legible, e.g. Consolas (“Text -&gt; Select”).</p>
+</div></blockquote>
+<p>Let’s also check which version of git was installed:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="o">--</span><span class="n">version</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">version</span> <span class="mf">2.32.0</span><span class="o">.</span><span class="n">windows</span><span class="mf">.1</span>
+</pre></div>
+</div>
+</section>
+<section id="visual-studio-code">
+<h2>Visual Studio Code<a class="headerlink" href="#visual-studio-code" title="Permalink to this heading">#</a></h2>
+<p>The open-source text editor Visual Studio Code (VS Code) is both a powerful text editor and a full-blown Python IDE, which we will use for more complex analysis.
+You can download and install the Windows version of VS Code from the VS code website <a class="reference external" href="https://code.visualstudio.com/download">https://code.visualstudio.com/download</a>.
+Once the download is finished, double click it to open and follow the installation instructions.
+Make sure you are able to open VS Code by clicking on the application.</p>
+</section>
+<section id="python">
+<h2>Python<a class="headerlink" href="#python" title="Permalink to this heading">#</a></h2>
+<p>We will be using Python for a large part of the course, and <code class="docutils literal notranslate"><span class="pre">conda</span></code> will be our Python package manager.</p>
+<section id="installing-conda-and-python">
+<h3>Installing <code class="docutils literal notranslate"><span class="pre">conda</span></code> and python<a class="headerlink" href="#installing-conda-and-python" title="Permalink to this heading">#</a></h3>
+<p>We will be using Python for a large part of the program, and <code class="docutils literal notranslate"><span class="pre">conda</span></code> as our Python package manager.
+To install Python and the <code class="docutils literal notranslate"><span class="pre">conda</span></code> package manager, we will use the <a class="reference external" href="https://docs.conda.io/en/latest/miniconda.html">Miniconda platform (read more here)</a>, for which the <a class="reference external" href="https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe"><strong>Python 3.9</strong> (or higher) 64-bit version can be downloaded here</a>.
+Miniconda also provides us with a minimum number of useful packages so installation is quick, and relatively painless.</p>
+<p>After the download has finished, run the installer and accept the default configuration for all pages.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Make sure to check the box to add Miniconda to the PATH. There is a big scary warning that says this is “Not Recommended” ; you can ignore that warning, and make sure that checkbox is clicked!</p>
+</div>
+<p>After the installation is complete, open the Start Menu and search for the program called “Anaconda Prompt (miniconda3)”.
+When this opens you will see a prompt similar to <code class="docutils literal notranslate"><span class="pre">(base)</span> <span class="pre">C:\Users\your_name</span></code>.
+Type the following to check that your Python installation is working:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="o">--</span><span class="n">version</span>
+</pre></div>
+</div>
+<p>which should return something like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Python</span> <span class="mf">3.9.5</span>
+</pre></div>
+</div>
+<blockquote>
+<div><p>If instead you see <code class="docutils literal notranslate"><span class="pre">Python</span> <span class="pre">2.7.X</span></code> you installed the wrong version.
+Follow <a class="reference external" href="https://docs.anaconda.com/anaconda/install/uninstall">these instructions</a> to delete this installation and try the installation again, selecting <strong>Python 3.9</strong>.</p>
+</div></blockquote>
+</section>
+<section id="integrating-python-with-the-git-bash-terminal">
+<h3>Integrating Python with the Git Bash terminal<a class="headerlink" href="#integrating-python-with-the-git-bash-terminal" title="Permalink to this heading">#</a></h3>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This part is very important!!!</p>
+</div>
+<p>To avoid having to open the separate Anaconda Prompt every time we want to use Python, we can make it available from the (Git Bash) terminal, which is what we will be using most of the time. To set this up, open the “Anaconda Prompt (miniconda3)” again and type:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">init</span> <span class="n">bash</span>
+</pre></div>
+</div>
+<p>You will see that this modified a few configuration files, which makes <code class="docutils literal notranslate"><span class="pre">conda</span></code> visible to the terminal. Close all open terminal windows and launch a new one, you should now see that the prompt string has changed to include the word <code class="docutils literal notranslate"><span class="pre">(base)</span></code> as in the screenshot below:</p>
+<img alt="" src="../../_images/add-conda-env-to-ps1.png" />
+<p>If you type</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="o">--</span><span class="n">version</span>
+</pre></div>
+</div>
+<p>you should now see the same output as above (you may see a higher version of python, that’s fine:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Python</span> <span class="mf">3.9.5</span>
+</pre></div>
+</div>
+<blockquote>
+<div><p>Note that if you want to run Python interactively from the Git Bash terminal, you need to prepend the <code class="docutils literal notranslate"><span class="pre">winpty</span></code> command, so the full command would be <code class="docutils literal notranslate"><span class="pre">winpty</span> <span class="pre">python</span></code> (if you run this, note that you can exit the Python prompt by typing <code class="docutils literal notranslate"><span class="pre">exit()</span></code>). Running just <code class="docutils literal notranslate"><span class="pre">python</span></code> works on other setups, but will freeze the Git Bash terminal.</p>
+</div></blockquote>
+<p>Let’s also check the version of the <code class="docutils literal notranslate"><span class="pre">conda</span></code> package manager. If you type</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="o">--</span><span class="n">version</span>
+</pre></div>
+</div>
+<p>you should see something like this</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="mf">4.12.0</span>
+</pre></div>
+</div>
+<blockquote>
+<div><p><em>Optional</em> One annoyance with our current terminal setup is that the word <code class="docutils literal notranslate"><span class="pre">(base)</span></code> is not on the same row as the rest of the prompt string (the part with <code class="docutils literal notranslate"><span class="pre">your_name&#64;your_computer</span></code>. To fix this we can edit the <code class="docutils literal notranslate"><span class="pre">.bash_profile</span></code> configuration file to indicate that we do not want a newline at the beginning of the prompt string. Open up the configuration file using VS Code by typing the following command into a terminal:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">code</span> <span class="s2">&quot;/c/Program Files/Git/etc/profile.d/git-prompt.sh&quot;</span>
+</pre></div>
+</div>
+<p>Delete the line that reads the following (it should be line 13):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">PS1</span><span class="o">=</span><span class="s2">&quot;$PS1&quot;</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span>       <span class="c1"># new line</span>
+</pre></div>
+</div>
+<p>Click to save the file,
+when VS Code prompts you that the saving failed,
+click “Retry as Admin” and then “Yes”.
+That’s it!
+Now if you launch a new terminal instance,
+you will see <code class="docutils literal notranslate"><span class="pre">(base)</span></code> on the same line as the rest of the prompt string as in the screenshot below.</p>
+</div></blockquote>
+<img alt="Decorative" src="../../_images/remove-newline-from-ps1.png" />
+</section>
+<section id="essential-python-packages">
+<h3>Essential Python packages<a class="headerlink" href="#essential-python-packages" title="Permalink to this heading">#</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">conda</span></code> installs Python packages from different online repositories which are called “channels”.
+A package needs to go through thorough testing before it is included in the default channel, which is good for stability, but also means that new versions will be delayed and fewer packages are available overall.
+There is a community-driven effort called the <a class="reference external" href="https://conda-forge.org/">conda-forge (read more here)</a>, which provides more up-to-date packages.
+To enable us to access the most recent versions of the Python packages we are going to use, we will add this channel.
+To add the conda-forge channel type the following in a Terminal window:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">config</span> <span class="o">--</span><span class="n">add</span> <span class="n">channels</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span>
+</pre></div>
+</div>
+<p>To install packages individually, we need to use the following command: <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">-c</span> <span class="pre">conda-forge</span> <span class="pre">&quot;&lt;package-name&gt;&quot;</span></code>.
+The part about <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span></code> tells the <code class="docutils literal notranslate"><span class="pre">conda</span></code> package manager to install a particular package, and the <code class="docutils literal notranslate"><span class="pre">-c</span></code> part is an extra “option” that tells <code class="docutils literal notranslate"><span class="pre">conda</span></code> to look in the <code class="docutils literal notranslate"><span class="pre">conda-forge</span></code> channel (which usually has the latest updated packages).
+Let’s install the key packages needed (you will note that we’re also specifying certain versions of the package with <code class="docutils literal notranslate"><span class="pre">=</span> <span class="pre">X.Y</span></code>).
+You should copy and paste each line below in your Terminal to install the following packages:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">install</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span> <span class="s2">&quot;jupyterlab=3.*&quot;</span>
+<span class="n">conda</span> <span class="n">install</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span> <span class="s2">&quot;numpy=1.*&quot;</span>
+<span class="n">conda</span> <span class="n">install</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span> <span class="s2">&quot;pandas=1.*&quot;</span>
+<span class="n">conda</span> <span class="n">install</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span> <span class="s2">&quot;black=19.*&quot;</span>
+<span class="n">conda</span> <span class="n">install</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span> <span class="s2">&quot;nbconvert=6.*&quot;</span>
+<span class="n">conda</span> <span class="n">install</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span> <span class="s2">&quot;seaborn&quot;</span>
+<span class="n">conda</span> <span class="n">install</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span> <span class="s2">&quot;pre-commit&quot;</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">conda</span></code> will show you the packages that will be downloaded, and you may need to press <code class="docutils literal notranslate"><span class="pre">enter</span></code> or <code class="docutils literal notranslate"><span class="pre">Y</span></code> (for yes) to proceed with the installation.
+We are specifying that we should use the “conda-forge” source because it typically has more recent and updated package versions.
+This may take a while to complete.</p>
+</section>
+</section>
+<section id="vscode-extensions">
+<h2>VSCode extensions<a class="headerlink" href="#vscode-extensions" title="Permalink to this heading">#</a></h2>
+<p>The real magic of VS Code is in the extensions that let you add languages, debuggers, and tools to your installation to support your specific workflow.
+Now that we have installed all our other Data Science tools, we can install the VS Code extensions that work really well with them.
+From within VS Code you can open up the <a class="reference external" href="https://code.visualstudio.com/docs/editor/extension-gallery">Extension Marketplace (read more here)</a> to browse and install extensions by clicking on the Extensions icon in the Activity Bar indicated in the figure below.</p>
+<img alt="Pointing to the left sidebar to where extensions can be installed." src="../../_images/vscode.png" />
+<p>To install an extension, you simply search for it in the search bar, click the extension you want, and then click “Install”.
+There are extensions available to make almost any workflow or task you are interested in more efficient!
+Here we are interested in setting up VS Code as a Python IDE.
+To do this, search for and install the following extensions:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Python</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Python</span> <span class="pre">Extension</span> <span class="pre">Pack</span></code> (for notebooks, debugging, linting, formatting, etc.)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">markdownlint</span></code> (markdown linting and style checking extension)</p></li>
+</ul>
+<img alt="Pointing to the VS Code for Python extension by Microsoft in the list of extensions. Click 'Install'" src="../../_images/vscode_python.png" />
+<p><a class="reference external" href="https://www.youtube.com/watch?v=06I63_p-2A4">This video tutorial</a> is an excellent introduction to using VS Code in Python.</p>
+</section>
+<section id="git-and-github">
+<h2>Git and GitHub<a class="headerlink" href="#git-and-github" title="Permalink to this heading">#</a></h2>
+<p>We will use the publicly available <a class="reference external" href="https://github.com/">GitHub.com</a>.</p>
+<p>You should already have your <a class="reference external" href="http://GitHub.com">GitHub.com</a> username, you will need that for this question.</p>
+<section id="install-git-on-your-computer">
+<h3>Install Git on your computer<a class="headerlink" href="#install-git-on-your-computer" title="Permalink to this heading">#</a></h3>
+<p>Although Git and GitBash are two separate programs, Git is packaged with GitBash and so you’ve already installed it.
+Time to configure it.</p>
+</section>
+<section id="configuring-git-user-info">
+<h3>Configuring Git user info<a class="headerlink" href="#configuring-git-user-info" title="Permalink to this heading">#</a></h3>
+<p>Next, we need to configure Git by telling it your name and email.
+To do this type the following into the Terminal (the same ones you used to sign up for GitHub):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="k">global</span> <span class="n">user</span><span class="o">.</span><span class="n">name</span> <span class="s2">&quot;YOUR NAME HERE&quot;</span>
+<span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="k">global</span> <span class="n">user</span><span class="o">.</span><span class="n">email</span> <span class="n">YOUR</span><span class="nd">@EMAIL</span><span class="o">.</span><span class="n">com</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>To ensure that you haven’t made a typo in any of the above, you can view your global Git configurations by either opening the configuration file in a text editor (e.g. via the command <code class="docutils literal notranslate"><span class="pre">code</span> <span class="pre">~/.gitconfig</span></code>) or by typing <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">config</span> <span class="pre">--list</span> <span class="pre">--global</span></code>.</p>
+</div>
+</section>
+<section id="create-your-github-personal-access-token">
+<h3>Create your GitHub “Personal Access Token”<a class="headerlink" href="#create-your-github-personal-access-token" title="Permalink to this heading">#</a></h3>
+<p>This is a bit tricky, so please make sure you follow these directions carefully.</p>
+<ol class="arabic simple">
+<li><p>Create a Personal Access Token on <a class="reference external" href="http://GitHub.com">GitHub.com</a> by clicking this link: <a class="github reference external" href="https://github.com/settings/tokens/new">settings/tokens</a>; make sure to COPY the token that they give you, it is basically a special password that you can use in the Terminal. Detailed steps are:</p></li>
+</ol>
+<ul class="simple">
+<li><p>Log in to <a class="reference external" href="http://GitHub.com">GitHub.com</a>,</p></li>
+<li><p>Click your picture in the top right,</p></li>
+<li><p>Click Settings,</p></li>
+<li><p>Click Developer Settings</p></li>
+<li><p>Click “Personal access tokens”, set the appropriate permissions at the “repo” level (see image below):</p></li>
+</ul>
+<figure class="align-default" id="pat">
+<img alt="../../_images/repo.png" src="../../_images/repo.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 5 </span><span class="caption-text">Personal Access Token settings</span><a class="headerlink" href="#pat" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<img alt="../../_images/GitHubcreatePAT.gif" src="../../_images/GitHubcreatePAT.gif" />
+<ul class="simple">
+<li><p>Click “Generate new token”</p></li>
+<li><p>Save this token somewhere on your computer, you will need it when you clone a <strong>private</strong> repository to your computer.</p></li>
+<li><p>Don’t share your token with anyone and protect it like it’s your password! You will not be able to come back to this page to get your token. If you forget it, or lose it, you can just delete the token and create another one.</p></li>
+</ul>
+</section>
+<section id="clone-your-first-repository-on-your-computer">
+<h3>Clone your first repository on your computer!<a class="headerlink" href="#clone-your-first-repository-on-your-computer" title="Permalink to this heading">#</a></h3>
+<p>Open a GitBash Terminal window, and then run the following command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">firasm</span><span class="o">/</span><span class="n">test</span><span class="o">.</span><span class="n">git</span>
+</pre></div>
+</div>
+<p>Hopefully, if things work, you should be able to see a new folder created at that location.
+We will be talking more about what exactly you did over the next week and a bit, don’t worry!</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If after running the code above, you see the error message:</p>
+<blockquote>
+<div><p>fatal: destination path ‘test’ already exists and is not an empty directory.</p>
+</div></blockquote>
+<p>It means that you already attempted a clone before, and there is already a directory called <code class="docutils literal notranslate"><span class="pre">test</span></code> where you are trying to clone this repository.
+You will first need to delete that directory to try again.</p>
+<p>Open an Explorer window on your computer, navigate to the directory, right click the <code class="docutils literal notranslate"><span class="pre">test</span></code> directory, and then delete the directory.
+Alternatively, from the command line you can try:</p>
+<blockquote>
+<div><p>rm -rf test</p>
+</div></blockquote>
+<p>which will “remove” the directory called “test”. The “-” is to specify additional options: <code class="docutils literal notranslate"><span class="pre">r</span></code> means “recursively” for all the files in the directory, and <code class="docutils literal notranslate"><span class="pre">f</span></code> means “force” which means don’t ask me for confirmation after deleting each file and folder.</p>
+</div>
+</section>
+<section id="launch-vs-code-from-gitbash">
+<h3>Launch VS Code from GitBash<a class="headerlink" href="#launch-vs-code-from-gitbash" title="Permalink to this heading">#</a></h3>
+<p>You can launch many windows programs from the Bash terminal, e.g. to launch VS Code that we installed previously, you would type in <code class="docutils literal notranslate"><span class="pre">code</span></code>, let’s use this to check the version of vscode that we installed:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">code</span> <span class="o">--</span><span class="n">version</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mf">1.71</span>
+<span class="n">e4503b30fc78200f846c62cf8091b76ff5547662</span>
+<span class="n">x64</span>
+</pre></div>
+</div>
+</section>
+<section id="setting-vs-code-as-the-default-editor">
+<h3>Setting VS Code as the default editor<a class="headerlink" href="#setting-vs-code-as-the-default-editor" title="Permalink to this heading">#</a></h3>
+<p>To make programs run from the terminal (such as <code class="docutils literal notranslate"><span class="pre">git</span></code>) use VS Code by default, we will modify <code class="docutils literal notranslate"><span class="pre">~/.bash_profile</span></code>. First, open it using VS Code:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">code</span> <span class="o">~/.</span><span class="n">bash_profile</span>
+</pre></div>
+</div>
+<blockquote>
+<div><p>Note: If you see any existing lines in your <code class="docutils literal notranslate"><span class="pre">~/.bash_profile</span></code> related to a previous Python or R installation, please remove these.</p>
+</div></blockquote>
+<p>Append the following lines:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span># Set the default editor for programs launch from terminal
+EDITOR=&quot;code --wait&quot;
+VISUAL=$EDITOR  # Use the same value as for &quot;EDITOR&quot; in the line above
+</pre></div>
+</div>
+<p>Then save the file and exit VS Code.</p>
+<blockquote>
+<div><p>Most terminal programs will read the <code class="docutils literal notranslate"><span class="pre">EDITOR</span></code> environmental variable when determining which editor to use, but some read <code class="docutils literal notranslate"><span class="pre">VISUAL</span></code>, so we’re setting both to the same value.</p>
+</div></blockquote>
+</section>
+</section>
+<section id="tree">
+<h2>Tree<a class="headerlink" href="#tree" title="Permalink to this heading">#</a></h2>
+<p>From the <a class="reference external" href="http://gnuwin32.sourceforge.net/packages/tree.htm">Tree for Windows</a> page, “Tree is a recursive directory listing program that produces a depth indented listing of files.”
+This is very useful to explore your directory and file structure to figure out which files are where.</p>
+<p>Unfortunately, <code class="docutils literal notranslate"><span class="pre">Tree</span></code> is not trivial to install on Windows, but it is definitely worth the 2-3 minutes it takes to install it.
+The steps <a class="reference external" href="https://dev.to/flyingduck92/add-tree-to-git-bash-on-windows-10-1eb1">in detail are outlined here (with screenshots)</a>.</p>
+<p>In brief, the steps are:</p>
+<ol class="arabic simple">
+<li><p>Download the <a class="reference external" href="http://downloads.sourceforge.net/gnuwin32/tree-1.5.2.2-bin.zip">Tree binaries</a></p></li>
+<li><p>Unzip the file, and navigate to the <code class="docutils literal notranslate"><span class="pre">bin</span></code> directory, and find <code class="docutils literal notranslate"><span class="pre">tree.exe</span></code>.</p></li>
+<li><p>Move or copy the <code class="docutils literal notranslate"><span class="pre">tree.exe</span></code> file to this location: <code class="docutils literal notranslate"><span class="pre">C:\Program</span> <span class="pre">Files\Git\usr\bin</span></code>.</p></li>
+<li><p>Restart GitBash and type in <code class="docutils literal notranslate"><span class="pre">tree</span></code>.</p></li>
+</ol>
+</section>
+<section id="test-jupyterlab">
+<h2>Test JupyterLab<a class="headerlink" href="#test-jupyterlab" title="Permalink to this heading">#</a></h2>
+<p>To test that your JupyterLab installation is functional, open a new Terminal window.
+Then type <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">lab</span></code> and then hit enter.
+This should open a new tab in your default browser with the JupyterLab interface.
+To exit out of JupyterLab you can click <code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">-&gt;</span> <span class="pre">Shutdown</span></code>,
+or go to the terminal from which you launched JupyterLab and hold <code class="docutils literal notranslate"><span class="pre">Ctrl</span></code> while pressing <code class="docutils literal notranslate"><span class="pre">c</span></code> twice.</p>
+<p>You should see something like this in your browser:</p>
+<p><img alt="" src="../../_images/jupyter_lab.png" /></p>
+<p>You’re all done!</p>
+</section>
+<section id="python-conda-and-jupyterlab">
+<h2>Python, Conda, and JupyterLab<a class="headerlink" href="#python-conda-and-jupyterlab" title="Permalink to this heading">#</a></h2>
+<section id="python-and-conda">
+<h3>Python and Conda<a class="headerlink" href="#python-and-conda" title="Permalink to this heading">#</a></h3>
+<p>We will be using Python for a large part of the program, and <code class="docutils literal notranslate"><span class="pre">conda</span></code> as our Python package manager. To install Python and the <code class="docutils literal notranslate"><span class="pre">conda</span></code> package manager, we will use the <a class="reference external" href="https://docs.conda.io/en/latest/miniconda.html">Miniconda platform (read more here)</a>, for which the <a class="reference external" href="https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe">Python 3.8 64-bit version can be downloaded here</a>. After the download has finished, run the installer and accept the default configuration for all pages.</p>
+<blockquote>
+<div><p>Do <em>not</em> add miniconda to PATH. We will set this up later.</p>
+</div></blockquote>
+<p>After installation, open the Start Menu and search for the program called “Anaconda Prompt (miniconda3)”. When this opens you will see a prompt similar to <code class="docutils literal notranslate"><span class="pre">(base)</span> <span class="pre">C:\Users\your_name</span></code>. Type the following to check that your Python installation is working:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="o">--</span><span class="n">version</span>
+</pre></div>
+</div>
+<p>which should return something like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Python</span> <span class="mf">3.8.3</span>
+</pre></div>
+</div>
+<blockquote>
+<div><p>If instead you see <code class="docutils literal notranslate"><span class="pre">Python</span> <span class="pre">2.7.X</span></code> you installed the wrong version. Follow <a class="reference external" href="https://docs.anaconda.com/anaconda/install/uninstall">these instructions</a> to delete this installation and try the installation again, selecting <strong>Python 3.8</strong>.</p>
+</div></blockquote>
+</section>
+<section id="id1">
+<h3>Integrating Python with the Git Bash terminal<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
+<p>To avoid having to open the separate Anaconda Prompt every time we want to use Python, we can make it available from the (Git Bash) terminal, which is what we will be using most of the time. To set this up, open the “Anaconda Prompt (miniconda3)” again and type:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">init</span> <span class="n">bash</span>
+</pre></div>
+</div>
+<p>You will see that this modified a few configuration files, which makes <code class="docutils literal notranslate"><span class="pre">conda</span></code> visible to the terminal. Close all open terminal windows and launch a new one, you should now see that the prompt string has changed to include the word <code class="docutils literal notranslate"><span class="pre">(base)</span></code> as in the screenshot below:</p>
+<img alt="" src="../../_images/add-conda-env-to-ps1.png" />
+<p>If you type</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="o">--</span><span class="n">version</span>
+</pre></div>
+</div>
+<p>you should now see the same output as above:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Python</span> <span class="mf">3.8.3</span>
+</pre></div>
+</div>
+<blockquote>
+<div><p>Note that if you want to run Python interactively from the Git Bash terminal, you need to prepend the <code class="docutils literal notranslate"><span class="pre">winpty</span></code> command, so the full command would be <code class="docutils literal notranslate"><span class="pre">winpty</span> <span class="pre">python</span></code> (if you run this, note that you can exit the Python prompt by typing <code class="docutils literal notranslate"><span class="pre">exit()</span></code>). Running just <code class="docutils literal notranslate"><span class="pre">python</span></code> works on other setups, but will freeze the Git Bash terminal.</p>
+</div></blockquote>
+<p>Let’s also check the version of the <code class="docutils literal notranslate"><span class="pre">conda</span></code> package manager. If you type</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="o">--</span><span class="n">version</span>
+</pre></div>
+</div>
+<p>you should see something like this</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="mf">4.8.3</span>
+</pre></div>
+</div>
+<blockquote>
+<div><p><em>Optional</em> One annoyance with our current terminal setup is that the word <code class="docutils literal notranslate"><span class="pre">(base)</span></code> is not on the same row as the rest of the prompt string (the part with <code class="docutils literal notranslate"><span class="pre">your_name&#64;your_computer</span></code>. To fix this we can edit the <code class="docutils literal notranslate"><span class="pre">.bash_profile</span></code> configuration file to indicate that we do not want a newline at the beginning of the prompt string. Open up the configuration file using VS Code by typing the following command into a terminal:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">code</span> <span class="s2">&quot;/c/Program Files/Git/etc/profile.d/git-prompt.sh&quot;</span>
+</pre></div>
+</div>
+<p>Delete the line that reads the following (it should be line 13):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">PS1</span><span class="o">=</span><span class="s2">&quot;$PS1&quot;</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span>       <span class="c1"># new line</span>
+</pre></div>
+</div>
+<p>Click to save the file,
+when VS Code prompts you that the saving failed,
+click “Retry as Admin” and then “Yes”.
+That’s it!
+Now if you launch a new terminal instance,
+you will see <code class="docutils literal notranslate"><span class="pre">(base)</span></code> on the same line as the rest of the prompt string as in the screenshot below.</p>
+<img alt="" src="../../_images/remove-newline-from-ps1.png" />
+</div></blockquote>
+</section>
+<section id="id2">
+<h3>Essential Python packages<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">conda</span></code> installs Python packages from different online repositories which are called “channels”.
+A package needs to go through thorough testing before it is included in the default channel,
+which is good for stability,
+but also means that new versions will be delayed and fewer packages are available overall.
+There is a community-driven effort called the <a class="reference external" href="https://conda-forge.org/">conda-forge (read more here)</a>,
+which provides more up to date packages
+To enable us to access the most up to date version of the Python packages we are going to use,
+we will add the more up to date  channel,
+To add the conda-forge channel by typing the following in the terminal:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">config</span> <span class="o">--</span><span class="n">add</span> <span class="n">channels</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span>
+</pre></div>
+</div>
+<p>To install packages individually, we can now use the following command: <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">&lt;package-name&gt;</span></code>. Let’s install the key packages needed for the start of the MDS program:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">install</span> \
+ <span class="s2">&quot;jupyterlab=2.*&quot;</span> \
+ <span class="s2">&quot;numpy=1.*&quot;</span> \
+ <span class="s2">&quot;pandas=1.*&quot;</span> \
+ <span class="s2">&quot;flake8=3.*&quot;</span> \
+ <span class="s2">&quot;black=19.*&quot;</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">conda</span></code> will show you the packages that will be downloaded,
+and you can press enter to proceed with the installation.
+If you want to answer <code class="docutils literal notranslate"><span class="pre">yes</span></code> by default and skip this confirmation step,
+you can replace <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span></code> with <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">-y</span></code>.</p>
+<p>Next we will update <code class="docutils literal notranslate"><span class="pre">nbconvert</span></code> (which was installed with <code class="docutils literal notranslate"><span class="pre">jupyterlab</span></code>),
+because we require a more recent version to make it work well with <code class="docutils literal notranslate"><span class="pre">tinytex</span></code> on Windows,
+which we will install later.
+To install the latest version directly from GitHub,
+we need to use the <code class="docutils literal notranslate"><span class="pre">pip</span></code> package manager instead of <code class="docutils literal notranslate"><span class="pre">conda</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">jupyter</span><span class="o">/</span><span class="n">nbconvert</span><span class="o">/</span><span class="n">archive</span><span class="o">/</span><span class="mf">6.0.0</span><span class="n">a6</span><span class="o">.</span><span class="n">zip</span>
+</pre></div>
+</div>
+<blockquote>
+<div><p>Note: we will use many more packages than those listed above across the MDS program, however we will manage these using virtual environments (which you will learn about in DSCI 521: Platforms for Data Science).</p>
+</div></blockquote>
+</section>
+<section id="jupyterlab-setup">
+<h3>JupyterLab setup<a class="headerlink" href="#jupyterlab-setup" title="Permalink to this heading">#</a></h3>
+<p>We will be using the Jupytext Python package and the JupyterLab git extension to facilitate using Jupyter notebooks with Git &amp; GitHub. Install them via the following commands:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">install</span> <span class="o">-</span><span class="n">y</span> <span class="n">nodejs</span><span class="o">=</span><span class="mf">10.</span><span class="o">*</span>
+<span class="n">pip</span> <span class="n">install</span> <span class="o">--</span><span class="n">upgrade</span> <span class="n">jupyterlab</span><span class="o">-</span><span class="n">git</span>
+<span class="n">conda</span> <span class="n">install</span> <span class="o">-</span><span class="n">y</span> <span class="n">jupytext</span><span class="o">=</span><span class="mf">1.</span><span class="o">*</span>
+<span class="n">jupyter</span> <span class="n">lab</span> <span class="n">build</span>
+</pre></div>
+</div>
+<p>To test that your JupyterLab installation is functional, you can type <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">lab</span></code> into a terminal, which should open a new tab in your default browser with the JupyterLab interface.
+To exit out of JupyterLab you can click <code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">-&gt;</span> <span class="pre">Shutdown</span></code>,
+or go to the terminal from which you launched JupyterLab and hold <code class="docutils literal notranslate"><span class="pre">Ctrl</span></code> while pressing <code class="docutils literal notranslate"><span class="pre">c</span></code> twice.</p>
+<img alt="" src="notes/setup/setup_images/jupyter_lab.PNG" />
+</section>
+</section>
+<section id="r-irkernel-rtools-and-rstudio">
+<h2>R, IRkernel, Rtools, and RStudio<a class="headerlink" href="#r-irkernel-rtools-and-rstudio" title="Permalink to this heading">#</a></h2>
+<p>R is another programming language that we will be using a lot in the MDS program. We will use R both in Jupyter notebooks and in RStudio.</p>
+<section id="r">
+<h3>R<a class="headerlink" href="#r" title="Permalink to this heading">#</a></h3>
+<p>Go to <a class="reference external" href="https://cran.r-project.org/bin/windows/base/">https://cran.r-project.org/bin/windows/base/</a> and download the latest version of R for Windows (4.0.2 at the time of writing). Open the file and follow the installer instructions accepting the default configuration.</p>
+<p>After the installation is complete, we will add the R executables to the PATH variable in terminal so that you can use it without typing the full path to R each time. Open a terminal and type:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">code</span> <span class="o">~/.</span><span class="n">bash_profile</span>
+</pre></div>
+</div>
+<p>Append the following line to the file</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span># Add R and Rscript to PATH
+export PATH=&quot;/c/Program Files/R/R-4.0.2/bin/x64&quot;:$PATH
+</pre></div>
+</div>
+<p>Then save the file and exit VS Code.
+Now you can open terminal and type</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">R</span> <span class="o">--</span><span class="n">version</span>
+</pre></div>
+</div>
+<p>which should return something like:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">R</span> <span class="n">version</span> <span class="mf">4.0.2</span> <span class="p">(</span><span class="mi">2020</span><span class="o">-</span><span class="mi">06</span><span class="o">-</span><span class="mi">22</span><span class="p">)</span> <span class="o">--</span> <span class="s2">&quot;Taking Off Again&quot;</span>
+<span class="n">Copyright</span> <span class="p">(</span><span class="n">C</span><span class="p">)</span> <span class="mi">2020</span> <span class="n">The</span> <span class="n">R</span> <span class="n">Foundation</span> <span class="k">for</span> <span class="n">Statistical</span> <span class="n">Computing</span>
+<span class="n">Platform</span><span class="p">:</span> <span class="n">x86_64</span><span class="o">-</span><span class="n">w64</span><span class="o">-</span><span class="n">mingw32</span><span class="o">/</span><span class="n">x64</span> <span class="p">(</span><span class="mi">64</span><span class="o">-</span><span class="n">bit</span><span class="p">)</span>
+
+<span class="n">R</span> <span class="ow">is</span> <span class="n">free</span> <span class="n">software</span> <span class="ow">and</span> <span class="n">comes</span> <span class="k">with</span> <span class="n">ABSOLUTELY</span> <span class="n">NO</span> <span class="n">WARRANTY</span><span class="o">.</span>
+<span class="n">You</span> <span class="n">are</span> <span class="n">welcome</span> <span class="n">to</span> <span class="n">redistribute</span> <span class="n">it</span> <span class="n">under</span> <span class="n">the</span> <span class="n">terms</span> <span class="n">of</span> <span class="n">the</span>
+<span class="n">GNU</span> <span class="n">General</span> <span class="n">Public</span> <span class="n">License</span> <span class="n">versions</span> <span class="mi">2</span> <span class="ow">or</span> <span class="mf">3.</span>
+<span class="n">For</span> <span class="n">more</span> <span class="n">information</span> <span class="n">about</span> <span class="n">these</span> <span class="n">matters</span> <span class="n">see</span>
+<span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">gnu</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">licenses</span><span class="o">/.</span>
+</pre></div>
+</div>
+<blockquote>
+<div><p>Note: Although it is possible to install R through Anaconda, we highly recommend not doing so. In case you have already installed R using Anaconda you can remove it by executing <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">uninstall</span> <span class="pre">r-base</span></code>.</p>
+</div></blockquote>
+</section>
+<section id="rstudio">
+<h3>RStudio<a class="headerlink" href="#rstudio" title="Permalink to this heading">#</a></h3>
+<p>Download the Windows version of RStudio from <a class="reference external" href="https://www.rstudio.com/products/rstudio/download/preview">https://www.rstudio.com/products/rstudio/download/preview</a>. Open the file and follow the installer instructions.</p>
+<p>To see if you were successful, try opening RStudio by clicking on its icon. It should open and looks something like this picture below:</p>
+<img alt="" src="../../_images/RStudio.png" />
+<p>Next, we will make sure that Rstudio uses the same directories as R from terminal for its configuration. To do this, we will need to set an environmental variable in Windows. First, open the start menu, type “env” and select the match that reads “Edit the system environment variables”. Click the button at the bottom that reads “Environmental Variables…”:</p>
+<img alt="" src="../../_images/sys-props-env-vars.png" />
+<p>Under “User variable” click the “New…” button:</p>
+<img alt="" src="../../_images/env-vars-new-user-var.png" />
+<p>And type in <code class="docutils literal notranslate"><span class="pre">R_USER</span></code> as the “Variable name” and <code class="docutils literal notranslate"><span class="pre">C:\Users\username</span></code> as the “Variable value”, replacing <code class="docutils literal notranslate"><span class="pre">username</span></code> with your actual user name (if you don’t know your user name, look at the top of the screenshot above where it says “User variables for your_username”):</p>
+<img alt="" src="../../_images/new-user-var-values.png" />
+<p>Click “OK” on all of the three windows we opened above and you’re done! If you open RStudio and R from terminal and type</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">.</span><span class="n">libPaths</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>both should return the same values, e.g.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;C:/Users/joelo/R/win-library/4.0&quot;</span>   <span class="s2">&quot;C:/Program Files/R/R-4.0.2/library&quot;</span>
+</pre></div>
+</div>
+</section>
+<section id="rtools">
+<h3>Rtools<a class="headerlink" href="#rtools" title="Permalink to this heading">#</a></h3>
+<p>Windows users will also need to install Rtools, which will allow you to use external libraries. Go to <a class="reference external" href="http://cran.r-project.org/bin/windows/Rtools/">http://cran.r-project.org/bin/windows/Rtools/</a> and download the latest version (e.g., Rtools40.exe). After the download has finished, run the installer with the default configuration. Do <em>not</em> follow the Rtools’ website instructions for “Putting Rtools on the PATH”. RStudio will put Rtools on the PATH automatically when it is needed.</p>
+<p>To test if you’re installation was successful, open RStudio and type the following into the Console:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">install</span><span class="o">.</span><span class="n">packages</span><span class="p">(</span><span class="s2">&quot;jsonlite&quot;</span><span class="p">,</span> <span class="nb">type</span> <span class="o">=</span> <span class="s2">&quot;source&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>If the <code class="docutils literal notranslate"><span class="pre">jsonlite</span></code> package installs without errors, Rtools is setup correctly.</p>
+</section>
+<section id="essential-r-packages">
+<h3>Essential R packages<a class="headerlink" href="#essential-r-packages" title="Permalink to this heading">#</a></h3>
+<p>Next, install the key R packages needed for the start of MDS program,
+by opening up RStudio and
+typing the following into the R console inside RStudio:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">install</span><span class="o">.</span><span class="n">packages</span><span class="p">(</span><span class="n">c</span><span class="p">(</span><span class="s1">&#39;tidyverse&#39;</span><span class="p">,</span> <span class="s1">&#39;blogdown&#39;</span><span class="p">,</span> <span class="s1">&#39;xaringan&#39;</span><span class="p">,</span> <span class="s1">&#39;renv&#39;</span><span class="p">,</span> <span class="s1">&#39;devtools&#39;</span><span class="p">,</span> <span class="s1">&#39;usethis&#39;</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>If you get a prompt asking if you want to install packages that need compilation from sources, click “Yes”.</p>
+<blockquote>
+<div><p>Note: we will use many more packages than those listed above across the MDS program, however we will manage these using the <code class="docutils literal notranslate"><span class="pre">renv</span></code> package manager (which you will learn about in DSCI 521: Platforms for Data Science).</p>
+</div></blockquote>
+</section>
+<section id="irkernel">
+<h3>IRkernel<a class="headerlink" href="#irkernel" title="Permalink to this heading">#</a></h3>
+<p>The <code class="docutils literal notranslate"><span class="pre">IRkernel</span></code> package is needed to make R work in Jupyter notebooks. To enable this kernel in the notebooks, open R <em>from a terminal</em> and run the setup via the following two commands:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">install</span><span class="o">.</span><span class="n">packages</span><span class="p">(</span><span class="s1">&#39;IRkernel&#39;</span><span class="p">)</span>
+<span class="n">IRkernel</span><span class="p">::</span><span class="n">installspec</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>When asked to select a mirror, pick one at a location close to where you live for faster downloads.</p>
+<blockquote>
+<div><p>Note that you cannot use RStudio for this step because it will not be able to find the jupyter installation. R from terminal will since the correct PATH for jupyter is set when the terminal is launched.</p>
+</div></blockquote>
+<p>To see if you were successful, try running JupyterLab and check if you have a working R kernel. To launch the JupyterLab type the following in the terminal:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">jupyter</span> <span class="n">lab</span>
+</pre></div>
+</div>
+<p>A browser should have launched and you should see a page that looks like the screenshot below. Now click on “R” notebook (circled in red on the screenshot below) to launch an JupyterLab with an R kernel.</p>
+<img alt="" src="../../_images/jupyter_lab_r_kernel.png" />
+<p>Sometimes a kernel loads, but doesn’t work as expected. To test whether your installation was done correctly now type <code class="docutils literal notranslate"><span class="pre">library(tidyverse)</span></code> in the code cell and click on the run button to run the cell. If your R kernel works you should see something like the image below:</p>
+<img alt="" src="../../_images/jupyter_lab_r_kernel2.png" />
+<p>To improve the experience of using R in JupyterLab,
+we will add an extension that allows us to setup keyboard shortcuts for inserting text
+(thanks to former MDS student Ryan Homer for developing this extension!).
+By default,
+it creates shortcuts for inserting two of the most common R operators: <code class="docutils literal notranslate"><span class="pre">&lt;-</span></code> and <code class="docutils literal notranslate"><span class="pre">%&gt;%</span></code>.
+Run the following from terminal to install the extension:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">jupyter</span> <span class="n">labextension</span> <span class="n">install</span> <span class="nd">@techrah</span><span class="o">/</span><span class="n">text</span><span class="o">-</span><span class="n">shortcuts</span>
+<span class="n">jupyter</span> <span class="n">lab</span> <span class="n">build</span>
+</pre></div>
+</div>
+<p>To check that the extension is working,
+open JupyterLab,
+launch an R notebook,
+and try inserting the operators by pressing <code class="docutils literal notranslate"><span class="pre">Alt</span></code> + <code class="docutils literal notranslate"><span class="pre">-</span></code> or <code class="docutils literal notranslate"><span class="pre">Shift</span></code> + <code class="docutils literal notranslate"><span class="pre">Ctrl</span></code> + <code class="docutils literal notranslate"><span class="pre">m</span></code>, respectively.</p>
+</section>
+</section>
+<section id="latex">
+<h2>LaTeX<a class="headerlink" href="#latex" title="Permalink to this heading">#</a></h2>
+<p>We will install the lightest possible version of LaTeX and it’s necessary packages as possible so that we can render Jupyter notebooks and R Markdown documents to html and PDF. If you have previously installed LaTeX, please uninstall it before proceeding with these instructions.</p>
+<p>First, open RStudio and run the following commands to install the <code class="docutils literal notranslate"><span class="pre">tinytex</span></code> package and setup <code class="docutils literal notranslate"><span class="pre">tinytex</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">install</span><span class="o">.</span><span class="n">packages</span><span class="p">(</span><span class="s1">&#39;tinytex&#39;</span><span class="p">)</span>
+<span class="n">tinytex</span><span class="p">::</span><span class="n">install_tinytex</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Note that you might see two error messages regarding lua during the installation, you can safely ignore these, the installation will complete successfully after clicking “OK”.</p>
+<p>You can check that the installation is working by opening a terminal and asking for the version of latex:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">latex</span> <span class="o">--</span><span class="n">version</span>
+</pre></div>
+</div>
+<p>You should see something like this if you were successful:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pdfTeX</span> <span class="mf">3.14159265</span><span class="o">-</span><span class="mf">2.6</span><span class="o">-</span><span class="mf">1.40.21</span> <span class="p">(</span><span class="n">TeX</span> <span class="n">Live</span> <span class="mi">2020</span><span class="p">)</span>
+<span class="n">kpathsea</span> <span class="n">version</span> <span class="mf">6.3.2</span>
+<span class="n">Copyright</span> <span class="mi">2020</span> <span class="n">Han</span> <span class="n">The</span> <span class="n">Thanh</span> <span class="p">(</span><span class="n">pdfTeX</span><span class="p">)</span> <span class="n">et</span> <span class="n">al</span><span class="o">.</span>
+<span class="n">There</span> <span class="ow">is</span> <span class="n">NO</span> <span class="n">warranty</span><span class="o">.</span>  <span class="n">Redistribution</span> <span class="n">of</span> <span class="n">this</span> <span class="n">software</span> <span class="ow">is</span>
+<span class="n">covered</span> <span class="n">by</span> <span class="n">the</span> <span class="n">terms</span> <span class="n">of</span> <span class="n">both</span> <span class="n">the</span> <span class="n">pdfTeX</span> <span class="n">copyright</span> <span class="ow">and</span>
+<span class="n">the</span> <span class="n">Lesser</span> <span class="n">GNU</span> <span class="n">General</span> <span class="n">Public</span> <span class="n">License</span><span class="o">.</span>
+<span class="n">For</span> <span class="n">more</span> <span class="n">information</span> <span class="n">about</span> <span class="n">these</span> <span class="n">matters</span><span class="p">,</span> <span class="n">see</span> <span class="n">the</span> <span class="n">file</span>
+<span class="n">named</span> <span class="n">COPYING</span> <span class="ow">and</span> <span class="n">the</span> <span class="n">pdfTeX</span> <span class="n">source</span><span class="o">.</span>
+<span class="n">Primary</span> <span class="n">author</span> <span class="n">of</span> <span class="n">pdfTeX</span><span class="p">:</span> <span class="n">Han</span> <span class="n">The</span> <span class="n">Thanh</span> <span class="p">(</span><span class="n">pdfTeX</span><span class="p">)</span> <span class="n">et</span> <span class="n">al</span><span class="o">.</span>
+<span class="n">Compiled</span> <span class="k">with</span> <span class="n">libpng</span> <span class="mf">1.6.37</span><span class="p">;</span> <span class="n">using</span> <span class="n">libpng</span> <span class="mf">1.6.37</span>
+<span class="n">Compiled</span> <span class="k">with</span> <span class="n">zlib</span> <span class="mf">1.2.11</span><span class="p">;</span> <span class="n">using</span> <span class="n">zlib</span> <span class="mf">1.2.11</span>
+<span class="n">Compiled</span> <span class="k">with</span> <span class="n">xpdf</span> <span class="n">version</span> <span class="mf">4.02</span>
+</pre></div>
+</div>
+<p>The above is all we need to have LaTeX work with R Markdown documents, however for Jupyter we need to add several more packages. Before we do this, please <a class="reference external" href="https://wiki.washjeff.edu/download/attachments/84967772/windows_10_logoff.png?version=1&amp;modificationDate=1474137276320&amp;api=v2">sign out of Windows</a> and back in again in order for the Git Bash terminal to be able to find the location of TinyTex.</p>
+<p>When you sign back in,
+install the additional LaTeX packages needed for Jupyter by pasting the following into the new terminal instance and press enter:
+by pasting the following:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tlmgr</span><span class="o">.</span><span class="n">bat</span> <span class="n">install</span> <span class="n">eurosym</span> \
+  <span class="n">adjustbox</span> \
+  <span class="n">caption</span> \
+  <span class="n">collectbox</span> \
+  <span class="n">enumitem</span> \
+  <span class="n">environ</span> \
+  <span class="n">fp</span> \
+  <span class="n">jknapltx</span> \
+  <span class="n">ms</span> \
+  <span class="n">parskip</span> \
+  <span class="n">pgf</span> \
+  <span class="n">rsfs</span> \
+  <span class="n">tcolorbox</span> \
+  <span class="n">titling</span> \
+  <span class="n">trimspaces</span> \
+  <span class="n">ucs</span> \
+  <span class="n">ulem</span> \
+  <span class="n">upquote</span>
+</pre></div>
+</div>
+<p>To test that your latex installation is working with jupyter notebooks,
+launch <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">lab</span></code> from a terminal and open either a new notebook
+or the same one you used to test IRkernel above.
+Go to <code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">-&gt;</span> <span class="pre">Export</span> <span class="pre">notebook</span> <span class="pre">as...</span> <span class="pre">-&gt;</span> <span class="pre">Export</span> <span class="pre">Notebook</span> <span class="pre">to</span> <span class="pre">PDF</span></code>.
+If the PDF file is created,
+your LaTeX environment is set up correctly.</p>
+</section>
+<section id="make">
+<h2>Make<a class="headerlink" href="#make" title="Permalink to this heading">#</a></h2>
+<p>Later in the program, we will be using <code class="docutils literal notranslate"><span class="pre">make</span></code> to automate our analysis scripts. <a class="reference external" href="https://downloads.sourceforge.net/project/ezwinports/make-4.3-without-guile-w32-bin.zip">Download <code class="docutils literal notranslate"><span class="pre">make</span></code> from this URL</a>. Click on the downloaded zip-file to open it in the File Explorer and click the button in the “Extract” tab that reads “Extract all”. Change the extract location to <code class="docutils literal notranslate"><span class="pre">C:\Users\YOUR_USERNAME\make-4.3</span></code> (substituting in your actual username instead of <code class="docutils literal notranslate"><span class="pre">YOUR_USERNAME</span></code>) and click “Extract”. See the screenshots below if you’re unsure what to click.</p>
+<img alt="" src="notes/setup/setup_images/extract-make.png" />
+<img alt="" src="notes/setup/setup_images/extract-make-path.png" />
+<p>Next we need to add make’s <code class="docutils literal notranslate"><span class="pre">bin</span></code> folder to our PATH so that we can use the command <code class="docutils literal notranslate"><span class="pre">make</span></code> from the terminal (like we did with R earlier). Open the bash configuration file with VS Code again by pasting this into a terminal:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">code</span> <span class="o">~/.</span><span class="n">bash_profile</span>
+</pre></div>
+</div>
+<p>And replace the section that reads:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span># Add R and Rscript to path
+export PATH=&quot;/c/Program Files/R/R-4.0.2/bin/x64&quot;:$PATH
+</pre></div>
+</div>
+<p>with the following to prepend make’s bin folder to the PATH
+(note that <code class="docutils literal notranslate"><span class="pre">${USERNAME}</span></code> below will be automatically expanded to your actual username by bash,
+so you don’t need to replace it manually.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span># Add R, Rscript, and Make to path
+export PATH=&quot;/c/Users/${USERNAME}/make-4.3/bin&quot;:&quot;/c/Program Files/R/R-4.0.2/bin/x64&quot;:$PATH
+</pre></div>
+</div>
+<p>Then save the file and exit VS Code.
+Launch a new terminal and run</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">make</span> <span class="o">--</span><span class="n">version</span>
+</pre></div>
+</div>
+<p>which should return something like</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">GNU</span> <span class="n">Make</span> <span class="mf">4.3</span>
+<span class="n">Built</span> <span class="k">for</span> <span class="n">Windows32</span>
+<span class="n">Copyright</span> <span class="p">(</span><span class="n">C</span><span class="p">)</span> <span class="mi">1988</span><span class="o">-</span><span class="mi">2020</span> <span class="n">Free</span> <span class="n">Software</span> <span class="n">Foundation</span><span class="p">,</span> <span class="n">Inc</span><span class="o">.</span>
+<span class="n">License</span> <span class="n">GPLv3</span><span class="o">+</span><span class="p">:</span> <span class="n">GNU</span> <span class="n">GPL</span> <span class="n">version</span> <span class="mi">3</span> <span class="ow">or</span> <span class="n">later</span> <span class="o">&lt;</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">gnu</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">licenses</span><span class="o">/</span><span class="n">gpl</span><span class="o">.</span><span class="n">html</span><span class="o">&gt;</span>
+<span class="n">This</span> <span class="ow">is</span> <span class="n">free</span> <span class="n">software</span><span class="p">:</span> <span class="n">you</span> <span class="n">are</span> <span class="n">free</span> <span class="n">to</span> <span class="n">change</span> <span class="ow">and</span> <span class="n">redistribute</span> <span class="n">it</span><span class="o">.</span>
+<span class="n">There</span> <span class="ow">is</span> <span class="n">NO</span> <span class="n">WARRANTY</span><span class="p">,</span> <span class="n">to</span> <span class="n">the</span> <span class="n">extent</span> <span class="n">permitted</span> <span class="n">by</span> <span class="n">law</span><span class="o">.</span>
+</pre></div>
+</div>
+</section>
+<section id="postgresql">
+<h2>PostgreSQL<a class="headerlink" href="#postgresql" title="Permalink to this heading">#</a></h2>
+<p>We will be using PostgreSQL as our database management system. You can <a class="reference external" href="https://www.enterprisedb.com/downloads/postgresql">download PostgreSQL 12.4 from here</a> (do <em>not</em> select version 13). Follow the instructions for the installation. In the password page, type whatever password you want, but make sure you’ll remember it later. For all the other options, use the default. You do not need to run “StackBuilder” at the end of the installation (if you accidentally launch the StackBuilder, click “cancel”, you don’t need to check any boxes).</p>
+<p>To test if the installation was successful open the <code class="docutils literal notranslate"><span class="pre">SQL</span> <span class="pre">Shell</span></code> app from the Start menu. You will be asked to setup your configuration, accept the default value (the one within square brackets) for the first four values by pressing enter four times, then type in your password and press enter one last time. It should look like this if it is working correctly:</p>
+<img alt="" src="notes/setup/setup_images/psql-windows.png" />
+</section>
+<section id="docker">
+<h2>Docker<a class="headerlink" href="#docker" title="Permalink to this heading">#</a></h2>
+<p>You will use Docker to create reproducible, sharable and shippable computing environments for your analyses. For this you will need a Docker account. You can sign up for a free one <a class="reference external" href="https://store.docker.com/signup?next=%2F%3Fref%3Dlogin">here</a>.</p>
+<p>After signing-up and signing into the Docker Store, go <a class="reference external" href="https://store.docker.com/editions/community/docker-ce-desktop-windows">here</a> and click on the “Get Stable” button on the right hand side of the screen. Then follow the installation instructions on that screen to install the stable version.</p>
+<p>After installation (Docker will make you sign out to finish installing), launch a terminal and type</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">docker</span> <span class="n">run</span> <span class="n">hello</span><span class="o">-</span><span class="n">world</span>
+</pre></div>
+</div>
+<p>which should output something like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Unable to find image &#39;hello-world:latest&#39; locally
+latest: Pulling from library/hello-world
+0e03bdcc26d7: Pulling fs layer
+0e03bdcc26d7: Verifying Checksum
+0e03bdcc26d7: Download complete
+0e03bdcc26d7: Pull complete
+Digest: sha256:49a1c8800c94df04e9658809b006fd8a686cab8028d33cfba2cc049724254202
+Status: Downloaded newer image for hello-world:latest
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the &quot;hello-world&quot; image from the Docker Hub.
+    (amd64)
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+To try something more ambitious, you can run an Ubuntu container with:
+ $ docker run -it ubuntu bash
+Share images, automate workflows, and more with a free Docker ID:
+ https://hub.docker.com/
+For more examples and ideas, visit:
+ https://docs.docker.com/get-started/
+</pre></div>
+</div>
+</section>
+<section id="improving-the-bash-configuration">
+<h2>Improving the bash configuration<a class="headerlink" href="#improving-the-bash-configuration" title="Permalink to this heading">#</a></h2>
+<p>To improve your experience using bash,
+we recommend appending a few lines to the end of your bash configuration file.
+This is optional,
+but makes it easier to use the TAB key for autocompletion
+and improves how bash handles the command history
+(we will talk more about these topics during class).
+First,
+open the configuration file:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">code</span> <span class="o">~/.</span><span class="n">bash_profile</span>
+</pre></div>
+</div>
+<p>Then paste the following at the end of the file
+(make sure not to overwrite any existing lines)
+and save it afterwards:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span># TAB completion configuration
+# TAB completion ignores case
+bind &quot;set completion-ignore-case on&quot;
+# Require only one instead of two TAB presses before showing matches
+bind &quot;set show-all-if-ambiguous on&quot;
+# If there are multiple matches for completion, cycle through them with TAB
+bind &#39;TAB&#39;:menu-complete
+# Perform partial completion on the first Tab press,
+# only start cycling full results on the second Tab press
+bind &quot;set menu-complete-display-prefix on&quot;
+
+# History configuration
+# Cycle through history based on characters already typed on the line
+bind &#39;&quot;\e[A&quot;:history-search-backward&#39;
+bind &#39;&quot;\e[B&quot;:history-search-forward&#39;
+# Append to the history file, don&#39;t overwrite it.
+shopt -s histappend
+# Write commands to history one-by-one right after they are executed
+# instead of all together when the terminal is closed.
+# Make new terminals see all commands run in currently open terminals and
+# prepend a newline to the prompt string to separate it from the last command&#39;s output
+PROMPT_COMMAND=&#39;history -a; echo&#39;
+# Increase history size
+HISTSIZE=50000
+HISTFILESIZE=50000
+
+# Aliases
+# Note that aliases only are in effect when you are using the shell interactively
+# (e.g. opening the Git Bash terminal and typing or pasting commands).
+# If you run a bash script or makefile,
+# the original command is used instead of your alias.
+# Run Python and Docker in compatibility mode when started from an interactive shell
+alias python=&quot;winpty python&quot;
+alias docker=&quot;winpty docker&quot;
+# `man` function to display help messages with a pager as on Unix
+man() {
+    $1 --help | less
+}
+</pre></div>
+</div>
+</section>
+<section id="post-installation-notes">
+<h2>Post-installation notes<a class="headerlink" href="#post-installation-notes" title="Permalink to this heading">#</a></h2>
+<p>You have completed the installation instructions, well done 🙌!
+We have created a script to help you check that your installation was successful,
+and to provide instructions for how you can troubleshoot any potential issues.
+To run this script,
+please execute the following command from your terminal.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">bash</span> <span class="o">&lt;</span><span class="p">(</span><span class="n">curl</span> <span class="o">-</span><span class="n">Ss</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">raw</span><span class="o">.</span><span class="n">githubusercontent</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">UBC</span><span class="o">-</span><span class="n">MDS</span><span class="o">/</span><span class="n">UBC</span><span class="o">-</span><span class="n">MDS</span><span class="o">.</span><span class="n">github</span><span class="o">.</span><span class="n">io</span><span class="o">/</span><span class="n">master</span><span class="o">/</span><span class="n">resources_pages</span><span class="o">/</span><span class="n">check</span><span class="o">-</span><span class="n">setup</span><span class="o">-</span><span class="n">mds</span><span class="o">.</span><span class="n">sh</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The output from running the script will look something like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span># MDS setup check 0.1.0
+
+If a program or package is marked as MISSING,
+this means that you are missing the required version of that program or package.
+Either it is not installed at all or the wrong version is installed.
+The required version is indicated with a number and an asterisk (*),
+e.g. 4.* means that all versions starting with 4 are accepted (4.0.1, 4.2.5, etc).
+
+You can run the following commands to find out which version
+of a program or package is installed (if any):
+```
+name_of_program --version  # For system programs
+conda list  # For Python packages
+R -q -e &quot;installed.packages()[,c(Package, Version)]&quot;  # For R packages
+```
+
+Checking program and package versions...
+
+## Operating system
+Microsoft Windows 10 Education
+64-bit
+10.0.19041
+
+## System programs
+OK        psql 12.3
+MISSING   rstudio=1.*
+OK        R 4.0.2 (2020-06-22) -- &quot;Taking Off Again&quot;
+OK        python 3.8.3
+OK        conda 4.8.3
+OK        bash 4-pc-linux-gnu)
+OK        git 2.27.0
+OK        make 4.3
+OK        latex 3.14159265-2.6-1.40.21 (TeX Live 2020)
+OK        tlmgr 55369 (2020-06-01 02:32:00 +0200)
+MISSING   docker=19.*
+MISSING   code=1.*
+
+## Python packages
+MISSING   jupyterlab=2.*
+MISSING   numpy=1.*
+MISSING   pandas=1.*
+OK        flake8=3.7.9
+MISSING   black=19.*
+MISSING   nodejs=10.*
+OK        jupytext=1.3.4
+MISSING   jupyterlab-git=0.*
+MISSING   jupyterlab PDF-generation failed. Check that latex and jupyterlab are marked OK above.
+
+## R packages
+OK        tidyverse=1.3.0
+OK        blogdown=0.20
+OK        xaringan=0.16
+OK        renv=0.11.0
+OK        IRkernel=1.1.1
+OK        tinytex=0.25
+OK        rmarkdown PDF-generation was successful
+
+This output and additional configuration details
+have been saved to the file check-setup-mds.log in this directory.
+</pre></div>
+</div>
+<p>As you can see at the end of the output,
+a log file is saved in your current directory.
+We might ask you to upload this file
+if we need to troubleshoot your installation,
+so that we can help you more effectively.
+If any of your packages are marked as “MISSING”
+you will need to figure out what is wrong and possibly reinstall them.
+Once all packages are marked as “OK”
+we will ask you to submit this log file,
+so that we can confirm that your installation was successful.
+Details on where to submit will be provided later.</p>
+<blockquote>
+<div><p>Note that in general you should be careful running scripts unless they come from a trusted source as in this case (just like how you should be careful when downloading and installing programs on your computer).</p>
+</div></blockquote>
+</section>
+<section id="attributions">
+<h2>Attributions<a class="headerlink" href="#attributions" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="http://cs109.github.io/2015/">Harvard CS109</a></p></li>
+<li><p><a class="reference external" href="http://stat545.com/packages01_system-prep.html#mac-os-system-prep">UBC STAT 545</a> licensed under the <a class="reference external" href="https://creativecommons.org/licenses/by-nc/3.0/legalcode">CC BY-NC 3.0</a>.</p></li>
+<li><p><a class="reference external" href="https://software-carpentry.org/">Software Carpentry</a></p></li>
+<li><p><a class="reference external" href="https://www.java.com/en/download/help/path.xml">Oracle - How do I set or change the PATH system variable?</a></p></li>
+<li><p><a class="reference external" href="https://clouds.eos.ubc.ca/~phil/numeric/python.html">Numerical Methods - Getting started</a></p></li>
+</ul>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>These instructions have been adapted and remixed from the original version provided by the UBC-Vancouver <a class="reference external" href="https://ubc-mds.github.io/resources_pages/installation_instructions/">MDS Install stack</a> under a CC-BY-SA 4.0 license. They were originally written by <a class="reference external" href="https://github.com/Anmol6">Anmol Jawandha</a> but have since been updated by Firas Moosvi, Joel Ostblom, Tomas Beuzen, Rodolfo Lourenzutti, &amp; Tiffany Timbers, and others.</p>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "firasm/jupyterbook_course_template",
+            ref: "main",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./notes/setup"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="install_macOS.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">macOS Software Stack</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="install_ubuntu.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Ubuntu Software Stack</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installation-notes">Installation notes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table-of-contents">Table of Contents</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ubc-student-email">UBC Student Email</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#web-browser">Web browser</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#zoom">Zoom</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#github-com-account">GitHub.com account</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#microsoft-office">Microsoft Office</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#terminal-gitbash">Terminal (GitBash)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visual-studio-code">Visual Studio Code</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python">Python</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-conda-and-python">Installing <code class="docutils literal notranslate"><span class="pre">conda</span></code> and python</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#integrating-python-with-the-git-bash-terminal">Integrating Python with the Git Bash terminal</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#essential-python-packages">Essential Python packages</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vscode-extensions">VSCode extensions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#git-and-github">Git and GitHub</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#install-git-on-your-computer">Install Git on your computer</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#configuring-git-user-info">Configuring Git user info</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#create-your-github-personal-access-token">Create your GitHub “Personal Access Token”</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#clone-your-first-repository-on-your-computer">Clone your first repository on your computer!</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#launch-vs-code-from-gitbash">Launch VS Code from GitBash</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#setting-vs-code-as-the-default-editor">Setting VS Code as the default editor</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tree">Tree</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#test-jupyterlab">Test JupyterLab</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-conda-and-jupyterlab">Python, Conda, and JupyterLab</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#python-and-conda">Python and Conda</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Integrating Python with the Git Bash terminal</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Essential Python packages</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#jupyterlab-setup">JupyterLab setup</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#r-irkernel-rtools-and-rstudio">R, IRkernel, Rtools, and RStudio</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#r">R</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rstudio">RStudio</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rtools">Rtools</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#essential-r-packages">Essential R packages</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#irkernel">IRkernel</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#latex">LaTeX</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#make">Make</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#postgresql">PostgreSQL</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#docker">Docker</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#improving-the-bash-configuration">Improving the bash configuration</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#post-installation-notes">Post-installation notes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#attributions">Attributions</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Firas Moosvi
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  <div>
+<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png"></a>
+    All content on this site (unless otherwise specified) is licensed under the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0 license</a>
+</div>
+
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

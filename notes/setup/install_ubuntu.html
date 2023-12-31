@@ -1,0 +1,1392 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Ubuntu Software Stack &#8212; Physics 111</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/extra.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pdf_print.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom_layouts.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "firasm/jupyterbook_course_template");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+    <script src="../../_static/save_state.js"></script>
+    <script src="../../_static/plausible_jupyterbookcoursetemplate.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'notes/setup/install_ubuntu';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Week 1" href="../demo01/demo01_summary.html" />
+    <link rel="prev" title="Windows Software Stack" href="install_windows.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+
+  <div class="bd-header-announcement container-fluid bd-header-announcement">
+    <div class="bd-header-announcement__content">Use this JupyterBook as a <a href='https://github.com/firasm/jupyterbook_course_template' style='color:pink;'>template by clicking here</a>!</div>
+  </div>
+
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../../about/unsyllabus.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo.jpg" class="logo__image only-light" alt="Physics 111 - Home"/>
+    <script>document.write(`<img src="../../_static/logo.jpg" class="logo__image only-dark" alt="Physics 111 - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../about/unsyllabus.html">
+                    Unsyllabus
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">About this course</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../about/pre_term.html">Before term starts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../about/syllabus.html">Course Syllabus (Official)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../about/course_schedule.html">Course Schedule</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../about/accommodations.html">Accommodations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../about/doing_well.html">How to do well in this course</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../about/faq.html">Frequently Asked Questions</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/tasks1.html">Before the Term starts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/tasks2.html">In the first week</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/tasks3.html">At the end of the first week</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="stack.html">Setup Your Machine</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="install_macOS.html">macOS Software Stack</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install_windows.html">Windows Software Stack</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Ubuntu Software Stack</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Demo section</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../demo01/demo01_summary.html">Demo 1 - Data Science</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../demo01/lecture1.html">Introduction to Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../demo01/lecture2.html">Platforms for Data Science</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../demo01/lecture3.html">Introduction to Microsoft Excel</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../demo02/demo02_summary.html">Demo 2 - Introductory Physics</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../demo02/videos.html">Videos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../demo02/homework.html">Homework</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../demo02/readings.html">Readings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../demo02/lab.html">Lab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../demo02/learninglogs.html">Learning Logs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../demo02/test.html">Test 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../demo03/demo03_summary.html">Demo 3 - Shakespeare</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../demo04/demo04_summary.html">Demo 4 - Chemistry</a></li>
+<li class="toctree-l2"><a class="reference external" href="https://firas.moosvi.com/books/active-learning-technologies/jupyterdays/capacitor_talk/Capacitor.html">Capacitor Lecture</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part 1 - Kinematics</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../week01/week01_summary.html">Week 1 - Introductions!</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../week02/week02_summary.html">Week 2 - Chapter 2</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../week02/readings.html">Readings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week02/videos.html">Videos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week02/homework.html">Homework</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week02/lecture.html">Lecture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week02/test.html">Test 0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week02/lab.html">Lab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week02/learninglogs.html">Learning Logs</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../week03/week03_summary.html">Week 3 - Chapter 3</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../week03/readings.html">Readings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week03/videos.html">Videos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week03/homework.html">Homework</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week03/lecture.html">Lecture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week03/test.html">Test 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week03/lab.html">Lab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week03/learninglogs.html">Learning Logs</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../week04/week04_summary.html">Week 4 - Chapter 4</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../week04/readings.html">Readings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week04/videos.html">Videos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week04/homework.html">Homework</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week04/lecture.html">Lecture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week04/test.html">Bonus Test 01</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week04/lab.html">Lab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week04/learninglogs.html">Learning Logs</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part 2 - Dynamics</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../week05/week05_summary.html">Week 5 - Chapter 5</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../week05/readings.html">Readings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week05/videos.html">Videos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week05/homework.html">Homework</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week05/lecture.html">Lecture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week05/test.html">Test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week05/lab.html">Lab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week05/learninglogs.html">Learning Logs</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../week06/week06_summary.html">Week 6 - Week Off !!</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../week07/week07_summary.html">Week 7 - Chapter 6</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../week07/readings.html">Readings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week07/videos.html">Videos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week07/homework.html">Homework</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week07/lecture.html">Lecture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week07/test.html">Test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week07/lab.html">Lab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week07/learninglogs.html">Learning Logs</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../week08/week08_summary.html">Week 8 - Chapter 7</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../week08/readings.html">Readings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week08/videos.html">Videos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week08/homework.html">Homework</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week08/lecture.html">Lecture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week08/test.html">Test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week08/lab.html">Lab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week08/learninglogs.html">Learning Logs</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../week09/week09_summary.html">Week 9 - Chapter 8</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../week09/readings.html">Readings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week09/videos.html">Videos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week09/homework.html">Homework</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week09/lecture.html">Lecture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week09/test.html">Test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week09/lab.html">Lab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week09/learninglogs.html">Learning Logs</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part 3 - Energy &amp; Momentum</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../week10/week10_summary.html">Week 10 - Chapter 9</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../week10/readings.html">Readings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week10/videos.html">Videos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week10/homework.html">Homework</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week10/lecture.html">Lecture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week10/test.html">Test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week10/lab.html">Lab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week10/learninglogs.html">Learning Logs</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../week11/week11_summary.html">Week 11 - Chapter 10</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../week11/readings.html">Readings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week11/videos.html">Videos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week11/homework.html">Homework</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week11/lecture.html">Lecture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week11/test.html">Test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week11/lab.html">Lab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week11/learninglogs.html">Learning Logs</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../week12/week12_summary.html">Week 12 - Chapter 11</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../week12/readings.html">Readings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week12/videos.html">Videos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week12/homework.html">Homework</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week12/lecture.html">Lecture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week12/test.html">Test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week12/lab.html">Lab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week12/learninglogs.html">Learning Logs</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Week 13 - Exam Review</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../week13/week13_summary.html">Week 13 - Review</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-14"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../week13/readings.html">Readings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week13/videos.html">Videos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week13/homework.html">Homework</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week13/lecture.html">Lecture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week13/test.html">Test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week13/lab.html">Lab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../week13/learninglogs.html">Learning Logs</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Final Exam</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../final.html">Final Exam Information</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Lab Materials</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../labs.html">Lab Stuff</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Course Feedback</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../about/feedback.html">Anonymous Feedback Form</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/firasm/jupyterbook_course_template" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/firasm/jupyterbook_course_template/edit/main/notes/setup/install_ubuntu.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/firasm/jupyterbook_course_template/issues/new?title=Issue%20on%20page%20%2Fnotes/setup/install_ubuntu.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/notes/setup/install_ubuntu.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Ubuntu Software Stack</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table-of-contents">Table of Contents</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installation-notes">Installation notes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ubc-student-email">UBC Student Email</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#web-browser">Web browser</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visual-studio-code">Visual Studio Code</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#github">GitHub</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#github-com">GitHub.com</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#github-ubc-ca">GitHub.ubc.ca</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#git">Git</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#configuring-git-user-info">Configuring Git user info</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#setting-vs-code-as-the-default-editor">Setting VS Code as the default editor</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-conda-and-jupyterlab">Python, Conda, and JupyterLab</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#python-and-conda">Python and Conda</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#essential-python-packages">Essential Python packages</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jupyterlab-setup">JupyterLab setup</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#r-irkernel-and-rstudio">R, IRkernel, and RStudio</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#r">R</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rstudio">RStudio</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#essential-r-packages">Essential R packages</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#irkernel">IRkernel</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#latex">LaTeX</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#postgresql">PostgreSQL</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#docker">Docker</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vs-code-extensions">VS Code extensions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#improving-the-bash-configuration">Improving the bash configuration</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#post-installation-notes">Post-installation notes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#attributions">Attributions</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="ubuntu-software-stack">
+<span id="page-install-ubuntu"></span><h1>Ubuntu Software Stack<a class="headerlink" href="#ubuntu-software-stack" title="Permalink to this heading">#</a></h1>
+<!-- Open links in a new tab unless they have the `` attribute -->
+<head>
+    <base target="_blank">
+</head>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>This guide has been (lightly) adapted from the UBC-Vancouver <a class="reference external" href="https://ubc-mds.github.io/resources_pages/installation_instructions/">MDS Install stack</a> under a CC-BY-SA 4.0 license.</p>
+</div>
+<p>These instructions will walk you through installing the required software stack for the UBC Master of Data Science program. Before starting, ensure that your laptop meets our program requirements:</p>
+<ul class="simple">
+<li><p>runs one of the following operating systems: macOS 10.15.X (Catalina), Ubuntu 20.04, Windows 10 Professional, Enterprise or Education; version 2004.</p>
+<ul>
+<li><p><strong>Windows 10 Home is not sufficient</strong> as not all the software required for the program can be installed on that OS. <a class="reference external" href="https://it.ubc.ca/software-downloads">Click here to download Windows 10 Education for free from UBC.</a></p></li>
+<li><p>When installing Ubuntu, checking the box “Install third party…” will (among other things) install proprietary drivers, which can be helpful for wifi and graphics cards.</p></li>
+</ul>
+</li>
+<li><p>can connect to networks via a wireless connection</p></li>
+<li><p>has at least 50 GB disk space available</p></li>
+<li><p>has at least 8 GB of RAM</p></li>
+<li><p>uses a 64-bit CPU</p></li>
+<li><p>is at most 6 years old at the start of the program (4 years old or newer is recommended)</p></li>
+<li><p>uses English as the default language</p></li>
+<li><p>student user has full administrative access to the computer</p></li>
+</ul>
+<p><strong>Students’ whose laptops do not meet the requirements specified above will not be able to receive technical assistance from the MDS team in troubleshooting installation issues.</strong></p>
+<section id="table-of-contents">
+<h2>Table of Contents<a class="headerlink" href="#table-of-contents" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="#ubc-student-email"><span class="std std-doc">UBC Student Email</span></a></p></li>
+<li><p><a class="reference internal" href="#web-browser"><span class="std std-doc">Web browser</span></a></p></li>
+<li><p><span class="xref myst">LastPass password manager</span></p></li>
+<li><p><span class="xref myst">Slack</span></p></li>
+<li><p><a class="reference internal" href="#visual-studio-code"><span class="std std-doc">Visual Studio Code</span></a></p></li>
+<li><p><a class="reference internal" href="#github"><span class="std std-doc">GitHub</span></a></p></li>
+<li><p><a class="reference internal" href="#git"><span class="std std-doc">Git</span></a></p></li>
+<li><p><a class="reference internal" href="#python-conda-and-jupyterlab"><span class="std std-doc">Python, Conda, and JupyterLab</span></a></p></li>
+<li><p><a class="reference internal" href="#r-irkernel-and-rstudio"><span class="std std-doc">R, IRkernel, and RStudio</span></a></p></li>
+<li><p><a class="reference internal" href="#latex"><span class="std std-doc">LaTeX</span></a></p></li>
+<li><p><a class="reference internal" href="#postgresql"><span class="std std-doc">PostgreSQL</span></a></p></li>
+<li><p><a class="reference internal" href="#docker"><span class="std std-doc">Docker</span></a></p></li>
+<li><p><a class="reference internal" href="#vs-code-extensions"><span class="std std-doc">VS Code extensions</span></a></p></li>
+<li><p><a class="reference internal" href="#improving-the-bash-configuration"><span class="std std-doc">Improving the bash configuration</span></a></p></li>
+<li><p><a class="reference internal" href="#post-installation-notes"><span class="std std-doc">Post-installation notes</span></a></p></li>
+</ul>
+</section>
+<section id="installation-notes">
+<h2>Installation notes<a class="headerlink" href="#installation-notes" title="Permalink to this heading">#</a></h2>
+<p>If you have already installed Git, Latex, or any of the R or Python related packages
+please uninstall these and follow the instructions below to reinstall them
+(make sure to also remove any user configuration files and backup them if desired).
+In order to be able to support you effectively
+and minimize setup issues and software conflicts,
+we require all students to install the software stack the same way.</p>
+<p>In all the sections below,
+if you are presented with the choice to download either a 64-bit (also called x64)
+or a 32-bit (also called x86) version of the application <strong>always</strong> choose the 64-bit version.</p>
+<p>Once you have completed these installation instructions,
+make sure to follow the post-installation notes at the end
+to check that all software is setup correctly.</p>
+</section>
+<section id="ubc-student-email">
+<h2>UBC Student Email<a class="headerlink" href="#ubc-student-email" title="Permalink to this heading">#</a></h2>
+<p>Please sign up for a UBC Student Email. This account will also grant you access to a range of UBC services, including Microsoft Teams and OneDrive. To do so navigate to <a class="reference external" href="https://it.ubc.ca/services/email-voice-internet/ubc-student-email-service">https://it.ubc.ca/services/email-voice-internet/ubc-student-email-service</a> and follow the instructions under “Get Started”.</p>
+</section>
+<section id="web-browser">
+<h2>Web browser<a class="headerlink" href="#web-browser" title="Permalink to this heading">#</a></h2>
+<p>In MDS we will be using many tools that work most reliably on Google Chrome and Firefox (including our online quiz software), so we recommend that you use one of these browsers.</p>
+<ul class="simple">
+<li><p>Firefox comes preinstalled with Ubuntu, so there is not need to download anything.</p></li>
+<li><p>To install Chrome, go to <a class="reference external" href="https://www.google.com/chrome/">https://www.google.com/chrome/</a>, click on “Download Chrome” choose the deb-file, download it to your computer and click on the downloaded file to install it.</p></li>
+</ul>
+<blockquote>
+<div><p>Note that if you select “open with” and try to open the file directly with the Ubuntu Software app instead of downloading it first, the software app might complain that the file is not supported.</p>
+</div></blockquote>
+</section>
+<section id="visual-studio-code">
+<h2>Visual Studio Code<a class="headerlink" href="#visual-studio-code" title="Permalink to this heading">#</a></h2>
+<p>The open-source text editor Visual Studio Code (VS Code) is both a powerful text editor and a full-blown Python IDE, which we will use for more complex analysis. You can install VS Code either via the <a class="reference external" href="https://snapcraft.io/code">Snap store/Ubuntu software app through this link</a> or via the downloadable deb-file from the VS code website <a class="reference external" href="https://code.visualstudio.com/download">https://code.visualstudio.com/download</a>. The getting started instructions are here: <a class="reference external" href="https://code.visualstudio.com/docs/?dv=linux64_deb">https://code.visualstudio.com/docs/?dv=linux64_deb</a>.</p>
+<p>You can test that VS code is installed and can be opened from Terminal by restarting terminal and typing the following command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">code</span> <span class="o">--</span><span class="n">version</span>
+</pre></div>
+</div>
+<p>you should see something like this if you were successful:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mf">1.47.0</span>
+<span class="n">d5e9aa0227e057a60c82568bf31c04730dc15dcd</span>
+<span class="n">x64</span>
+</pre></div>
+</div>
+</section>
+<section id="github">
+<h2>GitHub<a class="headerlink" href="#github" title="Permalink to this heading">#</a></h2>
+<p>In MDS we will use the publicly available <a class="reference external" href="https://github.com/">GitHub.com</a> as well as an Enterprise version of GitHub hosted here at UBC, <a class="reference external" href="https://github.ubc.ca">GitHub.ubc.ca</a>. Please follow the set-up instructions for both below.</p>
+<section id="github-com">
+<h3><a class="reference external" href="http://GitHub.com">GitHub.com</a><a class="headerlink" href="#github-com" title="Permalink to this heading">#</a></h3>
+<p>Sign up for a free account at <a class="reference external" href="https://github.com/">GitHub.com</a> if you don’t have one already.</p>
+</section>
+<section id="github-ubc-ca">
+<h3><a class="reference external" href="http://GitHub.ubc.ca">GitHub.ubc.ca</a><a class="headerlink" href="#github-ubc-ca" title="Permalink to this heading">#</a></h3>
+<p>To add you to the MDS organization on <a class="reference external" href="https://github.ubc.ca">Github.ubc.ca</a> we need you to login to <a class="reference external" href="https://github.ubc.ca">Github.ubc.ca</a> using your CWL credentials.</p>
+<p>This step is required for</p>
+<ul class="simple">
+<li><p>being able to store your work</p></li>
+<li><p>all homework submission and grading</p></li>
+<li><p>working collaboratively</p></li>
+</ul>
+</section>
+</section>
+<section id="git">
+<h2>Git<a class="headerlink" href="#git" title="Permalink to this heading">#</a></h2>
+<p>We will be using the command line version of Git as well as Git through RStudio and JupyterLab. Some of the Git commands we will use are only available since Git 2.23, so if you’re Git is older than this version, we ask you to update it using the following command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span> <span class="n">update</span>
+<span class="n">sudo</span> <span class="n">apt</span> <span class="n">install</span> <span class="n">git</span>
+</pre></div>
+</div>
+<p>You can check your git version with the following command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="o">--</span><span class="n">version</span>
+</pre></div>
+</div>
+<section id="configuring-git-user-info">
+<h3>Configuring Git user info<a class="headerlink" href="#configuring-git-user-info" title="Permalink to this heading">#</a></h3>
+<p>Next, we need to configure Git by telling it your name and email. To do this type the following into the terminal (replacing Jane Doe and <a class="reference external" href="mailto:janedoe&#37;&#52;&#48;example&#46;com">janedoe<span>&#64;</span>example<span>&#46;</span>com</a>, with your name and email (the same you used on GitHub), respectively):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="k">global</span> <span class="n">user</span><span class="o">.</span><span class="n">name</span> <span class="s2">&quot;Jane Doe&quot;</span>
+<span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="k">global</span> <span class="n">user</span><span class="o">.</span><span class="n">email</span> <span class="n">janedoe</span><span class="nd">@example</span><span class="o">.</span><span class="n">com</span>
+</pre></div>
+</div>
+<blockquote>
+<div><p>Note: to ensure that you haven’t made a typo in any of the above, you can view your global Git configurations by either opening the configuration file in a text editor (e.g. via the command <code class="docutils literal notranslate"><span class="pre">code</span> <span class="pre">~/.gitconfig</span></code>) or by typing <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">config</span> <span class="pre">--list</span> <span class="pre">--global</span></code>.</p>
+</div></blockquote>
+</section>
+<section id="setting-vs-code-as-the-default-editor">
+<h3>Setting VS Code as the default editor<a class="headerlink" href="#setting-vs-code-as-the-default-editor" title="Permalink to this heading">#</a></h3>
+<p>To make programs run from the terminal (such as <code class="docutils literal notranslate"><span class="pre">git</span></code>) use VS Code by default, we will modify the bash configuration file <code class="docutils literal notranslate"><span class="pre">~/.bashrc</span></code>. First, open it using VS Code:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">code</span> <span class="o">~/.</span><span class="n">bashrc</span>
+</pre></div>
+</div>
+<blockquote>
+<div><p>Note: If you see any existing lines in your <code class="docutils literal notranslate"><span class="pre">~/.bashrc</span></code>
+related to a previous Python or R installation,
+please remove these.</p>
+</div></blockquote>
+<p>Append the following lines:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span># Set the default editor for programs launch from terminal
+EDITOR=&quot;code --wait&quot;
+VISUAL=$EDITOR  # Use the same value as for &quot;EDITOR&quot; in the line above
+</pre></div>
+</div>
+<p>Then save the file and exit VS Code.</p>
+<blockquote>
+<div><p>Most terminal programs will read the <code class="docutils literal notranslate"><span class="pre">EDITOR</span></code> environmental variable when determining which editor to use, but some read <code class="docutils literal notranslate"><span class="pre">VISUAL</span></code>, so we’re setting both to the same value.</p>
+</div></blockquote>
+</section>
+</section>
+<section id="python-conda-and-jupyterlab">
+<h2>Python, Conda, and JupyterLab<a class="headerlink" href="#python-conda-and-jupyterlab" title="Permalink to this heading">#</a></h2>
+<section id="python-and-conda">
+<h3>Python and Conda<a class="headerlink" href="#python-and-conda" title="Permalink to this heading">#</a></h3>
+<p>We will be using Python for a large part of the program, and <code class="docutils literal notranslate"><span class="pre">conda</span></code> as our Python package manager. To install Python and the <code class="docutils literal notranslate"><span class="pre">conda</span></code> package manager, we will use the <a class="reference external" href="https://docs.conda.io/en/latest/miniconda.html">Miniconda platform (read more here)</a>, for which the <a class="reference external" href="https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh">Python 3.8 64-bit version can be downloaded here</a>.</p>
+<p>Once the download is finished, open Terminal and execute the following commands:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">bash</span> <span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">file</span>
+</pre></div>
+</div>
+<blockquote>
+<div><p>Note: most often this file is downloaded to the <code class="docutils literal notranslate"><span class="pre">Downloads</span></code> directory, and thus the command will look like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">bash</span> <span class="n">Downloads</span><span class="o">/</span><span class="n">Miniconda3</span><span class="o">-</span><span class="n">latest</span><span class="o">-</span><span class="n">Linux</span><span class="o">-</span><span class="n">x86_64</span><span class="o">.</span><span class="n">sh</span>
+</pre></div>
+</div>
+</div></blockquote>
+<p>The instructions for the installation will then appear:</p>
+<p>(1) Press Enter.
+(2) Once the licence agreement shows, you can press space scroll down, or press <code class="docutils literal notranslate"><span class="pre">q</span></code> to skip reading it.
+(3) Type <code class="docutils literal notranslate"><span class="pre">yes</span></code> and press enter to accept the licence agreement.
+(4) Press enter to accept the default installation location.
+(5) Type <code class="docutils literal notranslate"><span class="pre">yes</span></code> and press enter to instruct the installer to run <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">init</span></code>, which makes <code class="docutils literal notranslate"><span class="pre">conda</span></code> available from the terminal/shell.</p>
+<p>After installation, restart the terminal. If the installation was successful, you will see <code class="docutils literal notranslate"><span class="pre">(base)</span></code> prepending to your prompt string. To confirm that <code class="docutils literal notranslate"><span class="pre">conda</span></code> is working, you can ask it which version was installed:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="o">--</span><span class="n">version</span>
+</pre></div>
+</div>
+<p>which should return something like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="mf">4.8.3</span>
+</pre></div>
+</div>
+<p>Next, type the following to ask for the version of Python:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="o">--</span><span class="n">version</span>
+</pre></div>
+</div>
+<p>which should return something like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Python</span> <span class="mf">3.8.3</span>
+</pre></div>
+</div>
+<blockquote>
+<div><p>Note: If instead you see <code class="docutils literal notranslate"><span class="pre">Python</span> <span class="pre">2.7.X</span></code> you installed the wrong version. Uninstall the Miniconda you just installed (which usually lives in the <code class="docutils literal notranslate"><span class="pre">/home/&lt;USER&gt;</span></code> directory), and try the installation again, selecting <strong>Python 3.8</strong>.</p>
+</div></blockquote>
+</section>
+</section>
+<section id="essential-python-packages">
+<h2>Essential Python packages<a class="headerlink" href="#essential-python-packages" title="Permalink to this heading">#</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">conda</span></code> installs Python packages from different online repositories which are called “channels”.
+A package needs to go through thorough testing before it is included in the default channel,
+which is good for stability,
+but also means that new versions will be delayed and fewer packages are available overall.
+There is a community-driven effort called the <a class="reference external" href="https://conda-forge.org/">conda-forge (read more here)</a>,
+which provides more up to date packages
+To enable us to access the most up to date version of the Python packages we are going to use,
+we will add the more up to date  channel,
+To add the conda-forge channel by typing the following in the terminal:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">config</span> <span class="o">--</span><span class="n">add</span> <span class="n">channels</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span>
+</pre></div>
+</div>
+<p>To install packages individually, we can now use the following command: <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">&lt;package-name&gt;</span></code>. Let’s install the key packages needed for the start of our program:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">install</span> \
+ <span class="s2">&quot;jupyterlab=2.*&quot;</span> \
+ <span class="s2">&quot;numpy=1.*&quot;</span> \
+ <span class="s2">&quot;pandas=1.*&quot;</span> \
+ <span class="s2">&quot;flake8=3.*&quot;</span> \
+ <span class="s2">&quot;black=19.*&quot;</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">conda</span></code> will show you the packages that will be downloaded,
+and you can press enter to proceed with the installation.
+If you want to answer <code class="docutils literal notranslate"><span class="pre">yes</span></code> by default and skip this confirmation step,
+you can replace <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span></code> with <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">-y</span></code>.</p>
+<blockquote>
+<div><p>Note: we will use many more packages than those listed above across the MDS program, however we will manage these using virtual environments (which you will learn about in DSCI 521: Platforms for Data Science).</p>
+</div></blockquote>
+</section>
+<section id="jupyterlab-setup">
+<h2>JupyterLab setup<a class="headerlink" href="#jupyterlab-setup" title="Permalink to this heading">#</a></h2>
+<p>We will be using the Jupytext Python package and the JupyterLab git extension to facilitate using Jupyter notebooks with Git &amp; GitHub. Install them via the following commands:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">install</span> <span class="n">nodejs</span><span class="o">=</span><span class="mf">10.</span><span class="o">*</span>
+<span class="n">pip</span> <span class="n">install</span> <span class="o">--</span><span class="n">upgrade</span> <span class="n">jupyterlab</span><span class="o">-</span><span class="n">git</span>
+<span class="n">conda</span> <span class="n">install</span> <span class="n">jupytext</span><span class="o">=</span><span class="mf">1.</span><span class="o">*</span>
+<span class="n">jupyter</span> <span class="n">lab</span> <span class="n">build</span>
+</pre></div>
+</div>
+<p>To test that your JupyterLab installation is functional, you can type <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">lab</span></code> into a terminal, which should open a new tab in your default browser with the JupyterLab interface.
+To exit out of JupyterLab you can click <code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">-&gt;</span> <span class="pre">Shutdown</span></code>,
+or go to the terminal from which you launched JupyterLab and hold <code class="docutils literal notranslate"><span class="pre">Ctrl</span></code> while pressing <code class="docutils literal notranslate"><span class="pre">c</span></code> twice.</p>
+</section>
+<section id="r-irkernel-and-rstudio">
+<h2>R, IRkernel, and RStudio<a class="headerlink" href="#r-irkernel-and-rstudio" title="Permalink to this heading">#</a></h2>
+<p>R is another programming language that we will be using a lot in the MDS program. We will use R both in Jupyter notebooks and in RStudio.</p>
+<section id="r">
+<h3>R<a class="headerlink" href="#r" title="Permalink to this heading">#</a></h3>
+<p>The version of R available in the default Ubuntu repositories (<code class="docutils literal notranslate"><span class="pre">3.6.*</span></code>) is older than the one we use in MDS (<code class="docutils literal notranslate"><span class="pre">4.*</span></code>). To obtain the latest R <code class="docutils literal notranslate"><span class="pre">4.*</span></code> packages, we need to add a new repository which is maintained directly by the r-project. To do this, first add the key for this repository by typing the following:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">key</span> <span class="n">adv</span> <span class="o">--</span><span class="n">keyserver</span> <span class="n">keyserver</span><span class="o">.</span><span class="n">ubuntu</span><span class="o">.</span><span class="n">com</span> <span class="o">--</span><span class="n">recv</span><span class="o">-</span><span class="n">keys</span> <span class="n">E298A3A825C0D65DFD57CBB651716619E084DAB9</span>
+</pre></div>
+</div>
+<p>Then add the URL to the repository:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">add</span><span class="o">-</span><span class="n">repository</span> <span class="s1">&#39;deb https://cloud.r-project.org/bin/linux/ubuntu focal-cran40/&#39;</span>
+</pre></div>
+</div>
+<p>Next, install <code class="docutils literal notranslate"><span class="pre">r-base</span></code> and <code class="docutils literal notranslate"><span class="pre">r-base-dev</span></code> (useful for compiling R packages from source):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span> <span class="n">install</span> <span class="n">r</span><span class="o">-</span><span class="n">base</span> <span class="n">r</span><span class="o">-</span><span class="n">base</span><span class="o">-</span><span class="n">dev</span>
+</pre></div>
+</div>
+<p>After installation, type the following in a terminal to ask for the version:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">R</span> <span class="o">--</span><span class="n">version</span>
+</pre></div>
+</div>
+<p>You should see something like this if you were successful:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">R</span> <span class="n">version</span> <span class="mf">4.0.2</span> <span class="p">(</span><span class="mi">2020</span><span class="o">-</span><span class="mi">06</span><span class="o">-</span><span class="mi">22</span><span class="p">)</span> <span class="o">--</span> <span class="s2">&quot;Taking Off Again&quot;</span>
+<span class="n">Copyright</span> <span class="p">(</span><span class="n">C</span><span class="p">)</span> <span class="mi">2020</span> <span class="n">The</span> <span class="n">R</span> <span class="n">Foundation</span> <span class="k">for</span> <span class="n">Statistical</span> <span class="n">Computing</span>
+<span class="n">Platform</span><span class="p">:</span> <span class="n">x86_64</span><span class="o">-</span><span class="n">pc</span><span class="o">-</span><span class="n">linux</span><span class="o">-</span><span class="n">gnu</span> <span class="p">(</span><span class="mi">64</span><span class="o">-</span><span class="n">bit</span><span class="p">)</span>
+
+<span class="n">R</span> <span class="ow">is</span> <span class="n">free</span> <span class="n">software</span> <span class="ow">and</span> <span class="n">comes</span> <span class="k">with</span> <span class="n">ABSOLUTELY</span> <span class="n">NO</span> <span class="n">WARRANTY</span><span class="o">.</span>
+<span class="n">You</span> <span class="n">are</span> <span class="n">welcome</span> <span class="n">to</span> <span class="n">redistribute</span> <span class="n">it</span> <span class="n">under</span> <span class="n">the</span> <span class="n">terms</span> <span class="n">of</span> <span class="n">the</span>
+<span class="n">GNU</span> <span class="n">General</span> <span class="n">Public</span> <span class="n">License</span> <span class="n">versions</span> <span class="mi">2</span> <span class="ow">or</span> <span class="mf">3.</span>
+<span class="n">For</span> <span class="n">more</span> <span class="n">information</span> <span class="n">about</span> <span class="n">these</span> <span class="n">matters</span> <span class="n">see</span>
+<span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">gnu</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">licenses</span><span class="o">/.</span>
+</pre></div>
+</div>
+<blockquote>
+<div><p>Note: Although it is possible to install R through conda, we highly recommend not doing so. In case you have already installed R using conda you can remove it by executing <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">uninstall</span> <span class="pre">r-base</span></code>.</p>
+</div></blockquote>
+</section>
+<section id="rstudio">
+<h3>RStudio<a class="headerlink" href="#rstudio" title="Permalink to this heading">#</a></h3>
+<p>Download the Ubuntu 18/Debian 10 Desktop version of RStudio Preview from <a class="reference external" href="https://rstudio.com/products/rstudio/download/preview/">https://rstudio.com/products/rstudio/download/preview/</a>. Open the file and follow the installer instructions.</p>
+<blockquote>
+<div><p>Note that there is not yet an official RStudio version for Ubuntu 20.04, so it is recommended to use the Ubuntu 18 version. Also note that if you select “open with” and try to open the file directly with the Ubuntu Software app instead of downloading it first, the software app might complain that the file is not supported.</p>
+</div></blockquote>
+<p>To see if you were successful, try opening RStudio by clicking on its icon or typing <code class="docutils literal notranslate"><span class="pre">rstudio</span></code> in a terminal. It should open and look something like this picture below:</p>
+<img alt="" src="../../_images/RStudio-ubuntu.png" />
+<blockquote>
+<div><p>Note that since we installed RStudio directly from a deb file rather than from a repository or a snap package, it will not be updated when we run <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">apt</span> <span class="pre">upgrade</span></code> and not automatically as for snap packages. Instead, RStudio will notify you of any available updates when the program is launched.</p>
+</div></blockquote>
+</section>
+<section id="essential-r-packages">
+<h3>Essential R packages<a class="headerlink" href="#essential-r-packages" title="Permalink to this heading">#</a></h3>
+<p>The <code class="docutils literal notranslate"><span class="pre">tidyverse</span></code> R package (and some others) have external dependencies on Ubuntu outside of R. We need to install these first before we install such R packages:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span> <span class="n">install</span> <span class="n">libcurl4</span><span class="o">-</span><span class="n">openssl</span><span class="o">-</span><span class="n">dev</span> <span class="n">libssl</span><span class="o">-</span><span class="n">dev</span> <span class="n">libxml2</span><span class="o">-</span><span class="n">dev</span>
+</pre></div>
+</div>
+<p>Next, install the key R packages needed for the start of MDS program,
+by opening up RStudio and
+typing the following into the R console inside RStudio:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">install</span><span class="o">.</span><span class="n">packages</span><span class="p">(</span><span class="n">c</span><span class="p">(</span><span class="s1">&#39;tidyverse&#39;</span><span class="p">,</span> <span class="s1">&#39;blogdown&#39;</span><span class="p">,</span> <span class="s1">&#39;xaringan&#39;</span><span class="p">,</span> <span class="s1">&#39;renv&#39;</span><span class="p">,</span> <span class="s1">&#39;usethis&#39;</span><span class="p">,</span> <span class="s1">&#39;devtools&#39;</span><span class="p">))</span>
+</pre></div>
+</div>
+<blockquote>
+<div><p>Note: we will use many more packages than those listed above across the MDS program, however we will manage these using the <code class="docutils literal notranslate"><span class="pre">renv</span></code> package manager (which you will learn about in DSCI 521: Platforms for Data Science).</p>
+</div></blockquote>
+</section>
+<section id="irkernel">
+<h3>IRkernel<a class="headerlink" href="#irkernel" title="Permalink to this heading">#</a></h3>
+<p>The <code class="docutils literal notranslate"><span class="pre">IRkernel</span></code> package is needed to make R work in Jupyter notebooks. To enable this kernel in the notebooks, install it and run the setup via the following two commands:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">install</span><span class="o">.</span><span class="n">packages</span><span class="p">(</span><span class="s1">&#39;IRkernel&#39;</span><span class="p">)</span>
+<span class="n">IRkernel</span><span class="p">::</span><span class="n">installspec</span><span class="p">()</span>
+</pre></div>
+</div>
+<blockquote>
+<div><p>Note: If you see an error message saying “jupyter-client has to be installed…”,
+close RStudio and run the following line from your terminal instead <code class="docutils literal notranslate"><span class="pre">R</span> <span class="pre">-e</span> <span class="pre">&quot;IRkernel::installspec()&quot;</span></code>.</p>
+</div></blockquote>
+<p>To see if you were successful, try running JupyterLab and check if you have a working R kernel. To launch JupyterLab, type the following in a terminal:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">jupyter</span> <span class="n">lab</span>
+</pre></div>
+</div>
+<p>A browser should have launched and you should see a page that looks like the screenshot below. Now click on “R” notebook (circled in red on the screenshot below) to launch an JupyterLab with an R kernel.</p>
+<img alt="" src="../../_images/jupyter_lab_r_kernel.png" />
+<p>Sometimes a kernel loads, but doesn’t work as expected. To test whether your installation was done correctly now type <code class="docutils literal notranslate"><span class="pre">library(tidyverse)</span></code> in the code cell and click on the run button to run the cell. If your R kernel works you should see something like the image below:</p>
+<img alt="" src="../../_images/jupyter_lab_r_kernel2.png" />
+<p>To improve the experience of using R in JupyterLab,
+we will add an extension that allows us to setup keyboard shortcuts for inserting text
+(thanks to former MDS student Ryan Homer for developing this extension!).
+By default,
+it creates shortcuts for inserting two of the most common R operators: <code class="docutils literal notranslate"><span class="pre">&lt;-</span></code> and <code class="docutils literal notranslate"><span class="pre">%&gt;%</span></code>.
+Run the following from terminal to install the extension:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">jupyter</span> <span class="n">labextension</span> <span class="n">install</span> <span class="nd">@techrah</span><span class="o">/</span><span class="n">text</span><span class="o">-</span><span class="n">shortcuts</span>
+<span class="n">jupyter</span> <span class="n">lab</span> <span class="n">build</span>
+</pre></div>
+</div>
+<p>To check that the extension is working,
+open JupyterLab,
+launch an R notebook,
+and try inserting the operators by pressing <code class="docutils literal notranslate"><span class="pre">Alt</span></code> + <code class="docutils literal notranslate"><span class="pre">-</span></code> or <code class="docutils literal notranslate"><span class="pre">Shift</span></code> + <code class="docutils literal notranslate"><span class="pre">Ctrl</span></code> + <code class="docutils literal notranslate"><span class="pre">m</span></code>, respectively.</p>
+</section>
+</section>
+<section id="latex">
+<h2>LaTeX<a class="headerlink" href="#latex" title="Permalink to this heading">#</a></h2>
+<p>We will install the lightest possible version of LaTeX and it’s necessary packages as possible so that we can render Jupyter notebooks and R Markdown documents to html and PDF. If you have previously installed LaTeX, please uninstall it before proceeding with these instructions.</p>
+<p>First, open RStudio and run the following commands to install the <code class="docutils literal notranslate"><span class="pre">tinytex</span></code> package and setup <code class="docutils literal notranslate"><span class="pre">tinytex</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">install</span><span class="o">.</span><span class="n">packages</span><span class="p">(</span><span class="s1">&#39;tinytex&#39;</span><span class="p">)</span>
+<span class="n">tinytex</span><span class="p">::</span><span class="n">install_tinytex</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>The above is all we need to have LaTeX work with R Markdown documents, however for Jupyter we need to add the TinyTex executables to our <code class="docutils literal notranslate"><span class="pre">PATH</span></code> and install several more packages (<code class="docutils literal notranslate"><span class="pre">PATH</span></code> is a collection of directories which contain the available executable programs on your computer).</p>
+<p>To append the TinyTex executables to our <code class="docutils literal notranslate"><span class="pre">PATH</span></code> we need to edit our <code class="docutils literal notranslate"><span class="pre">.bashrc</span></code> file. The TinyTex executables are usually installed in <code class="docutils literal notranslate"><span class="pre">$HOME/bin</span></code>. Thus, add the lines below to the bottom of your <code class="docutils literal notranslate"><span class="pre">.bashrc</span></code> file (which you can open by <code class="docutils literal notranslate"><span class="pre">code</span> <span class="pre">$HOME/.bashrc</span></code>) and save the file:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Append TinyTex executables to the path</span>
+<span class="n">export</span> <span class="n">PATH</span><span class="o">=</span><span class="s2">&quot;$PATH:$HOME/bin&quot;</span>
+</pre></div>
+</div>
+<p>When you launch a new terminal instance, this directory will have been added to your path (you can check this by running <code class="docutils literal notranslate"><span class="pre">echo</span> <span class="pre">$PATH</span></code> in the terminal.</p>
+<p>Next, install the additional LaTeX packages needed for Jupyter by pasting the following into the new terminal instance and press enter:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tlmgr</span> <span class="n">install</span> <span class="n">eurosym</span> \
+  <span class="n">adjustbox</span> \
+  <span class="n">caption</span> \
+  <span class="n">collectbox</span> \
+  <span class="n">enumitem</span> \
+  <span class="n">environ</span> \
+  <span class="n">fp</span> \
+  <span class="n">jknapltx</span> \
+  <span class="n">ms</span> \
+  <span class="n">parskip</span> \
+  <span class="n">pgf</span> \
+  <span class="n">rsfs</span> \
+  <span class="n">tcolorbox</span> \
+  <span class="n">titling</span> \
+  <span class="n">trimspaces</span> \
+  <span class="n">ucs</span> \
+  <span class="n">ulem</span> \
+  <span class="n">upquote</span>
+</pre></div>
+</div>
+<p>To test that your latex installation is working with jupyter notebooks,
+launch <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">lab</span></code> from a terminal and open either a new notebook
+or the same one you used to test IRkernel above.
+Go to <code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">-&gt;</span> <span class="pre">Export</span> <span class="pre">notebook</span> <span class="pre">as...</span> <span class="pre">-&gt;</span> <span class="pre">Export</span> <span class="pre">Notebook</span> <span class="pre">to</span> <span class="pre">PDF</span></code>.
+If the PDF file is created,
+your LaTeX environment is set up correctly.
+You can also check by typing the following to ask for the version of latex:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">latex</span> <span class="o">--</span><span class="n">version</span>
+</pre></div>
+</div>
+<p>You should see something like this if you were successful:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pdfTeX</span> <span class="mf">3.14159265</span><span class="o">-</span><span class="mf">2.6</span><span class="o">-</span><span class="mf">1.40.21</span> <span class="p">(</span><span class="n">TeX</span> <span class="n">Live</span> <span class="mi">2020</span><span class="p">)</span>
+<span class="n">kpathsea</span> <span class="n">version</span> <span class="mf">6.3.2</span>
+<span class="n">Copyright</span> <span class="mi">2020</span> <span class="n">Han</span> <span class="n">The</span> <span class="n">Thanh</span> <span class="p">(</span><span class="n">pdfTeX</span><span class="p">)</span> <span class="n">et</span> <span class="n">al</span><span class="o">.</span>
+<span class="n">There</span> <span class="ow">is</span> <span class="n">NO</span> <span class="n">warranty</span><span class="o">.</span>  <span class="n">Redistribution</span> <span class="n">of</span> <span class="n">this</span> <span class="n">software</span> <span class="ow">is</span>
+<span class="n">covered</span> <span class="n">by</span> <span class="n">the</span> <span class="n">terms</span> <span class="n">of</span> <span class="n">both</span> <span class="n">the</span> <span class="n">pdfTeX</span> <span class="n">copyright</span> <span class="ow">and</span>
+<span class="n">the</span> <span class="n">Lesser</span> <span class="n">GNU</span> <span class="n">General</span> <span class="n">Public</span> <span class="n">License</span><span class="o">.</span>
+<span class="n">For</span> <span class="n">more</span> <span class="n">information</span> <span class="n">about</span> <span class="n">these</span> <span class="n">matters</span><span class="p">,</span> <span class="n">see</span> <span class="n">the</span> <span class="n">file</span>
+<span class="n">named</span> <span class="n">COPYING</span> <span class="ow">and</span> <span class="n">the</span> <span class="n">pdfTeX</span> <span class="n">source</span><span class="o">.</span>
+<span class="n">Primary</span> <span class="n">author</span> <span class="n">of</span> <span class="n">pdfTeX</span><span class="p">:</span> <span class="n">Han</span> <span class="n">The</span> <span class="n">Thanh</span> <span class="p">(</span><span class="n">pdfTeX</span><span class="p">)</span> <span class="n">et</span> <span class="n">al</span><span class="o">.</span>
+<span class="n">Compiled</span> <span class="k">with</span> <span class="n">libpng</span> <span class="mf">1.6.37</span><span class="p">;</span> <span class="n">using</span> <span class="n">libpng</span> <span class="mf">1.6.37</span>
+<span class="n">Compiled</span> <span class="k">with</span> <span class="n">zlib</span> <span class="mf">1.2.11</span><span class="p">;</span> <span class="n">using</span> <span class="n">zlib</span> <span class="mf">1.2.11</span>
+<span class="n">Compiled</span> <span class="k">with</span> <span class="n">xpdf</span> <span class="n">version</span> <span class="mf">4.02</span>
+</pre></div>
+</div>
+</section>
+<section id="postgresql">
+<h2>PostgreSQL<a class="headerlink" href="#postgresql" title="Permalink to this heading">#</a></h2>
+<p>We will be using PostgreSQL as our database management system. To install PostgreSQL type the following command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span> <span class="n">install</span> <span class="n">postgresql</span> <span class="n">postgresql</span><span class="o">-</span><span class="n">contrib</span>
+</pre></div>
+</div>
+<p>By default, this installation creates a new user called <code class="docutils literal notranslate"><span class="pre">postgres</span></code>,
+which is the only one with permission to open the databases.
+We will see how to set this up for other users later in the program,
+but for now run the following to confirm that your installation was successful:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">su</span> <span class="o">-</span><span class="n">c</span> <span class="n">psql</span> <span class="n">postgres</span>
+</pre></div>
+</div>
+<p>The above should yield the prompt to change to what is shown below:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">psql</span> <span class="p">(</span><span class="mf">12.2</span> <span class="p">(</span><span class="n">Ubuntu</span> <span class="mf">12.2</span><span class="o">-</span><span class="mi">4</span><span class="p">))</span>
+<span class="n">Type</span> <span class="s2">&quot;help&quot;</span> <span class="k">for</span> <span class="n">help</span><span class="o">.</span>
+
+<span class="n">postgres</span><span class="o">=</span><span class="c1">#</span>
+</pre></div>
+</div>
+<blockquote>
+<div><p>Note: to exit from Postgres type <code class="docutils literal notranslate"><span class="pre">exit</span></code>, or press <code class="docutils literal notranslate"><span class="pre">ctrl</span></code> + <code class="docutils literal notranslate"><span class="pre">d</span></code>.</p>
+</div></blockquote>
+</section>
+<section id="docker">
+<h2>Docker<a class="headerlink" href="#docker" title="Permalink to this heading">#</a></h2>
+<p>You will use Docker to create reproducible, sharable and shippable computing environments for your analyses. For this you will need a Docker account. You can <a class="reference external" href="https://store.docker.com/signup?next=%2F%3Fref%3Dlogin">sign up for a free one here</a>.</p>
+<p>After signing-up, you also need to install Docker <strong>CE</strong> for Ubuntu. Install the stable version by following the installation instructions using the <a class="reference external" href="https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository">“Install using the repository” methods found here</a>, including the subheadings “Set up the repository” and “Install Docker engine”.</p>
+<p>Next, <a class="reference external" href="https://docs.docker.com/engine/install/linux-postinstall/">follow the Linux post installation steps here</a> so that you can run Docker without typing <code class="docutils literal notranslate"><span class="pre">sudo</span></code>, and confirm that docker is working by following the verification instructions on that same page.</p>
+</section>
+<section id="vs-code-extensions">
+<h2>VS Code extensions<a class="headerlink" href="#vs-code-extensions" title="Permalink to this heading">#</a></h2>
+<p>The real magic of VS Code is in the extensions that let you add languages, debuggers, and tools to your installation to support your specific workflow. From within VS Code you can open up the <a class="reference external" href="https://code.visualstudio.com/docs/editor/extension-gallery">Extension Marketplace (read more here)</a> to browse and install extensions by clicking on the Extensions icon in the Activity Bar indicated in the figure below.</p>
+<img alt="" src="../../_images/vscode.png" />
+<p>To install an extension, you simply search for it in the search bar, click the extension you want, and then click “Install”. There are extensions available to make almost any workflow or task you are interested in more efficient! Here we are interested in setting up VS Code as a Python IDE. To do this, search for and install the following extensions:</p>
+<ul class="simple">
+<li><p>Python (everything Python: notebooks, debugging, linting, formatting, etc.)</p></li>
+<li><p>markdownlint (markdown linting and style checking extension)</p></li>
+<li><p>GitLens (powerful extension that extends VS Code’s native git capabilities)</p></li>
+<li><p>Docker (easily use Docker from VS Code)</p></li>
+<li><p>(Optional) Material Theme and/or Predawn Theme Kit (additional colour themes to choose from)</p></li>
+<li><p>(Optional) Material Icon Theme (great-looking custom file icons!)</p></li>
+<li><p>(Optional) Bracket Pair Colorizer 2 (add colour to help distinguish your brackets: (), [], {})</p></li>
+</ul>
+<p><a class="reference external" href="https://www.youtube.com/watch?v=06I63_p-2A4">This video tutorial</a> is an excellent introduction to using VS Code in Python.</p>
+</section>
+<section id="improving-the-bash-configuration">
+<h2>Improving the bash configuration<a class="headerlink" href="#improving-the-bash-configuration" title="Permalink to this heading">#</a></h2>
+<p>To improve your experience using bash,
+we recommend appending a few lines to the end of your bash configuration file.
+This is optional,
+but makes it easier to use the TAB key for autocompletion
+and improves how bash handles the command history
+(we will talk more about these topics during class).
+First,
+open the configuration file:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">code</span> <span class="o">~/.</span><span class="n">bashrc</span>
+</pre></div>
+</div>
+<p>Then paste the following at the end of the file
+(make sure not to overwrite any existing lines)
+and save it afterwards:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># TAB completion configuration</span>
+<span class="c1"># TAB completion ignores case</span>
+<span class="n">bind</span> <span class="s2">&quot;set completion-ignore-case on&quot;</span>
+<span class="c1"># Require only one instead of two TAB presses before showing matches</span>
+<span class="n">bind</span> <span class="s2">&quot;set show-all-if-ambiguous on&quot;</span>
+<span class="c1"># If there are multiple matches for completion, cycle through them with TAB</span>
+<span class="n">bind</span> <span class="s1">&#39;TAB&#39;</span><span class="p">:</span><span class="n">menu</span><span class="o">-</span><span class="n">complete</span>
+<span class="c1"># Perform partial completion on the first Tab press,</span>
+<span class="c1"># only start cycling full results on the second Tab press</span>
+<span class="n">bind</span> <span class="s2">&quot;set menu-complete-display-prefix on&quot;</span>
+
+<span class="c1"># History configuration</span>
+<span class="c1"># Cycle through history based on characters already typed on the line</span>
+<span class="n">bind</span> <span class="s1">&#39;&quot;\e[A&quot;:history-search-backward&#39;</span>
+<span class="n">bind</span> <span class="s1">&#39;&quot;\e[B&quot;:history-search-forward&#39;</span>
+<span class="c1"># Append to the history file, don&#39;t overwrite it.</span>
+<span class="n">shopt</span> <span class="o">-</span><span class="n">s</span> <span class="n">histappend</span>
+<span class="c1"># Write commands to history one-by-one right after they are executed</span>
+<span class="c1"># instead of all together when the terminal is closed.</span>
+<span class="c1"># Make new terminals see all commands run in currently open terminals and</span>
+<span class="c1"># prepend a newline to the prompt string to separate it from the last command&#39;s output</span>
+<span class="n">PROMPT_COMMAND</span><span class="o">=</span><span class="s1">&#39;history -a; echo&#39;</span>
+<span class="c1"># Increase history size</span>
+<span class="n">HISTSIZE</span><span class="o">=</span><span class="mi">50000</span>
+<span class="n">HISTFILESIZE</span><span class="o">=</span><span class="mi">50000</span>
+</pre></div>
+</div>
+</section>
+<section id="post-installation-notes">
+<h2>Post-installation notes<a class="headerlink" href="#post-installation-notes" title="Permalink to this heading">#</a></h2>
+<p>You have completed the installation instructions, well done 🙌!
+We have created a script to help you check that your installation was successful,
+and to provide instructions for how you can troubleshoot any issues.
+To run this script,
+please execute the following command from your terminal.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">bash</span> <span class="o">&lt;</span><span class="p">(</span><span class="n">curl</span> <span class="o">-</span><span class="n">Ss</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">raw</span><span class="o">.</span><span class="n">githubusercontent</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">UBC</span><span class="o">-</span><span class="n">MDS</span><span class="o">/</span><span class="n">UBC</span><span class="o">-</span><span class="n">MDS</span><span class="o">.</span><span class="n">github</span><span class="o">.</span><span class="n">io</span><span class="o">/</span><span class="n">master</span><span class="o">/</span><span class="n">resources_pages</span><span class="o">/</span><span class="n">check</span><span class="o">-</span><span class="n">setup</span><span class="o">-</span><span class="n">mds</span><span class="o">.</span><span class="n">sh</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The output from running the script will look something like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span># MDS setup check 0.1.0
+
+If a program or package is marked as MISSING,
+this means that you are missing the required version of that program or package.
+Either it is not installed at all or the wrong version is installed.
+The required version is indicated with a number and an asterisk (*),
+e.g. 4.* means that all versions starting with 4 are accepted (4.0.1, 4.2.5, etc).
+
+You can run the following commands to find out which version
+of a program or package is installed (if any):
+```
+name_of_program --version  # For system programs
+conda list  # For Python packages
+R -q -e &quot;installed.packages()[,c(Package, Version)]&quot;  # For R packages
+```
+
+Checking program and package versions...
+
+## Operating system
+Operating System: Ubuntu 20.04
+Architecture:     x86-64
+Kernel:           Linux 5.4.0-28-generic
+
+## System programs
+OK        psql 12.3
+MISSING   rstudio=1.*
+OK        R 4.0.2 (2020-06-22) -- &quot;Taking Off Again&quot;
+OK        python 3.8.3
+OK        conda 4.8.3
+OK        bash 4-pc-linux-gnu)
+OK        git 2.27.0
+OK        make 4.3
+OK        latex 3.14159265-2.6-1.40.21 (TeX Live 2020)
+OK        tlmgr 55369 (2020-06-01 02:32:00 +0200)
+MISSING   docker=19.*
+MISSING   code=1.*
+
+## Python packages
+MISSING   jupyterlab=2.*
+MISSING   numpy=1.*
+MISSING   pandas=1.*
+OK        flake8=3.7.9
+MISSING   black=19.*
+MISSING   nodejs=10.*
+OK        jupytext=1.3.4
+MISSING   jupyterlab-git=0.*
+MISSING   jupyterlab PDF-generation failed. Check that latex and jupyterlab are marked OK above.
+
+## R packages
+OK        tidyverse=1.3.0
+OK        blogdown=0.20
+OK        xaringan=0.16
+OK        renv=0.11.0
+OK        IRkernel=1.1.1
+OK        tinytex=0.25
+OK        rmarkdown PDF-generation was successful
+
+This output and additional configuration details
+have been saved to the file check-setup-mds.log in this directory.
+</pre></div>
+</div>
+<p>As you can see at the end of the output,
+a log file is saved in your current directory.
+We might ask you to upload this file
+if we need to troubleshoot your installation,
+so that we can help you more effectively.
+If any of your packages are marked as “MISSING”
+you will need to figure out what is wrong and possibly reinstall them.
+Once all packages are marked as “OK”
+we will ask you to submit this log file,
+so that we can confirm that your installation was successful.
+Details on where to submit will be provided later.</p>
+<blockquote>
+<div><p>Note that in general you should be careful running scripts unless they come from a trusted source as in this case (just like how you should be careful when downloading and installing programs on your computer).</p>
+</div></blockquote>
+</section>
+<section id="attributions">
+<h2>Attributions<a class="headerlink" href="#attributions" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="http://cs109.github.io/2015/">Harvard CS109</a></p></li>
+<li><p><a class="reference external" href="http://stat545.com/packages01_system-prep.html#mac-os-system-prep">UBC STAT 545</a> licensed under the <a class="reference external" href="https://creativecommons.org/licenses/by-nc/3.0/legalcode">CC BY-NC 3.0</a>.</p></li>
+<li><p><a class="reference external" href="https://software-carpentry.org/">Software Carpentry</a></p></li>
+</ul>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "firasm/jupyterbook_course_template",
+            ref: "main",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./notes/setup"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="install_windows.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Windows Software Stack</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../demo01/demo01_summary.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Week 1</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table-of-contents">Table of Contents</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installation-notes">Installation notes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ubc-student-email">UBC Student Email</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#web-browser">Web browser</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visual-studio-code">Visual Studio Code</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#github">GitHub</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#github-com">GitHub.com</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#github-ubc-ca">GitHub.ubc.ca</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#git">Git</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#configuring-git-user-info">Configuring Git user info</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#setting-vs-code-as-the-default-editor">Setting VS Code as the default editor</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-conda-and-jupyterlab">Python, Conda, and JupyterLab</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#python-and-conda">Python and Conda</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#essential-python-packages">Essential Python packages</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jupyterlab-setup">JupyterLab setup</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#r-irkernel-and-rstudio">R, IRkernel, and RStudio</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#r">R</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rstudio">RStudio</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#essential-r-packages">Essential R packages</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#irkernel">IRkernel</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#latex">LaTeX</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#postgresql">PostgreSQL</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#docker">Docker</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vs-code-extensions">VS Code extensions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#improving-the-bash-configuration">Improving the bash configuration</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#post-installation-notes">Post-installation notes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#attributions">Attributions</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Firas Moosvi
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  <div>
+<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png"></a>
+    All content on this site (unless otherwise specified) is licensed under the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0 license</a>
+</div>
+
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
