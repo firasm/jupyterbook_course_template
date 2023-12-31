@@ -40,7 +40,7 @@ Once you have completed these installation instructions, make sure to follow the
 - [UBC Student Email](#ubc-student-email)
 - [Web browser](#web-browser)
 - [Zoom](#zoom)
-- [GitHub.com account](#github)
+- [GitHub.com account](#github-account)
 - [Microsoft Office](#microsoft-office)
 - [Visual Studio Code](#visual-studio-code)
 - [Terminal](#terminal)
@@ -74,7 +74,7 @@ You can ensure you have the latest version of Zoom by clicking "Check for Update
 Please note that if you have been relying on the "web version" of Zoom that works only in a browser, this will not work for this course! Please make sure to download the Zoom desktop client for your operating system to fully participate in the course.
 ```
 
-## GitHub.com account
+## GitHub account
 
 Sign up for a free account at [GitHub.com](https://github.com/) if you don't have one already.
 Your GitHub username is important, here's how to find your username:
@@ -335,7 +335,7 @@ This is a bit tricky, so please make sure you follow these directions carefully.
 
 ```{figure} setup_images/repo.png
 ---
-name: PAT
+name: PAT_mac
 ---
 Personal Access Token settings
 ```

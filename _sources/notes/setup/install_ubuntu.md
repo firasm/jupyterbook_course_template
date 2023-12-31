@@ -30,8 +30,6 @@ These instructions will walk you through installing the required software stack 
 
 - [UBC Student Email](#ubc-student-email)
 - [Web browser](#web-browser)
-- [LastPass password manager](#lastpass-password-manager)
-- [Slack](#slack)
 - [Visual Studio Code](#visual-studio-code)
 - [GitHub](#github)
 - [Git](#git)
@@ -259,7 +257,7 @@ or go to the terminal from which you launched JupyterLab and hold `Ctrl` while p
 
 R is another programming language that we will be using a lot in the MDS program. We will use R both in Jupyter notebooks and in RStudio.
 
-#### R
+### R
 
 The version of R available in the default Ubuntu repositories (`3.6.*`) is older than the one we use in MDS (`4.*`). To obtain the latest R `4.*` packages, we need to add a new repository which is maintained directly by the r-project. To do this, first add the key for this repository by typing the following:
 

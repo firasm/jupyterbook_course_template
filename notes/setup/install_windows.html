@@ -980,10 +980,10 @@ To do this type the following into the Terminal (the same ones you used to sign 
 <li><p>Click Developer Settings</p></li>
 <li><p>Click “Personal access tokens”, set the appropriate permissions at the “repo” level (see image below):</p></li>
 </ul>
-<figure class="align-default" id="pat">
+<figure class="align-default" id="pat-windows">
 <img alt="../../_images/repo.png" src="../../_images/repo.png" />
 <figcaption>
-<p><span class="caption-number">Fig. 5 </span><span class="caption-text">Personal Access Token settings</span><a class="headerlink" href="#pat" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 5 </span><span class="caption-text">Personal Access Token settings</span><a class="headerlink" href="#pat-windows" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <img alt="../../_images/GitHubcreatePAT.gif" src="../../_images/GitHubcreatePAT.gif" />
@@ -1369,8 +1369,8 @@ your LaTeX environment is set up correctly.</p>
 <section id="make">
 <h2>Make<a class="headerlink" href="#make" title="Permalink to this heading">#</a></h2>
 <p>Later in the program, we will be using <code class="docutils literal notranslate"><span class="pre">make</span></code> to automate our analysis scripts. <a class="reference external" href="https://downloads.sourceforge.net/project/ezwinports/make-4.3-without-guile-w32-bin.zip">Download <code class="docutils literal notranslate"><span class="pre">make</span></code> from this URL</a>. Click on the downloaded zip-file to open it in the File Explorer and click the button in the “Extract” tab that reads “Extract all”. Change the extract location to <code class="docutils literal notranslate"><span class="pre">C:\Users\YOUR_USERNAME\make-4.3</span></code> (substituting in your actual username instead of <code class="docutils literal notranslate"><span class="pre">YOUR_USERNAME</span></code>) and click “Extract”. See the screenshots below if you’re unsure what to click.</p>
-<img alt="" src="notes/setup/setup_images/extract-make.png" />
-<img alt="" src="notes/setup/setup_images/extract-make-path.png" />
+<img alt="" src="../../_images/extract-make.png" />
+<img alt="" src="../../_images/extract-make-path.png" />
 <p>Next we need to add make’s <code class="docutils literal notranslate"><span class="pre">bin</span></code> folder to our PATH so that we can use the command <code class="docutils literal notranslate"><span class="pre">make</span></code> from the terminal (like we did with R earlier). Open the bash configuration file with VS Code again by pasting this into a terminal:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">code</span> <span class="o">~/.</span><span class="n">bash_profile</span>
 </pre></div>
@@ -1406,7 +1406,7 @@ Launch a new terminal and run</p>
 <h2>PostgreSQL<a class="headerlink" href="#postgresql" title="Permalink to this heading">#</a></h2>
 <p>We will be using PostgreSQL as our database management system. You can <a class="reference external" href="https://www.enterprisedb.com/downloads/postgresql">download PostgreSQL 12.4 from here</a> (do <em>not</em> select version 13). Follow the instructions for the installation. In the password page, type whatever password you want, but make sure you’ll remember it later. For all the other options, use the default. You do not need to run “StackBuilder” at the end of the installation (if you accidentally launch the StackBuilder, click “cancel”, you don’t need to check any boxes).</p>
 <p>To test if the installation was successful open the <code class="docutils literal notranslate"><span class="pre">SQL</span> <span class="pre">Shell</span></code> app from the Start menu. You will be asked to setup your configuration, accept the default value (the one within square brackets) for the first four values by pressing enter four times, then type in your password and press enter one last time. It should look like this if it is working correctly:</p>
-<img alt="" src="notes/setup/setup_images/psql-windows.png" />
+<img alt="" src="../../_images/psql-windows.png" />
 </section>
 <section id="docker">
 <h2>Docker<a class="headerlink" href="#docker" title="Permalink to this heading">#</a></h2>
