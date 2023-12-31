@@ -1,6 +1,6 @@
 **{{ COURSE_CODE }} ({{ CREDITS }}) {{ TITLE }}**
 
-The [UBCO calendar description](https://www.calendar.ubc.ca/okanagan/courses.cfm?code=PHYS) of this course is: 
+The [UBC calendar description](https://vancouver.calendar.ubc.ca/course-descriptions/subject/phys) of this course is: 
 
 > Introduction to mechanics primarily for students majoring in the physical sciences (e.g. physics, chemistry, mathematics, computer science, geology, physical geography) or engineering.
 > Particle kinematics and dynamics, work and energy, momentum, gravitation, rigid body motion, fluid statics and dynamics with applications to the physical sciences.

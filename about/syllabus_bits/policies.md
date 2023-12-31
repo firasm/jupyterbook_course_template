@@ -21,7 +21,7 @@ Distribution of this material to a third party is forbidden.
 A student who has a complaint related to this course should follow the procedures summarized below:
 
 - The student should attempt to resolve the matter with the instructor first. Students may talk first to someone other than the instructor if they do not feel, for whatever reason, that they can directly approach the instructor. 
-- If the complaint is not resolved to the student's satisfaction, the student should e-mail the Associate Head, {{ ASSOCIATE_HEAD }} or the Department Head, Dr. John Braun at [john.braun@ubc.ca](mailto:john.braun@ubc.ca).
+- If the complaint is not resolved to the student's satisfaction, the student should e-mail the Associate Head, {{ ASSOCIATE_HEAD }} or the Department Head.
 
 ## Academic Integrity
 
@@ -33,7 +33,7 @@ Violations of academic integrity (i.e., misconduct) lead to the breakdown of the
 For example, incidences of plagiarism or cheating may result in a mark of zero on the assignment or exam and more serious consequences may apply if the matter is referred to the President’s Advisory Committee on Student Discipline.
 Careful records are kept in order to monitor and prevent recurrences.
 
-A more detailed description of academic integrity, including the University’s policies and procedures, may be found in the [Academic Calendar](http://okanagan.students.ubc.ca/calendar/index.cfm?tree=3,54,111,0.)
+A more detailed description of academic integrity, including the University’s policies and procedures, may be found on the [Academic Integrity Website](https://academicintegrity.ubc.ca/about-academic-integrity/)
 
 If you have any questions about how academic integrity applies to this course, please consult with your professor.
 
@@ -41,13 +41,13 @@ If you have any questions about how academic integrity applies to this course, p
 
 Faculties, departments, and schools reserve the right to scale grades in order to maintain equity among sections and conformity to University, faculty, department, or school norms. 
 Students should therefore note that an unofficial grade given by an instructor might be changed by the faculty, department, or school.
-[Grades](http://www.calendar.ubc.ca/okanagan/index.cfm?tree=3,41,90,1014) are not official until they appear on a student's academic record.
+[Grades](https://vancouver.calendar.ubc.ca/campus-wide-policies-and-regulations/grading-practices/introduction) are not official until they appear on a student's academic record.
 If you have any questions about how academic integrity applies to this course, please consult with your professor.
 
 ## Disability Assistance
 
 The Disability Resource Centre ensures educational equity for students with disabilities, injuries or illness.
-If you are disabled, have an injury or illness and require academic accommodations to meet the course objectives, [visit our website](https://students.ok.ubc.ca/drc/welcome.html) for more information or contact the DRC at: [drc.questions@ubc.ca](mailto:drc.questions@ubc.ca).
+If you are disabled, have an injury or illness and require academic accommodations to meet the course objectives, [visit our website](https://students.ubc.ca/about-student-services/centre-for-accessibility) for more information or contact the CFA at: [info.accessibility@ubc.ca](mailto:info.accessibility@ubc.ca).
 
 ## Equity, Human Rights, Discrimination and Harassment
 
@@ -56,10 +56,10 @@ If you require assistance related to an issue of equity, discrimination or haras
 
 ## Health & Wellness - UNC 337
 
-At UBC Okanagan health services to students are provided by Health and Wellness.
+At UBC Okanagan health services to students are provided by Health and Wellbeing.
 Nurses, physicians and counsellors provide health care and counselling related to physical health, emotional/mental health and sexual/reproductive health concerns.
 As well, health promotion, education and research activities are provided to the campus community.
-If you require assistance with your health, please contact [Health and Wellness](http://www.students.ok.ubc.ca/health-wellness) in person (UNC 337) or by email (healthwellness.okanagan@ubc.ca) for more information or to book an appointment.
+If you require assistance with your health, please contact [Health and Wellbeing](https://students.ubc.ca/health) in person (UNC 337) or by email (healthwellness.okanagan@ubc.ca) for more information or to book an appointment.
 
 ## Sexual Violence Prevention and Response Office (SVPRO)
 

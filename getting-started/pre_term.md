@@ -69,7 +69,7 @@ You can print from anywhere on campus and then go to your closest printer to pic
 I encourage you to set it up and try it once before things get crazy and you need to print things in a panic.
 You'll never know when you need it!
 
-[Set up your computer to print here.](https://it.ok.ubc.ca/services/computers-printers/printing-at-ubco/pay-for-print-students/)
+[Set up your computer to print here.](https://services.library.ubc.ca/computers-technology/copy-print-scan/pay-for-print-students-faculty-staff/)
 ```
 
 ```{dropdown} 🖊 3. Create a Hypothesis account (Optional)
@@ -133,7 +133,7 @@ However, it is an unfortunate and dark part of our society that it tends to happ
 Practically speaking, in almost all cases^, and instructors here need a PhD to teach, so even if unintentional or accidental, you are devaluing their accomplishments and titles by referring to them as anything other than `Dr.` or `Professor`.
 These titles that have been incredibly hard-earned (PhDs tend to have 5-7 years of additional education and training after a bachelor's degree), often in extremely traumatic circumstances (particularly for minoritized folks). 
 In general, I encourage you all to look within yourself and fight against your inner biases when it comes to equity and inclusion.
-Specifically in this case, I suggest you **always** refer to your instructors at UBCO with `Dr.` + `<last name>` or `Professor` + `<last name>`.
+Specifically in this case, I suggest you **always** refer to your instructors at UBC with `Dr.` + `<last name>` or `Professor` + `<last name>`.
 
 ^ *Note: In some rare cases, there may be exceptional senior grad students or exceptional teachers with Masters degrees teaching your courses. 
 Even in those cases, unless they tell you otherwise and insist, it's usually wisest (and politest) to refer to them as `Dr.` or `Professor` as well.*

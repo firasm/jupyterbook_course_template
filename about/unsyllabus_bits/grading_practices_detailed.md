@@ -17,5 +17,5 @@ Any submissions submitted past the grace period will not be graded (with some ex
 ```
 
 ```{note}
-Note: Any requests for changes to final exams must be sent to the office of the Associate Dean of Students (bsasdeansoffice.ubco@ubc.ca).
+Please refer to [this page](https://students.ubc.ca/enrolment/exams/exam-clashes-hardships-cancellations) for details on exam clashes, hardships, and cancellations.
 ```

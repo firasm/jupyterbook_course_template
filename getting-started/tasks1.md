@@ -9,7 +9,7 @@ I've split these tasks up into several chunks so it's a bit more manageable.
     :color: primary
     :open:
 
-Canvas is the go-to platform at UBC Okanagan.
+Canvas is the go-to platform at UBC.
 You can access it by going to: https://canvas.ubc.ca and logging in with your CWL.
 I expect you'll find most of your courses to be using the Canvas platform.
 All the information and content for this course will be posted on Canvas.
