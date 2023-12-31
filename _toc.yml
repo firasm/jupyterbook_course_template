@@ -9,6 +9,22 @@ parts:
   - file: about/accommodations
   - file: about/doing_well
   - file: about/faq
+
+- caption: Getting Started
+  chapters:
+  - file: getting-started/tasks1
+    title: Before the Term starts
+  - file: getting-started/tasks2
+    title: In the first week
+  - file: getting-started/tasks3
+    title: At the end of the first week
+  # - file: class/setup/stack
+  #   title: Setup Your Machine
+  #   sections:
+  #   - file: class/setup/macOS
+  #   - file: class/setup/windows
+  #   - file: class/setup/ubuntu
+
 - caption: Demo section
   chapters:
   - file: class/demo01/demo01_summary

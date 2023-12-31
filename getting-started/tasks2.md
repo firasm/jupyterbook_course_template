@@ -8,7 +8,7 @@ I've split these tasks up into several chunks so it's a bit more manageable.
     :class-container: sd-shadow-lg
     :color: primary
 
-You will be invited to Ed Discussion based on the email you enter [in this form](https://ubc.ca1.qualtrics.com/jfe/form/SV_bjBcTik01NqJ9A2?course=cosc123&term=2022_WT2)! 
+You will be invited to Ed Discussion based on the email you enter [in this form](https://ubc.ca1.qualtrics.com)! 
 I will invite folks a couple of times a day.
 
 <img src="../images/EdDiscussion.gif">
