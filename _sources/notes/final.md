@@ -98,12 +98,17 @@ Another thing to note that we did not do Chapter 12 this term, so you can ignore
 ## Academic Integrity
 
 You will be expected to uphold the highest standard of academic integrity during your final exam for Physics 111, and all other courses as well.
-As a reminder, here is UBCO's statement on Academic Integrity:
+As a reminder, here is [UBC's statement on Academic Integrity](https://academicintegrity.ubc.ca/about-academic-integrity/):
 
-> The academic enterprise is founded on honesty, civility, and integrity.
-> As members of this enterprise, all students are expected to know, understand, and follow the codes of conduct regarding academic integrity.
-> At the most basic level, this means submitting only original work done by you and acknowledging all sources of information or ideas and attributing them to others as required.
-> This also means you should not cheat, copy, or mislead others about what is your work.
-> Violations of academic integrity (i.e., misconduct) lead to the breakdown of the academic enterprise, and therefore serious consequences arise and harsh sanctions are imposed.
-> For example, incidences of plagiarism or cheating may result in a mark of zero on the assignment or exam and more serious consequences may apply if the matter is referred to the President’s Advisory Committee on Student Discipline.
-> Careful records are kept in order to monitor and prevent recurrences.
+> Doing your own work, acknowledging the contributions of others, and seeking help when you need it are all part of what academic integrity means at UBC, as is avoiding tools and services that subvert these practices.
+> 
+> Academic integrity is a commitment to upholding the values of respect, integrity, and accountability in academic work.
+> It is foundational to teaching and learning and is a fundamental and shared value of all members of the UBC community.
+> UBC adopts an educative approach to academic integrity that supports students and instructors around awareness and that values academic misconduct processes that are fair and effective.   
+> 
+> Academic integrity is a set of values and skills that must be learned and refined over time.
+> Instructors are responsible for setting clear expectations around academic integrity in their courses, modelling honest behaviour as teachers and scholars, and creating a space for students to develop their understanding of academic integrity.
+> Students are responsible for meeting these expectations in their academic work, developing an understanding of concepts, and seeking support when they have questions.
+> UBC is responsible for creating and sustaining the culture of academic integrity that makes all of this possible. 
+> 
+> Everyone plays a part in supporting and enhancing academic integrity at UBC.
