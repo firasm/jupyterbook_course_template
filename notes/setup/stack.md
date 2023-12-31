@@ -1,8 +1,13 @@
-(page_install_ds_stack)=
-Data Science Tech Stack
+---
+myst:
+  substitutions:
+    key1: "macOS Sonoma 14.2.1"
+---
+(page_tech_stack)=
+Tech Stack
 =======================
 
-To do data analyses, we will use several tools and software packages in this course.
+For any computer science (or data science) course, several tools and software packages are needed for this course.
 These tools are not usually included on your computer, and if they are, some configuration is necessary.
 This page links out to a guide (depending on your operating system) to install the "Tech Stack" for {{ COURSE_CODE }}.
 A "Tech Stack" is the complete set of tools and technologies needed to accomplish a particular task, in this case, Data Analytics.
@@ -17,9 +22,9 @@ This is an exciting time for you as you begin your Data Science journey!
 
 Below are links to the software installation guide used for {{ COURSE_CODE }} for the three operating systems that are currently supported.
 
-- [macOS](install_ds_stack_mac.md)
-- [Windows](install_ds_stack_windows.md)
-- [Ubuntu](install_ds_stack_ubuntu.md)
+- [macOS](page_install_macOS)
+- [Windows](page_install_windows.md)
+- [Ubuntu](page_install_ubuntu.md)
 
 ## Attribution
 

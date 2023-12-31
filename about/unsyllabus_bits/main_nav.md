@@ -93,7 +93,7 @@ Completing this course with honesty and integrity. Examples of things you can an
 :::
 
 :::{grid-item-card}
-:link: accommodations
+:link: missed-things
 :link-type: ref
 :class-header: sd-bg-secondary sd-text-white
 

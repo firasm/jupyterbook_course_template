@@ -82,10 +82,10 @@ This course website is currently under construction. It will continue to be upda
 ```{include} unsyllabus_bits/doing_well_physics.md
 ```
 
-(course-accommodations)=
-## Course Accommodations
+(missed-things)=
+## Missed things
 
-```{include} unsyllabus_bits/accommodations.md
+```{include} unsyllabus_bits/missed-things.md
 ```
 
 <div class="page_break"> </div>

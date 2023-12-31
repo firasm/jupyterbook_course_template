@@ -1,4 +1,4 @@
-(page_install_ds_stack_macOS)=
+(page_install_macOS)=
 macOS Software Stack
 =======================
 
@@ -6,7 +6,7 @@ macOS Software Stack
 	<base target="_blank">
 </head>
 
-These instructions will walk you through installing the required Data Science software stack for {{ COURSE_CODE }}. 
+These instructions will walk you through installing the required software stack for {{ COURSE_CODE }}. 
 Before starting, ensure that your laptop meets the minimum requirements:
 
 - Runs macOS Catalina (10.15.x), macOS BigSur (11.4) or newer. macOS Monterey (12.x) is recommended; older operating systems are possible but not recommended unless there is no other choice.

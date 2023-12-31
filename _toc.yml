@@ -18,12 +18,12 @@ parts:
     title: In the first week
   - file: getting-started/tasks3
     title: At the end of the first week
-  # - file: notes/setup/stack
-  #   title: Setup Your Machine
-  #   sections:
-  #   - file: notes/setup/macOS
-  #   - file: notes/setup/windows
-  #   - file: notes/setup/ubuntu
+  - file: notes/setup/stack
+    title: Setup Your Machine
+    sections:
+    - file: notes/setup/install_macOS
+    - file: notes/setup/install_windows
+    - file: notes/setup/install_ubuntu
 
 - caption: Demo section
   chapters:
