@@ -46,6 +46,8 @@ sphinx:
     html_show_copyright: false
     html_extra_path: ['files']
     bibtex_reference_style: author_year
+    myst_heading_anchors: true
+    myst_heading_anchors: 3
     myst_enable_extensions: 
     - amsmath
     - colon_fence
