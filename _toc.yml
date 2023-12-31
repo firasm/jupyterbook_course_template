@@ -18,164 +18,164 @@ parts:
     title: In the first week
   - file: getting-started/tasks3
     title: At the end of the first week
-  # - file: class/setup/stack
+  # - file: notes/setup/stack
   #   title: Setup Your Machine
   #   sections:
-  #   - file: class/setup/macOS
-  #   - file: class/setup/windows
-  #   - file: class/setup/ubuntu
+  #   - file: notes/setup/macOS
+  #   - file: notes/setup/windows
+  #   - file: notes/setup/ubuntu
 
 - caption: Demo section
   chapters:
-  - file: class/demo01/demo01_summary
+  - file: notes/demo01/demo01_summary
     title: Demo 1 - Data Science
     sections:
-      - file: class/demo01/lecture1
-      - file: class/demo01/lecture2
-      - file: class/demo01/lecture3
-  - file: class/demo02/demo02_summary
+      - file: notes/demo01/lecture1
+      - file: notes/demo01/lecture2
+      - file: notes/demo01/lecture3
+  - file: notes/demo02/demo02_summary
     title: Demo 2 - Introductory Physics
     sections:
-      - file: class/demo02/videos
-      - file: class/demo02/homework
-      - file: class/demo02/readings
-      - file: class/demo02/lab
-      - file: class/demo02/learninglogs
-      - file: class/demo02/test
-      - file: class/demo03/demo03_summary
+      - file: notes/demo02/videos
+      - file: notes/demo02/homework
+      - file: notes/demo02/readings
+      - file: notes/demo02/lab
+      - file: notes/demo02/learninglogs
+      - file: notes/demo02/test
+      - file: notes/demo03/demo03_summary
         title: Demo 3 - Shakespeare
-      - file: class/demo04/demo04_summary
+      - file: notes/demo04/demo04_summary
         title: Demo 4 - Chemistry
       - url: https://firas.moosvi.com/books/active-learning-technologies/jupyterdays/capacitor_talk/Capacitor.html
         title: Capacitor Lecture
 - caption: Part 1 - Kinematics
   chapters:
-  - file: class/week01/week01_summary
+  - file: notes/week01/week01_summary
     title: Week 1 - Introductions!
-  - file: class/week02/week02_summary
+  - file: notes/week02/week02_summary
     title: Week 2 - Chapter 2
     sections:
-      - file: class/week02/readings
-      - file: class/week02/videos
-      - file: class/week02/homework
-      - file: class/week02/lecture
-      - file: class/week02/test
-      - file: class/week02/lab
-      - file: class/week02/learninglogs
-  - file: class/week03/week03_summary
+      - file: notes/week02/readings
+      - file: notes/week02/videos
+      - file: notes/week02/homework
+      - file: notes/week02/lecture
+      - file: notes/week02/test
+      - file: notes/week02/lab
+      - file: notes/week02/learninglogs
+  - file: notes/week03/week03_summary
     title: Week 3 - Chapter 3
     sections:
-      - file: class/week03/readings
-      - file: class/week03/videos
-      - file: class/week03/homework
-      - file: class/week03/lecture
-      - file: class/week03/test
-      - file: class/week03/lab
-      - file: class/week03/learninglogs
-  - file: class/week04/week04_summary
+      - file: notes/week03/readings
+      - file: notes/week03/videos
+      - file: notes/week03/homework
+      - file: notes/week03/lecture
+      - file: notes/week03/test
+      - file: notes/week03/lab
+      - file: notes/week03/learninglogs
+  - file: notes/week04/week04_summary
     title: Week 4 - Chapter 4
     sections:
-      - file: class/week04/readings
-      - file: class/week04/videos
-      - file: class/week04/homework
-      - file: class/week04/lecture
-      - file: class/week04/test
-      - file: class/week04/lab
-      - file: class/week04/learninglogs
+      - file: notes/week04/readings
+      - file: notes/week04/videos
+      - file: notes/week04/homework
+      - file: notes/week04/lecture
+      - file: notes/week04/test
+      - file: notes/week04/lab
+      - file: notes/week04/learninglogs
 - caption: Part 2 - Dynamics
   chapters:
-  - file: class/week05/week05_summary
+  - file: notes/week05/week05_summary
     title: Week 5 - Chapter 5
     sections:
-      - file: class/week05/readings
-      - file: class/week05/videos
-      - file: class/week05/homework
-      - file: class/week05/lecture
-      - file: class/week05/test
-      - file: class/week05/lab
-      - file: class/week05/learninglogs
-  - file: class/week06/week06_summary
+      - file: notes/week05/readings
+      - file: notes/week05/videos
+      - file: notes/week05/homework
+      - file: notes/week05/lecture
+      - file: notes/week05/test
+      - file: notes/week05/lab
+      - file: notes/week05/learninglogs
+  - file: notes/week06/week06_summary
     title: Week 6 - Week Off !!
-  - file: class/week07/week07_summary
+  - file: notes/week07/week07_summary
     title: Week 7 - Chapter 6
     sections:
-      - file: class/week07/readings
-      - file: class/week07/videos
-      - file: class/week07/homework
-      - file: class/week07/lecture
-      - file: class/week07/test
-      - file: class/week07/lab
-      - file: class/week07/learninglogs
-  - file: class/week08/week08_summary
+      - file: notes/week07/readings
+      - file: notes/week07/videos
+      - file: notes/week07/homework
+      - file: notes/week07/lecture
+      - file: notes/week07/test
+      - file: notes/week07/lab
+      - file: notes/week07/learninglogs
+  - file: notes/week08/week08_summary
     title: Week 8 - Chapter 7
     sections:
-      - file: class/week08/readings
-      - file: class/week08/videos
-      - file: class/week08/homework
-      - file: class/week08/lecture
-      - file: class/week08/test
-      - file: class/week08/lab
-      - file: class/week08/learninglogs
-  - file: class/week09/week09_summary
+      - file: notes/week08/readings
+      - file: notes/week08/videos
+      - file: notes/week08/homework
+      - file: notes/week08/lecture
+      - file: notes/week08/test
+      - file: notes/week08/lab
+      - file: notes/week08/learninglogs
+  - file: notes/week09/week09_summary
     title: Week 9 - Chapter 8
     sections:
-      - file: class/week09/readings
-      - file: class/week09/videos
-      - file: class/week09/homework
-      - file: class/week09/lecture
-      - file: class/week09/test
-      - file: class/week09/lab
-      - file: class/week09/learninglogs
+      - file: notes/week09/readings
+      - file: notes/week09/videos
+      - file: notes/week09/homework
+      - file: notes/week09/lecture
+      - file: notes/week09/test
+      - file: notes/week09/lab
+      - file: notes/week09/learninglogs
 - caption: Part 3 - Energy & Momentum
   chapters:
-  - file: class/week10/week10_summary
+  - file: notes/week10/week10_summary
     title: Week 10 - Chapter 9
     sections:
-      - file: class/week10/readings
-      - file: class/week10/videos
-      - file: class/week10/homework
-      - file: class/week10/lecture
-      - file: class/week10/test
-      - file: class/week10/lab
-      - file: class/week10/learninglogs
-  - file: class/week11/week11_summary
+      - file: notes/week10/readings
+      - file: notes/week10/videos
+      - file: notes/week10/homework
+      - file: notes/week10/lecture
+      - file: notes/week10/test
+      - file: notes/week10/lab
+      - file: notes/week10/learninglogs
+  - file: notes/week11/week11_summary
     title: Week 11 - Chapter 10
     sections:
-      - file: class/week11/readings
-      - file: class/week11/videos
-      - file: class/week11/homework
-      - file: class/week11/lecture
-      - file: class/week11/test
-      - file: class/week11/lab
-      - file: class/week11/learninglogs
-  - file: class/week12/week12_summary
+      - file: notes/week11/readings
+      - file: notes/week11/videos
+      - file: notes/week11/homework
+      - file: notes/week11/lecture
+      - file: notes/week11/test
+      - file: notes/week11/lab
+      - file: notes/week11/learninglogs
+  - file: notes/week12/week12_summary
     title: Week 12 - Chapter 11
     sections:
-      - file: class/week12/readings
-      - file: class/week12/videos
-      - file: class/week12/homework
-      - file: class/week12/lecture
-      - file: class/week12/test
-      - file: class/week12/lab
-      - file: class/week12/learninglogs
+      - file: notes/week12/readings
+      - file: notes/week12/videos
+      - file: notes/week12/homework
+      - file: notes/week12/lecture
+      - file: notes/week12/test
+      - file: notes/week12/lab
+      - file: notes/week12/learninglogs
 - caption: Week 13 - Exam Review
   chapters:
-  - file: class/week13/week13_summary
+  - file: notes/week13/week13_summary
     title: Week 13 - Review
     sections:
-      - file: class/week13/readings
-      - file: class/week13/videos
-      - file: class/week13/homework
-      - file: class/week13/lecture
-      - file: class/week13/test
-      - file: class/week13/lab
-      - file: class/week13/learninglogs
+      - file: notes/week13/readings
+      - file: notes/week13/videos
+      - file: notes/week13/homework
+      - file: notes/week13/lecture
+      - file: notes/week13/test
+      - file: notes/week13/lab
+      - file: notes/week13/learninglogs
 - caption: Final Exam
   chapters:
-  - file: class/final
+  - file: notes/final
 - caption: Lab Materials
   chapters:
-  - file: class/labs
+  - file: notes/labs
     title: Lab Stuff
 - caption: Course Feedback
   chapters:

@@ -1,6 +1,6 @@
 ![](../images/header.jpg)
 
-![](../images/UBCO_CMPS_header.jpg)
+![](../images/UBC_CS.png)
 
 (unsyllabus)=
 # Unsyllabus

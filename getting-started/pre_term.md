@@ -1,6 +1,6 @@
 ![](../images/header.jpg)
 
-![](../images/UBCO_CMPS_header.jpg)
+![](../images/UBC_CS.png)
 
 (page_pre_term)=
 # Before term starts
@@ -64,7 +64,7 @@ This account will also grant you access to a range of other UBC services includi
     :color: success
     :name: print
 
-UBCO has a super sweet printing process that is fast and convenient!
+UBC has a super sweet printing process that is fast and convenient!
 You can print from anywhere on campus and then go to your closest printer to pick up your documents.
 I encourage you to set it up and try it once before things get crazy and you need to print things in a panic.
 You'll never know when you need it!
@@ -101,14 +101,14 @@ If you created a Hypothes.is account, **select this bolded text** and make a com
 
 ## Frequently asked questions (before the term starts)
 
-````{dropdown} How do I address my professors at UBCO?
+````{dropdown} How do I address my professors at UBC?
     :class-container: sd-shadow-lg
     :color: primary
     :name: how-to-address-professors
     :open:
 
 ```{tip}
-The short answer is: always use `Dr.` + `<last name>` or `Professor` + `<last name>`.
+In my opinion (and there are other opinions!) the short answer is: always use `Dr.` + `<last name>` or `Professor` + `<last name>`.
 So you would call me `Dr. Moosvi` in emails and in-person.
 ```
 

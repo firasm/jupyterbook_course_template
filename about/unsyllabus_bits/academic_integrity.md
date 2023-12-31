@@ -33,7 +33,7 @@ In particular, I hope (and expect) that the following features of the course sho
 
 With these features, and several other little things, I sincerely hope that you will consider completing this course with maximum integrity so that you never have to feel guilty, ashamed, or disappointed in yourself and your actions!
 
-A more detailed description of academic integrity, including the University’s policies and procedures, may be found in the [Academic Calendar](https://calendar.ubc.ca/vancouver/index.cfm?tree=3,54,111,0).
+A more detailed description of academic integrity, including the University’s policies and procedures, may be found in the [UBC Academic Calendar](https://vancouver.calendar.ubc.ca/campus-wide-policies-and-regulations/student-conduct-and-discipline/discipline-academic-misconduct).
 
 ### What is considered academic dishonesty in this course?
 

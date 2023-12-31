@@ -3,7 +3,7 @@
 The examination period for {{ TERM }} is {{ EXAM_PERIOD }}.
 Except in the case of examination clashes and hardships (three or more formal examinations scheduled within a 24-hour period) or unforeseen events, students will be permitted to apply for out-of-time final examinations only if they are representing the University, the province, or the country in a competition or performance; serving in the Canadian military; observing a religious rite; working to support themselves or their family; or caring for a family member.
 Unforeseen events include (but may not be limited to) the following: ill health or other personal challenges that arise during a term and changes in the requirements of an ongoing job.
-Further information on Academic Concession can be found under Policies and Regulation in the [Okanagan Academic Calendar](http://www.calendar.ubc.ca/okanagan/index.cfm?tree=3,48,0,0).
+Further information on Academic Concession can be found under Policies and Regulation in the [UBC Academic Calendar](https://vancouver.calendar.ubc.ca/campus-wide-policies-and-regulations/academic-concession).
 
 ## Copyright Disclaimer
 
@@ -52,7 +52,7 @@ If you are disabled, have an injury or illness and require academic accommodatio
 ## Equity, Human Rights, Discrimination and Harassment
 
 UBC Okanagan is a place where every student, staff and faculty member should be able to study and work in an environment that is free from human rights based discrimination and harassment.
-If you require assistance related to an issue of equity, discrimination or harassment, please contact the [Equity Office](https://equity.ok.ubc.ca/) by phone (250.807.9291) or email ([equity.ubco@ubc.ca](mailto:equity.ubco@ubc.ca)), your administrative head of unit, and/or your unit’s equity representative.   
+If you require assistance related to an issue of equity, discrimination or harassment, please contact the [Equity Office](https://equity.ubc.ca) by phone (604.827.1773) or email ([info@equity.ubc.ca](mailto:info@equity.ubc.ca)), your administrative head of unit, and/or your unit’s equity representative.   
 
 ## Health & Wellness - UNC 337
 

@@ -43,7 +43,7 @@ Here's an image of the image:
 
 1. Structured book with markdown file stubs aligning with a course structure for a 13 week course. Fully versioned using GitHub, automatically deployed using GH Actions to either GH or your own server. Can also be extended with a testing framework for extra peace of mind.
 
-1. [Examples of how to use IFrames](https://firasm.github.io/jupyterbook_course_template/class/topic1.html#) to embed web content, @phet_sims, @sli.do polls, videos, and other content. 
+1. [Examples of how to use IFrames](https://firasm.github.io/jupyterbook_course_template/notes/topic1.html#) to embed web content, @phet_sims, @sli.do polls, videos, and other content. 
 
 1. Powerful built-in annotation and commenting features with [hypothes.is](http://hypothes.is) and [utteranc.es](http://utteranc.es). Annotate your syllabus, course readings, and any other content.
 
