@@ -23,8 +23,8 @@ This is an exciting time for you as you begin your Data Science journey!
 Below are links to the software installation guide used for {{ COURSE_CODE }} for the three operating systems that are currently supported.
 
 - [macOS](page_install_macOS)
-- [Windows](page_install_windows.md)
-- [Ubuntu](page_install_ubuntu.md)
+- [Windows](page_install_windows)
+- [Ubuntu](page_install_ubuntu)
 
 ## Attribution
 

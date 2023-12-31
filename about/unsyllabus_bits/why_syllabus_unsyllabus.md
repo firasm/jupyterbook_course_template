@@ -1,5 +1,3 @@
-**Why is there a Syllabus and an Unsyllabus for this course?**
-
 Traditionally, there has been a culture at most higher education institutions for every course to have a document that sets expectation for how the course will be conducted, what students will be expected to do, and what they will learn in the course.
 The purpose of that document was for the instructor to communicate "what the course will be about" to students so they know what they're getting themselves into.
 This document is typically called a "Syllabus" or a "Course Outline".
@@ -36,9 +34,9 @@ I invite you to be co-contributors to this unsyllabus, and use the tools provide
 At various points in the term, I will invite you to provide feedback on how things are going in the class.
 You may use those opportunities (or any other using the anonymous {{ ANON_FEEDBACK }} or {{ FORUM_LINK }}) to propose adjustments to how the class is running for consideration.
 
-| Document   | Status                                                                                                                                                   |
-|------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Syllabus   | University-mandated, like a legal contract and contains university rules about conduct and behaviour;  elements will not change.                         |
+| Document   | Status                                                                                                                                   |
+|------------|------------------------------------------------------------------------------------------------------------------------------------------|
+| Syllabus   | University-mandated, like a legal contract and contains university rules about conduct and behaviour;  elements will not change.                                                                   |
 | Unsyllabus | Living document, responsive to student feedback and adaptable to circumstances; elements may change, usually to the benefit of students and of learning. |
 
 ```{important} Please note that I have your best interests in mind, and it is highly unlikely that I will ever change the unsyllabus in a way that negatively affects the class, or even individual students. If you believe a change is affecting you negatively, please reach out to me on {{ FORUM_LINK }}, or submit your feedback using the anonymous {{ ANON_FEEDBACK }}.

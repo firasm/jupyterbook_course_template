@@ -365,7 +365,7 @@ This is a bit tricky, so please make sure you follow these directions carefully.
 
 ```{figure} setup_images/repo.png
 ---
-name: PAT
+name: PAT_windows
 ---
 Personal Access Token settings
 ```

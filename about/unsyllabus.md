@@ -85,7 +85,7 @@ This course website is currently under construction. It will continue to be upda
 (missed-things)=
 ## Missed things
 
-```{include} unsyllabus_bits/missed-things.md
+```{include} unsyllabus_bits/missed_things.md
 ```
 
 <div class="page_break"> </div>
