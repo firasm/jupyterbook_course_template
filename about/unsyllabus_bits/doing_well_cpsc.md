@@ -15,7 +15,7 @@ And some ingredients for your success:
 1. Do not be fooled by familiarity of the material.
 
 ```{important}
-These guidelines were adapted from [Dr. Simon Bates' Physics 117 course from UBCV](https://sites.google.com/site/simonpbates/home?authuser=0)).
+These guidelines were adapted from [Dr. Simon Bates' Physics 117 course from UBCV](https://sites.google.com/site/simonpbates/home?authuser=0).
 ```
 
 ### ... but I've never been good at computer science!
