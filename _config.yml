@@ -75,7 +75,7 @@ sphinx:
       TERM: "2023 Winter Term 2"
       ROOM: "ROOM 100"
       MEETING_TIMES: "Monday, Wednesday, Friday from 1-2 PM"
-      FORMAT: "Lectures, Labs, Tutorials will all be running in-person."
+      # FORMAT: "Lectures, Labs, Tutorials will all be running in-person."
 
       # Important Links
       CANVAS_ID: "63995"

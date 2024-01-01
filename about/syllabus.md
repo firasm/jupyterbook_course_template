@@ -2,13 +2,18 @@
 
 ![](../images/UBC_CS.png)
 
-**Department of Computer Science, Mathematics, Physics, and Statistics**
-
 # Course Syllabus (Official)
 
 Below is the official UBC-mandated Course Syllabus for {{ COURSE_CODE }}.
 Elements of this document are **fixed** and unchanging.
 Additional details about the course are available on the {{ '[course website]({link})'.format(link=CANVAS_LINK.replace('CANVAS_ID',CANVAS_ID))}}.
+
+## Land Acknowledgement
+
+```{include} syllabus_bits/land_acknowledgement.md
+```
+
+## Course Information
 
 **{{ COURSE_CODE }} {{ SECTION }}**
 
@@ -19,28 +24,31 @@ Additional details about the course are available on the {{ '[course website]({l
 **{{ ROOM }} - {{ MEETING_TIMES }}**
 
 ---
-## Course Instructor
 
-**Name:** {{ INSTRUCTOR }}
+**Instructor Name:** {{ INSTRUCTOR }}
 
-**Office:** {{ OFFICE }}
+**Instructor Office:** {{ OFFICE }}
 
-**Phone:** {{ PHONE }}
+**Instructor Phone:** {{ PHONE }}
 
 For information on how to contact your course instructor, including office hours, see the {{ '[course website]({link})'.format(link=COURSE_LINK)}}.
 
-**Mode of Delivery:** Online (All course activities and assessments, including the Final Exam, will be conducted Online.)
+**Mode of Delivery:** In-person (All course activities and assessments, including the Final Exam, will be conducted in-person)
 
-## Course Description
+## Calendar Description
 
 ```{include} syllabus_bits/calendar_entry.md
 ```
 
-## Course Format
-
-This course has {{ FORMAT }}
-
 You will find all the important term dates in the [UBC Academic Calendar](https://vancouver.calendar.ubc.ca/dates-and-deadlines).
+
+## Other Instructional Staff
+
+For information on this, see the {{ '[course website]({link})'.format(link=COURSE_LINK)}}.
+
+## Course Structure
+
+For information on this, see the {{ '[course website]({link})'.format(link=COURSE_LINK)}}.
 
 ## Learning Outcomes
 
@@ -51,12 +59,23 @@ The Learning Outcomes for this course are:
 
 More details about the course can be found on the {{ '[course website]({link})'.format(link=CANVAS_LINK.replace('CANVAS_ID',CANVAS_ID))}}.
 
+## Schedule of Topics
+
+The tentative course schedule, subject to change, can be found on the {{ '[course website]({link})'.format(link=CANVAS_LINK.replace('CANVAS_ID',CANVAS_ID))}}.
+
+```{include} syllabus_bits/schedule.md
+```
+
+## Learning Activities
+
+For information on this, see the {{ '[course website]({link})'.format(link=COURSE_LINK)}}.
+
 ## Required Materials
 
 There is no requirement to purchase textbooks or any other materials for this course.
 Resources and materials for this course can be found on the {{ '[course website]({link})'.format(link=CANVAS_LINK.replace('CANVAS_ID',CANVAS_ID))}}.
 
-## Course Evaluation
+## Assessments of Learning
 
 ```{include} syllabus_bits/grading_practices_simple.md
 ```
@@ -73,11 +92,14 @@ Missed Tests and Exams will be given a score of 0 unless prior arrangements are 
 To contact the instructor for this course, use {{ FORUM_LINK }}.
 Details on deadlines and other course policies can be found on the {{ '[course website]({link})'.format(link=CANVAS_LINK.replace('CANVAS_ID',CANVAS_ID))}}.
 
-## Tentative Course Schedule
-The tentative course schedule, subject to change, can be found on the {{ '[course website]({link})'.format(link=CANVAS_LINK.replace('CANVAS_ID',CANVAS_ID))}}.
+## Learning Analytics
 
-```{include} syllabus_bits/schedule.md
+```{include} syllabus_bits/learning_analytics.md
 ```
+
+## Learning Resources
+
+For information on this, see the {{ '[course website]({link})'.format(link=COURSE_LINK)}}.
 
 ```{include} syllabus_bits/policies.md
 ```

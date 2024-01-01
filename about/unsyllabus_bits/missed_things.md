@@ -41,13 +41,13 @@ Accommodations are intended to remove barriers experienced by individuals with d
 As a matter of principle, UBC is committed to promoting human rights, equity and diversity, and it also has a legal duty under the BC Human Rights Code to make its goods and services available in a manner that does not discriminate.
 [Policy 73](https://universitycounsel.ubc.ca/files/2019/02/policy73.pdf) (Accommodation for Students with Disabilities) sets out principles and processes governing the accommodation of students with disabilities.
 
-All accommodations for this course are handled through the [Disability Resource Centre](https://students.ok.ubc.ca/academic-success/disability-resources/contact-the-disability-resource-centre/) and I encourage you to contact them to book an appointment. 
+All accommodations for this course are handled through the [Centre for Accessibility](https://students.ubc.ca/about-student-services/centre-for-accessibility) and I encourage you to contact them to book an appointment. 
 
 ### Compassion
 
-As I'm sure you're aware, *there is (still) a global pandemic* happening right now and we could all use some extra compassion and humanity.
-If you're going through something that is affecting you (course or otherwise), you are always welcome to come and talk to me about it. 
-If I am not able to help you myself, then I can probably direct you to the right person or resource.
+Overall, my philosophy is that I think we could all use some extra compassion and humanity wherever and whenever it's possible.
+If you're going through something that is affecting you (in the course or otherwise), you are always welcome to come and talk to me about it. 
+If I am not able to help you myself, then I can probably direct you to the right person or resource on campus.
 If you need extra help, or extra time to deal with something you're going through, just ask.
 You will *never* owe me an explanation about your physical health, mental health, or those of your family members, friends, etc... I will believe you, and I will trust you.
 I will not judge you, nor think any less of you.

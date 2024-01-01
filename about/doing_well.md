@@ -2,8 +2,8 @@
 How to do well in this course
 =======================
 
-```{tip}
-Full credit for the original version of this document below goes to [Dr. Simon Bates](https://sites.google.com/site/simonpbates/home?authuser=0) from Physics 117 at UBC-Vancouver.
+```{note}
+Credit for the original version of this document goes to [Dr. Simon Bates](https://sites.google.com/site/simonpbates/home?authuser=0) from Physics 117 at UBC-Vancouver.
 
 The material below has been used and adapted with his permission.
 ```

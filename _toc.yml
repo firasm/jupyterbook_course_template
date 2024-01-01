@@ -3,7 +3,6 @@ root: about/unsyllabus
 parts:
 - caption: About this course
   chapters:
-  - file: about/pre_term
   - file: about/syllabus
   - file: about/course_schedule
   - file: about/accommodations
@@ -12,12 +11,10 @@ parts:
 
 - caption: Getting Started
   chapters:
+  - file: about/pre_term
   - file: getting-started/tasks1
-    title: Before the Term starts
   - file: getting-started/tasks2
-    title: In the first week
   - file: getting-started/tasks3
-    title: At the end of the first week
   - file: notes/setup/stack
     title: Setup Your Machine
     sections:
