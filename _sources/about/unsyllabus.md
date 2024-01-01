@@ -22,6 +22,11 @@ This course website is currently under construction. It will continue to be upda
 ```{include} unsyllabus_bits/important_details.md
 ```
 
+### What do I need to purchase for this course?
+
+Being very conscious of the high tuition and technology costs, we have made efforts to remove the additional cost of taking this course.
+All course content, references, and resources provided in this course are free and open source, and can be considered open educational resources (OER).
+
 <div class="page_break"> </div>
 
 (contact-us)=
@@ -96,6 +101,40 @@ This course website is currently under construction. It will continue to be upda
 ```{include} unsyllabus_bits/course_tools.md
 ```
 
+### Required Tools
+
+In this course, we will be using the following required learning technologies (privacy policies linked): 
+
+- [Canvas](https://faculty.canvas.ubc.ca/canvas-privacy/)
+- [Ed Discussion](https://edstem.org/privacy)
+- [Gradescope](https://www.gradescope.com/privacy)
+- [GitHub](https://docs.github.com/en/github/site-policy/github-privacy-statement)
+- [PrairieLearn](https://www.prairielearn.com/legal/privacy)
+- [Sli.do](https://www.slido.com/terms?experience_id=1&utm_campaign=_eid-007-control&utm_source=www.slido.com-_ab#privacy-policy)
+
+```{include} unsyllabus_bits/tools/canvas.md
+```
+
+```{include} unsyllabus_bits/tools/ed_discussion.md
+```
+
+```{include} unsyllabus_bits/tools/github.md
+```
+
+```{include} unsyllabus_bits/tools/prairielearn.md
+```
+
+```{include} unsyllabus_bits/tools/slido.md
+```
+
+```{include} unsyllabus_bits/tools/gradescope.md
+```
+
+### What type of information will I collect about you in this course?
+
+```{include} ../about/syllabus_bits/learning_analytics.md
+```
+
 <div class="page_break"> </div>
 
 (philosophy)=
@@ -122,6 +161,12 @@ This course website is currently under construction. It will continue to be upda
 ## Acknowledgements
 
 ```{include} unsyllabus_bits/acknowledgements.md
+```
+
+(unsyllabus_land-acknowledgement)=
+## Land Acknowledgement
+
+```{include} syllabus_bits/land_acknowledgement.md
 ```
 
 (references)=

@@ -1,0 +1,828 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Ed Discussion &#8212; Physics 111</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/extra.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pdf_print.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom_layouts.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "firasm/jupyterbook_course_template");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+    <script src="../../_static/save_state.js"></script>
+    <script src="../../_static/plausible_jupyterbookcoursetemplate.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'tools/ed_discussion/ed_discussion';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Git and GitHub" href="../github/github.html" />
+    <link rel="prev" title="PHYS 111 Anonymous Feedback Form" href="../../about/feedback.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+
+  <div class="bd-header-announcement container-fluid bd-header-announcement">
+    <div class="bd-header-announcement__content">Use this JupyterBook as a <a href='https://github.com/firasm/jupyterbook_course_template' style='color:pink;'>template by clicking here</a>!</div>
+  </div>
+
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../../about/unsyllabus.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo.jpg" class="logo__image only-light" alt="Physics 111 - Home"/>
+    <script>document.write(`<img src="../../_static/logo.jpg" class="logo__image only-dark" alt="Physics 111 - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../about/unsyllabus.html">
+                    Unsyllabus
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">About this course</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../about/syllabus.html">Course Syllabus (Official)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../about/course_schedule.html">Course Schedule</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../about/accommodations.html">Accommodations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../about/doing_well.html">How to do well in this course</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../about/faq.html">Frequently Asked Questions</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../about/pre_term.html">Before term starts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/tasks1.html">Before the first class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/tasks2.html">After the First Class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/tasks3.html">In the first week</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../notes/setup/stack.html">Setup Your Machine</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/setup/install_macOS.html">macOS Software Stack</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/setup/install_windows.html">Windows Software Stack</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/setup/install_ubuntu.html">Ubuntu Software Stack</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Demo section</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../notes/demo01/demo01_summary.html">Demo 1 - Data Science</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/demo01/lecture1.html">Introduction to Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/demo01/lecture2.html">Platforms for Data Science</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/demo01/lecture3.html">Introduction to Microsoft Excel</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../notes/demo02/demo02_summary.html">Demo 2 - Introductory Physics</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/demo02/videos.html">Videos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/demo02/homework.html">Homework</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/demo02/readings.html">Readings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/demo02/lab.html">Lab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/demo02/learninglogs.html">Learning Logs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/demo02/test.html">Test 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/demo03/demo03_summary.html">Demo 3 - Shakespeare</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/demo04/demo04_summary.html">Demo 4 - Chemistry</a></li>
+<li class="toctree-l2"><a class="reference external" href="https://firas.moosvi.com/books/active-learning-technologies/jupyterdays/capacitor_talk/Capacitor.html">Capacitor Lecture</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part 1 - Kinematics</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../notes/week01/week01_summary.html">Week 1 - Introductions!</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../notes/week02/week02_summary.html">Week 2 - Chapter 2</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/week02/readings.html">Readings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/week02/videos.html">Videos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/week02/homework.html">Homework</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/week02/lecture.html">Lecture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/week02/test.html">Test 0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/week02/lab.html">Lab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/week02/learninglogs.html">Learning Logs</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../notes/week03/week03_summary.html">Week 3 - Chapter 3</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/week03/readings.html">Readings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/week03/videos.html">Videos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/week03/homework.html">Homework</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/week03/lecture.html">Lecture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/week03/test.html">Test 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/week03/lab.html">Lab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/week03/learninglogs.html">Learning Logs</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../notes/week04/week04_summary.html">Week 4 - Chapter 4</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/week04/readings.html">Readings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/week04/videos.html">Videos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/week04/homework.html">Homework</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/week04/lecture.html">Lecture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/week04/test.html">Bonus Test 01</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/week04/lab.html">Lab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/week04/learninglogs.html">Learning Logs</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part 2 - Dynamics</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../notes/week05/week05_summary.html">Week 5 - Chapter 5</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/week05/readings.html">Readings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/week05/videos.html">Videos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/week05/homework.html">Homework</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/week05/lecture.html">Lecture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/week05/test.html">Test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/week05/lab.html">Lab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/week05/learninglogs.html">Learning Logs</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../notes/week06/week06_summary.html">Week 6 - Week Off !!</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../notes/week07/week07_summary.html">Week 7 - Chapter 6</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/week07/readings.html">Readings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/week07/videos.html">Videos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/week07/homework.html">Homework</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/week07/lecture.html">Lecture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/week07/test.html">Test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/week07/lab.html">Lab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/week07/learninglogs.html">Learning Logs</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../notes/week08/week08_summary.html">Week 8 - Chapter 7</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/week08/readings.html">Readings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/week08/videos.html">Videos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/week08/homework.html">Homework</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/week08/lecture.html">Lecture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/week08/test.html">Test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/week08/lab.html">Lab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/week08/learninglogs.html">Learning Logs</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../notes/week09/week09_summary.html">Week 9 - Chapter 8</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/week09/readings.html">Readings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/week09/videos.html">Videos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/week09/homework.html">Homework</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/week09/lecture.html">Lecture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/week09/test.html">Test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/week09/lab.html">Lab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/week09/learninglogs.html">Learning Logs</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part 3 - Energy &amp; Momentum</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../notes/week10/week10_summary.html">Week 10 - Chapter 9</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/week10/readings.html">Readings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/week10/videos.html">Videos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/week10/homework.html">Homework</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/week10/lecture.html">Lecture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/week10/test.html">Test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/week10/lab.html">Lab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/week10/learninglogs.html">Learning Logs</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../notes/week11/week11_summary.html">Week 11 - Chapter 10</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/week11/readings.html">Readings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/week11/videos.html">Videos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/week11/homework.html">Homework</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/week11/lecture.html">Lecture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/week11/test.html">Test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/week11/lab.html">Lab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/week11/learninglogs.html">Learning Logs</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../notes/week12/week12_summary.html">Week 12 - Chapter 11</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/week12/readings.html">Readings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/week12/videos.html">Videos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/week12/homework.html">Homework</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/week12/lecture.html">Lecture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/week12/test.html">Test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/week12/lab.html">Lab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/week12/learninglogs.html">Learning Logs</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Week 13 - Exam Review</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../notes/week13/week13_summary.html">Week 13 - Review</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-14"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/week13/readings.html">Readings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/week13/videos.html">Videos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/week13/homework.html">Homework</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/week13/lecture.html">Lecture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/week13/test.html">Test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/week13/lab.html">Lab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/week13/learninglogs.html">Learning Logs</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Final Exam</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../notes/final.html">Final Exam Information</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Lab Materials</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../notes/labs.html">Lab Stuff</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Course Feedback</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../about/feedback.html">Anonymous Feedback Form</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Tools</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Ed Discussion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../github/github.html">Git and GitHub</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/firasm/jupyterbook_course_template" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/firasm/jupyterbook_course_template/edit/main/tools/ed_discussion/ed_discussion.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/firasm/jupyterbook_course_template/issues/new?title=Issue%20on%20page%20%2Ftools/ed_discussion/ed_discussion.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/tools/ed_discussion/ed_discussion.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Ed Discussion</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interface">1. Interface</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#find-and-stay-up-to-date-on-your-questions">2. Find and stay up-to-date on your questions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-post-a-question">3. How to Post a Question</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-ask-private-questions-only-to-the-instructor">4. How to ask private questions ONLY to the instructor</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#use-the-editor-and-all-its-features">5. Use the editor and all its’ features</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#set-your-notification-settings">6. Set your notification settings!</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#refer-to-other-posts">7. Refer to other posts</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#new-can-i-contact-other-students-in-the-class-dm">8. (NEW!) Can I contact other students in the class (DM) ?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quick-start-guide">Quick Start Guide</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <p><img alt="" src="../../_images/header.jpg" /></p>
+<section class="tex2jax_ignore mathjax_ignore" id="ed-discussion">
+<span id="tools-ed-discussion"></span><h1>Ed Discussion<a class="headerlink" href="#ed-discussion" title="Permalink to this heading">#</a></h1>
+<p>Hello everyone!</p>
+<p>We will be using Ed Discussion for our class Q&amp;A, it’s really great! I hope you like it.</p>
+<p>This is the best place to ask questions about the course, whether about content, or logistics. You should ask every question here, and the only thing you need to decide is whether your question should be public (helps everyone) or private (applies only to you, for e.g., regrade requests, personal circumstances etc…)</p>
+<p>You will get faster answers here from the teaching team as well as other students here on Ed Discussion - all of your TAs are on here as well. Neither TAs nor instructors will be responding to emails or Canvas messages, unless it’s a legitimate emergency.</p>
+<p>At various points in the course, I will give you some tips and suggestions on how to more effectively ask for, and give help.</p>
+<p>Here are some tips:</p>
+<ul class="simple">
+<li><p>Do a quick scan to search before you post, it’s possible your question was already asked. If it has, add a response to it, rather than creating a new question</p></li>
+<li><p>Click the heart emoji ❤️ for questions and answers you find/found useful</p></li>
+<li><p>Try to answer questions you feel comfortable answering and just try your best! If it’s not quite correct, TAs and instructors will be offering helpful edits and corrections. This will be a learning experience as well.</p></li>
+<li><p>For each questions that were answered by students (high recommended!), the first answer that we think is fully correct, we will “Endorse” it - this means that the answer was approved by an instructor</p></li>
+<li><p>Share interesting course related content with staff and peers - ask lots of questions and let’s build a community together!</p></li>
+</ul>
+<p>Here is a quick overview of the main features of Ed Discussion:</p>
+<section id="interface">
+<h2>1. Interface<a class="headerlink" href="#interface" title="Permalink to this heading">#</a></h2>
+<p><img alt="" src="../../_images/welcome.png" /></p>
+</section>
+<section id="find-and-stay-up-to-date-on-your-questions">
+<h2>2. Find and stay up-to-date on your questions<a class="headerlink" href="#find-and-stay-up-to-date-on-your-questions" title="Permalink to this heading">#</a></h2>
+<p><img alt="" src="../../_images/tips.png" /></p>
+</section>
+<section id="how-to-post-a-question">
+<h2>3. How to Post a Question<a class="headerlink" href="#how-to-post-a-question" title="Permalink to this heading">#</a></h2>
+<p>Most of the time, you should select “Question” instead of a “Post”.
+A post can be used for things that you don’t necessarily want a response to, sharing of resources, videos, etc…</p>
+<p><img alt="" src="../../_images/question.png" /></p>
+</section>
+<section id="how-to-ask-private-questions-only-to-the-instructor">
+<h2>4. How to ask private questions ONLY to the instructor<a class="headerlink" href="#how-to-ask-private-questions-only-to-the-instructor" title="Permalink to this heading">#</a></h2>
+<p>To make a post/question Private, simply click on the box that says “Private”. You can also post anonymously to other students (but the TAs and instructor will still know who posted).</p>
+<p><img alt="" src="../../_images/private.png" /></p>
+<p>In general, I suggest asking open and public questions so others can benefit from answers and we can crowd-source knowledge. For questions that you think are private and relevant only to you, you can ask them privately so only the instructors see the question.</p>
+</section>
+<section id="use-the-editor-and-all-its-features">
+<h2>5. Use the editor and all its’ features<a class="headerlink" href="#use-the-editor-and-all-its-features" title="Permalink to this heading">#</a></h2>
+<p><img alt="" src="../../_images/editor.png" /></p>
+</section>
+<section id="set-your-notification-settings">
+<h2>6. Set your notification settings!<a class="headerlink" href="#set-your-notification-settings" title="Permalink to this heading">#</a></h2>
+<p>I suggest you enable notification emails so that you get an email when someone replies to your thread or a comment that you made.</p>
+<p><img alt="" src="../../_images/notifications.png" /></p>
+</section>
+<section id="refer-to-other-posts">
+<h2>7. Refer to other posts<a class="headerlink" href="#refer-to-other-posts" title="Permalink to this heading">#</a></h2>
+<p>Each post has a number associated with it that starts from 1 and counts upwards. You can refer to other posts by using the following syntax: #2.</p>
+<p>Ed Discussion is smart enough to turn that into a link, so that if someone clicks on it, they will get taken to Post #2 (which is this one).</p>
+</section>
+<section id="new-can-i-contact-other-students-in-the-class-dm">
+<h2>8. (NEW!) Can I contact other students in the class (DM) ?<a class="headerlink" href="#new-can-i-contact-other-students-in-the-class-dm" title="Permalink to this heading">#</a></h2>
+<p>Yes - Ed Discussion has a new feature called “Ed Chat” (that’s in Early Beta) which allows you to chat with other students in the class, and with the teaching team (when they initiate a conversation).
+I have turned this feature on, but I urge you to be respectful of how you approach others.
+If you find that this feature is causing you grief, or if you are receiving messages that are inappropriate, please let me know anonymously, and I will turn off the ability to contact your peers.
+It is my hope that this new functionality allows you to contact your study group partners, make friends, and build community.
+The teaching team may reach out to you via Ed Chat.</p>
+<p>Ed Chat can be accessed from the left sidebar on your course’s main discussion page:</p>
+<p><img alt="" src="../../_images/chat.png" /></p>
+<p>The interface is a bit rough, but the functionality all seems to be there.
+You can create a “public channel” that other students can join, or create a “private channel” for situations where you want to control the members in the group.
+There is also the ability to send “direct messages (DMs)” directly to one or more students.</p>
+<p><img alt="" src="../../_images/chat2.png" /></p>
+<p>Let me know if you find this new functionality useful!</p>
+</section>
+<section id="quick-start-guide">
+<h2>Quick Start Guide<a class="headerlink" href="#quick-start-guide" title="Permalink to this heading">#</a></h2>
+<p>Here is a <a class="reference external" href="https:/edstem.org/quickstart/ed-discussion.pdf">PDF of the Quick Start Guide to Ed Discussion</a>.</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "firasm/jupyterbook_course_template",
+            ref: "main",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./tools/ed_discussion"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../../about/feedback.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">PHYS 111 Anonymous Feedback Form</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../github/github.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Git and GitHub</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interface">1. Interface</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#find-and-stay-up-to-date-on-your-questions">2. Find and stay up-to-date on your questions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-post-a-question">3. How to Post a Question</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-ask-private-questions-only-to-the-instructor">4. How to ask private questions ONLY to the instructor</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#use-the-editor-and-all-its-features">5. Use the editor and all its’ features</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#set-your-notification-settings">6. Set your notification settings!</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#refer-to-other-posts">7. Refer to other posts</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#new-can-i-contact-other-students-in-the-class-dm">8. (NEW!) Can I contact other students in the class (DM) ?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quick-start-guide">Quick Start Guide</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Firas Moosvi
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  <div>
+<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png"></a>
+    All content on this site (unless otherwise specified) is licensed under the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0 license</a>
+</div>
+
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

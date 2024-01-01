@@ -188,7 +188,7 @@ Most of the content I use is open source so you can {{ '[access the course websi
 
 ```{tip}
 Unfortunately the **course instructor has no control over student registration** and you will not be able to join the Canvas course until you are officially registered in the class.
-If you have specific questions, I suggest contacting the department cmps.okanagan@ubc.ca. Note: the operating hours for the CMPS office are Monday - Friday, 9 a.m. - 4 p.m. (PDT).
+If you have specific questions, I suggest contacting the department cmps.Health and Wellbeing@ubc.ca. Note: the operating hours for the CMPS office are Monday - Friday, 9 a.m. - 4 p.m. (PDT).
 ```
 ````
 
@@ -206,7 +206,7 @@ Some lab sections are often blocked to help minimize cases where there are only 
 ```{tip}
 This is usually not an issue, and I don't expect this to be an issue in the future.
 I know it's a bit frustrating, but students *always* over-register into more courses than they can realistically take while they consider their options.
-If by the start of term, you're still not in a lab/tutorial, then I suggest contacting cmps.okanagan@ubc.ca to let the department know that you're not able to get into a lab/tutorial along with your constraints, and they will likely provide you with some advice.
+If by the start of term, you're still not in a lab/tutorial, then I suggest contacting an advisor to let them know that you're not able to get into a lab/tutorial along with your constraints, and they will likely provide you with some advice.
 ```
 ````
 
