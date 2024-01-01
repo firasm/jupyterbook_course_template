@@ -182,4 +182,4 @@ parts:
 - caption: Tools
   chapters:
   - file: tools/ed_discussion/ed_discussion
-  - file: tools/github
+  - file: tools/github/github
