@@ -22,6 +22,11 @@ This course website is currently under construction. It will continue to be upda
 ```{include} unsyllabus_bits/important_details.md
 ```
 
+### What do I need to purchase for this course?
+
+Being very conscious of the high tuition and technology costs, we have made efforts to remove the additional cost of taking this course.
+All course content, references, and resources provided in this course are free and open source, and can be considered open educational resources (OER).
+
 <div class="page_break"> </div>
 
 (contact-us)=
@@ -161,7 +166,7 @@ In this course, we will be using the following required learning technologies (p
 (unsyllabus_land-acknowledgement)=
 ## Land Acknowledgement
 
-```{include} ../syllabus_bits/land_acknowledgement.md
+```{include} syllabus_bits/land_acknowledgement.md
 ```
 
 (references)=

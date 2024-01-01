@@ -28,10 +28,9 @@ Distribution of this material to a third party is forbidden.
 
 ## Grievances and Complaints Procedures
 
-A student who has a complaint related to this course should follow the procedures summarized below:
-
-- The student should attempt to resolve the matter with the instructor first. Students may talk first to someone other than the instructor if they do not feel, for whatever reason, that they can directly approach the instructor. 
-- If the complaint is not resolved to the student's satisfaction, the student should e-mail the Associate Head, {{ ASSOCIATE_HEAD }} or the Department Head.
+A student who has a complaint related to this course should attempt to resolve the matter with the instructor first.
+Students may also talk to other members of the teaching team (TAs, course coordinators, co-instructors) if they do not feel, for whatever reason, that they can directly approach their own instructor.
+<!-- - If the complaint is not resolved to the student's satisfaction, the student should e-mail the Associate Head, {{ ASSOCIATE_HEAD }} or the Department Head. -->
 
 ## Academic Integrity
 
@@ -61,56 +60,36 @@ If you are disabled, have an injury or illness and require academic accommodatio
 
 ## Equity, Human Rights, Discrimination and Harassment
 
-UBC Okanagan is a place where every student, staff and faculty member should be able to study and work in an environment that is free from human rights based discrimination and harassment.
-If you require assistance related to an issue of equity, discrimination or harassment, please contact the [Equity Office](https://equity.ubc.ca) by phone (604.827.1773) or email ([info@equity.ubc.ca](mailto:info@equity.ubc.ca)), your administrative head of unit, and/or your unit’s equity representative.   
+UBC is a place where every student, staff and faculty member should be able to study and work in an environment that is free from human rights based discrimination and harassment.
+If you require assistance related to an issue of equity, discrimination or harassment, please contact the [Equity Office](https://equity.ubc.ca) or email ([info@equity.ubc.ca](mailto:info@equity.ubc.ca)), your administrative head of unit, and/or your unit’s equity representative.   
 
-## Health & Wellness - UNC 337
+## Health & Wellbeing
 
-At UBC Okanagan health services to students are provided by Health and Wellbeing.
+At UBC health services to students are provided by [Health and Wellbeing](https://students.ubc.ca/health).
 Nurses, physicians and counsellors provide health care and counselling related to physical health, emotional/mental health and sexual/reproductive health concerns.
 As well, health promotion, education and research activities are provided to the campus community.
-If you require assistance with your health, please contact [Health and Wellbeing](https://students.ubc.ca/health) in person (UNC 337) or by email (healthwellness.okanagan@ubc.ca) for more information or to book an appointment.
+If you require assistance with your health, please contact [Health and Wellbeing](https://students.ubc.ca/health) in person (UBC Life Building, Room 1400), or by phone (604.822.8450) for more information or to book an appointment.
 
 ## Sexual Violence Prevention and Response Office (SVPRO)
 
-A safe and confidential place for UBC students, staff and faculty who have experienced sexual violence regardless of when or where it took place.
+[SVPRO](https://svpro.ubc.ca) is a safe and confidential place for UBC students, staff and faculty who have experienced sexual violence regardless of when or where it took place.
 Just want to talk? We are here to listen and help you explore your options. We can help you find a safe place to stay, explain your reporting options (UBC or police), accompany you to the hospital, or support you with academic accommodations.
-You have the right to choose what happens next.
-We support your decision, whatever you decide. Visit [svpro.ok.ubc.ca](https://svpro.ok.ubc.ca) or call us at 250.807.9640.
+You have the right to choose what happens next, and we believe you.
+We support your decision, whatever you decide.
+Visit [svpro.ubc.ca](https://svpro.ubc.ca), email them at [svpro.vancouver@ubc.ca](mailto:svpro.vancouver@ubc.ca), or call us at 604.822.1588.
 
-## Independent Investigations Office (IIO)
+## UBC Investigations Office (IO)
 
-If you or someone you know has experienced sexual assault or some other form of sexual misconduct by a UBC community member and you want the Independent Investigations Office (IIO) at UBC to investigate, please contact the IIO.
+The UBC Investigations Office (IO) responds to formal reports of sexual misconduct and discrimination involving UBC students, faculty, and staff through investigations and alternative resolution processes.
+If you or someone you know has experienced sexual assault or some other form of sexual misconduct by a UBC community member and you want the UBC Investigations Office (IO) at UBC to investigate, please contact the IO.
 Investigations are conducted in a trauma informed, confidential and respectful manner in accordance with the principles of procedural fairness.
-You can report your experience directly to the IIO via email: [director.of.investigations@ubc.ca](mailto:director.of.investigations@ubc.ca) or by calling 604.827.2060 or online by visiting [investigationsoffice.ubc.ca](https://investigationsoffice.ubc.ca).
-
-## The Hub
-
-The Student Learning Hub (LIB 237) is your go-to resource for free math, science, writing, and language learning support.
-The Hub welcomes undergraduate students from all disciplines and year levels to access a range of supports that include tutoring in math, sciences, languages, and writing, as well as help with study skills and learning strategies. 
-For more information, please visit the Hub’s website (https://students.ok.ubc.ca/student-learning-hub/) or call 250-807-9185.
+You can report your experience directly to the IO via a [secure webform here](https://ubc.ca1.qualtrics.com/jfe/form/SV_8oFgTWeLsNiO9F4) or by calling 604.827.2060 or online by visiting [io.ubc.ca](https://io.ubc.ca).
 
 ## SAFEWALK
 
-Don't want to walk alone at night?  Not too sure how to get somewhere on campus? 
+You do not have to walk alone on campus. 
+If you feel unsafe walking alone on campus after dark, or if you are not too sure how to get somewhere on campus, then Safewalk can accompany you to your destination.
 
-Call Safewalk at 250.807.8076.
+Call Safewalk at 604.822.5355 during their opening hours from 8:00 PM – 2:00 AM.
 
-For more information, [visit our website](https://security.ok.ubc.ca/safewalk/) or download the UBC SAFE - Okanagan app.
-
-<!-- 
-UBC provides resources to support student learning and to maintain healthy lifestyles but recognizes that sometimes crises arise and so there are additional resources to access including those for survivors of sexual violence.
-UBC values respect for the person and ideas of all members of the academic community.
-Harassment and discrimination are not tolerated nor is suppression of academic freedom. 
-UBC provides appropriate accommodation for students with disabilities and for religious and cultural observances. 
-UBC values academic honesty and students are expected to acknowledge the ideas generated by others and to uphold the highest academic standards in all of their actions. Details of the policies and how to access support are available [here](https://senate.ubc.ca/policies-resources-support-student-success).
-
-### Online learning for international students
-
-During this pandemic, the shift to online learning has greatly altered teaching and studying at UBC, including changes to health and safety considerations.
-Keep in mind that some UBC courses might cover topics that are censored or considered illegal by non-Canadian governments.
-This may include, but is not limited to, human rights, representative government, defamation, obscenity, gender or sexuality, and historical or current geopolitical controversies.
-If you are a student living abroad, you will be subject to the laws of your local jurisdiction, and your local authorities might limit your access to course material or take punitive action against you. UBC is strongly committed to academic freedom, but has no control over foreign authorities (please visit [this calendar page](http://www.calendar.ubc.ca/okanagan/index.cfm?tree=3,293,866,0) for an articulation of the values of the University conveyed in the Senate Statement on Academic Freedom).
-Thus, we recognize that students will have legitimate reason to exercise caution in studying certain subjects.
-If you have concerns regarding your personal situation, consider postponing taking a course with manifest risks, until you are back on campus or reach out to your academic advisor to find substitute courses. 
-For further information and support, please visit: [https://academic.ubc.ca/support-resources/freedom-expression/](https://academic.ubc.ca/support-resources/freedom-expression/). -->
+For more information, [visit our website](https://www.ams.ubc.ca/support-services/student-services/safewalk/) or download the [UBC SAFE app](https://security.ubc.ca/home/safety-prevention-resources/ubc-safe-app/) on iOS and Android devices.

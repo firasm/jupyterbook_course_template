@@ -8,7 +8,7 @@ I also don't want there to be an unchangeable legal document governing the inter
 What I do want is to give you suggestions and guidelines supported by my personal experience as well as the latest literature on teaching and learning.
 
 That being said, perhaps there are some advantages to having some elements of a course codified in a "legal document" - the "Syllabus".
-For instance, the instructor for the course, the calendar course entry, the term dates, the final exam period, the passing criteria, how to file a grievance or complaint, and your responsibilities to uphold UBC Okanagan's commitment to equity, diversity, and inclusion.
+For instance, the instructor for the course, the calendar course entry, the term dates, the final exam period, the passing criteria, how to file a grievance or complaint, and your responsibilities to uphold UBC's commitment to equity, diversity, and inclusion.
 The items above are indeed permanent and unchanging, and deserve to be in the syllabus. 
 
 Other things, such as what you will learn, how and when you will do it are more flexible and fluid.

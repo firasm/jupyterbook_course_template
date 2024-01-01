@@ -15,38 +15,17 @@ Additional details about the course are available on the {{ '[course website]({l
 
 ## Course Information
 
-**{{ COURSE_CODE }} {{ SECTION }}**
-
-**{{ TITLE }} ({{ CREDITS }})**
-
-**{{ TERM }}**
-
-**{{ ROOM }} - {{ MEETING_TIMES }}**
-
----
-
-**Instructor Name:** {{ INSTRUCTOR }}
-
-**Instructor Office:** {{ OFFICE }}
-
-**Instructor Phone:** {{ PHONE }}
+```{include} unsyllabus_bits/important_details.md
+```
 
 For information on how to contact your course instructor, including office hours, see the {{ '[course website]({link})'.format(link=COURSE_LINK)}}.
-
-**Mode of Delivery:** In-person (All course activities and assessments, including the Final Exam, will be conducted in-person)
 
 ## Calendar Description
 
 ```{include} syllabus_bits/calendar_entry.md
 ```
 
-You will find all the important term dates in the [UBC Academic Calendar](https://vancouver.calendar.ubc.ca/dates-and-deadlines).
-
 ## Other Instructional Staff
-
-For information on this, see the {{ '[course website]({link})'.format(link=COURSE_LINK)}}.
-
-## Course Structure
 
 For information on this, see the {{ '[course website]({link})'.format(link=COURSE_LINK)}}.
 
@@ -61,16 +40,20 @@ More details about the course can be found on the {{ '[course website]({link})'.
 
 ## Schedule of Topics
 
-The tentative course schedule, subject to change, can be found on the {{ '[course website]({link})'.format(link=CANVAS_LINK.replace('CANVAS_ID',CANVAS_ID))}}.
+The tentative course schedule, subject to change, can be found on the {{ '[course website]({link})'.format(link=CANVAS_LINK.replace('CANVAS_ID',CANVAS_ID))}}. 
 
 ```{include} syllabus_bits/schedule.md
 ```
+
+## Course Structure
+
+For information on this, see the {{ '[course website]({link})'.format(link=COURSE_LINK)}}.
 
 ## Learning Activities
 
 For information on this, see the {{ '[course website]({link})'.format(link=COURSE_LINK)}}.
 
-## Required Materials
+## Learning Materials
 
 There is no requirement to purchase textbooks or any other materials for this course.
 Resources and materials for this course can be found on the {{ '[course website]({link})'.format(link=CANVAS_LINK.replace('CANVAS_ID',CANVAS_ID))}}.

@@ -17,6 +17,6 @@ New tools may be added to the course as the need arises, and I will update this 
 
 There is no cost to the student for any of the tools used in this course.
 
-```{warning}
+```{tip}
 Even though the tools above are required for this course, if you have a moral or legal objection to my use of these tools, please do reach out to me and we can likely find an acceptable accommodation.
 ```

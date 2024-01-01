@@ -178,3 +178,8 @@ parts:
   chapters:
   - file: about/feedback
     title: Anonymous Feedback Form
+
+- caption: Tools
+  chapters:
+  - file: tools/ed_discussion/ed_discussion
+  - file: tools/github
