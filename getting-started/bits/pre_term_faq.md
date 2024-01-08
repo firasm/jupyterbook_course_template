@@ -59,7 +59,7 @@ Before enrolling in this course, ensure that your laptop meets the minimum requi
 
 - runs one of the following operating systems: 
     - Macs: 
-        - Latest: macOS 12.5
+        - Latest: macOS 14.2.1
         - Recommended: macOS 10.14.6 or higher
         - Required: macOS 10.11 (El Capitan)
     - Windows: 
@@ -67,7 +67,7 @@ Before enrolling in this course, ensure that your laptop meets the minimum requi
         - Recommended: Windows 10 (64-bit) or higher
         - Required: Windows 7 or higher
     - Ubuntu: 
-        - Latest: Ubuntu 21.10
+        - Latest: Ubuntu 23.10
         - Recommended: Ubuntu 20.04 or higher
         - Required: version 18.04
 - can connect to networks via a wireless connection
@@ -88,7 +88,7 @@ If this is going to be a problem, please contact me through a private message on
 
 No, you do not need to purchase anything for this course.
 
-It would be helpful if you had access to a computing device as we'll be conducting all of our homework and tests online. If this is going to be a problem, please contact me through a private message on {{ FORUM_LINK }} and we can work out an accommodation.
+It would be helpful if you had access to a computing device as we'll be conducting all of our homework, classwork, and labs digitally. If this is going to be a problem, please contact me through a private message on {{ FORUM_LINK }} and we can work out an accommodation.
 ```
 
 ```{dropdown} Which textbook are we using for this course?
@@ -104,7 +104,7 @@ It would be helpful if you had access to a computing device as we'll be conducti
     :color: primary
     :name: recorded-lectures
 
-Lectures may be recorded and will be posted if they are - mostly for students that miss the class and want to catch up on missed announcements.
+Lectures may be recorded and will be posted on Canvas if they are - mostly for students that miss the class and want to catch up on missed announcements.
 
 In general, I do not think re-watching lectures is a good way to study (even at 1.5x speed).
 It will be far more beneficial for you to try doing more problems and come to student hours or get extra help on the forum!
@@ -147,12 +147,12 @@ There will be frequent tests (roughly every two weeks) in this course and you wi
 If you come in with good work ethic, the right attitude, and sufficient motivation, you will do really well - I promise!
 ```
 
-```{dropdown} Is attendance mandatory in lectures and labs?
+```{dropdown} Is attendance mandatory in lectures?
     :class-container: sd-shadow-lg
     :color: primary
     :name: attendance
 
-- Attendance is **highly recommended** in lectures and labs, but not required.
-- Labs will not be recorded, Lectures may be recorded and if they are, will be made available via Canvas.
-- Note that there are several passing requirements in this course - it's highly unlikely you'll be able to pass the labs if you skip the labs and lectures!
+- Attendance is **highly recommended** in lectures, but not required.
+- Lectures may be recorded and if they are, will be made available via Canvas.
+- Note that there are several passing requirements in this course - it's highly unlikely you'll be able to pass the course if you skip the lectures!
 ```

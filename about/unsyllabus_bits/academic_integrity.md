@@ -8,7 +8,7 @@ According to the scientific literature, the most common reasons students cheat a
 - Peer pressure, including an inability to say no to help others cheat
 - Perceived societal acceptance of cheating (Lance Armstrong, Barry Bonds, Enron, Wall Street & the The Big Short)
 - Desire for success without the time/desire to put in the work needed
-- Strict deadlines and due-dates
+- Strict due dates and due-dates
 - Requirement from instructors to memorize facts, figures, equations, etc...
 - High-stakes exams with no recompense for "having a bad day"
 - Peers cheating with no consequences or penalties
@@ -19,7 +19,7 @@ Though I sympathize with students and the stresses of your busy lives - in my op
 I have tried extremely hard to make this course focused on learning rather than grading, and where grading is needed, to have policies that are as student-friendly as possible.
 In particular, I hope (and expect) that the following features of the course should eliminate your temptation to cheat or plagiarize:
 
-- {{ GRACE_PERIOD }} grace-period on all due dates and deadlines.
+- {{ GRACE_PERIOD }} grace-period on all due dates and due dates.
 - Long testing window so you can start the tests whenever you're comfortable.
 - Weekly learning logs, homework and reading reflections to make you think about your learning ([metacognition](https://cft.vanderbilt.edu/guides-sub-pages/metacognition/)).
 - Each test has a "bonus test" available one week later; for each test, we will take the better score of the pair.

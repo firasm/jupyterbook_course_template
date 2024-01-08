@@ -2,7 +2,7 @@ First of all, I'm sorry you're having trouble and are considering withdrawing fr
 This is no problem, and I will not be personally offended or upset you need to do this, I encourage you to do what you feel is right for you and your situation. 
 Below is some information that might be helpful for you in making the decision.
 
-```{warning} Please note that it is the student's responsibility to check the withdrawal dates as [listed in the UBC Calendar](https://vancouver.calendar.ubc.ca/dates-and-deadlines).
+```{warning} Please note that it is the student's responsibility to check the withdrawal dates as [listed in the UBC Calendar](https://vancouver.calendar.ubc.ca/dates-and-due dates).
 ```
 | Withdrawal type        | Effect on Transcript | Tuition refund                                                                                     |
 |------------------------|----------------------|----------------------------------------------------------------------------------------------------|

@@ -70,10 +70,10 @@ Resources and materials for this course can be found on the {{ '[course website]
 
 ## Late Policy and Missed Assignments and Exams
 
-Deadlines in this course have a generous no-penalty {{ GRACE_PERIOD }} grace period so late submissions are not generally accepted.
+Due dates in this course have a generous no-penalty {{ GRACE_PERIOD }} grace period so late submissions are not generally accepted.
 Missed Tests and Exams will be given a score of 0 unless prior arrangements are made with the course instructor.
 To contact the instructor for this course, use {{ FORUM_LINK }}.
-Details on deadlines and other course policies can be found on the {{ '[course website]({link})'.format(link=CANVAS_LINK.replace('CANVAS_ID',CANVAS_ID))}}.
+Details on due dates and other course policies can be found on the {{ '[course website]({link})'.format(link=CANVAS_LINK.replace('CANVAS_ID',CANVAS_ID))}}.
 
 ## Learning Analytics
 

@@ -12,7 +12,7 @@ There will be 5 tests in this course in an (approximately) bi-weekly schedule.
 For each of the tests, there will be a bonus test exactly one week later and the better score of the Test-Bonus Test pair will be taken.
 
 ```{attention} 
-All deadlines in this course have an automatic 48 hour grace period after the due dates listed above.
+All due dates in this course have an automatic 48 hour grace period after the due dates listed above.
 Any submissions submitted past the grace period will not be graded (with some exceptions).
 ```
 

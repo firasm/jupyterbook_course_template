@@ -1,6 +1,6 @@
 ### What if I miss labs, tests, or the exam due to an illness, health, or other personal situations?
 
-Normally, most deadlines in this course have a generous grace period.
+Normally, most due dates in this course have a generous grace period.
 If you require an extension beyond the grace period, please contact the instructor on {{ FORUM_LINK }} (ideally before the deadline passes) to discuss your options.
 
 Students who, because of unforeseen events, are absent during the term and are unable to complete tests or other graded work, should normally discuss with their instructors how they can make up for missed work.
@@ -20,7 +20,7 @@ I'm sure we will come to some agreement, generally the earlier you let me know o
 
 ### What if I have to miss a deadline because of a wedding, birthday, funeral, religious holiday, or personal event ?
 
-No problem! There's not even any need to tell me, or ask for permission to miss deadlines.
+No problem! There's not even any need to tell me, or ask for permission to miss due dates.
 The course is designed to give you maximum flexibility: 
 
 - Every deadline has a {{ GRACE_PERIOD }} grace period that is automatically applied.
