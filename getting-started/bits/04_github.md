@@ -1,4 +1,4 @@
-```{dropdown} 2. Create an account on GitHub.com (if you don't already have one)
+```{dropdown} 2. Create an account on GitHub (if you don't already have one)
     :class-container: sd-shadow-lg
     :color: primary
 
