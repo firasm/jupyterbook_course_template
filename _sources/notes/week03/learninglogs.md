@@ -57,7 +57,7 @@ Q3: Is there anything else you would like to tell me?
 
 [Open Text]
 
-I’ll do what I can within my role as an instructor, in terms of workload and deadlines.
+I’ll do what I can within my role as an instructor, in terms of workload and due dates.
 Part of undergraduate life and healthy living is finding ways to manage your stress and anxiety in a manner that is effective for you - this will look different for each person! 
 If you want to explore additional resources, start with the ones listed at [UBCV Health and wellbeing](https://students.ubc.ca/health) and see if the tips there work for you!
 
